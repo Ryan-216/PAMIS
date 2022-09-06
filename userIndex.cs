@@ -15,7 +15,6 @@ namespace Party_MS2
         public UserIndex()
         {
             InitializeComponent();
-            Label
         }
     }
 }
