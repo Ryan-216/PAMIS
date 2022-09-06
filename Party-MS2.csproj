@@ -53,6 +53,7 @@
       <DependentUpon>AdminIndex.cs</DependentUpon>
     </Compile>
     <Compile Include="Dao.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
