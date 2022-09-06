@@ -31,14 +31,7 @@ namespace Party_MS2
 
         private void label1_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text != "" && textBox2.Text != "")
-            {
-                Login();
-            }
-            else
-            {
-                MessageBox.Show("账号或密码不能为空，请重新输入！");
-            }
+
         }
         public void Login()
         {
@@ -46,7 +39,7 @@ namespace Party_MS2
             if (radioButton1.Checked == true)
             {
                 Dao dao = new Dao();
-                string sql = $"select* from t_user where id='{textBox1.Text}' and psw='{textBox2.Text}'";
+                string sql = $"select* from t_user where stu_id='{textBox1.Text}' and pwd='{textBox2.Text}'";
                 IDataReader dc = dao.read(sql);
                 if (dc.Read())
                 {
@@ -70,7 +63,7 @@ namespace Party_MS2
             if (radioButton2.Checked == true)
             {
                 Dao dao = new Dao();
-                string sql = $"select* from t_admin where id='{textBox1.Text}' and psw='{textBox2.Text}'";
+                string sql = $"select* from t_admin where id='{textBox1.Text}' and pwd='{textBox2.Text}'";
                 IDataReader dc = dao.read(sql);
                 if (dc.Read())
                 {
@@ -90,7 +83,14 @@ namespace Party_MS2
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (textBox1.Text != "" && textBox2.Text != "")
+            {
+                Login();
+            }
+            else
+            {
+                MessageBox.Show("账号或密码不能为空，请重新输入！");
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
