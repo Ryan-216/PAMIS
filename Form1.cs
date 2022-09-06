@@ -15,6 +15,21 @@ namespace Party_MS2
         public Form1()
         {
             InitializeComponent();
+            string picPath = Application.StartupPath + "\\img/loginBackground.png";
+            this.BackgroundImage = Image.FromFile(picPath);
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
+            label3.BackColor = Color.Transparent;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
