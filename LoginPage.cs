@@ -45,14 +45,14 @@ namespace Party_MS2
                 IDataReader dc = dao.read(sql);
                 if (dc.Read())
                 {
-                    //Data.UID = dc["id"].ToString();
-                    //Data.UName = dc["name"].ToString();
+                    Data.UID = dc["id"].ToString();
+                    Data.UName = dc["name"].ToString();
 
                     MessageBox.Show("登录成功！");
 
-                    //user_index user = new user_index();
+                    UserIndex user = new UserIndex();
                     this.Hide();
-                    //user.ShowDialog();
+                    user.ShowDialog();
                     this.Show();
                 }
                 else
@@ -70,9 +70,9 @@ namespace Party_MS2
                 if (dc.Read())
                 {
                     MessageBox.Show("登录成功！");
-                    //admin_index admin = new admin_index();
+                    AdminIndex admin = new AdminIndex();
                     this.Hide();
-                    //admin.ShowDialog();
+                    admin.ShowDialog();
                     this.Show();
                 }
                 else

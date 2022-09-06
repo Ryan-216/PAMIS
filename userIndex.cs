@@ -15,6 +15,12 @@ namespace Party_MS2
         public UserIndex()
         {
             InitializeComponent();
+            label1.Text = $"欢迎{Data.UName}登录!";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
