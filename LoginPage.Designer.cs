@@ -63,11 +63,11 @@ namespace Party_MS2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("楷体_GB2312", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(172, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(462, 51);
+            this.label1.Size = new System.Drawing.Size(470, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "欢迎登录党务管理系统";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -75,22 +75,22 @@ namespace Party_MS2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("楷体_GB2312", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(137, 148);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 29);
+            this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "用户名";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("楷体_GB2312", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(146, 232);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 29);
+            this.label3.Size = new System.Drawing.Size(66, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "密码";
             // 
@@ -113,29 +113,29 @@ namespace Party_MS2
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.ForeColor = System.Drawing.Color.White;
             this.radioButton1.Location = new System.Drawing.Point(253, 291);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(124, 19);
+            this.radioButton1.Size = new System.Drawing.Size(58, 19);
             this.radioButton1.TabIndex = 7;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "用户";
-            this.radioButton1.ForeColor = Color.White;
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.ForeColor = System.Drawing.Color.White;
             this.radioButton2.Location = new System.Drawing.Point(471, 291);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(124, 19);
+            this.radioButton2.Size = new System.Drawing.Size(73, 19);
             this.radioButton2.TabIndex = 8;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "管理员";
-            this.radioButton2.ForeColor = Color.White;
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,7 +149,7 @@ namespace Party_MS2
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "LoginPage";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

@@ -27,6 +27,7 @@ namespace Party_MS2
             label3.BackColor = Color.Transparent;
             radioButton1.BackColor = Color.Transparent;
             radioButton2.BackColor = Color.Transparent;
+            radioButton1.Checked = true;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,6 +36,7 @@ namespace Party_MS2
         }
         public void Login()
         {
+           
             //user
             if (radioButton1.Checked == true)
             {
