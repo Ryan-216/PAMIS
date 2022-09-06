@@ -2,7 +2,7 @@
 
 namespace Party_MS2
 {
-    partial class Login
+    partial class LoginPage
     {
         /// <summary>
         /// 必需的设计器变量。
