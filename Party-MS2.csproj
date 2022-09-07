@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABIUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABIUpdate.Designer.cs">
+      <DependentUpon>ABIUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABIAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABIAdd.Designer.cs">
+      <DependentUpon>ABIAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBasicInfomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBasicInfomation.Designer.cs">
+      <DependentUpon>AdminBasicInfomation.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminIndex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +78,11 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="PartyDBIIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartyDBIIDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserIndex.cs">
@@ -68,6 +91,18 @@
     <Compile Include="UserIndex.Designer.cs">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ABIAdd.resx">
+      <DependentUpon>ABIAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABIUpdate.resx">
+      <DependentUpon>ABIUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBasicInfomation.resx">
+      <DependentUpon>AdminBasicInfomation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminIndex.resx">
+      <DependentUpon>AdminIndex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +118,17 @@
     <EmbeddedResource Include="UserIndex.resx">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="PartyDBIIDataSet.xsc">
+      <DependentUpon>PartyDBIIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartyDBIIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartyDBIIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartyDBIIDataSet.xss">
+      <DependentUpon>PartyDBIIDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

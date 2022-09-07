@@ -43,6 +43,7 @@ namespace Party_MS2
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("楷体_GB2312", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(253, 342);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 43);
@@ -53,6 +54,7 @@ namespace Party_MS2
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("楷体_GB2312", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.Location = new System.Drawing.Point(471, 342);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 43);
@@ -67,7 +69,7 @@ namespace Party_MS2
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(172, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(470, 44);
+            this.label1.Size = new System.Drawing.Size(469, 43);
             this.label1.TabIndex = 2;
             this.label1.Text = "欢迎登录党务管理系统";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -113,10 +115,11 @@ namespace Party_MS2
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("楷体_GB2312", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton1.ForeColor = System.Drawing.Color.White;
             this.radioButton1.Location = new System.Drawing.Point(253, 291);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 19);
+            this.radioButton1.Size = new System.Drawing.Size(60, 19);
             this.radioButton1.TabIndex = 7;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "用户";
@@ -126,10 +129,11 @@ namespace Party_MS2
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("楷体_GB2312", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton2.ForeColor = System.Drawing.Color.White;
             this.radioButton2.Location = new System.Drawing.Point(471, 291);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 19);
+            this.radioButton2.Size = new System.Drawing.Size(76, 19);
             this.radioButton2.TabIndex = 8;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "管理员";
@@ -150,7 +154,7 @@ namespace Party_MS2
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "LoginPage";
-            this.Text = "Form1";
+            this.Text = "党务管理系统";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
