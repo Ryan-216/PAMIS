@@ -276,7 +276,7 @@ namespace Party_MS2
             this.label11.TabIndex = 34;
             this.label11.Text = "申请时间";
             // 
-            // ADBIAdd
+            // ABIAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -305,7 +305,8 @@ namespace Party_MS2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "ADBIAdd";
+            this.Name = "ABIAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "添加学生";
             this.Load += new System.EventHandler(this.ADBIAdd_Load);
             this.ResumeLayout(false);

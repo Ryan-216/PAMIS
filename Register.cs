@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Party_MS2
 {
-    public partial class UserIndex : Form
+    public partial class Register : Form
     {
-        public UserIndex()
+        public Register()
         {
             InitializeComponent();
-            label1.Text = $"欢迎{Data.UName}登录!";
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

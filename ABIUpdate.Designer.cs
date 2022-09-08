@@ -305,6 +305,7 @@ namespace Party_MS2
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "ABIUpdate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "修改信息";
             this.Load += new System.EventHandler(this.ABIUpdate_Load);
             this.ResumeLayout(false);
