@@ -245,6 +245,7 @@ namespace Party_MS2
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(350, 28);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // radioButton1
             // 
@@ -257,6 +258,7 @@ namespace Party_MS2
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "学号查询";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -269,6 +271,7 @@ namespace Party_MS2
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "学院查询";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -281,6 +284,7 @@ namespace Party_MS2
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "党组织查询";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // button5
             // 

@@ -99,5 +99,13 @@ namespace Party_MS2
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Register register = new Register();
+            this.Hide();
+            register.ShowDialog();
+            this.Show();
+        }
     }
 }

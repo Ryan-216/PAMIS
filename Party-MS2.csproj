@@ -64,11 +64,23 @@
     <Compile Include="AdminBasicInfomation.Designer.cs">
       <DependentUpon>AdminBasicInfomation.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminEducation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEducation.Designer.cs">
+      <DependentUpon>AdminEducation.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminIndex.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminIndex.Designer.cs">
       <DependentUpon>AdminIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPlan.Designer.cs">
+      <DependentUpon>AdminPlan.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminReport.cs">
       <SubType>Form</SubType>
@@ -81,6 +93,18 @@
     </Compile>
     <Compile Include="AdminScore.Designer.cs">
       <DependentUpon>AdminScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEAdd.Designer.cs">
+      <DependentUpon>AEAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEUpdate.Designer.cs">
+      <DependentUpon>AEUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Dao.cs" />
     <Compile Include="Data.cs" />
@@ -118,14 +142,26 @@
     <EmbeddedResource Include="AdminBasicInfomation.resx">
       <DependentUpon>AdminBasicInfomation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminEducation.resx">
+      <DependentUpon>AdminEducation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminIndex.resx">
       <DependentUpon>AdminIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPlan.resx">
+      <DependentUpon>AdminPlan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminReport.resx">
       <DependentUpon>AdminReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminScore.resx">
       <DependentUpon>AdminScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEAdd.resx">
+      <DependentUpon>AEAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEUpdate.resx">
+      <DependentUpon>AEUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>

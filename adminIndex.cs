@@ -46,5 +46,13 @@ namespace Party_MS2
             admin.ShowDialog();
             this.Show();
         }
+
+        private void 发展计划管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminPlan adminPlan = new AdminPlan();
+            this.Hide();
+            adminPlan.ShowDialog();
+            this.Show();
+        }
     }
 }

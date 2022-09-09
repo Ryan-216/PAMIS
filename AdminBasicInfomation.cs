@@ -42,13 +42,14 @@ namespace Party_MS2
                 name = dc[1].ToString();
                 sex = dc[2].ToString();
                 ID = dc[3].ToString();
+                status = dc[4].ToString();
                 school_id = dc[5].ToString();
                 nation = dc[6].ToString();
                 origin = dc[7].ToString();
                 e_mail = dc[8].ToString();
                 pri_party = dc[9].ToString();
                 apply_time = dc[10].ToString();
-                status = dc[4].ToString();
+               
 
 
                 string[] table = { stu_id, name, sex, ID, status, school_id, nation, origin, e_mail, pri_party, apply_time };
@@ -76,13 +77,14 @@ namespace Party_MS2
                 string name = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
                 string sex = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
                 string ID = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                string status = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
                 string school_id = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
                 string nation = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
                 string origin = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
                 string e_mail = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
                 string pri_party  = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
                 string apply_time = dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
-                string status = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                
                 
                 ABIUpdate admin = new ABIUpdate(stu_id, name, sex, ID, status, school_id, nation, origin, e_mail, pri_party, apply_time);
                 admin.ShowDialog();
@@ -178,6 +180,26 @@ namespace Party_MS2
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
