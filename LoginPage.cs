@@ -41,7 +41,7 @@ namespace Party_MS2
             if (radioButton1.Checked == true)
             {
                 Dao dao = new Dao();
-                string sql = $"select* from t_user where stu_id='{textBox1.Text}' and pwd='{textBox2.Text}'";
+                string sql = $"select* from t_pwd where stu_id='{textBox1.Text}' and pwd='{textBox2.Text}'";
                 IDataReader dc = dao.read(sql);
                 if (dc.Read())
                 {
@@ -107,5 +107,7 @@ namespace Party_MS2
             register.ShowDialog();
             this.Show();
         }
+
+      
     }
 }

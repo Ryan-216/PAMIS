@@ -72,7 +72,7 @@
             this.系统ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1016, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1016, 27);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -83,7 +83,7 @@
             this.成绩审查ToolStripMenuItem,
             this.思想汇报管理ToolStripMenuItem});
             this.基本资料管理ToolStripMenuItem.Name = "基本资料管理ToolStripMenuItem";
-            this.基本资料管理ToolStripMenuItem.Size = new System.Drawing.Size(143, 24);
+            this.基本资料管理ToolStripMenuItem.Size = new System.Drawing.Size(143, 23);
             this.基本资料管理ToolStripMenuItem.Text = "基本资料管理";
             // 
             // 申请人基本信息管理ToolStripMenuItem
@@ -114,38 +114,38 @@
             this.思政教育管理ToolStripMenuItem,
             this.函调管理ToolStripMenuItem});
             this.计划培训及函调管理ToolStripMenuItem.Name = "计划培训及函调管理ToolStripMenuItem";
-            this.计划培训及函调管理ToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.计划培训及函调管理ToolStripMenuItem.Size = new System.Drawing.Size(223, 23);
             this.计划培训及函调管理ToolStripMenuItem.Text = "计划、培训及函调管理";
             // 
             // 发展计划管理ToolStripMenuItem
             // 
             this.发展计划管理ToolStripMenuItem.Name = "发展计划管理ToolStripMenuItem";
-            this.发展计划管理ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.发展计划管理ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.发展计划管理ToolStripMenuItem.Text = "发展计划管理";
             this.发展计划管理ToolStripMenuItem.Click += new System.EventHandler(this.发展计划管理ToolStripMenuItem_Click);
             // 
             // 思政教育管理ToolStripMenuItem
             // 
             this.思政教育管理ToolStripMenuItem.Name = "思政教育管理ToolStripMenuItem";
-            this.思政教育管理ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.思政教育管理ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.思政教育管理ToolStripMenuItem.Text = "思政教育管理";
             // 
             // 函调管理ToolStripMenuItem
             // 
             this.函调管理ToolStripMenuItem.Name = "函调管理ToolStripMenuItem";
-            this.函调管理ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.函调管理ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.函调管理ToolStripMenuItem.Text = "函调管理";
             // 
             // 会议管理ToolStripMenuItem
             // 
             this.会议管理ToolStripMenuItem.Name = "会议管理ToolStripMenuItem";
-            this.会议管理ToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.会议管理ToolStripMenuItem.Size = new System.Drawing.Size(103, 23);
             this.会议管理ToolStripMenuItem.Text = "会议管理";
             // 
             // 文书管理ToolStripMenuItem
             // 
             this.文书管理ToolStripMenuItem.Name = "文书管理ToolStripMenuItem";
-            this.文书管理ToolStripMenuItem.Size = new System.Drawing.Size(103, 24);
+            this.文书管理ToolStripMenuItem.Size = new System.Drawing.Size(103, 23);
             this.文书管理ToolStripMenuItem.Text = "文书管理";
             // 
             // 系统ToolStripMenuItem
@@ -154,7 +154,7 @@
             this.联系管理员ToolStripMenuItem,
             this.退出ToolStripMenuItem});
             this.系统ToolStripMenuItem.Name = "系统ToolStripMenuItem";
-            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
+            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(63, 23);
             this.系统ToolStripMenuItem.Text = "系统";
             // 
             // 联系管理员ToolStripMenuItem
@@ -177,6 +177,7 @@
             this.ClientSize = new System.Drawing.Size(1016, 541);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AdminIndex";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

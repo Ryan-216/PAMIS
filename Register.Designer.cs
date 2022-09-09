@@ -107,7 +107,7 @@ namespace Party_MS2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Party_MS2.Properties.Resources.微信图片_20220906155730;
-            this.ClientSize = new System.Drawing.Size(1017, 520);
+            this.ClientSize = new System.Drawing.Size(1016, 520);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
