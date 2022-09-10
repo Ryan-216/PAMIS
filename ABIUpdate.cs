@@ -68,5 +68,10 @@ namespace Party_MS2
         {
             set_Null();
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
