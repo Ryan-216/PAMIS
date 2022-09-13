@@ -139,6 +139,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="User\UserBasicInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserBasicInformation.Designer.cs">
+      <DependentUpon>UserBasicInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\UserIndex.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserBasicInformation.resx">
+      <DependentUpon>UserBasicInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\UserIndex.resx">
       <DependentUpon>UserIndex.cs</DependentUpon>
