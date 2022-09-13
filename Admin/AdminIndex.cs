@@ -62,5 +62,10 @@ namespace Party_MS2
             adminletter.ShowDialog();
             this.Show();
         }
+
+        private void 基本资料管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
