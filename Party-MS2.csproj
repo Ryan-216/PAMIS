@@ -118,6 +118,12 @@
     <Compile Include="Admin\ALAdd.Designer.cs">
       <DependentUpon>ALAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\ALUpdate1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ALUpdate1.Designer.cs">
+      <DependentUpon>ALUpdate1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dao.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="LoginPage.cs">
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\ALAdd.resx">
       <DependentUpon>ALAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ALUpdate1.resx">
+      <DependentUpon>ALUpdate1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>

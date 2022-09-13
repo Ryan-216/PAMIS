@@ -54,5 +54,13 @@ namespace Party_MS2
             adminPlan.ShowDialog();
             this.Show();
         }
+
+        private void 函调管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminLetter adminletter = new AdminLetter();
+            this.Hide();
+            adminletter.ShowDialog();
+            this.Show();
+        }
     }
 }

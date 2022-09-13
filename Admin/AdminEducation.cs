@@ -90,7 +90,7 @@ namespace Party_MS2
 
         private void button2_Click(object sender, EventArgs e)
         {
-           // try
+            try
             {
                 string no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                 string name = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
@@ -106,7 +106,7 @@ namespace Party_MS2
 
                 Table();
             }
-           // catch
+            catch
             {
                 MessageBox.Show("Error");
             }

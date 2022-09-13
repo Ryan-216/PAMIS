@@ -132,6 +132,7 @@ namespace Party_MS2
             this.button2.TabIndex = 21;
             this.button2.Text = "修改课程";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -232,6 +233,7 @@ namespace Party_MS2
             this.Name = "AdminLetter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminLetter";
+            this.Load += new System.EventHandler(this.AdminLetter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

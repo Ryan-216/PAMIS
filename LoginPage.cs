@@ -45,8 +45,8 @@ namespace Party_MS2
                 IDataReader dc = dao.read(sql);
                 if (dc.Read())
                 {
-                    Data.UID = dc["id"].ToString();
-                    Data.UName = dc["name"].ToString();
+                    Data.UID = dc["stu_id"].ToString();
+                    Data.UName = dc["pwd"].ToString();
 
                     MessageBox.Show("登录成功！");
 
