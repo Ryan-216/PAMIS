@@ -46,76 +46,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ABIUpdate.cs">
+    <Compile Include="Admin\ABIUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABIUpdate.Designer.cs">
+    <Compile Include="Admin\ABIUpdate.Designer.cs">
       <DependentUpon>ABIUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="ABIAdd.cs">
+    <Compile Include="Admin\ABIAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ABIAdd.Designer.cs">
+    <Compile Include="Admin\ABIAdd.Designer.cs">
       <DependentUpon>ABIAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminBasicInfomation.cs">
+    <Compile Include="Admin\AdminBasicInfomation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminBasicInfomation.Designer.cs">
+    <Compile Include="Admin\AdminBasicInfomation.Designer.cs">
       <DependentUpon>AdminBasicInfomation.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminEducation.cs">
+    <Compile Include="Admin\AdminEducation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminEducation.Designer.cs">
+    <Compile Include="Admin\AdminEducation.Designer.cs">
       <DependentUpon>AdminEducation.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminIndex.cs">
+    <Compile Include="Admin\AdminIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminIndex.Designer.cs">
+    <Compile Include="Admin\AdminIndex.Designer.cs">
       <DependentUpon>AdminIndex.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminLetter.cs">
+    <Compile Include="Admin\AdminLetter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminLetter.Designer.cs">
+    <Compile Include="Admin\AdminLetter.Designer.cs">
       <DependentUpon>AdminLetter.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminPlan.cs">
+    <Compile Include="Admin\AdminPlan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPlan.Designer.cs">
+    <Compile Include="Admin\AdminPlan.Designer.cs">
       <DependentUpon>AdminPlan.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminReport.cs">
+    <Compile Include="Admin\AdminReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminReport.Designer.cs">
+    <Compile Include="Admin\AdminReport.Designer.cs">
       <DependentUpon>AdminReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminScore.cs">
+    <Compile Include="Admin\AdminScore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminScore.Designer.cs">
+    <Compile Include="Admin\AdminScore.Designer.cs">
       <DependentUpon>AdminScore.cs</DependentUpon>
     </Compile>
-    <Compile Include="AEAdd.cs">
+    <Compile Include="Admin\AEAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AEAdd.Designer.cs">
+    <Compile Include="Admin\AEAdd.Designer.cs">
       <DependentUpon>AEAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="AEUpdate.cs">
+    <Compile Include="Admin\AEUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AEUpdate.Designer.cs">
+    <Compile Include="Admin\AEUpdate.Designer.cs">
       <DependentUpon>AEUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="ALAdd.cs">
+    <Compile Include="Admin\ALAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ALAdd.Designer.cs">
+    <Compile Include="Admin\ALAdd.Designer.cs">
       <DependentUpon>ALAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Dao.cs" />
@@ -139,46 +139,46 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserIndex.cs">
+    <Compile Include="User\UserIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserIndex.Designer.cs">
+    <Compile Include="User\UserIndex.Designer.cs">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ABIAdd.resx">
+    <EmbeddedResource Include="Admin\ABIAdd.resx">
       <DependentUpon>ABIAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ABIUpdate.resx">
+    <EmbeddedResource Include="Admin\ABIUpdate.resx">
       <DependentUpon>ABIUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminBasicInfomation.resx">
+    <EmbeddedResource Include="Admin\AdminBasicInfomation.resx">
       <DependentUpon>AdminBasicInfomation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminEducation.resx">
+    <EmbeddedResource Include="Admin\AdminEducation.resx">
       <DependentUpon>AdminEducation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="adminIndex.resx">
+    <EmbeddedResource Include="Admin\adminIndex.resx">
       <DependentUpon>AdminIndex.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminLetter.resx">
+    <EmbeddedResource Include="Admin\AdminLetter.resx">
       <DependentUpon>AdminLetter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminPlan.resx">
+    <EmbeddedResource Include="Admin\AdminPlan.resx">
       <DependentUpon>AdminPlan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminReport.resx">
+    <EmbeddedResource Include="Admin\AdminReport.resx">
       <DependentUpon>AdminReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminScore.resx">
+    <EmbeddedResource Include="Admin\AdminScore.resx">
       <DependentUpon>AdminScore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AEAdd.resx">
+    <EmbeddedResource Include="Admin\AEAdd.resx">
       <DependentUpon>AEAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AEUpdate.resx">
+    <EmbeddedResource Include="Admin\AEUpdate.resx">
       <DependentUpon>AEUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ALAdd.resx">
+    <EmbeddedResource Include="Admin\ALAdd.resx">
       <DependentUpon>ALAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
@@ -197,7 +197,7 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserIndex.resx">
+    <EmbeddedResource Include="User\UserIndex.resx">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="PartyDBIIDataSet.xsc">
