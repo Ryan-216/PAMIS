@@ -64,6 +64,7 @@ namespace Party_MS2
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(446, 49);
             this.textBox11.TabIndex = 59;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // label11
             // 
@@ -75,6 +76,7 @@ namespace Party_MS2
             this.label11.Size = new System.Drawing.Size(166, 42);
             this.label11.TabIndex = 58;
             this.label11.Text = "申请时间";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // textBox10
             // 
@@ -84,6 +86,7 @@ namespace Party_MS2
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(446, 49);
             this.textBox10.TabIndex = 57;
+            this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // label10
             // 
@@ -95,6 +98,7 @@ namespace Party_MS2
             this.label10.Size = new System.Drawing.Size(203, 42);
             this.label10.TabIndex = 56;
             this.label10.Text = "党组织编号";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // textBox9
             // 
@@ -104,6 +108,7 @@ namespace Party_MS2
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(415, 49);
             this.textBox9.TabIndex = 55;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // label9
             // 
@@ -115,6 +120,7 @@ namespace Party_MS2
             this.label9.Size = new System.Drawing.Size(166, 42);
             this.label9.TabIndex = 54;
             this.label9.Text = "电子邮件";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // textBox8
             // 
@@ -124,6 +130,7 @@ namespace Party_MS2
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(260, 49);
             this.textBox8.TabIndex = 53;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label8
             // 
@@ -135,6 +142,7 @@ namespace Party_MS2
             this.label8.Size = new System.Drawing.Size(92, 42);
             this.label8.TabIndex = 52;
             this.label8.Text = "籍贯";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox7
             // 
@@ -144,6 +152,7 @@ namespace Party_MS2
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(158, 49);
             this.textBox7.TabIndex = 51;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label7
             // 
@@ -155,6 +164,7 @@ namespace Party_MS2
             this.label7.Size = new System.Drawing.Size(92, 42);
             this.label7.TabIndex = 50;
             this.label7.Text = "民族";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textBox6
             // 
@@ -164,6 +174,7 @@ namespace Party_MS2
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(446, 49);
             this.textBox6.TabIndex = 49;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label6
             // 
@@ -175,6 +186,7 @@ namespace Party_MS2
             this.label6.Size = new System.Drawing.Size(129, 42);
             this.label6.TabIndex = 48;
             this.label6.Text = "学院号";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button2
             // 
@@ -208,6 +220,7 @@ namespace Party_MS2
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(152, 49);
             this.textBox5.TabIndex = 45;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label5
             // 
@@ -219,6 +232,7 @@ namespace Party_MS2
             this.label5.Size = new System.Drawing.Size(166, 42);
             this.label5.TabIndex = 44;
             this.label5.Text = "政治面貌";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox4
             // 
@@ -228,6 +242,7 @@ namespace Party_MS2
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(415, 49);
             this.textBox4.TabIndex = 43;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 
@@ -239,6 +254,7 @@ namespace Party_MS2
             this.label4.Size = new System.Drawing.Size(166, 42);
             this.label4.TabIndex = 42;
             this.label4.Text = "身份证号";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox3
             // 
@@ -260,6 +276,7 @@ namespace Party_MS2
             this.label3.Size = new System.Drawing.Size(92, 42);
             this.label3.TabIndex = 40;
             this.label3.Text = "性别";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox2
             // 
@@ -269,6 +286,7 @@ namespace Party_MS2
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(210, 49);
             this.textBox2.TabIndex = 39;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -280,6 +298,7 @@ namespace Party_MS2
             this.label2.Size = new System.Drawing.Size(92, 42);
             this.label2.TabIndex = 38;
             this.label2.Text = "姓名";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 
@@ -289,6 +308,7 @@ namespace Party_MS2
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(202, 49);
             this.textBox1.TabIndex = 37;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -300,6 +320,7 @@ namespace Party_MS2
             this.label1.Size = new System.Drawing.Size(92, 42);
             this.label1.TabIndex = 36;
             this.label1.Text = "学号";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ABIUpdate
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Party_MS2.User;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,13 @@ namespace Party_MS2
         private void label1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void 入党流程ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserBasicInformation userBasicInformation = new UserBasicInformation();
+            userBasicInformation.Show();
+            this.Hide();
         }
     }
 }

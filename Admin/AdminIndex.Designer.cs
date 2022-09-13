@@ -86,6 +86,7 @@
             this.基本资料管理ToolStripMenuItem.Name = "基本资料管理ToolStripMenuItem";
             this.基本资料管理ToolStripMenuItem.Size = new System.Drawing.Size(138, 28);
             this.基本资料管理ToolStripMenuItem.Text = "基本资料管理";
+            this.基本资料管理ToolStripMenuItem.Click += new System.EventHandler(this.基本资料管理ToolStripMenuItem_Click);
             // 
             // 申请人基本信息管理ToolStripMenuItem
             // 

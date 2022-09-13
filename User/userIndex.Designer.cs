@@ -51,7 +51,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1521, 43);
+            this.menuStrip1.Size = new System.Drawing.Size(1521, 44);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -59,35 +59,36 @@
             // 
             this.入党流程ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.入党流程ToolStripMenuItem.Name = "入党流程ToolStripMenuItem";
-            this.入党流程ToolStripMenuItem.Size = new System.Drawing.Size(209, 37);
+            this.入党流程ToolStripMenuItem.Size = new System.Drawing.Size(209, 38);
             this.入党流程ToolStripMenuItem.Text = "基本资料管理";
+            this.入党流程ToolStripMenuItem.Click += new System.EventHandler(this.入党流程ToolStripMenuItem_Click);
             // 
             // 计划函调及培训管理ToolStripMenuItem
             // 
             this.计划函调及培训管理ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.计划函调及培训管理ToolStripMenuItem.Name = "计划函调及培训管理ToolStripMenuItem";
-            this.计划函调及培训管理ToolStripMenuItem.Size = new System.Drawing.Size(325, 37);
+            this.计划函调及培训管理ToolStripMenuItem.Size = new System.Drawing.Size(325, 38);
             this.计划函调及培训管理ToolStripMenuItem.Text = "计划、培训及函调管理";
             // 
             // 会议管理ToolStripMenuItem
             // 
             this.会议管理ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.会议管理ToolStripMenuItem.Name = "会议管理ToolStripMenuItem";
-            this.会议管理ToolStripMenuItem.Size = new System.Drawing.Size(151, 37);
+            this.会议管理ToolStripMenuItem.Size = new System.Drawing.Size(151, 38);
             this.会议管理ToolStripMenuItem.Text = "会议管理";
             // 
             // 文书管理ToolStripMenuItem
             // 
             this.文书管理ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.文书管理ToolStripMenuItem.Name = "文书管理ToolStripMenuItem";
-            this.文书管理ToolStripMenuItem.Size = new System.Drawing.Size(151, 37);
+            this.文书管理ToolStripMenuItem.Size = new System.Drawing.Size(151, 38);
             this.文书管理ToolStripMenuItem.Text = "文书管理";
             // 
             // 系统ToolStripMenuItem
             // 
             this.系统ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.系统ToolStripMenuItem.Name = "系统ToolStripMenuItem";
-            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(93, 37);
+            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(93, 38);
             this.系统ToolStripMenuItem.Text = "系统";
             // 
             // label1
