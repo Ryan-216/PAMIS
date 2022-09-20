@@ -31,10 +31,14 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.入党流程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.计划函调及培训管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.思政教育ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.创建函调信ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.会议管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.文书管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.学习ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,10 +69,35 @@
             // 
             // 计划函调及培训管理ToolStripMenuItem
             // 
+            this.计划函调及培训管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.思政教育ToolStripMenuItem,
+            this.创建函调信ToolStripMenuItem});
             this.计划函调及培训管理ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.计划函调及培训管理ToolStripMenuItem.Name = "计划函调及培训管理ToolStripMenuItem";
             this.计划函调及培训管理ToolStripMenuItem.Size = new System.Drawing.Size(325, 38);
             this.计划函调及培训管理ToolStripMenuItem.Text = "计划、培训及函调管理";
+            // 
+            // 思政教育ToolStripMenuItem
+            // 
+            this.思政教育ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.学习ToolStripMenuItem});
+            this.思政教育ToolStripMenuItem.Name = "思政教育ToolStripMenuItem";
+            this.思政教育ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.思政教育ToolStripMenuItem.Text = "思政教育";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(359, 44);
+            this.toolStripMenuItem1.Text = "学习";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // 创建函调信ToolStripMenuItem
+            // 
+            this.创建函调信ToolStripMenuItem.Name = "创建函调信ToolStripMenuItem";
+            this.创建函调信ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.创建函调信ToolStripMenuItem.Text = "创建函调信";
             // 
             // 会议管理ToolStripMenuItem
             // 
@@ -105,6 +134,12 @@
             this.label1.Text = "欢迎用户登录！";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // 学习ToolStripMenuItem
+            // 
+            this.学习ToolStripMenuItem.Name = "学习ToolStripMenuItem";
+            this.学习ToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.学习ToolStripMenuItem.Text = "考试";
+            // 
             // UserIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -135,5 +170,9 @@
         private System.Windows.Forms.ToolStripMenuItem 会议管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 文书管理ToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem 思政教育ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 创建函调信ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 学习ToolStripMenuItem;
     }
 }

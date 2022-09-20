@@ -35,5 +35,10 @@ namespace Party_MS2
             userBasicInformation.Show();
             this.Hide();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
