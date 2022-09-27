@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminWrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminWrit.Designer.cs">
+      <DependentUpon>AdminWrit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ABIUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,12 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="media.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="media.Designer.cs">
+      <DependentUpon>media.cs</DependentUpon>
+    </Compile>
     <Compile Include="PartyDBIIDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -181,6 +193,9 @@
     <Compile Include="User\UserIndex.Designer.cs">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\AdminWrit.resx">
+      <DependentUpon>AdminWrit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\ABIAdd.resx">
       <DependentUpon>ABIAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +248,9 @@
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="media.resx">
+      <DependentUpon>media.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -281,6 +299,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\微信图片_20220906155730.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -70,12 +70,23 @@ namespace Party_MS2
 
         private void 文书管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AdminWrit admin = new AdminWrit();
+            this.Hide();
+            admin.ShowDialog();
+            this.Show();
         }
 
         private void 会议管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //A
+            AdminMeeting admin = new AdminMeeting();
+            this.Hide();
+            admin.ShowDialog();
+            this.Show();
+        }
+
+        private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

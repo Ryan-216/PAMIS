@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +21,7 @@ namespace Party_MS2
             string picPath = Application.StartupPath + "\\../../img/loginBackground.png";
             this.BackgroundImage = Image.FromFile(picPath);
             this.BackgroundImageLayout = ImageLayout.Stretch;
+            GenerateCode();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,52 +38,62 @@ namespace Party_MS2
         {
 
         }
+
+        string code1="";
+
         public void Login()
         {
-           
-            //user
-            if (radioButton1.Checked == true)
+            if (textBox3.Text == code1)
             {
-                Dao dao = new Dao();
-                string sql = $"select* from t_pwd where stu_id='{textBox1.Text}' and pwd='{textBox2.Text}'";
-                IDataReader dc = dao.read(sql);
-                if (dc.Read())
+                //user
+                if (radioButton1.Checked == true)
                 {
-                    Data.UID = dc["stu_id"].ToString();
-                    Data.UName = dc["pwd"].ToString();
 
-                    MessageBox.Show("登录成功！");
+                    Dao dao = new Dao();
+                    string sql = $"select* from t_pwd where stu_id='{textBox1.Text}' and pwd='{textBox2.Text}'";
+                    IDataReader dc = dao.read(sql);
+                    if (dc.Read())
+                    {
+                        Data.UID = dc["stu_id"].ToString();
+                        Data.UName = dc["pwd"].ToString();
 
-                    UserIndex user = new UserIndex();
-                    this.Hide();
-                    user.ShowDialog();
-                    this.Show();
+                        MessageBox.Show("登录成功！");
+
+                        UserIndex user = new UserIndex();
+                        this.Hide();
+                        user.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("登录失败！");
+                    }
+                    dao.DaoClose();
                 }
-                else
+                //admin
+                if (radioButton2.Checked == true)
                 {
-                    MessageBox.Show("登录失败！");
+                    Dao dao = new Dao();
+                    string sql = $"select* from t_admin where id='{textBox1.Text}' and pwd='{textBox2.Text}'";
+                    IDataReader dc = dao.read(sql);
+                    if (dc.Read())
+                    {
+                        MessageBox.Show("登录成功！");
+                        AdminIndex admin = new AdminIndex();
+                        this.Hide();
+                        admin.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("登录失败！");
+                    }
+                    dao.DaoClose();
                 }
-                dao.DaoClose();
             }
-            //admin
-            if (radioButton2.Checked == true)
+            else
             {
-                Dao dao = new Dao();
-                string sql = $"select* from t_admin where id='{textBox1.Text}' and pwd='{textBox2.Text}'";
-                IDataReader dc = dao.read(sql);
-                if (dc.Read())
-                {
-                    MessageBox.Show("登录成功！");
-                    AdminIndex admin = new AdminIndex();
-                    this.Hide();
-                    admin.ShowDialog();
-                    this.Show();
-                }
-                else
-                {
-                    MessageBox.Show("登录失败！");
-                }
-                dao.DaoClose();
+                MessageBox.Show("验证码错误！");
             }
         }
 
@@ -108,6 +122,98 @@ namespace Party_MS2
             this.Show();
         }
 
-      
+        //生成验证码
+        private void GenerateCode(int codeLen = 6)
+        {
+            string code = "";
+            //生成随机数字
+            Random rand = new Random();
+            for (int i = 0; i < codeLen; i++)
+            {
+                code += rand.Next(0, 9).ToString();
+            }
+            code1 = code;
+            /*这里将code保存下来做比对验证*/
+
+            //生成验证码图片并显示到pictureBox1
+            byte[] bytes = GenerateImg(code);
+            MemoryStream ms = new MemoryStream(bytes);
+            Image image = System.Drawing.Image.FromStream(ms);
+            pictureBox1.Image = image;
+        }
+
+
+        /// <summary>
+        /// 生成验证码图片
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        public byte[] GenerateImg(string code)
+        {
+            Bitmap image = new Bitmap(code.Length * 10, 25);
+            Graphics g = Graphics.FromImage(image);
+            try
+            {
+                //清空图片背景色
+                g.Clear(Color.White);
+
+                //增加背景干扰线
+                Random random = new Random();
+                for (int i = 0; i < 30; i++)
+                {
+                    int x1 = random.Next(image.Width);
+                    int x2 = random.Next(image.Width);
+                    int y1 = random.Next(image.Height);
+                    int y2 = random.Next(image.Height);
+                    //颜色可自定义
+                    g.DrawLine(new Pen(Color.FromArgb(186, 212, 231)), x1, y1, x2, y2);
+                }
+
+                //定义验证码字体
+                Font font = new Font("Arial", 13, (FontStyle.Bold | FontStyle.Italic | FontStyle.Strikeout));
+                //定义验证码的刷子，这里采用渐变的方式，颜色可自定义
+                LinearGradientBrush brush = new LinearGradientBrush(new Rectangle(0, 0, image.Width, image.Height), Color.FromArgb(67, 93, 230), Color.FromArgb(70, 128, 228), 1.5f, true);
+
+                //增加干扰点
+                for (int i = 0; i < 100; i++)
+                {
+                    int x = random.Next(image.Width);
+                    int y = random.Next(image.Height);
+                    //颜色可自定义
+                    image.SetPixel(x, y, Color.FromArgb(random.Next()));
+                }
+
+                //将验证码写入图片
+                g.DrawString(code, font, brush, 5, 5);
+
+
+                //图片边框
+                g.DrawRectangle(new Pen(Color.FromArgb(93, 142, 228)), 0, 0, image.Width - 1, image.Height - 1);
+
+                //保存图片数据
+                MemoryStream stream = new MemoryStream();
+                image.Save(stream, ImageFormat.Jpeg);
+                return stream.ToArray();
+            }
+            finally
+            {
+                g.Dispose();
+                image.Dispose();
+            }
+
+        }
+
+        //给pictureBox1添加一个点击刷新的功能
+    
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            GenerateCode();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

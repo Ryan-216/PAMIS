@@ -120,7 +120,7 @@ namespace Party_MS2
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 42);
             this.button3.TabIndex = 22;
-            this.button3.Text = "删除课程";
+            this.button3.Text = "删除函调";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -130,7 +130,7 @@ namespace Party_MS2
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(137, 42);
             this.button2.TabIndex = 21;
-            this.button2.Text = "修改课程";
+            this.button2.Text = "修改函调";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -141,7 +141,7 @@ namespace Party_MS2
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 42);
             this.button1.TabIndex = 20;
-            this.button1.Text = "添加课程";
+            this.button1.Text = "添加函调";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

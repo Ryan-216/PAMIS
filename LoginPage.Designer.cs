@@ -40,6 +40,10 @@ namespace Party_MS2
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -48,7 +52,7 @@ namespace Party_MS2
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.ForeColor = System.Drawing.Color.DeepPink;
-            this.button1.Location = new System.Drawing.Point(368, 373);
+            this.button1.Location = new System.Drawing.Point(368, 432);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 43);
             this.button1.TabIndex = 0;
@@ -61,7 +65,7 @@ namespace Party_MS2
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.ForeColor = System.Drawing.Color.DeepPink;
-            this.button2.Location = new System.Drawing.Point(586, 373);
+            this.button2.Location = new System.Drawing.Point(586, 432);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 43);
             this.button2.TabIndex = 1;
@@ -129,9 +133,9 @@ namespace Party_MS2
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(368, 322);
+            this.radioButton1.Location = new System.Drawing.Point(368, 398);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 26);
+            this.radioButton1.Size = new System.Drawing.Size(69, 28);
             this.radioButton1.TabIndex = 7;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "用户";
@@ -144,13 +148,44 @@ namespace Party_MS2
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(586, 322);
+            this.radioButton2.Location = new System.Drawing.Point(586, 398);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 26);
+            this.radioButton2.Size = new System.Drawing.Size(88, 28);
             this.radioButton2.TabIndex = 8;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "管理员";
             this.radioButton2.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(569, 326);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(148, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(368, 326);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(195, 36);
+            this.textBox3.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(252, 333);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 29);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "验证码";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // LoginPage
             // 
@@ -158,6 +193,9 @@ namespace Party_MS2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Party_MS2.Properties.Resources.微信图片_20220906155730;
             this.ClientSize = new System.Drawing.Size(1015, 519);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox2);
@@ -174,6 +212,7 @@ namespace Party_MS2
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "党务管理系统";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +229,9 @@ namespace Party_MS2
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

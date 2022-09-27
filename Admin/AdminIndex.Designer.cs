@@ -164,14 +164,15 @@
             // 联系管理员ToolStripMenuItem
             // 
             this.联系管理员ToolStripMenuItem.Name = "联系管理员ToolStripMenuItem";
-            this.联系管理员ToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
+            this.联系管理员ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.联系管理员ToolStripMenuItem.Text = "联系管理员";
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
             // AdminIndex
             // 
