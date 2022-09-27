@@ -38,7 +38,9 @@ namespace Party_MS2
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            UserLearn userLearn = new UserLearn();
+            userLearn.Show();
+            this.Hide();
         }
     }
 }

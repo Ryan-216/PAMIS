@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.是否完成 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.截止时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.开始时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.内容 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.学时 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.课程名称 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.编号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.课程名称 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.学时 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.内容 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.开始时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.截止时间 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.是否完成 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.成绩 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,63 +52,17 @@
             this.内容,
             this.开始时间,
             this.截止时间,
-            this.是否完成});
-            this.dataGridView1.Location = new System.Drawing.Point(-1, -3);
+            this.是否完成,
+            this.成绩});
+            this.dataGridView1.Location = new System.Drawing.Point(-2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 37;
-            this.dataGridView1.Size = new System.Drawing.Size(1261, 300);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1262, 413);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // 是否完成
-            // 
-            this.是否完成.HeaderText = "是否完成";
-            this.是否完成.MinimumWidth = 10;
-            this.是否完成.Name = "是否完成";
-            this.是否完成.Width = 200;
-            // 
-            // 截止时间
-            // 
-            this.截止时间.HeaderText = "截止时间";
-            this.截止时间.MinimumWidth = 10;
-            this.截止时间.Name = "截止时间";
-            this.截止时间.Width = 200;
-            // 
-            // 开始时间
-            // 
-            this.开始时间.HeaderText = "开始时间";
-            this.开始时间.MinimumWidth = 10;
-            this.开始时间.Name = "开始时间";
-            this.开始时间.Width = 200;
-            // 
-            // 内容
-            // 
-            this.内容.HeaderText = "内容";
-            this.内容.MinimumWidth = 10;
-            this.内容.Name = "内容";
-            this.内容.Width = 200;
-            // 
-            // 学时
-            // 
-            this.学时.HeaderText = "学时";
-            this.学时.MinimumWidth = 10;
-            this.学时.Name = "学时";
-            this.学时.Width = 200;
-            // 
-            // 课程名称
-            // 
-            this.课程名称.HeaderText = "课程名称";
-            this.课程名称.MinimumWidth = 10;
-            this.课程名称.Name = "课程名称";
-            this.课程名称.Width = 200;
-            // 
-            // 编号
-            // 
-            this.编号.HeaderText = "编号";
-            this.编号.MinimumWidth = 10;
-            this.编号.Name = "编号";
-            this.编号.Width = 150;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
@@ -128,6 +83,62 @@
             this.button2.Text = "返回";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // 编号
+            // 
+            this.编号.HeaderText = "编号";
+            this.编号.MinimumWidth = 10;
+            this.编号.Name = "编号";
+            this.编号.Width = 150;
+            // 
+            // 课程名称
+            // 
+            this.课程名称.HeaderText = "课程名称";
+            this.课程名称.MinimumWidth = 10;
+            this.课程名称.Name = "课程名称";
+            this.课程名称.Width = 200;
+            // 
+            // 学时
+            // 
+            this.学时.HeaderText = "学时";
+            this.学时.MinimumWidth = 10;
+            this.学时.Name = "学时";
+            this.学时.Width = 200;
+            // 
+            // 内容
+            // 
+            this.内容.HeaderText = "内容";
+            this.内容.MinimumWidth = 10;
+            this.内容.Name = "内容";
+            this.内容.Width = 200;
+            // 
+            // 开始时间
+            // 
+            this.开始时间.HeaderText = "开始时间";
+            this.开始时间.MinimumWidth = 10;
+            this.开始时间.Name = "开始时间";
+            this.开始时间.Width = 200;
+            // 
+            // 截止时间
+            // 
+            this.截止时间.HeaderText = "截止时间";
+            this.截止时间.MinimumWidth = 10;
+            this.截止时间.Name = "截止时间";
+            this.截止时间.Width = 200;
+            // 
+            // 是否完成
+            // 
+            this.是否完成.HeaderText = "是否完成";
+            this.是否完成.MinimumWidth = 10;
+            this.是否完成.Name = "是否完成";
+            this.是否完成.Width = 200;
+            // 
+            // 成绩
+            // 
+            this.成绩.HeaderText = "成绩";
+            this.成绩.MinimumWidth = 10;
+            this.成绩.Name = "成绩";
+            this.成绩.Width = 200;
+            // 
             // UserLearn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -146,6 +157,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn 编号;
         private System.Windows.Forms.DataGridViewTextBoxColumn 课程名称;
         private System.Windows.Forms.DataGridViewTextBoxColumn 学时;
@@ -153,7 +166,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 开始时间;
         private System.Windows.Forms.DataGridViewTextBoxColumn 截止时间;
         private System.Windows.Forms.DataGridViewTextBoxColumn 是否完成;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 成绩;
     }
 }

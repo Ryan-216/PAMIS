@@ -175,6 +175,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="User\UserLearning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserLearning.Designer.cs">
+      <DependentUpon>UserLearning.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\UserLearn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User\UserIndex.resx">
       <DependentUpon>UserIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserLearning.resx">
+      <DependentUpon>UserLearning.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="PartyDBIIDataSet.xsc">
       <DependentUpon>PartyDBIIDataSet.xsd</DependentUpon>
