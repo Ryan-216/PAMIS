@@ -72,7 +72,6 @@
             this.系统ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1016, 32);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
@@ -144,6 +143,7 @@
             this.会议管理ToolStripMenuItem.Name = "会议管理ToolStripMenuItem";
             this.会议管理ToolStripMenuItem.Size = new System.Drawing.Size(100, 28);
             this.会议管理ToolStripMenuItem.Text = "会议管理";
+            this.会议管理ToolStripMenuItem.Click += new System.EventHandler(this.会议管理ToolStripMenuItem_Click);
             // 
             // 文书管理ToolStripMenuItem
             // 
@@ -164,13 +164,13 @@
             // 联系管理员ToolStripMenuItem
             // 
             this.联系管理员ToolStripMenuItem.Name = "联系管理员ToolStripMenuItem";
-            this.联系管理员ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.联系管理员ToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
             this.联系管理员ToolStripMenuItem.Text = "联系管理员";
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
             this.退出ToolStripMenuItem.Text = "退出";
             // 
             // AdminIndex

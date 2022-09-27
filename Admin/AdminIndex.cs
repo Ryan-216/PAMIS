@@ -72,5 +72,10 @@ namespace Party_MS2
         {
 
         }
+
+        private void 会议管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //A
+        }
     }
 }
