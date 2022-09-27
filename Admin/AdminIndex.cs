@@ -67,5 +67,10 @@ namespace Party_MS2
         {
 
         }
+
+        private void 文书管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
