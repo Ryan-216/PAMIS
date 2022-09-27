@@ -82,6 +82,12 @@
     <Compile Include="Admin\AdminLetter.Designer.cs">
       <DependentUpon>AdminLetter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMeeting.Designer.cs">
+      <DependentUpon>AdminMeeting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminPlan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,18 @@
     </Compile>
     <Compile Include="Admin\ALUpdate1.Designer.cs">
       <DependentUpon>ALUpdate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AMAttendee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AMAttendee.Designer.cs">
+      <DependentUpon>AMAttendee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AMRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AMRecord.Designer.cs">
+      <DependentUpon>AMRecord.cs</DependentUpon>
     </Compile>
     <Compile Include="Dao.cs" />
     <Compile Include="Data.cs" />
@@ -181,6 +199,9 @@
     <EmbeddedResource Include="Admin\AdminLetter.resx">
       <DependentUpon>AdminLetter.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminMeeting.resx">
+      <DependentUpon>AdminMeeting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminPlan.resx">
       <DependentUpon>AdminPlan.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,8 +220,15 @@
     <EmbeddedResource Include="Admin\ALAdd.resx">
       <DependentUpon>ALAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ALUpdate.resx" />
     <EmbeddedResource Include="Admin\ALUpdate1.resx">
       <DependentUpon>ALUpdate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AMAttendee.resx">
+      <DependentUpon>AMAttendee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AMRecord.resx">
+      <DependentUpon>AMRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
