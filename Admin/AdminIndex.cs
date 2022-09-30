@@ -88,5 +88,13 @@ namespace Party_MS2
         {
             Close();
         }
+
+        private void 思政教育管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminEducation admin = new AdminEducation();
+            this.Hide();
+            admin.ShowDialog();
+            this.Show();
+        }
     }
 }

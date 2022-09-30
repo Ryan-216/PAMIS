@@ -170,7 +170,7 @@ namespace Party_MS2
                 }
 
                 //定义验证码字体
-                Font font = new Font("Arial", 13, (FontStyle.Bold | FontStyle.Italic | FontStyle.Strikeout));
+                Font font = new Font("Arial", 10, (FontStyle.Bold | FontStyle.Italic | FontStyle.Strikeout));
                 //定义验证码的刷子，这里采用渐变的方式，颜色可自定义
                 LinearGradientBrush brush = new LinearGradientBrush(new Rectangle(0, 0, image.Width, image.Height), Color.FromArgb(67, 93, 230), Color.FromArgb(70, 128, 228), 1.5f, true);
 

@@ -121,20 +121,21 @@
             // 发展计划管理ToolStripMenuItem
             // 
             this.发展计划管理ToolStripMenuItem.Name = "发展计划管理ToolStripMenuItem";
-            this.发展计划管理ToolStripMenuItem.Size = new System.Drawing.Size(208, 28);
+            this.发展计划管理ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.发展计划管理ToolStripMenuItem.Text = "发展计划管理";
             this.发展计划管理ToolStripMenuItem.Click += new System.EventHandler(this.发展计划管理ToolStripMenuItem_Click);
             // 
             // 思政教育管理ToolStripMenuItem
             // 
             this.思政教育管理ToolStripMenuItem.Name = "思政教育管理ToolStripMenuItem";
-            this.思政教育管理ToolStripMenuItem.Size = new System.Drawing.Size(208, 28);
+            this.思政教育管理ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.思政教育管理ToolStripMenuItem.Text = "思政教育管理";
+            this.思政教育管理ToolStripMenuItem.Click += new System.EventHandler(this.思政教育管理ToolStripMenuItem_Click);
             // 
             // 函调管理ToolStripMenuItem
             // 
             this.函调管理ToolStripMenuItem.Name = "函调管理ToolStripMenuItem";
-            this.函调管理ToolStripMenuItem.Size = new System.Drawing.Size(208, 28);
+            this.函调管理ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.函调管理ToolStripMenuItem.Text = "函调管理";
             this.函调管理ToolStripMenuItem.Click += new System.EventHandler(this.函调管理ToolStripMenuItem_Click);
             // 
@@ -164,13 +165,13 @@
             // 联系管理员ToolStripMenuItem
             // 
             this.联系管理员ToolStripMenuItem.Name = "联系管理员ToolStripMenuItem";
-            this.联系管理员ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.联系管理员ToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
             this.联系管理员ToolStripMenuItem.Text = "联系管理员";
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 

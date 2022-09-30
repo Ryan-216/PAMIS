@@ -158,10 +158,10 @@ namespace Party_MS2
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(569, 326);
+            this.pictureBox1.Location = new System.Drawing.Point(586, 326);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(131, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
@@ -171,7 +171,7 @@ namespace Party_MS2
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(368, 326);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 36);
+            this.textBox3.Size = new System.Drawing.Size(212, 36);
             this.textBox3.TabIndex = 10;
             // 
             // label4
