@@ -100,5 +100,10 @@ namespace Party_MS2.User
         {
 
         }
+
+        private void UserBasicInformation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

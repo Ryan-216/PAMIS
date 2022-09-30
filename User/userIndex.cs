@@ -31,9 +31,7 @@ namespace Party_MS2
 
         private void 入党流程ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UserBasicInformation userBasicInformation = new UserBasicInformation();
-            userBasicInformation.Show();
-            this.Hide();
+            
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
@@ -41,6 +39,19 @@ namespace Party_MS2
             UserLearn userLearn = new UserLearn();
             userLearn.Show();
             this.Hide();
+        }
+
+        private void 我的个人信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserBasicInformation userBasicInformation = new UserBasicInformation();
+            this.Hide();
+            userBasicInformation.ShowDialog();
+            this.Show();
+        }
+
+        private void UserIndex_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
