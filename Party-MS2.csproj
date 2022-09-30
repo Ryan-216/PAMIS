@@ -175,12 +175,6 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="UMSignin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UMSignin.Designer.cs">
-      <DependentUpon>UMSignin.cs</DependentUpon>
-    </Compile>
     <Compile Include="UMSignin1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,12 +210,6 @@
     </Compile>
     <Compile Include="User\UserIndex.Designer.cs">
       <DependentUpon>UserIndex.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserMeeting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserMeeting.Designer.cs">
-      <DependentUpon>UserMeeting.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin\AdminWrit.resx">
       <DependentUpon>AdminWrit.cs</DependentUpon>
@@ -294,9 +282,6 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UMSignin.resx">
-      <DependentUpon>UMSignin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UMSignin1.resx">
       <DependentUpon>UMSignin1.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,9 +299,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User\UserLearning.resx">
       <DependentUpon>UserLearning.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserMeeting.resx">
-      <DependentUpon>UserMeeting.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="PartyDBIIDataSet.xsc">
       <DependentUpon>PartyDBIIDataSet.xsd</DependentUpon>

@@ -53,5 +53,13 @@ namespace Party_MS2
         {
 
         }
+
+        private void 会议管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserMeeting1 user=new UserMeeting1();
+            this.Hide();
+            user.ShowDialog();
+            this.Show();
+        }
     }
 }

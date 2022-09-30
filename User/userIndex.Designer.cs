@@ -135,6 +135,7 @@
             this.会议管理ToolStripMenuItem.Name = "会议管理ToolStripMenuItem";
             this.会议管理ToolStripMenuItem.Size = new System.Drawing.Size(100, 28);
             this.会议管理ToolStripMenuItem.Text = "我的会议";
+            this.会议管理ToolStripMenuItem.Click += new System.EventHandler(this.会议管理ToolStripMenuItem_Click);
             // 
             // 文书管理ToolStripMenuItem
             // 

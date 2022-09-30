@@ -16,7 +16,7 @@ namespace Party_MS2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UMSignin1());
+            Application.Run(new LoginPage());
         }
     }
 }
