@@ -35,11 +35,11 @@ namespace Party_MS2
             {
                 //获取用户选择的文件，并判断文件大小不能超过20K，fileInfo.Length是以字节为单位的 
                 FileInfo fileInfo = new FileInfo(openPic.FileName);
-                if (fileInfo.Length > 20480)
+               // if (fileInfo.Length > 20480)
                 {
                     //MessageBox.Show("上传的图片不能大于20K");
                 }
-               else
+              // else
                 {
                     strPicPath = openPic.FileName;
                     pictureBox1.BackgroundImage = Image.FromFile(strPicPath);  // picReceiptLogo是存储图片的路径

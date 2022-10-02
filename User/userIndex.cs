@@ -61,5 +61,13 @@ namespace Party_MS2
             user.ShowDialog();
             this.Show();
         }
+
+        private void 文书管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserWrit user = new UserWrit();
+            this.Hide();
+            user.ShowDialog();
+            this.Show();
+        }
     }
 }

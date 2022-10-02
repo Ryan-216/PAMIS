@@ -187,6 +187,12 @@
     <Compile Include="UserMeeting1.Designer.cs">
       <DependentUpon>UserMeeting1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserWrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserWrit.Designer.cs">
+      <DependentUpon>UserWrit.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\UserLearning.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserMeeting1.resx">
       <DependentUpon>UserMeeting1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserWrit.resx">
+      <DependentUpon>UserWrit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\UserBasicInformation.resx">
       <DependentUpon>UserBasicInformation.cs</DependentUpon>

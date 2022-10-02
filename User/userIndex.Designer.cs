@@ -143,6 +143,7 @@
             this.文书管理ToolStripMenuItem.Name = "文书管理ToolStripMenuItem";
             this.文书管理ToolStripMenuItem.Size = new System.Drawing.Size(100, 28);
             this.文书管理ToolStripMenuItem.Text = "我的文书";
+            this.文书管理ToolStripMenuItem.Click += new System.EventHandler(this.文书管理ToolStripMenuItem_Click);
             // 
             // 系统ToolStripMenuItem
             // 
