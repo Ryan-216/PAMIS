@@ -22,29 +22,77 @@ namespace Party_MS2
         {
 
         }
-       
+        string meeting_no;
+        public UMSignin1(string no)
+        {
+            InitializeComponent();
+            string meeting_no = no;
+            label3.Text = no;
+        }
+        public void upload()
+        {
 
+            //debug文件夹下建文件夹Photo
+            //数据库存入
+
+            //创建文件对话框对象
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "请选择上传的图片";
+            ofd.Filter = "图片格式|*.jpg";
+            ofd.Multiselect = false;
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                //获得文件的完整路径
+                string filePath = ofd.FileName;
+                label2.Text = filePath;
+
+                //int position = filePath.LastIndexOf("\\");
+                //string photoName = filePath.Substring(position + 1);
+
+                //获取最后一个点的位置（图片后缀名）
+                int position = filePath.LastIndexOf(".");
+                string geshi = filePath.Substring(position);
+
+                //重命名该文件
+                string photoName = Data.UID + DateTime.Now.ToOADate().ToString() + geshi;
+
+                //上传至指定程序所在的debug文件夹下，并在pictureBox中显示
+                //如果存在，则删除
+                if (System.IO.File.Exists(Application.StartupPath + "\\Photo\\" + photoName))
+                {
+                    System.IO.File.Delete(Application.StartupPath + "\\Photo\\" + photoName);
+                }
+                //System.IO.File.Delete(Application.StartupPath + "\\Photo\\" + photoName)
+                System.IO.File.Copy(ofd.FileName, Application.StartupPath + "\\Photo\\" + photoName);
+                pictureBox1.ImageLocation = Application.StartupPath + "\\Photo\\" + photoName;
+
+                //数据库存入 该文件名 photoName
+
+                //如果需要调用该图片，则只需要通过数据库中的图片名，和文件夹Photo下的文件名调用即可；
+               
+                Dao dao = new Dao();
+                string sql = $"insert into t_mattend values('{meeting_no}','{Data.UID}','已参加')";
+                int n = dao.Execute(sql);
+                if (n > 0)
+                {
+                    MessageBox.Show("签到成功！");
+                }
+                else
+                {
+                    MessageBox.Show("签到失败！");
+                }
+                dao.DaoClose();
+                                 
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            string strPicPath = @"ImgSign-in";  // 存储路径
-            OpenFileDialog openPic = new OpenFileDialog();
-            openPic.Filter = "图片文件|*.bmp;*.jpg;*.jpeg;*.png";
-            openPic.FilterIndex = 1;
-            //openPic.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);//获取桌面文件夹路径为初始地址                                    
-            if (openPic.ShowDialog() == DialogResult.OK)
-            {
-                //获取用户选择的文件，并判断文件大小不能超过20K，fileInfo.Length是以字节为单位的 
-                FileInfo fileInfo = new FileInfo(openPic.FileName);
-               // if (fileInfo.Length > 20480)
-                {
-                    //MessageBox.Show("上传的图片不能大于20K");
-                }
-              // else
-                {
-                    strPicPath = openPic.FileName;
-                    pictureBox1.BackgroundImage = Image.FromFile(strPicPath);  // picReceiptLogo是存储图片的路径
-                }
-            }
+            upload();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            upload();
         }
     }
 }

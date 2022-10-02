@@ -47,5 +47,15 @@ namespace Party_MS2
             dc.Close();
             dao.DaoClose();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+
+            UMSignin1 user = new UMSignin1(no);
+            this.Hide();
+            user.ShowDialog();
+            this.Show();
+        }
     }
 }
