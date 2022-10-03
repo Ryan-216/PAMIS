@@ -175,6 +175,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="UMAskforleave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UMAskforleave.Designer.cs">
+      <DependentUpon>UMAskforleave.cs</DependentUpon>
+    </Compile>
     <Compile Include="UMSignin1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +293,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UMAskforleave.resx">
+      <DependentUpon>UMAskforleave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UMSignin1.resx">
       <DependentUpon>UMSignin1.cs</DependentUpon>

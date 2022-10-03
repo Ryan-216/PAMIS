@@ -50,9 +50,19 @@ namespace Party_MS2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            string meeting_id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+           
+            UMSignin1 user = new UMSignin1(meeting_id);
+            this.Hide();
+            user.ShowDialog();
+            this.Show();
+        }
 
-            UMSignin1 user = new UMSignin1(no);
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string meeting_id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+
+            UMAskforleave user = new UMAskforleave(meeting_id);
             this.Hide();
             user.ShowDialog();
             this.Show();

@@ -26,8 +26,7 @@ namespace Party_MS2
         public UMSignin1(string no)
         {
             InitializeComponent();
-            string meeting_no = no;
-            label3.Text = no;
+            meeting_no = no;
         }
         public void upload()
         {
@@ -69,20 +68,7 @@ namespace Party_MS2
                 //数据库存入 该文件名 photoName
 
                 //如果需要调用该图片，则只需要通过数据库中的图片名，和文件夹Photo下的文件名调用即可；
-               
-                Dao dao = new Dao();
-                string sql = $"insert into t_mattend values('{meeting_no}','{Data.UID}','已参加')";
-                int n = dao.Execute(sql);
-                if (n > 0)
-                {
-                    MessageBox.Show("签到成功！");
-                }
-                else
-                {
-                    MessageBox.Show("签到失败！");
-                }
-                dao.DaoClose();
-                                 
+                                                               
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -92,7 +78,18 @@ namespace Party_MS2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            upload();
+            Dao dao = new Dao();
+            string sql = $"insert into t_mattend values('{meeting_no}','{Data.UID}','出席')";
+            int n = dao.Execute(sql);
+            if (n > 0)
+            {
+                MessageBox.Show("签到成功！");
+            }
+            else
+            {
+                MessageBox.Show("签到失败！");
+            }
+            dao.DaoClose();
         }
     }
 }
