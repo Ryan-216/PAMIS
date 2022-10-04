@@ -69,5 +69,12 @@ namespace Party_MS2
             user.ShowDialog();
             this.Show();
         }
+
+        private void 我的成绩ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserTranscript userTranscript = new UserTranscript();
+            userTranscript.Show();
+            this.Hide();
+        }
     }
 }

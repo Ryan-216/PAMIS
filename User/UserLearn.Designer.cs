@@ -54,14 +54,13 @@
             this.截止时间,
             this.是否完成,
             this.成绩});
-            this.dataGridView1.Location = new System.Drawing.Point(-1, 1);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(-2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 37;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(841, 258);
+            this.dataGridView1.Size = new System.Drawing.Size(1262, 413);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -123,10 +122,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(209, 281);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(314, 450);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
+            this.button1.Size = new System.Drawing.Size(112, 42);
             this.button1.TabIndex = 1;
             this.button1.Text = "学习";
             this.button1.UseVisualStyleBackColor = true;
@@ -134,23 +132,22 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(480, 282);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(720, 451);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 25);
+            this.button2.Size = new System.Drawing.Size(112, 40);
             this.button2.TabIndex = 2;
             this.button2.Text = "返回";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // UserLearn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 446);
+            this.ClientSize = new System.Drawing.Size(1262, 714);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserLearn";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.UserLearn_Load);

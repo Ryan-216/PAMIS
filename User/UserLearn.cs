@@ -18,6 +18,7 @@ namespace Party_MS2.User
         public UserLearn()
         {
             InitializeComponent();
+            table();
         }
 
         public void table()
@@ -25,8 +26,8 @@ namespace Party_MS2.User
             dataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "select t_education.no, t_education.name, t_education.hours, t_education.contents, " +
-                "t_education.status, t_education.s_time, t_education.e_time, t_eduscore.clear, e_eduscore.score from t_education, t_eduscore " +
-                "where t_education.no=t_eduscore.no and t_education.id="+Data.UID;
+                "t_education.status, t_education.s_time, t_education.e_time, t_stueduscore.clear, e_stueduscore.score from t_education, t_stueduscore " +
+                "where t_education.no=t_stueduscore.no and t_education.id="+Data.UID;
             IDataReader dc = dao.read(sql);
             string education_no, education_name, education_hours, education_contents, education_status, education_stime, education_etime, education_clear;
             while (dc.Read())
@@ -61,6 +62,13 @@ namespace Party_MS2.User
         private void UserLearn_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserIndex userIndex = new UserIndex();
+            userIndex.Show();
         }
     }
 }
