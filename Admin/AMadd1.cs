@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Party_MS2
 {
-    public partial class AMAdd : Form
+    public partial class AMadd : Form
     {
-        public AMAdd()
+        public AMadd()
         {
             InitializeComponent();
+        }
+
+        private void AMadd_Load(object sender, EventArgs e)
+        {
+
         }
         public void set_Null()
         {
@@ -26,23 +31,13 @@ namespace Party_MS2
             textBox6.Text = "";
             textBox7.Text = "";
         }
-       
-        private void AEAdd_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "" && textBox7.Text != "")
+            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "" && textBox7.Text != "" && textBox8.Text != "")
             {
                 Dao dao = new Dao();
-                string sql = $"insert into t_education values('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}','{textBox6.Text}','{textBox7.Text}')";
+                string sql = $"insert into t_meeting values('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}','{textBox6.Text}','{textBox7.Text}'，'{textBox8.Text}')";
                 int n = dao.Execute(sql);
                 if (n > 0)
                 {

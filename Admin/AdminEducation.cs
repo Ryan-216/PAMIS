@@ -81,7 +81,7 @@ namespace Party_MS2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AEAdd aEAdd = new AEAdd();
+            AMAdd aEAdd = new AMAdd();
             this.Hide();
             aEAdd.ShowDialog();
             this.Show();

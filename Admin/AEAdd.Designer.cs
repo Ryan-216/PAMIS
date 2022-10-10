@@ -1,7 +1,7 @@
 ﻿
 namespace Party_MS2
 {
-    partial class AEAdd
+    partial class AMAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Party_MS2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AEAdd));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AMAdd));
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();

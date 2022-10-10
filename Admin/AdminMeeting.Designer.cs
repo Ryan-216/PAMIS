@@ -46,6 +46,9 @@ namespace Party_MS2
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,7 +131,7 @@ namespace Party_MS2
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(975, 318);
+            this.dataGridView1.Size = new System.Drawing.Size(1023, 160);
             this.dataGridView1.TabIndex = 16;
             // 
             // Column1
@@ -219,11 +222,47 @@ namespace Party_MS2
             this.button3.Text = "请假审批";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button7.Location = new System.Drawing.Point(660, 244);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(125, 42);
+            this.button7.TabIndex = 28;
+            this.button7.Text = "删除会议";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button8.Location = new System.Drawing.Point(442, 244);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(137, 42);
+            this.button8.TabIndex = 27;
+            this.button8.Text = "修改会议";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button9.Location = new System.Drawing.Point(208, 244);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(133, 42);
+            this.button9.TabIndex = 26;
+            this.button9.Text = "添加会议";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // AdminMeeting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 537);
+            this.ClientSize = new System.Drawing.Size(1023, 631);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -262,5 +301,8 @@ namespace Party_MS2
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
