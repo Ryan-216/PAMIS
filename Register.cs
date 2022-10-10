@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Types;
+using Sunny.UI;
 
 namespace Party_MS2
 {
@@ -33,7 +34,23 @@ namespace Party_MS2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" )
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+
+        private void uiButton1_Click_1(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "" && textBox2.Text != "")
             {
                 Dao dao = new Dao();
                 string sql = $"insert into t_pwd values('{textBox1.Text}','{textBox2.Text}')";
@@ -54,12 +71,12 @@ namespace Party_MS2
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void uiButton2_Click(object sender, EventArgs e)
         {
             set_Null();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void uiButton3_Click(object sender, EventArgs e)
         {
             var accountSid = "ACca294c5c8bf71e24c8f68c2847addbe2";
             var authToken = "0f0bffca4971544d4af01884a2fabe9e";
@@ -74,6 +91,12 @@ namespace Party_MS2
             Console.WriteLine(message.Body);
 
             MessageBox.Show("短信已发送");
+        }
+
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
