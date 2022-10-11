@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Party_MS2
 {
-    public partial class AMadd : Form
+    public partial class AMadd1 : Form
     {
-        public AMadd()
+        public AMadd1()
         {
             InitializeComponent();
         }
