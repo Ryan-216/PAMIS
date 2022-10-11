@@ -196,6 +196,7 @@ namespace Party_MS2
             this.Name = "ALAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ALAdd";
+            this.Load += new System.EventHandler(this.ALAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

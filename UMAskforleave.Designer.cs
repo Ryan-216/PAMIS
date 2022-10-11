@@ -39,7 +39,7 @@ namespace Party_MS2
             this.textBox1.Location = new System.Drawing.Point(229, 82);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(346, 265);
+            this.textBox1.Size = new System.Drawing.Size(361, 265);
             this.textBox1.TabIndex = 0;
             // 
             // label1
@@ -73,7 +73,8 @@ namespace Party_MS2
             this.Controls.Add(this.textBox1);
             this.Name = "UMAskforleave";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UMAskforleave";
+            this.Text = "6";
+            this.Load += new System.EventHandler(this.UMAskforleave_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

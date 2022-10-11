@@ -88,5 +88,10 @@ namespace Party_MS2
             Table();
             textBox1.Text = "";
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

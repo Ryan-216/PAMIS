@@ -178,6 +178,12 @@ namespace Party_MS2
             }
         }
 
-        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AMLeavereasons admin = new AMLeavereasons();
+            this.Hide();
+            admin.ShowDialog();
+            this.Show();
+        }
     }
 }

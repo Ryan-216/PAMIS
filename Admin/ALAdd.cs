@@ -48,5 +48,10 @@ namespace Party_MS2
                 MessageBox.Show("信息不可为空！");
             }
         }
+
+        private void ALAdd_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

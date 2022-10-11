@@ -27,7 +27,7 @@ namespace Party_MS2
         private void button1_Click(object sender, EventArgs e)
         {
             Dao dao = new Dao();
-            string sql = $"insert into t_mattend values('{meeting_no}','{Data.UID}','请假（{textBox1.Text}）')";
+            string sql = $"insert into t_leavereasons values('{meeting_no}','{Data.UID}','{textBox1.Text}','未审核')";
             int n = dao.Execute(sql);
             if (n > 0)
             {
@@ -38,6 +38,11 @@ namespace Party_MS2
                 MessageBox.Show("请假失败！");
             }
             dao.DaoClose();
+        }
+
+        private void UMAskforleave_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
