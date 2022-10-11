@@ -26,7 +26,7 @@ namespace Party_MS2
         {
             dataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = $"select * from t_meeting where t_meeting.attendee=(select status from t_user where stu_id ='{Data.UID}'); ";
+            string sql = $"select * from t_meeting where t_meeting.attendee=(select status from t_user where stu_id ='34191035'); ";
             IDataReader dc = dao.read(sql);
             string no, name, m_content, time, place, attendee, record, host;
             while (dc.Read())
@@ -61,8 +61,11 @@ namespace Party_MS2
         private void button2_Click(object sender, EventArgs e)
         {
             string meeting_id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            string name= dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            string meeting_time = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            string meeting_place = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
 
-            UMAskforleave user = new UMAskforleave(meeting_id);
+            UMAskforleave user = new UMAskforleave(meeting_id,name,meeting_time,meeting_place);
             this.Hide();
             user.ShowDialog();
             this.Show();
