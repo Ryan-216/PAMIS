@@ -311,5 +311,10 @@ namespace Party_MS2
             table();
             uiTextBox1.Text = "";
         }
+
+        private void basicDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

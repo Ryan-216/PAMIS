@@ -74,7 +74,6 @@ namespace Party_MS2
         {
             UserTranscript userTranscript = new UserTranscript();
             userTranscript.Show();
-            this.Hide();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)

@@ -85,6 +85,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMeeting.Designer.cs">
+      <DependentUpon>AdminMeeting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminWrit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,12 @@
     </Compile>
     <Compile Include="Admin\ALUpdate1.Designer.cs">
       <DependentUpon>ALUpdate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AMadd1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AMadd1.Designer.cs">
+      <DependentUpon>AMadd1.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\AMAttendee.cs">
       <SubType>Form</SubType>
@@ -274,6 +286,9 @@
     <Compile Include="User\UserIndex.Designer.cs">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\AdminMeeting.resx">
+      <DependentUpon>AdminMeeting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminWrit.resx">
       <DependentUpon>AdminWrit.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,6 +331,9 @@
     <EmbeddedResource Include="Admin\ALUpdate.resx" />
     <EmbeddedResource Include="Admin\ALUpdate1.resx">
       <DependentUpon>ALUpdate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AMadd1.resx">
+      <DependentUpon>AMadd1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AMAttendee.resx">
       <DependentUpon>AMAttendee.cs</DependentUpon>
@@ -401,6 +419,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="README.md" />
     <None Include="Resources\微信图片_20220906155730.jpg" />
   </ItemGroup>
   <ItemGroup>

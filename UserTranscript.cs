@@ -15,13 +15,14 @@ namespace Party_MS2
         public UserTranscript()
         {
             InitializeComponent();
-            
+            table();
         }
 
         private void table()
         {
+            dataGridView1.Rows.Clear();
             Dao dao = new Dao();
-            string sql = "select course_no, course_name, course_score from t_transcript where no=" + Data.UID;
+            string sql = "select course_no, course_name, course_score from t_transcript where stu_id=" + Data.UID;
             IDataReader dc = dao.read(sql);
             string course_no, course_name, course_score;
             while(dc.Read())
@@ -45,8 +46,11 @@ namespace Party_MS2
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            UserIndex userIndex = new UserIndex();
-            userIndex.Show();
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            table();
         }
     }
 }
