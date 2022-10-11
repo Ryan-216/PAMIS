@@ -86,5 +86,11 @@ namespace Party_MS2
             UserExam userExam = new UserExam();
             userExam.Show();
         }
+
+        private void 我的思想汇报ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserReports userReports = new UserReports();
+            userReports.Show();
+        }
     }
 }

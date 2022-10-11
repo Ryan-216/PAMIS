@@ -78,22 +78,23 @@
             // 我的个人信息ToolStripMenuItem
             // 
             this.我的个人信息ToolStripMenuItem.Name = "我的个人信息ToolStripMenuItem";
-            this.我的个人信息ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.我的个人信息ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.我的个人信息ToolStripMenuItem.Text = "我的个人信息";
             this.我的个人信息ToolStripMenuItem.Click += new System.EventHandler(this.我的个人信息ToolStripMenuItem_Click);
             // 
             // 我的成绩ToolStripMenuItem
             // 
             this.我的成绩ToolStripMenuItem.Name = "我的成绩ToolStripMenuItem";
-            this.我的成绩ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.我的成绩ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.我的成绩ToolStripMenuItem.Text = "我的成绩";
             this.我的成绩ToolStripMenuItem.Click += new System.EventHandler(this.我的成绩ToolStripMenuItem_Click);
             // 
             // 我的思想汇报ToolStripMenuItem
             // 
             this.我的思想汇报ToolStripMenuItem.Name = "我的思想汇报ToolStripMenuItem";
-            this.我的思想汇报ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.我的思想汇报ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.我的思想汇报ToolStripMenuItem.Text = "我的思想汇报";
+            this.我的思想汇报ToolStripMenuItem.Click += new System.EventHandler(this.我的思想汇报ToolStripMenuItem_Click);
             // 
             // 计划函调及培训管理ToolStripMenuItem
             // 
@@ -117,14 +118,14 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(130, 26);
             this.toolStripMenuItem1.Text = "学习";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // 学习ToolStripMenuItem
             // 
             this.学习ToolStripMenuItem.Name = "学习ToolStripMenuItem";
-            this.学习ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.学习ToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.学习ToolStripMenuItem.Text = "考试";
             this.学习ToolStripMenuItem.Click += new System.EventHandler(this.学习ToolStripMenuItem_Click);
             // 

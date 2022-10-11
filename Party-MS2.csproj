@@ -207,6 +207,12 @@
     </Compile>
     <Compile Include="Dao.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="UserReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserReports.Designer.cs">
+      <DependentUpon>UserReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserExam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -352,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AMLeavereasons.resx">
       <DependentUpon>AMLeavereasons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserReports.resx">
+      <DependentUpon>UserReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserExam.resx">
       <DependentUpon>UserExam.cs</DependentUpon>
