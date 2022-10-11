@@ -46,7 +46,7 @@ namespace Party_MS2
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(537, 426);
+            this.button2.Location = new System.Drawing.Point(534, 426);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 35);
             this.button2.TabIndex = 22;
@@ -57,7 +57,7 @@ namespace Party_MS2
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(268, 426);
+            this.button1.Location = new System.Drawing.Point(278, 426);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 35);
             this.button1.TabIndex = 21;
@@ -91,7 +91,7 @@ namespace Party_MS2
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(963, 409);
+            this.dataGridView1.Size = new System.Drawing.Size(963, 341);
             this.dataGridView1.TabIndex = 20;
             // 
             // Column1
