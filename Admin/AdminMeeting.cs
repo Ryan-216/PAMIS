@@ -117,7 +117,7 @@ namespace Party_MS2
 
         private void button9_Click(object sender, EventArgs e)
         {
-            AMadd aMRecord = new AMadd();
+            AMadd1 aMRecord = new AMadd1();
             this.Hide();
             aMRecord.ShowDialog();
             this.Show();

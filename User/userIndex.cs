@@ -76,5 +76,10 @@ namespace Party_MS2
             userTranscript.Show();
             this.Hide();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

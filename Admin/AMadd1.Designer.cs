@@ -1,7 +1,7 @@
 ﻿
 namespace Party_MS2
 {
-    partial class AMadd
+    partial class AMadd1
     {
         /// <summary>
         /// Required designer variable.
@@ -215,7 +215,7 @@ namespace Party_MS2
             this.textBox8.Size = new System.Drawing.Size(360, 34);
             this.textBox8.TabIndex = 58;
             // 
-            // AMadd
+            // AMadd1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -238,7 +238,7 @@ namespace Party_MS2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "AMadd";
+            this.Name = "AMadd1";
             this.Text = "AMadd";
             this.Load += new System.EventHandler(this.AMadd_Load);
             this.ResumeLayout(false);
