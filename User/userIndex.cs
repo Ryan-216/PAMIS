@@ -80,5 +80,11 @@ namespace Party_MS2
         {
 
         }
+
+        private void 学习ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserExam userExam = new UserExam();
+            userExam.Show();
+        }
     }
 }
