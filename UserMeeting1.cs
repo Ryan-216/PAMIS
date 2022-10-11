@@ -26,7 +26,7 @@ namespace Party_MS2
         {
             dataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = $"select * from t_meeting where t_meeting.attendee=(select status from t_user where stu_id ='34191035'); ";
+            string sql = $"select * from t_meeting where t_meeting.attendee=(select status from t_user where stu_id ='{Data.UID}'); ";
             IDataReader dc = dao.read(sql);
             string no, name, m_content, time, place, attendee, record, host;
             while (dc.Read())

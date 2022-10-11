@@ -28,9 +28,9 @@ namespace Party_MS2
             meeting_name = name;
             meeting_time = time;
             meeting_place = place;
-            label2.Text = $"您要请假的会议名称：'{meeting_name}'";
-            label3.Text = $"时间：'{meeting_time}'";
-            label4.Text = $"地点：'{meeting_place}'";
+            label2.Text = $"您要请假的会议名称：{meeting_name}";
+            label4.Text = $"时间：{meeting_time}";
+            label5.Text = $"地点：{meeting_place}";
         }
 
         public void Table()
