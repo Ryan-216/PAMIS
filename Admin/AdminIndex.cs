@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sunny.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -114,8 +115,19 @@ namespace Party_MS2
 
         private void uiNavMenu1_MenuItemClick(TreeNode node, Sunny.UI.NavMenuItem item, int pageIndex)
         {
-
+            UIMessageTip.ShowOk(node.Text + ", " + pageIndex);
+            if (node.Text == "申请人基本资料")
+            {
+                //AdminBasicInfomation adminBasicInfomation = new AdminBasicInfomation();
+                //adminBasicInfomation.ShowDialog();
+                ShowAdminBasicInformation();
+            }
         }
         
+        private void ShowAdminBasicInformation()
+        {
+            label1.Hide();
+
+        }
     }
 }
