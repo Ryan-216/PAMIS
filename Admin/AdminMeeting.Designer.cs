@@ -43,12 +43,11 @@ namespace Party_MS2
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,34 +189,12 @@ namespace Party_MS2
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(143, 350);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 31);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "查看参会人员";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(405, 350);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 31);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "查看会议记录";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(671, 350);
+            this.button3.Location = new System.Drawing.Point(768, 233);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(153, 31);
+            this.button3.Size = new System.Drawing.Size(115, 39);
             this.button3.TabIndex = 25;
             this.button3.Text = "请假审批";
             this.button3.UseVisualStyleBackColor = true;
@@ -225,7 +202,7 @@ namespace Party_MS2
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.Location = new System.Drawing.Point(660, 244);
+            this.button7.Location = new System.Drawing.Point(405, 231);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(125, 42);
             this.button7.TabIndex = 28;
@@ -236,7 +213,7 @@ namespace Party_MS2
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button8.Location = new System.Drawing.Point(442, 244);
+            this.button8.Location = new System.Drawing.Point(208, 231);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(137, 42);
             this.button8.TabIndex = 27;
@@ -247,13 +224,24 @@ namespace Party_MS2
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button9.Location = new System.Drawing.Point(208, 244);
+            this.button9.Location = new System.Drawing.Point(21, 231);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(133, 42);
             this.button9.TabIndex = 26;
             this.button9.Text = "添加会议";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button2.Location = new System.Drawing.Point(579, 231);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 42);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "查看会议记录";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // AdminMeeting
             // 
@@ -265,7 +253,6 @@ namespace Party_MS2
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -298,11 +285,10 @@ namespace Party_MS2
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button2;
     }
 }
