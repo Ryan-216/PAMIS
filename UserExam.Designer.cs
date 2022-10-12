@@ -272,6 +272,7 @@
             this.Controls.Add(this.uiButton1);
             this.Name = "UserExam";
             this.Text = "UserExam";
+            this.Load += new System.EventHandler(this.UserExam_Load);
             this.ResumeLayout(false);
 
         }

@@ -83,14 +83,44 @@ namespace Party_MS2
                 answer += "D*";
             }
             Dao dao = new Dao();
-            string sql = "insert into t_stu_exam values (" + "\'" + Data.UID + "\'" + ", " + "\'" + exam_no + "\'" + ", " + "\'" + answer + "\'" + ")";
+            string sql = "insert into t_stu_exam values (" + "\'" + Data.UID + "\'" + ", " + "\'" + exam_no + "\'" + ", " + "\'" + answer + "\'" + "," + 0 + ")";
             dao.Execute(sql);
+        }
+        
+        private int setScore(string exam_no)
+        {
+            int correct = 0;
+            int score = 0;
+            Dao dao = new Dao();
+            string sql = "select exam_answer from t_exam where exam_no=\'" + exam_no + "\'";
+            IDataReader dc = dao.read(sql);
+            dc.Read();
+            string answer = dc[0].ToString();
+            string[] answerArray = answer.Split('*');
+            sql = "select stu_answer from t_stu_exam where exam_no=\'" + exam_no + "\' and stu_id =" + Data.UID;
+            dc = dao.read(sql);
+            dc.Read();
+            string stu_answer = dc[0].ToString();
+            string[] stu_answerArray = stu_answer.Split('*');
+            for(int i = 0; i<= answerArray.Length - 1; i++)
+            {
+                if (answerArray[i].ToLower() == stu_answerArray[i].ToLower())
+                {
+                    correct++;
+                    score = correct * 100 / answerArray.Length;
+                }
+            }
+            sql = "update t_stu_exam set exam_score =" + score + "where stu_id = " + Data.UID + "and exam_no =\'" + exam_no + "\'";
+            dao.Execute(sql);
+            return score;
         }
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
             setAnswer("E01");               //need alter
-            MessageBox.Show("提交成功！");
+            int score = setScore("E01");
+            MessageBox.Show("提交成功！ 您本次考试的得分为" + score + "分");
+            this.Close();
         }
 
         private void uiButton2_Click(object sender, EventArgs e)
@@ -106,5 +136,9 @@ namespace Party_MS2
 
         }
 
+        private void UserExam_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
