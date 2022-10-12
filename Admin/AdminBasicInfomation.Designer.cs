@@ -89,7 +89,7 @@ namespace Party_MS2
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1162, 295);
+            this.dataGridView1.Size = new System.Drawing.Size(1164, 295);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -302,7 +302,7 @@ namespace Party_MS2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1162, 571);
+            this.ClientSize = new System.Drawing.Size(1164, 571);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);

@@ -86,6 +86,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminIndex2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminIndex2.Designer.cs">
+      <DependentUpon>AdminIndex2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminMeeting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -305,6 +311,9 @@
     <Compile Include="User\UserIndex.Designer.cs">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminIndex2.resx">
+      <DependentUpon>AdminIndex2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminMeeting.resx">
       <DependentUpon>AdminMeeting.cs</DependentUpon>
     </EmbeddedResource>
@@ -471,6 +480,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aaa.mp4" />
+    <None Include="Resources\t01cd4b59a94db03b3b.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

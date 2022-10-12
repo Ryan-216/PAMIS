@@ -63,6 +63,16 @@ namespace Party_MS2.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap t01cd4b59a94db03b3b {
+            get {
+                object obj = ResourceManager.GetObject("t01cd4b59a94db03b3b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 微信图片_20220906155730 {
             get {
                 object obj = ResourceManager.GetObject("微信图片_20220906155730", resourceCulture);
