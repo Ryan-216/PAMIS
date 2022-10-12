@@ -109,7 +109,8 @@ namespace Party_MS2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AMRecord aMRecord = new AMRecord();
+            string meeting_id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            AMRecord aMRecord = new AMRecord(meeting_id);
             this.Hide();
             aMRecord.ShowDialog();
             this.Show();

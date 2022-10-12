@@ -130,7 +130,7 @@ namespace Party_MS2
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1023, 306);
+            this.dataGridView1.Size = new System.Drawing.Size(1118, 306);
             this.dataGridView1.TabIndex = 16;
             // 
             // Column1
@@ -192,7 +192,7 @@ namespace Party_MS2
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(796, 378);
+            this.button3.Location = new System.Drawing.Point(813, 375);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(115, 39);
             this.button3.TabIndex = 25;
@@ -203,7 +203,7 @@ namespace Party_MS2
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button7.Location = new System.Drawing.Point(429, 375);
+            this.button7.Location = new System.Drawing.Point(488, 372);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(125, 42);
             this.button7.TabIndex = 28;
@@ -214,7 +214,7 @@ namespace Party_MS2
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button8.Location = new System.Drawing.Point(261, 375);
+            this.button8.Location = new System.Drawing.Point(320, 372);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(137, 42);
             this.button8.TabIndex = 27;
@@ -225,7 +225,7 @@ namespace Party_MS2
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button9.Location = new System.Drawing.Point(94, 375);
+            this.button9.Location = new System.Drawing.Point(153, 372);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(133, 42);
             this.button9.TabIndex = 26;
@@ -236,11 +236,11 @@ namespace Party_MS2
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(584, 375);
+            this.button2.Location = new System.Drawing.Point(643, 372);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 42);
+            this.button2.Size = new System.Drawing.Size(127, 42);
             this.button2.TabIndex = 24;
-            this.button2.Text = "查看会议记录";
+            this.button2.Text = "会议记录";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -248,7 +248,7 @@ namespace Party_MS2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 631);
+            this.ClientSize = new System.Drawing.Size(1118, 631);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button9);

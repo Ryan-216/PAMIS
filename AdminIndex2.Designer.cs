@@ -29,27 +29,27 @@ namespace Party_MS2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("申请人基本资料");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("成绩管理");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("思想汇报管理");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("基本资料管理", new System.Windows.Forms.TreeNode[] {
-            treeNode14,
-            treeNode15,
-            treeNode16});
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("计划发展管理");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("思政教育管理");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("函调管理");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("计划、培训及函调管理", new System.Windows.Forms.TreeNode[] {
-            treeNode18,
-            treeNode19,
-            treeNode20});
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("会议管理");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("文书管理");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("联系管理员");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("退出");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
-            treeNode24,
-            treeNode25});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("申请人基本信息管理");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("成绩审查");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("思想汇报管理");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("基本资料管理", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("发展计划管理");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("思政教育管理");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("函调管理");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("计划、培训及函调管理", new System.Windows.Forms.TreeNode[] {
+            treeNode5,
+            treeNode6,
+            treeNode7});
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("会议管理");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("文书管理");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("联系管理员");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("退出");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
+            treeNode11,
+            treeNode12});
             this.panel1 = new System.Windows.Forms.Panel();
             this.uiNavMenu1 = new Sunny.UI.UINavMenu();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -85,38 +85,38 @@ namespace Party_MS2
             this.uiNavMenu1.Location = new System.Drawing.Point(3, 3);
             this.uiNavMenu1.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             this.uiNavMenu1.Name = "uiNavMenu1";
-            treeNode14.Name = "节点1";
-            treeNode14.Text = "申请人基本资料";
-            treeNode15.Name = "节点2";
-            treeNode15.Text = "成绩管理";
-            treeNode16.Name = "节点4";
-            treeNode16.Text = "思想汇报管理";
-            treeNode17.Name = "基本资料管理";
-            treeNode17.Text = "基本资料管理";
-            treeNode18.Name = "节点9";
-            treeNode18.Text = "计划发展管理";
-            treeNode19.Name = "节点10";
-            treeNode19.Text = "思政教育管理";
-            treeNode20.Name = "节点11";
-            treeNode20.Text = "函调管理";
-            treeNode21.Name = "节点5";
-            treeNode21.Text = "计划、培训及函调管理";
-            treeNode22.Name = "节点6";
-            treeNode22.Text = "会议管理";
-            treeNode23.Name = "节点7";
-            treeNode23.Text = "文书管理";
-            treeNode24.Name = "节点13";
-            treeNode24.Text = "联系管理员";
-            treeNode25.Name = "节点14";
-            treeNode25.Text = "退出";
-            treeNode26.Name = "节点8";
-            treeNode26.Text = "系统";
+            treeNode1.Name = "节点1";
+            treeNode1.Text = "申请人基本信息管理";
+            treeNode2.Name = "节点2";
+            treeNode2.Text = "成绩审查";
+            treeNode3.Name = "节点4";
+            treeNode3.Text = "思想汇报管理";
+            treeNode4.Name = "基本资料管理";
+            treeNode4.Text = "基本资料管理";
+            treeNode5.Name = "节点9";
+            treeNode5.Text = "发展计划管理";
+            treeNode6.Name = "节点10";
+            treeNode6.Text = "思政教育管理";
+            treeNode7.Name = "节点11";
+            treeNode7.Text = "函调管理";
+            treeNode8.Name = "节点5";
+            treeNode8.Text = "计划、培训及函调管理";
+            treeNode9.Name = "节点6";
+            treeNode9.Text = "会议管理";
+            treeNode10.Name = "节点7";
+            treeNode10.Text = "文书管理";
+            treeNode11.Name = "节点13";
+            treeNode11.Text = "联系管理员";
+            treeNode12.Name = "节点14";
+            treeNode12.Text = "退出";
+            treeNode13.Name = "节点8";
+            treeNode13.Text = "系统";
             this.uiNavMenu1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode17,
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode26});
+            treeNode4,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode13});
             this.uiNavMenu1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.uiNavMenu1.ScrollBarHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             this.uiNavMenu1.ScrollBarPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
@@ -205,6 +205,7 @@ namespace Party_MS2
             this.Name = "AdminIndex2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminIndex2";
+            this.Load += new System.EventHandler(this.AdminIndex2_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
