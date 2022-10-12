@@ -95,7 +95,7 @@ namespace Party_MS2
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(311, 409);
+            this.button1.Location = new System.Drawing.Point(299, 409);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 36);
             this.button1.TabIndex = 3;
@@ -106,7 +106,7 @@ namespace Party_MS2
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(612, 409);
+            this.button2.Location = new System.Drawing.Point(608, 409);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 36);
             this.button2.TabIndex = 4;

@@ -23,9 +23,9 @@ namespace Party_MS2
         private void 申请人基本信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AdminBasicInfomation admin = new AdminBasicInfomation();
-            this.Hide();
+            
             admin.ShowDialog();
-            this.Show();
+            
 
         }
 
@@ -81,9 +81,9 @@ namespace Party_MS2
 
         private void 会议管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //AdminMeeting admin = new AdminMeeting();
+            AdminMeeting admin = new AdminMeeting();
             this.Hide();
-            //admin.ShowDialog();
+            admin.ShowDialog();
             this.Show();
         }
 

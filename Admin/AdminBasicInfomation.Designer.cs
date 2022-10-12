@@ -315,7 +315,7 @@ namespace Party_MS2
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminBasicInfomation";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "申请人基本信息管理";
             this.Load += new System.EventHandler(this.AdminBasicInfomation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
