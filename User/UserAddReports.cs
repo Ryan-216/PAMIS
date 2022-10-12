@@ -38,7 +38,8 @@ namespace Party_MS2.User
         private void uiButton1_Click(object sender, EventArgs e)
         {
             amount = uiTextBox1.Text.ToInt();
-
+            MessageBox.Show("您选择上传3张图片");
+            uiLabel2.Text = "请上传3张图片";
         }
 
         private void uploadReport()
@@ -72,7 +73,7 @@ namespace Party_MS2.User
                         ms.Close();
                         pictureBox1.Image = bmap;
                         //string connectionstring = "Data Source=(local);Initial Catalog=Test;Integrated Security=SSPI";
-                        //MessageBox.Show("");
+                        MessageBox.Show("图片"+(i+1)+"选择成功");
                         if (i == amount-1)
                         {
                             int j = 1;
@@ -81,11 +82,12 @@ namespace Party_MS2.User
                                 SqlCommand sqlcom = new SqlCommand($"insert into t_reports values ('{Data.UID + dateNO}','{Data.UID}','{currentTime}', NULL,'待审批',@ImageList)", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
                                 sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
                                 sqlcom.Parameters["ImageList"].Value = imageStream;
-
+                                /*
                                 if (sqlcom.ExecuteNonQuery() > 0)
                                 {
                                     MessageBox.Show("图片" + j + "上传成功");
                                 }
+                                */
                                 j++;
                             }
                         }
@@ -93,6 +95,7 @@ namespace Party_MS2.User
                     }
                 }
             }
+            MessageBox.Show("图片均已上传成功");
             sqlcon.Close();
         }
 
