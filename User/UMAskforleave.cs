@@ -15,6 +15,7 @@ namespace Party_MS2
         public UMAskforleave()
         {
             InitializeComponent();
+            Table();
         }
 
         string meeting_no;
@@ -24,6 +25,7 @@ namespace Party_MS2
         public UMAskforleave(string no,string name,string time,string place)
         {
             InitializeComponent();
+            Table();
             meeting_no = no;
             meeting_name = name;
             meeting_time = time;
@@ -32,7 +34,7 @@ namespace Party_MS2
             label4.Text = $"时间：{meeting_time}";
             label5.Text = $"地点：{meeting_place}";
         }
-
+        
         public void Table()
         {
             dataGridView1.Rows.Clear();//清空旧数据

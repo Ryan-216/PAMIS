@@ -124,7 +124,7 @@
             this.系统ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1484, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1484, 32);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -136,28 +136,28 @@
             this.成绩审查ToolStripMenuItem,
             this.思想汇报管理ToolStripMenuItem});
             this.基本资料管理ToolStripMenuItem.Name = "基本资料管理ToolStripMenuItem";
-            this.基本资料管理ToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
+            this.基本资料管理ToolStripMenuItem.Size = new System.Drawing.Size(138, 28);
             this.基本资料管理ToolStripMenuItem.Text = "基本资料管理";
             this.基本资料管理ToolStripMenuItem.Click += new System.EventHandler(this.基本资料管理ToolStripMenuItem_Click);
             // 
             // 申请人基本信息管理ToolStripMenuItem
             // 
             this.申请人基本信息管理ToolStripMenuItem.Name = "申请人基本信息管理ToolStripMenuItem";
-            this.申请人基本信息管理ToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
+            this.申请人基本信息管理ToolStripMenuItem.Size = new System.Drawing.Size(265, 28);
             this.申请人基本信息管理ToolStripMenuItem.Text = "申请人基本信息管理";
             this.申请人基本信息管理ToolStripMenuItem.Click += new System.EventHandler(this.申请人基本信息管理ToolStripMenuItem_Click);
             // 
             // 成绩审查ToolStripMenuItem
             // 
             this.成绩审查ToolStripMenuItem.Name = "成绩审查ToolStripMenuItem";
-            this.成绩审查ToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
+            this.成绩审查ToolStripMenuItem.Size = new System.Drawing.Size(265, 28);
             this.成绩审查ToolStripMenuItem.Text = "成绩审查";
             this.成绩审查ToolStripMenuItem.Click += new System.EventHandler(this.成绩审查ToolStripMenuItem_Click);
             // 
             // 思想汇报管理ToolStripMenuItem
             // 
             this.思想汇报管理ToolStripMenuItem.Name = "思想汇报管理ToolStripMenuItem";
-            this.思想汇报管理ToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
+            this.思想汇报管理ToolStripMenuItem.Size = new System.Drawing.Size(265, 28);
             this.思想汇报管理ToolStripMenuItem.Text = "思想汇报管理";
             this.思想汇报管理ToolStripMenuItem.Click += new System.EventHandler(this.思想汇报管理ToolStripMenuItem_Click);
             // 
@@ -168,41 +168,41 @@
             this.思政教育管理ToolStripMenuItem,
             this.函调管理ToolStripMenuItem});
             this.计划培训及函调管理ToolStripMenuItem.Name = "计划培训及函调管理ToolStripMenuItem";
-            this.计划培训及函调管理ToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.计划培训及函调管理ToolStripMenuItem.Size = new System.Drawing.Size(214, 28);
             this.计划培训及函调管理ToolStripMenuItem.Text = "计划、培训及函调管理";
             // 
             // 发展计划管理ToolStripMenuItem
             // 
             this.发展计划管理ToolStripMenuItem.Name = "发展计划管理ToolStripMenuItem";
-            this.发展计划管理ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.发展计划管理ToolStripMenuItem.Size = new System.Drawing.Size(208, 28);
             this.发展计划管理ToolStripMenuItem.Text = "发展计划管理";
             this.发展计划管理ToolStripMenuItem.Click += new System.EventHandler(this.发展计划管理ToolStripMenuItem_Click);
             // 
             // 思政教育管理ToolStripMenuItem
             // 
             this.思政教育管理ToolStripMenuItem.Name = "思政教育管理ToolStripMenuItem";
-            this.思政教育管理ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.思政教育管理ToolStripMenuItem.Size = new System.Drawing.Size(208, 28);
             this.思政教育管理ToolStripMenuItem.Text = "思政教育管理";
             this.思政教育管理ToolStripMenuItem.Click += new System.EventHandler(this.思政教育管理ToolStripMenuItem_Click);
             // 
             // 函调管理ToolStripMenuItem
             // 
             this.函调管理ToolStripMenuItem.Name = "函调管理ToolStripMenuItem";
-            this.函调管理ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.函调管理ToolStripMenuItem.Size = new System.Drawing.Size(208, 28);
             this.函调管理ToolStripMenuItem.Text = "函调管理";
             this.函调管理ToolStripMenuItem.Click += new System.EventHandler(this.函调管理ToolStripMenuItem_Click);
             // 
             // 会议管理ToolStripMenuItem
             // 
             this.会议管理ToolStripMenuItem.Name = "会议管理ToolStripMenuItem";
-            this.会议管理ToolStripMenuItem.Size = new System.Drawing.Size(96, 26);
+            this.会议管理ToolStripMenuItem.Size = new System.Drawing.Size(100, 28);
             this.会议管理ToolStripMenuItem.Text = "会议管理";
             this.会议管理ToolStripMenuItem.Click += new System.EventHandler(this.会议管理ToolStripMenuItem_Click);
             // 
             // 文书管理ToolStripMenuItem
             // 
             this.文书管理ToolStripMenuItem.Name = "文书管理ToolStripMenuItem";
-            this.文书管理ToolStripMenuItem.Size = new System.Drawing.Size(96, 26);
+            this.文书管理ToolStripMenuItem.Size = new System.Drawing.Size(100, 28);
             this.文书管理ToolStripMenuItem.Text = "文书管理";
             this.文书管理ToolStripMenuItem.Click += new System.EventHandler(this.文书管理ToolStripMenuItem_Click);
             // 
@@ -212,19 +212,19 @@
             this.联系管理员ToolStripMenuItem,
             this.退出ToolStripMenuItem});
             this.系统ToolStripMenuItem.Name = "系统ToolStripMenuItem";
-            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(60, 26);
+            this.系统ToolStripMenuItem.Size = new System.Drawing.Size(62, 28);
             this.系统ToolStripMenuItem.Text = "系统";
             // 
             // 联系管理员ToolStripMenuItem
             // 
             this.联系管理员ToolStripMenuItem.Name = "联系管理员ToolStripMenuItem";
-            this.联系管理员ToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.联系管理员ToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
             this.联系管理员ToolStripMenuItem.Text = "联系管理员";
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 

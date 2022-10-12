@@ -61,7 +61,7 @@ namespace Party_MS2
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(997, 318);
+            this.dataGridView1.Size = new System.Drawing.Size(997, 373);
             this.dataGridView1.TabIndex = 2;
             // 
             // Column1
@@ -95,18 +95,18 @@ namespace Party_MS2
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(303, 359);
+            this.button1.Location = new System.Drawing.Point(311, 409);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 36);
             this.button1.TabIndex = 3;
-            this.button1.Text = "通过";
+            this.button1.Text = "批准";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(606, 359);
+            this.button2.Location = new System.Drawing.Point(612, 409);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 36);
             this.button2.TabIndex = 4;

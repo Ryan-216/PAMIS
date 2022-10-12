@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -71,9 +72,48 @@ namespace Party_MS2
                                                                
             }
         }
+        public void upload1()
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = "*.jpg|*.JPG";//设置弹出对话框选择图片
+            //openFileDialog1.ShowDialog();
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string path = openFileDialog1.FileName;
+                label2.Text = path;
+                using (FileStream filestream = new FileStream(path, FileMode.Open))
+                {
+                    Byte[] imageByte = new byte[filestream.Length];
+                    filestream.Read(imageByte, 0, imageByte.Length);//将图片数据读入比特数组存储
+                     //在pictureBox1中显示图片
+                    MemoryStream ms = new MemoryStream(imageByte);//创建图片数据流
+                    Bitmap bmap = new Bitmap(ms);//获取图片
+                    ms.Close();
+                    pictureBox1.Image = bmap;
+                    //string connectionstring = "Data Source=(local);Initial Catalog=Test;Integrated Security=SSPI";
+                    string str = @"Data Source=LAPTOP-TESM5QR4; Initial Catalog=PartyDBII; User Id = test; Password = 123456";
+                    SqlConnection sqlcon = new SqlConnection(str);
+                    sqlcon.Open();
+                    SqlCommand sqlcom = new SqlCommand($"insert into t_signin values ('{meeting_no}','{Data.UID}',@ImageList)", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
+                    sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
+                    sqlcom.Parameters["ImageList"].Value = imageByte;
+                   
+                    if (sqlcom.ExecuteNonQuery() > 0)
+                    {
+                        MessageBox.Show("上传成功");
+                    }    
+                    sqlcon.Close();
+
+                  
+                }
+            }
+
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            upload();
+            upload1();
         }
 
         private void button2_Click(object sender, EventArgs e)

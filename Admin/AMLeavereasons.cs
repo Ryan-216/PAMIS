@@ -50,7 +50,7 @@ namespace Party_MS2
             meeting_no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             mstu_id= dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             Dao dao = new Dao();
-            string sql = $"update t_leavereasons set audit='批准'where no='{meeting_no}'and stu_id='{mstu_id}';";
+            string sql = $"update t_leavereasons set audit='批准'where no='{meeting_no}'and stu_id='{mstu_id}';insert into t_mattend values('{meeting_no}','{mstu_id}','请假')";
             int n = dao.Execute(sql);
             if (n > 0)
             {
