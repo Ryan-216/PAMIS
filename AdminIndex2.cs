@@ -15,7 +15,47 @@ namespace Party_MS2
         public AdminIndex2()
         {
             InitializeComponent();
+            //
+            uiLabel2.Text = $"{Data.UID}";
+            Notification1 admin = new Notification1();
+            admin.TopLevel = false;
+            admin.FormBorderStyle = FormBorderStyle.None;
+            admin.Dock = DockStyle.Fill;
+            this.panel5.Controls.Clear();
+            this.panel5.Controls.Add(admin);
+            admin.Show();
+            //
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
         }
+
+        string weekstr = "";
+        private void control_Load(object sender, EventArgs e)
+        {
+
+            timer1.Start();
+
+            //把得到的星期转换成中文
+            switch (DateTime.Now.DayOfWeek.ToString())
+            {
+                case "Monday": weekstr = "星期一"; break;
+                case "Tuesday": weekstr = "星期二"; break;
+                case "Wednesday": weekstr = "星期三"; break;
+                case "Thursday": weekstr = "星期四"; break;
+                case "Friday": weekstr = "星期五"; break;
+                case "Saturday": weekstr = "星期六"; break;
+                case "Sunday": weekstr = "星期日"; break;
+            }
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            uiLabel5.Text = DateTime.Now.ToString() + " " + weekstr;
+        }
+
+
 
         private void uiNavMenu1_MenuItemClick(TreeNode node, Sunny.UI.NavMenuItem item, int pageIndex)
         {
@@ -102,6 +142,16 @@ namespace Party_MS2
         }
 
         private void AdminIndex2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiAvatar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
 
         }

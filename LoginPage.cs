@@ -78,8 +78,9 @@ namespace Party_MS2
                     IDataReader dc = dao.read(sql);
                     if (dc.Read())
                     {
+                        Data.UID = dc["id"].ToString();
                         MessageBox.Show("登录成功！");
-                        AdminIndex admin = new AdminIndex();
+                        AdminIndex2 admin = new AdminIndex2();
                         this.Hide();
                         admin.ShowDialog();
                         this.Show();
