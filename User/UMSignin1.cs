@@ -131,5 +131,10 @@ namespace Party_MS2
             }
             dao.DaoClose();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

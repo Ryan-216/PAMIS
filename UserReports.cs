@@ -21,5 +21,10 @@ namespace Party_MS2
         {
             this.Close();
         }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
