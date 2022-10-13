@@ -15,19 +15,30 @@ namespace Party_MS2
         public AdminIndex2()
         {
             InitializeComponent();
+            preload();
             //
             uiLabel2.Text = $"{Data.UID}";
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+        }
+        public void preload()
+        {
             Notification1 admin = new Notification1();
             admin.TopLevel = false;
             admin.FormBorderStyle = FormBorderStyle.None;
             admin.Dock = DockStyle.Fill;
             this.panel5.Controls.Clear();
-            this.panel5.Controls.Add(admin);
+            this.panel5.Controls.Add(admin);           
             admin.Show();
             //
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            News admin1 = new News();
+            admin1.TopLevel = false;
+            admin1.FormBorderStyle = FormBorderStyle.None;
+            admin1.Dock = DockStyle.Fill;
+            this.panel4.Controls.Clear();
+            this.panel4.Controls.Add(admin1);
+            admin1.Show();
         }
 
         string weekstr = "";

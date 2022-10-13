@@ -1,7 +1,7 @@
 ﻿
 namespace Party_MS2
 {
-    partial class Notification1
+    partial class News
     {
         /// <summary>
         /// Required designer variable.
@@ -101,29 +101,28 @@ namespace Party_MS2
             this.basicDataGridView.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.basicDataGridView.SelectedIndex = -1;
             this.basicDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.basicDataGridView.Size = new System.Drawing.Size(379, 450);
+            this.basicDataGridView.Size = new System.Drawing.Size(372, 371);
             this.basicDataGridView.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.basicDataGridView.Style = Sunny.UI.UIStyle.LayuiOrange;
-            this.basicDataGridView.TabIndex = 29;
+            this.basicDataGridView.TabIndex = 30;
             this.basicDataGridView.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.basicDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.basicDataGridView_CellContentClick);
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "通知";
+            this.Column1.HeaderText = "要闻";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
-            // Notification1
+            // News
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 450);
+            this.ClientSize = new System.Drawing.Size(372, 371);
             this.Controls.Add(this.basicDataGridView);
-            this.Name = "Notification1";
-            this.Text = "Notification1";
-            this.Load += new System.EventHandler(this.Notification1_Load);
+            this.Name = "News";
+            this.Text = "News";
+            this.Load += new System.EventHandler(this.News_Load);
             ((System.ComponentModel.ISupportInitialize)(this.basicDataGridView)).EndInit();
             this.ResumeLayout(false);
 

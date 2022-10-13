@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace Party_MS2
 {
-    public partial class Notification1 : Form
+    public partial class News : Form
     {
-        public Notification1()
+        public News()
         {
             InitializeComponent();
             Table();
         }
 
-        private void Notification1_Load(object sender, EventArgs e)
+        private void News_Load(object sender, EventArgs e)
         {
 
         }
@@ -26,7 +26,7 @@ namespace Party_MS2
         {
             basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = $"select title from t_notification order by time desc; ";
+            string sql = $"select title from t_news order by time desc; ";
             IDataReader dc = dao.read(sql);
             string contents;
             while (dc.Read())
@@ -38,11 +38,6 @@ namespace Party_MS2
             }
             dc.Close();
             dao.DaoClose();
-        }
-
-        private void basicDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
