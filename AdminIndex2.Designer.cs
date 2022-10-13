@@ -238,7 +238,6 @@ namespace Party_MS2
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.panel7);
             this.panel3.Location = new System.Drawing.Point(265, 54);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1060, 640);
