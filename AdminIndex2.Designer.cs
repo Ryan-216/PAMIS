@@ -66,7 +66,6 @@ namespace Party_MS2
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -174,7 +173,7 @@ namespace Party_MS2
             this.uiLabel5.Name = "uiLabel5";
             this.uiLabel5.Size = new System.Drawing.Size(287, 34);
             this.uiLabel5.TabIndex = 2;
-            this.uiLabel5.Text = "用户名";
+            this.uiLabel5.Text = "时间";
             this.uiLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
@@ -286,16 +285,6 @@ namespace Party_MS2
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.Location = new System.Drawing.Point(-264, -52);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1339, 729);
-            this.panel7.TabIndex = 2;
             // 
             // AdminIndex2
             // 
