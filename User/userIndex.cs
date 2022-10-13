@@ -92,5 +92,10 @@ namespace Party_MS2
             UserReports userReports = new UserReports();
             userReports.Show();
         }
+
+        private void 我的入党申请书ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

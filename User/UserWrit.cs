@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Party_MS2.User;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,6 +44,17 @@ namespace Party_MS2
             }
             dc.Close();
             dao.DaoClose();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserSelectWrit userSelectWrit = new UserSelectWrit();
+            userSelectWrit.Show();
         }
     }
 }

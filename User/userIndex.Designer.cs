@@ -78,21 +78,21 @@
             // 我的个人信息ToolStripMenuItem
             // 
             this.我的个人信息ToolStripMenuItem.Name = "我的个人信息ToolStripMenuItem";
-            this.我的个人信息ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.我的个人信息ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.我的个人信息ToolStripMenuItem.Text = "我的个人信息";
             this.我的个人信息ToolStripMenuItem.Click += new System.EventHandler(this.我的个人信息ToolStripMenuItem_Click);
             // 
             // 我的成绩ToolStripMenuItem
             // 
             this.我的成绩ToolStripMenuItem.Name = "我的成绩ToolStripMenuItem";
-            this.我的成绩ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.我的成绩ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.我的成绩ToolStripMenuItem.Text = "我的成绩";
             this.我的成绩ToolStripMenuItem.Click += new System.EventHandler(this.我的成绩ToolStripMenuItem_Click);
             // 
             // 我的思想汇报ToolStripMenuItem
             // 
             this.我的思想汇报ToolStripMenuItem.Name = "我的思想汇报ToolStripMenuItem";
-            this.我的思想汇报ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.我的思想汇报ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.我的思想汇报ToolStripMenuItem.Text = "我的思想汇报";
             this.我的思想汇报ToolStripMenuItem.Click += new System.EventHandler(this.我的思想汇报ToolStripMenuItem_Click);
             // 
@@ -112,7 +112,7 @@
             this.toolStripMenuItem1,
             this.学习ToolStripMenuItem});
             this.思政教育ToolStripMenuItem.Name = "思政教育ToolStripMenuItem";
-            this.思政教育ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.思政教育ToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.思政教育ToolStripMenuItem.Text = "思政教育";
             // 
             // toolStripMenuItem1
@@ -132,7 +132,7 @@
             // 创建函调信ToolStripMenuItem
             // 
             this.创建函调信ToolStripMenuItem.Name = "创建函调信ToolStripMenuItem";
-            this.创建函调信ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.创建函调信ToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.创建函调信ToolStripMenuItem.Text = "创建函调信";
             // 
             // 会议管理ToolStripMenuItem

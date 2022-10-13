@@ -281,6 +281,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="User\UserSelectWrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserSelectWrit.Designer.cs">
+      <DependentUpon>UserSelectWrit.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\UserAddReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -438,6 +444,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserSelectWrit.resx">
+      <DependentUpon>UserSelectWrit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\UserAddReports.resx">
       <DependentUpon>UserAddReports.cs</DependentUpon>
