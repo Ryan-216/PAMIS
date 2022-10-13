@@ -28,18 +28,18 @@ namespace Party_MS2
         {
             dataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql =  $"select * from t_writ where t_writ.stu_id ='{Data.UID}'; ";
+            string sql =  $"select writ_id, type, upload_time, check_time, statues from t_writ where t_writ.stu_id ='{Data.UID}'; ";
             IDataReader dc = dao.read(sql);
-            string stu_id, type, time, contents, pass;
+            string writ_id, type, upload_time, check_time, statues;
             while (dc.Read())
             {
-                stu_id = dc[0].ToString();
+                writ_id = dc[0].ToString();
                 type = dc[1].ToString();
-                time = dc[2].ToString();
-                contents = dc[3].ToString();
-                pass = dc[4].ToString();
+                upload_time = dc[2].ToString();
+                check_time = dc[3].ToString();
+                statues = dc[4].ToString();
 
-                string[] table = { stu_id, type, time, contents, pass };
+                string[] table = { writ_id, type, upload_time, check_time, statues};
                 dataGridView1.Rows.Add(table);
             }
             dc.Close();

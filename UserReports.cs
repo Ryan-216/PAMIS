@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Party_MS2.User;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,8 @@ namespace Party_MS2
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-
+            UserAddReports userAddReports = new UserAddReports();
+            userAddReports.Show();
         }
     }
 }

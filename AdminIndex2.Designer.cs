@@ -325,6 +325,5 @@ namespace Party_MS2
         private Sunny.UI.UILabel uiLabel4;
         private System.Windows.Forms.Timer timer1;
         private Sunny.UI.UILabel uiLabel5;
-        private System.Windows.Forms.Panel panel7;
     }
 }

@@ -82,6 +82,7 @@ namespace Party_MS2.User
                                 SqlCommand sqlcom = new SqlCommand($"insert into t_reports values ('{Data.UID + dateNO}','{Data.UID}','{currentTime}', NULL,'待审批',@ImageList)", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
                                 sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
                                 sqlcom.Parameters["ImageList"].Value = imageStream;
+                                sqlcom.ExecuteNonQuery();
                                 /*
                                 if (sqlcom.ExecuteNonQuery() > 0)
                                 {
