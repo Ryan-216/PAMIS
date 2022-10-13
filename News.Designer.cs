@@ -106,6 +106,7 @@ namespace Party_MS2
             this.basicDataGridView.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.basicDataGridView.TabIndex = 30;
             this.basicDataGridView.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.basicDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.basicDataGridView_CellContentClick);
             // 
             // Column1
             // 

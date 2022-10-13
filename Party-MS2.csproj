@@ -226,6 +226,12 @@
     <Compile Include="News.Designer.cs">
       <DependentUpon>News.cs</DependentUpon>
     </Compile>
+    <Compile Include="NNcontents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NNcontents.Designer.cs">
+      <DependentUpon>NNcontents.cs</DependentUpon>
+    </Compile>
     <Compile Include="Notification1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -410,6 +416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="News.resx">
       <DependentUpon>News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NNcontents.resx">
+      <DependentUpon>NNcontents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Notification1.resx">
       <DependentUpon>Notification1.cs</DependentUpon>

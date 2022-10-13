@@ -39,5 +39,18 @@ namespace Party_MS2
             dc.Close();
             dao.DaoClose();
         }
+        private void basicDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+
+        {
+            string title = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            NNcontents nNcontents = new NNcontents(title, "news");
+            nNcontents.ShowDialog();        
+
+        }
+
+        private void basicDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

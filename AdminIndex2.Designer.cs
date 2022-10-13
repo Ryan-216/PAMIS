@@ -59,17 +59,17 @@ namespace Party_MS2
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiLabel1 = new Sunny.UI.UILabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -164,6 +164,7 @@ namespace Party_MS2
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1330, 46);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // uiLabel5
             // 
@@ -222,41 +223,6 @@ namespace Party_MS2
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
-            this.pictureBox1.Location = new System.Drawing.Point(35, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = global::Party_MS2.Properties.Resources.微信图片_20220906155730;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(265, 54);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1060, 640);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(77, 272);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(375, 365);
-            this.panel5.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(568, 272);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(416, 359);
-            this.panel4.TabIndex = 0;
-            // 
             // uiLabel3
             // 
             this.uiLabel3.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -285,6 +251,41 @@ namespace Party_MS2
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::Party_MS2.Properties.Resources.微信图片_20220906155730;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Location = new System.Drawing.Point(265, 54);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1060, 640);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(77, 272);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(375, 365);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(568, 272);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(416, 359);
+            this.panel4.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
+            this.pictureBox1.Location = new System.Drawing.Point(35, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // AdminIndex2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -301,8 +302,8 @@ namespace Party_MS2
             this.Load += new System.EventHandler(this.AdminIndex2_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

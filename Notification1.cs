@@ -39,6 +39,22 @@ namespace Party_MS2
             dc.Close();
             dao.DaoClose();
         }
+        private void basicDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+
+        {
+            string title = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            NNcontents nNcontents = new NNcontents(title,"notification");
+            nNcontents.ShowDialog();
+            /* 找不到panel3
+             nNcontents.TopLevel = false;
+             nNcontents.FormBorderStyle = FormBorderStyle.None;
+             nNcontents.Dock = DockStyle.Fill;
+             this.panel3.Controls.Clear();
+             this.panel3.Controls.Add(nNcontents);
+             nNcontents.Show();
+            */
+
+        }
 
         private void basicDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
