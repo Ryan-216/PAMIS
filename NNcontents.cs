@@ -21,9 +21,9 @@ namespace Party_MS2
         public NNcontents(string title_selected,string type_selected)
         {
             InitializeComponent();
-            string title = title_selected;
-            string type1 = type_selected;
-            load_contents();
+            title = title_selected;
+            type = type_selected;
+            load_contents(); 
         }
 
         private void load_contents()

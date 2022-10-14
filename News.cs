@@ -42,14 +42,30 @@ namespace Party_MS2
         private void basicDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
 
         {
-            string title = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
-            NNcontents nNcontents = new NNcontents(title, "news");
-            nNcontents.ShowDialog();        
+                  
 
         }
-
+        private void load_contents()
+        {
+           
+        }
         private void basicDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+            string title = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+           // NNcontents nNcontents = new NNcontents(title, "news");
+           // nNcontents.ShowDialog();
+            Dao dao = new Dao();
+            string sql = "";
+            sql = $"select contents from t_news where title='{title}'; ";
+            IDataReader dc = dao.read(sql);
+            while (dc.Read())
+            {
+                System.Diagnostics.Process.Start(dc[0].ToString());
+            }
+            dc.Close();
+            dao.DaoClose();
+
 
         }
     }
