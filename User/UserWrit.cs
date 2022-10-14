@@ -56,5 +56,10 @@ namespace Party_MS2
             UserSelectWrit userSelectWrit = new UserSelectWrit();
             userSelectWrit.Show();
         }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

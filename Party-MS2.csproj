@@ -287,6 +287,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="User\UsersWrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UsersWrit.Designer.cs">
+      <DependentUpon>UsersWrit.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\UserSelectWrit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -468,6 +474,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User\UserMeeting1.resx">
       <DependentUpon>UserMeeting1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UsersWrit.resx">
+      <DependentUpon>UsersWrit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\UserWrit.resx">
       <DependentUpon>UserWrit.cs</DependentUpon>

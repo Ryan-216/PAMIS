@@ -35,11 +35,29 @@ namespace Party_MS2.User
 
         }
 
+        public string numberAddZero(int anyNumber)
+        {
+            string stringNumber;
+            if(anyNumber <= 9)
+            {
+                stringNumber = "00" + anyNumber.ToString();
+            }
+            else if(anyNumber <= 99)
+            {
+                stringNumber = "0" + anyNumber.ToString();
+            }
+            else
+            {
+                stringNumber = anyNumber.ToString();
+            }
+            return stringNumber;
+        }
+
         private void uiButton1_Click(object sender, EventArgs e)
         {
             amount = uiTextBox1.Text.ToInt();
-            MessageBox.Show("您选择上传3张图片");
-            uiLabel2.Text = "请上传3张图片";
+            MessageBox.Show("您选择上传"+amount+"张图片");
+            uiLabel2.Text = "请上传"+amount+"张图片";
         }
 
         private void uploadReport()
@@ -52,7 +70,16 @@ namespace Party_MS2.User
             sqlcon.Open();
             //fetch the current time
             System.DateTime currentTime = System.DateTime.Now;
-            string dateNO = currentTime.Year.ToString() + currentTime.Month.ToString() + currentTime.Day.ToString() + currentTime.Hour.ToString() + currentTime.Minute.ToString() + currentTime.Second.ToString();
+            //string dateNO = currentTime.Year.ToString() + currentTime.Month.ToString() + currentTime.Day.ToString() + currentTime.Hour.ToString() + currentTime.Minute.ToString() + currentTime.Second.ToString();
+            //get the upload times
+            int count = 0;
+            string sql = "select upload_counts from t_reports where stu_id = " + Data.UID + "order by upload_counts DESC";
+            Dao dao = new Dao();
+            IDataReader dc = dao.read(sql);
+            dc.Read();
+            count = dc[0].ToString().ToInt();
+
+
             for (int i=0; i<= amount-1; i++)
             {
                 OpenFileDialog openFileDialog1 = new OpenFileDialog();
@@ -79,7 +106,7 @@ namespace Party_MS2.User
                             int j = 1;
                             foreach (Byte[] imageStream in imageByteList)
                             {
-                                SqlCommand sqlcom = new SqlCommand($"insert into t_reports values ('{Data.UID + dateNO}','{Data.UID}','{currentTime}', NULL,'待审批',@ImageList)", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
+                                SqlCommand sqlcom = new SqlCommand($"insert into t_reports values ('{Data.UID + "01" + numberAddZero(count+1) + numberAddZero(j)}','{Data.UID}','{currentTime}', NULL,'待审批',@ImageList, "+ (count+1) +")", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
                                 sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
                                 sqlcom.Parameters["ImageList"].Value = imageStream;
                                 sqlcom.ExecuteNonQuery();
