@@ -42,23 +42,23 @@ namespace Party_MS2
         private void basicDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
 
         {
-            string title = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
-            NNcontents nNcontents = new NNcontents(title,"notification");
-            nNcontents.ShowDialog();
-            /* 找不到panel3
-             nNcontents.TopLevel = false;
-             nNcontents.FormBorderStyle = FormBorderStyle.None;
-             nNcontents.Dock = DockStyle.Fill;
-             this.panel3.Controls.Clear();
-             this.panel3.Controls.Add(nNcontents);
-             nNcontents.Show();
-            */
+           
 
         }
 
         private void basicDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            string title = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();      
+            Dao dao = new Dao();
+            string sql = "";
+            sql = $"select contents from t_notification where title='{title}'; ";
+            IDataReader dc = dao.read(sql);
+            while (dc.Read())
+            {
+                System.Diagnostics.Process.Start(dc[0].ToString());
+            }
+            dc.Close();
+            dao.DaoClose();
         }
     }
 }
