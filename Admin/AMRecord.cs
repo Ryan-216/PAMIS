@@ -91,7 +91,7 @@ namespace Party_MS2
                 }
             }
         }
-        public void Watch()
+        public void Check()
         {
             
             string meeting_id = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
@@ -122,7 +122,7 @@ namespace Party_MS2
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            Watch();
+            Check();
         }
 
         private void uiButton3_Click(object sender, EventArgs e)

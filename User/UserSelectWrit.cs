@@ -98,7 +98,7 @@ namespace Party_MS2.User
                             int j = 1;
                             foreach (Byte[] imageStream in imageByteList)
                             {
-                                SqlCommand sqlcom = new SqlCommand($"insert into t_writ values ('{Data.UID}','{Data.UID + "02" + userAddReports.numberAddZero(j)}','{currentTime}', NULL,'待审批',@ImageList,'入党申请书')", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
+                                SqlCommand sqlcom = new SqlCommand($"insert into t_writ values ('{Data.UID}', '入党申请书', '{Data.UID + "02" + userAddReports.numberAddZero(j)}','{currentTime}', NULL, '待审批', @ImageList)", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
                                 sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
                                 sqlcom.Parameters["ImageList"].Value = imageStream;
                                 sqlcom.ExecuteNonQuery();
@@ -159,7 +159,7 @@ namespace Party_MS2.User
                             int j = 1;
                             foreach (Byte[] imageStream in imageByteList)
                             {
-                                SqlCommand sqlcom = new SqlCommand($"insert into t_writ values ('{Data.UID}','{Data.UID + "03" + userAddReports.numberAddZero(j)}','{currentTime}', NULL,'待审批',@ImageList,'入党志愿书')", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
+                                SqlCommand sqlcom = new SqlCommand($"insert into t_writ values ('{Data.UID}','入党志愿书', '{Data.UID + "03" + userAddReports.numberAddZero(j)}','{currentTime}', NULL, '待审批', @ImageList)", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
                                 sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
                                 sqlcom.Parameters["ImageList"].Value = imageStream;
                                 sqlcom.ExecuteNonQuery();
@@ -220,7 +220,7 @@ namespace Party_MS2.User
                             int j = 1;
                             foreach (Byte[] imageStream in imageByteList)
                             {
-                                SqlCommand sqlcom = new SqlCommand($"insert into t_writ values ('{Data.UID}', '转正申请书'，'{Data.UID + "04" + userAddReports.numberAddZero(j)}','{currentTime}', NULL,'待审批',@ImageList)", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
+                                SqlCommand sqlcom = new SqlCommand($"insert into t_writ values ('{Data.UID}', '转正申请书', '{Data.UID + "04" + userAddReports.numberAddZero(j)}','{currentTime}', NULL, '待审批', @ImageList)", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
                                 sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
                                 sqlcom.Parameters["ImageList"].Value = imageStream;
                                 sqlcom.ExecuteNonQuery();
