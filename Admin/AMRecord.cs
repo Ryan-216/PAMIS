@@ -130,5 +130,10 @@ namespace Party_MS2
             Table();
             Refresh1();
         }
+
+        private void uiButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

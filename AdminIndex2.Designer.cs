@@ -55,30 +55,40 @@ namespace Party_MS2
             this.panel6 = new System.Windows.Forms.Panel();
             this.uiNavMenu1 = new Sunny.UI.UINavMenu();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uiLabel5 = new Sunny.UI.UILabel();
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
-            this.uiLabel2 = new Sunny.UI.UILabel();
-            this.uiLabel1 = new Sunny.UI.UILabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.uiFlowLayoutPanel1 = new Sunny.UI.UIFlowLayoutPanel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.uiNavMenu1);
-            this.panel1.Location = new System.Drawing.Point(1, 54);
+            this.panel1.Location = new System.Drawing.Point(1, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(258, 640);
+            this.panel1.Size = new System.Drawing.Size(258, 655);
             this.panel1.TabIndex = 0;
             // 
             // panel6
@@ -101,7 +111,7 @@ namespace Party_MS2
             this.uiNavMenu1.FullRowSelect = true;
             this.uiNavMenu1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.uiNavMenu1.ItemHeight = 50;
-            this.uiNavMenu1.Location = new System.Drawing.Point(3, 3);
+            this.uiNavMenu1.Location = new System.Drawing.Point(3, 0);
             this.uiNavMenu1.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             this.uiNavMenu1.Name = "uiNavMenu1";
             treeNode1.Name = "节点1";
@@ -146,7 +156,7 @@ namespace Party_MS2
             this.uiNavMenu1.SelectedForeColor = System.Drawing.Color.Yellow;
             this.uiNavMenu1.SelectedHighColor = System.Drawing.Color.Yellow;
             this.uiNavMenu1.ShowLines = false;
-            this.uiNavMenu1.Size = new System.Drawing.Size(252, 634);
+            this.uiNavMenu1.Size = new System.Drawing.Size(252, 640);
             this.uiNavMenu1.Style = Sunny.UI.UIStyle.Custom;
             this.uiNavMenu1.TabIndex = 5;
             this.uiNavMenu1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -155,73 +165,43 @@ namespace Party_MS2
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.uiLabel5);
             this.panel2.Controls.Add(this.uiAvatar1);
-            this.panel2.Controls.Add(this.uiLabel2);
-            this.panel2.Controls.Add(this.uiLabel1);
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.toolStrip1);
             this.panel2.Location = new System.Drawing.Point(1, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1330, 46);
+            this.panel2.Size = new System.Drawing.Size(1330, 35);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // uiLabel5
-            // 
-            this.uiLabel5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.uiLabel5.Font = new System.Drawing.Font("微软雅黑 Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel5.Location = new System.Drawing.Point(654, 8);
-            this.uiLabel5.Name = "uiLabel5";
-            this.uiLabel5.Size = new System.Drawing.Size(287, 34);
-            this.uiLabel5.TabIndex = 2;
-            this.uiLabel5.Text = "时间";
-            this.uiLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
             // uiAvatar1
             // 
-            this.uiAvatar1.AvatarSize = 40;
+            this.uiAvatar1.AvatarSize = 35;
             this.uiAvatar1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiAvatar1.Enabled = false;
             this.uiAvatar1.FillColor = System.Drawing.Color.Red;
             this.uiAvatar1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiAvatar1.ForeColor = System.Drawing.Color.Yellow;
-            this.uiAvatar1.Location = new System.Drawing.Point(992, -3);
+            this.uiAvatar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.uiAvatar1.Location = new System.Drawing.Point(1192, 0);
             this.uiAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar1.Name = "uiAvatar1";
-            this.uiAvatar1.Size = new System.Drawing.Size(51, 45);
+            this.uiAvatar1.Size = new System.Drawing.Size(43, 39);
             this.uiAvatar1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiAvatar1.SymbolSize = 40;
+            this.uiAvatar1.SymbolSize = 30;
             this.uiAvatar1.TabIndex = 0;
             this.uiAvatar1.Text = "uiAvatar1";
             this.uiAvatar1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiAvatar1.Click += new System.EventHandler(this.uiAvatar1_Click);
             // 
-            // uiLabel2
+            // pictureBox1
             // 
-            this.uiLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(1059, 6);
-            this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(100, 34);
-            this.uiLabel2.TabIndex = 0;
-            this.uiLabel2.Text = "用户名";
-            this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiLabel1
-            // 
-            this.uiLabel1.BackColor = System.Drawing.Color.Red;
-            this.uiLabel1.Font = new System.Drawing.Font("黑体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.ForeColor = System.Drawing.Color.Yellow;
-            this.uiLabel1.Location = new System.Drawing.Point(100, 7);
-            this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(369, 35);
-            this.uiLabel1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiLabel1.TabIndex = 0;
-            this.uiLabel1.Text = "吉林大学党务管理信息系统";
-            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.pictureBox1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
+            this.pictureBox1.Location = new System.Drawing.Point(52, 316);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // uiLabel3
             // 
@@ -255,36 +235,117 @@ namespace Party_MS2
             // 
             this.panel3.BackgroundImage = global::Party_MS2.Properties.Resources.微信图片_20220906155730;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(265, 54);
+            this.panel3.Location = new System.Drawing.Point(265, 42);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1060, 640);
+            this.panel3.Size = new System.Drawing.Size(1060, 652);
             this.panel3.TabIndex = 2;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(77, 272);
+            this.panel5.Controls.Add(this.uiFlowLayoutPanel1);
+            this.panel5.Location = new System.Drawing.Point(97, 346);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(375, 365);
+            this.panel5.Size = new System.Drawing.Size(382, 291);
             this.panel5.TabIndex = 1;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(568, 272);
+            this.panel4.Location = new System.Drawing.Point(591, 346);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(416, 359);
+            this.panel4.Size = new System.Drawing.Size(388, 285);
             this.panel4.TabIndex = 0;
             // 
-            // pictureBox1
+            // toolStrip1
             // 
-            this.pictureBox1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
-            this.pictureBox1.Location = new System.Drawing.Point(35, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripLabel1,
+            this.toolStripSeparator1,
+            this.toolStripLabel2,
+            this.toolStripSeparator2,
+            this.toolStripLabel3,
+            this.toolStripTextBox1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.toolStrip1.Size = new System.Drawing.Size(1330, 34);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 31);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.BackColor = System.Drawing.Color.Red;
+            this.toolStripLabel1.Font = new System.Drawing.Font("黑体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripLabel1.ForeColor = System.Drawing.Color.Yellow;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(385, 31);
+            this.toolStripLabel1.Text = "吉林大学党务管理信息系统";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 34);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(39, 31);
+            this.toolStripLabel2.Text = "时间";
+            // 
+            // toolStripLabel3
+            // 
+            this.toolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel3.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(86, 31);
+            this.toolStripLabel3.Text = "用户名";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 34);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 34);
+            // 
+            // uiFlowLayoutPanel1
+            // 
+            this.uiFlowLayoutPanel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiFlowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.uiFlowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiFlowLayoutPanel1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiFlowLayoutPanel1.Name = "uiFlowLayoutPanel1";
+            this.uiFlowLayoutPanel1.Padding = new System.Windows.Forms.Padding(2);
+            this.uiFlowLayoutPanel1.ShowText = false;
+            this.uiFlowLayoutPanel1.Size = new System.Drawing.Size(433, 387);
+            this.uiFlowLayoutPanel1.TabIndex = 0;
+            this.uiFlowLayoutPanel1.Text = "uiFlowLayoutPanel1";
+            this.uiFlowLayoutPanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.uiFlowLayoutPanel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(591, 5);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(388, 315);
+            this.panel7.TabIndex = 2;
             // 
             // AdminIndex2
             // 
@@ -302,8 +363,12 @@ namespace Party_MS2
             this.Load += new System.EventHandler(this.AdminIndex2_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -316,14 +381,21 @@ namespace Party_MS2
         private Sunny.UI.UINavMenu uiNavMenu1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Sunny.UI.UIAvatar uiAvatar1;
-        private Sunny.UI.UILabel uiLabel1;
-        private Sunny.UI.UILabel uiLabel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private Sunny.UI.UILabel uiLabel3;
         private Sunny.UI.UILabel uiLabel4;
         private System.Windows.Forms.Timer timer1;
-        private Sunny.UI.UILabel uiLabel5;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.Panel panel7;
+        private Sunny.UI.UIFlowLayoutPanel uiFlowLayoutPanel1;
     }
 }

@@ -17,7 +17,7 @@ namespace Party_MS2
             InitializeComponent();
             preload();
             //
-            uiLabel2.Text = $"{Data.UID}";
+            toolStripLabel3.Text = $"{Data.UID}";
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -29,7 +29,7 @@ namespace Party_MS2
             admin.FormBorderStyle = FormBorderStyle.None;
             admin.Dock = DockStyle.Fill;
             this.panel5.Controls.Clear();
-            this.panel5.Controls.Add(admin);           
+            this.panel5.Controls.Add(admin);
             admin.Show();
             //
             News admin1 = new News();
@@ -63,7 +63,7 @@ namespace Party_MS2
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            uiLabel5.Text = DateTime.Now.ToString() + " " + weekstr;
+            toolStripLabel2.Text = DateTime.Now.ToString() + " " + weekstr;
         }
 
 
@@ -171,5 +171,7 @@ namespace Party_MS2
         {
 
         }
+
+
     }
 }
