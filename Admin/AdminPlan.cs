@@ -21,7 +21,7 @@ namespace Party_MS2
 
         public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "select * from t_plan";
             IDataReader dc = dao.read(sql);
@@ -36,14 +36,14 @@ namespace Party_MS2
                 pass = dc[5].ToString();
 
                 string[] table = { no, stu_id, name, test1, test2, pass };
-                dataGridView1.Rows.Add(table);
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
         public void TableSearch()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "";
             if (radioButton1.Checked == true)
@@ -66,7 +66,7 @@ namespace Party_MS2
                 pass = dc[5].ToString();
 
                 string[] table = { no, stu_id, name, test1, test2, pass };
-                dataGridView1.Rows.Add(table);
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
@@ -86,6 +86,11 @@ namespace Party_MS2
         {
             Table();
             textBox1.Text = "";
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
