@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sunny.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,9 @@ namespace Party_MS2
         public test()
         {
             InitializeComponent();
+            UILineOption option = new UILineOption();
+            option.Title = new UITitle();
+            option.Title.Text = "LineChartTitle";
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -81,6 +85,11 @@ namespace Party_MS2
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void uiLineChart1_Click(object sender, EventArgs e)
         {
 
         }
