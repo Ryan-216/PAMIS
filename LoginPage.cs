@@ -80,9 +80,9 @@ namespace Party_MS2
                     {
                         Data.UID = dc["id"].ToString();
                         MessageBox.Show("登录成功！");
-                        AdminIndex2 admin = new AdminIndex2();
+                        //AdminIndex2 admin = new AdminIndex2();
                         this.Hide();
-                        admin.ShowDialog();
+                        //admin.ShowDialog();
                         this.Show();
                     }
                     else
