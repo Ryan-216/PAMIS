@@ -36,7 +36,7 @@ namespace Party_MS2.User
             #endregion
             this.axWindowsMediaPlayer1.URL = @"vid\aaa.mp4";
             Player_Media_end();
-            //String filename = @"..\..\vid\aaa.mp4";
+            //String filename = @"..\..\aaa.mp4";
             //Process.Start(filename);
         }
         private void Player_MediaError(object sender, _WMPOCXEvents_MediaErrorEvent e)

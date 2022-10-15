@@ -112,7 +112,7 @@
             this.toolStripMenuItem1,
             this.学习ToolStripMenuItem});
             this.思政教育ToolStripMenuItem.Name = "思政教育ToolStripMenuItem";
-            this.思政教育ToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.思政教育ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.思政教育ToolStripMenuItem.Text = "思政教育";
             // 
             // toolStripMenuItem1
@@ -132,8 +132,9 @@
             // 创建函调信ToolStripMenuItem
             // 
             this.创建函调信ToolStripMenuItem.Name = "创建函调信ToolStripMenuItem";
-            this.创建函调信ToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
+            this.创建函调信ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.创建函调信ToolStripMenuItem.Text = "创建函调信";
+            this.创建函调信ToolStripMenuItem.Click += new System.EventHandler(this.创建函调信ToolStripMenuItem_Click);
             // 
             // 会议管理ToolStripMenuItem
             // 

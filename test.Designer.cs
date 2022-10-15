@@ -35,6 +35,7 @@ namespace Party_MS2
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uiLineChart1 = new Sunny.UI.UILineChart();
             this.basicDataGridView = new Sunny.UI.UIDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +71,7 @@ namespace Party_MS2
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.uiLineChart1);
             this.panel2.Controls.Add(this.basicDataGridView);
             this.panel2.Controls.Add(this.uiTextBox1);
             this.panel2.Controls.Add(this.uiRadioButton3);
@@ -84,6 +86,19 @@ namespace Party_MS2
             this.panel2.Size = new System.Drawing.Size(988, 607);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // uiLineChart1
+            // 
+            this.uiLineChart1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLineChart1.LegendFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLineChart1.Location = new System.Drawing.Point(53, 261);
+            this.uiLineChart1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLineChart1.Name = "uiLineChart1";
+            this.uiLineChart1.Size = new System.Drawing.Size(400, 300);
+            this.uiLineChart1.SubFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLineChart1.TabIndex = 28;
+            this.uiLineChart1.Text = "uiLineChart1";
+            this.uiLineChart1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // basicDataGridView
             // 
@@ -430,28 +445,28 @@ namespace Party_MS2
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem5});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(43, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(40, 24);
             this.toolStripMenuItem1.Text = "111";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(128, 26);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(124, 26);
             this.toolStripMenuItem5.Text = "2121";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(43, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(40, 24);
             this.toolStripMenuItem2.Text = "222";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(43, 24);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(40, 24);
             this.toolStripMenuItem3.Text = "333";
             // 
             // panel1
@@ -472,7 +487,7 @@ namespace Party_MS2
             this.toolStripMenuItem3});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(56, 520);
+            this.menuStrip1.Size = new System.Drawing.Size(53, 520);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -486,7 +501,7 @@ namespace Party_MS2
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.miniToolStrip;
             this.Name = "test";
-            this.Text = "Form1";
+            this.Text = "1";
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.basicDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -526,5 +541,6 @@ namespace Party_MS2
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private Sunny.UI.UILineChart uiLineChart1;
     }
 }

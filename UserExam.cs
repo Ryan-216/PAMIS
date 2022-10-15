@@ -41,6 +41,11 @@ namespace Party_MS2
                 uiRadioButton6.Text = "B." + sArray[7];
                 uiRadioButton7.Text = "C." + sArray[8];
                 uiRadioButton8.Text = "D." + sArray[9];
+                uiLabel2.Text = "3." + sArray[10];
+                uiRadioButton9.Text = "A." + sArray[11];
+                uiRadioButton10.Text = "B." + sArray[12];
+                uiRadioButton11.Text = "C." + sArray[13];
+                uiRadioButton12.Text = "D." + sArray[14];
 
             }
 
@@ -79,6 +84,22 @@ namespace Party_MS2
                 answer += "C*";
             }
             if (uiRadioButton8.Checked)
+            {
+                answer += "D*";
+            }
+            if(uiRadioButton9.Checked)
+            {
+                answer += "A*";
+            }
+            if(uiRadioButton10.Checked)
+            {
+                answer += "B*";
+            }
+            if (uiRadioButton11.Checked)
+            {
+                answer += "C*";
+            }
+            if (uiRadioButton12.Checked)
             {
                 answer += "D*";
             }

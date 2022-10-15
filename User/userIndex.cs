@@ -97,5 +97,13 @@ namespace Party_MS2
         {
 
         }
+
+        private void 创建函调信ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserCreateLetter userCreateLetter = new UserCreateLetter();
+            this.Hide();
+            userCreateLetter.ShowDialog();
+            this.Show();
+        }
     }
 }

@@ -25,9 +25,7 @@ namespace Party_MS2.User
         {
             dataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select t_education.no, t_education.name, t_education.hours, t_education.contents, " +
-                "t_education.status, t_education.s_time, t_education.e_time, t_stueduscore.clear, e_stueduscore.score from t_education, t_stueduscore " +
-                "where t_education.no=t_stueduscore.no and t_education.id="+Data.UID;
+            string sql = "select no, name, hours, status, s_time, e_time, clear, score from t_education where stu_id="+Data.UID;
             IDataReader dc = dao.read(sql);
             string education_no, education_name, education_hours, education_contents, education_status, education_stime, education_etime, education_clear;
             while (dc.Read())
@@ -50,8 +48,8 @@ namespace Party_MS2.User
         private void button1_Click(object sender, EventArgs e)
         {
             Data.LearningNO = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            UserLearning userLearning = new UserLearning();
-            userLearning.Show();
+            media media = new media();
+            media.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
