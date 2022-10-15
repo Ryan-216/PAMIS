@@ -97,11 +97,11 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminIndex2.cs">
+    <Compile Include="AdminIndex2_bak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminIndex2.Designer.cs">
-      <DependentUpon>AdminIndex2.cs</DependentUpon>
+    <Compile Include="AdminIndex2_bak.Designer.cs">
+      <DependentUpon>AdminIndex2_bak.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\AdminMeeting.cs">
       <SubType>Form</SubType>
@@ -376,8 +376,8 @@
     <Compile Include="User\UserIndex.Designer.cs">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminIndex2.resx">
-      <DependentUpon>AdminIndex2.cs</DependentUpon>
+    <EmbeddedResource Include="AdminIndex2_bak.resx">
+      <DependentUpon>AdminIndex2_bak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminMeeting.resx">
       <DependentUpon>AdminMeeting.cs</DependentUpon>
