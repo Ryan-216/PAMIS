@@ -163,7 +163,7 @@ namespace Party_MS2
             }
             else if (node.Text == "考试统计")
             {
-                AdminExamScoreChart admin = new AdminExamScoreChart("E03");                  //static!!!!!!!!!!!!
+                AdminExamTotal admin = new AdminExamTotal();                
                 admin.TopLevel = false;
                 admin.FormBorderStyle = FormBorderStyle.None;
                 admin.Dock = DockStyle.Fill;
