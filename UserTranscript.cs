@@ -39,6 +39,7 @@ namespace Party_MS2
         private void Check()
         {
             string type = "";
+            string sql = "";
             if (uiRadioButton3.Checked == true)
             {
                 type = "学业成绩";
@@ -51,12 +52,17 @@ namespace Party_MS2
             {
                 type = "发展对象培训成绩";
             }
-            if(type == "")
+            
+            Dao dao = new Dao();
+            if (type != null)
+            {
+                string sql = $"insert into t_asktocheck values('{Data.UID}','type','未审核')";
+            }
+            else
             {
                 MessageBox.Show("请选择申诉类型！");
             }
-            Dao dao = new Dao();
-            string sql = $"insert into t_asktocheck values('{Data.UID}','type','未审核')";
+           
             int n = dao.Execute(sql);
             if (n>0)
             {
