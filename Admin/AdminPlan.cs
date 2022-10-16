@@ -134,13 +134,13 @@ namespace Party_MS2
             else if (uiRadioButton3.Checked == true)
             {
                 sql_conditions = " and status='发展对象' and count_reports >= 6 + (cul_time/4) and failed='否' and score2> = 60 and application2='通过'";
-                update_status = "预备党员";
+                update_status = "中共预备党员";
                 update_time = "member_time";
             }
             else if (uiRadioButton4.Checked == true)
             {
-                sql_conditions = " and status='预备党员' and cul_time >= 12 and count_reports >= (count_reports_last + 4) and failed='否' and befull='通过'";
-                update_status = "正式党员";
+                sql_conditions = " and status='中共预备党员' and cul_time >= 12 and count_reports >= (count_reports_last + 4) and failed='否' and befull='通过'";
+                update_status = "中共党员";
                 update_time = "fullmember_time";
             }
 
@@ -154,8 +154,8 @@ namespace Party_MS2
 
             string sql_update = $"update t_user set status='{update_status}' where stu_id in ({sql_basic})";
             string sql_time=$"update t_timerecord set {update_time}=CONVERT(varchar(100), GETDATE(), 23),final_time= CONVERT(varchar(100), GETDATE(), 23) where stu_id in ({sql_basic})";
+            string sql_reports_last=$"update t_writsum set count_reports_last=count_reports where stu_id in ({sql_basic})";
 
-            
             if (uiTextBox1.Text != "")
             {
                 string sql_exclude = " and stu_id not in " + $"({uiTextBox1.Text})";
@@ -165,6 +165,7 @@ namespace Party_MS2
             Dao dao = new Dao();
             int n = dao.Execute(sql_update);
             int m = dao.Execute(sql_time);
+            int p = dao.Execute(sql_reports_last);
             if (m > 0 && n > 0)
             {
                 MessageBox.Show($"{n}名学生的身份已改为“{update_status}”");
