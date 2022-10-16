@@ -30,56 +30,53 @@ namespace Party_MS2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("申请人基本信息管理");
-            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("成绩审查");
-            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("思想汇报管理");
-            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("基本资料管理", new System.Windows.Forms.TreeNode[] {
-            treeNode53,
-            treeNode54,
-            treeNode55});
-            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("发展计划管理");
-            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("思政教育管理");
-            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("函调管理");
-            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("计划、培训及函调管理", new System.Windows.Forms.TreeNode[] {
-            treeNode57,
-            treeNode58,
-            treeNode59});
-            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("会议管理");
-            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("文书管理");
-            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("联系管理员");
-            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("退出");
-            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
-            treeNode63,
-            treeNode64});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("申请人基本信息管理");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("成绩审查");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("思想汇报管理");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("基本资料管理", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("发展计划管理");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("思政教育管理");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("函调管理");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("计划、培训及函调管理", new System.Windows.Forms.TreeNode[] {
+            treeNode5,
+            treeNode6,
+            treeNode7});
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("会议管理");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("文书管理");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("联系管理员");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("退出");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
+            treeNode11,
+            treeNode12});
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.uiNavMenu1 = new Sunny.UI.UINavMenu();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.uiLabel4 = new Sunny.UI.UILabel();
+            this.uiLabel3 = new Sunny.UI.UILabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.uiLabel3 = new Sunny.UI.UILabel();
-            this.uiLabel4 = new Sunny.UI.UILabel();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.uiLabel1 = new Sunny.UI.UILabel();
-            this.uiLabel2 = new Sunny.UI.UILabel();
-            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,14 +88,15 @@ namespace Party_MS2
             this.panel1.Size = new System.Drawing.Size(347, 743);
             this.panel1.TabIndex = 0;
             // 
-            // panel6
+            // pictureBox1
             // 
-            this.panel6.Controls.Add(this.uiLabel4);
-            this.panel6.Controls.Add(this.uiLabel3);
-            this.panel6.Location = new System.Drawing.Point(51, 787);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1322, 34);
-            this.panel6.TabIndex = 3;
+            this.pictureBox1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 558);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // uiNavMenu1
             // 
@@ -116,38 +114,38 @@ namespace Party_MS2
             this.uiNavMenu1.Location = new System.Drawing.Point(3, 0);
             this.uiNavMenu1.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             this.uiNavMenu1.Name = "uiNavMenu1";
-            treeNode53.Name = "节点1";
-            treeNode53.Text = "申请人基本信息管理";
-            treeNode54.Name = "节点2";
-            treeNode54.Text = "成绩审查";
-            treeNode55.Name = "节点4";
-            treeNode55.Text = "思想汇报管理";
-            treeNode56.Name = "基本资料管理";
-            treeNode56.Text = "基本资料管理";
-            treeNode57.Name = "节点9";
-            treeNode57.Text = "发展计划管理";
-            treeNode58.Name = "节点10";
-            treeNode58.Text = "思政教育管理";
-            treeNode59.Name = "节点11";
-            treeNode59.Text = "函调管理";
-            treeNode60.Name = "节点5";
-            treeNode60.Text = "计划、培训及函调管理";
-            treeNode61.Name = "节点6";
-            treeNode61.Text = "会议管理";
-            treeNode62.Name = "节点7";
-            treeNode62.Text = "文书管理";
-            treeNode63.Name = "节点13";
-            treeNode63.Text = "联系管理员";
-            treeNode64.Name = "节点14";
-            treeNode64.Text = "退出";
-            treeNode65.Name = "节点8";
-            treeNode65.Text = "系统";
+            treeNode1.Name = "节点1";
+            treeNode1.Text = "申请人基本信息管理";
+            treeNode2.Name = "节点2";
+            treeNode2.Text = "成绩审查";
+            treeNode3.Name = "节点4";
+            treeNode3.Text = "思想汇报管理";
+            treeNode4.Name = "基本资料管理";
+            treeNode4.Text = "基本资料管理";
+            treeNode5.Name = "节点9";
+            treeNode5.Text = "发展计划管理";
+            treeNode6.Name = "节点10";
+            treeNode6.Text = "思政教育管理";
+            treeNode7.Name = "节点11";
+            treeNode7.Text = "函调管理";
+            treeNode8.Name = "节点5";
+            treeNode8.Text = "计划、培训及函调管理";
+            treeNode9.Name = "节点6";
+            treeNode9.Text = "会议管理";
+            treeNode10.Name = "节点7";
+            treeNode10.Text = "文书管理";
+            treeNode11.Name = "节点13";
+            treeNode11.Text = "联系管理员";
+            treeNode12.Name = "节点14";
+            treeNode12.Text = "退出";
+            treeNode13.Name = "节点8";
+            treeNode13.Text = "系统";
             this.uiNavMenu1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode56,
-            treeNode60,
-            treeNode61,
-            treeNode62,
-            treeNode65});
+            treeNode4,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode13});
             this.uiNavMenu1.ScrollBarColor = System.Drawing.Color.Tomato;
             this.uiNavMenu1.ScrollBarHoverColor = System.Drawing.Color.Tomato;
             this.uiNavMenu1.ScrollBarPressColor = System.Drawing.Color.Maroon;
@@ -164,6 +162,39 @@ namespace Party_MS2
             this.uiNavMenu1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiNavMenu1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiNavMenu1.MenuItemClick += new Sunny.UI.UINavMenu.OnMenuItemClick(this.uiNavMenu1_MenuItemClick);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.uiLabel4);
+            this.panel6.Controls.Add(this.uiLabel3);
+            this.panel6.Location = new System.Drawing.Point(51, 787);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1322, 34);
+            this.panel6.TabIndex = 3;
+            // 
+            // uiLabel4
+            // 
+            this.uiLabel4.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel4.Location = new System.Drawing.Point(820, 0);
+            this.uiLabel4.Name = "uiLabel4";
+            this.uiLabel4.Size = new System.Drawing.Size(606, 34);
+            this.uiLabel4.TabIndex = 4;
+            this.uiLabel4.Text = "地址：中国吉林长春 联系电话：85168315 邮箱：nicxxb@jlu.edu.cn";
+            this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiLabel3
+            // 
+            this.uiLabel3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel3.Location = new System.Drawing.Point(24, 0);
+            this.uiLabel3.Name = "uiLabel3";
+            this.uiLabel3.Size = new System.Drawing.Size(671, 34);
+            this.uiLabel3.TabIndex = 3;
+            this.uiLabel3.Text = "吉林大学 版权所有 Copyright © 2022 Jilin University，All Rights Reserved";
+            this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // panel2
             // 
@@ -215,19 +246,28 @@ namespace Party_MS2
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 31);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.BackColor = System.Drawing.Color.Red;
             this.toolStripLabel1.Font = new System.Drawing.Font("黑体", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.toolStripLabel1.ForeColor = System.Drawing.Color.SeaShell;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(385, 30);
+            this.toolStripLabel1.Size = new System.Drawing.Size(385, 31);
             this.toolStripLabel1.Text = "吉林大学党务管理信息系统";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 33);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 34);
             // 
             // toolStripLabel2
             // 
@@ -239,31 +279,14 @@ namespace Party_MS2
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 33);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 34);
             // 
-            // uiLabel3
+            // toolStripLabel3
             // 
-            this.uiLabel3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel3.Location = new System.Drawing.Point(24, 0);
-            this.uiLabel3.Name = "uiLabel3";
-            this.uiLabel3.Size = new System.Drawing.Size(671, 34);
-            this.uiLabel3.TabIndex = 3;
-            this.uiLabel3.Text = "吉林大学 版权所有 Copyright © 2022 Jilin University，All Rights Reserved";
-            this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiLabel4
-            // 
-            this.uiLabel4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel4.Location = new System.Drawing.Point(820, 0);
-            this.uiLabel4.Name = "uiLabel4";
-            this.uiLabel4.Size = new System.Drawing.Size(606, 34);
-            this.uiLabel4.TabIndex = 4;
-            this.uiLabel4.Text = "地址：中国吉林长春 联系电话：85168315 邮箱：nicxxb@jlu.edu.cn";
-            this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.toolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            this.toolStripLabel3.Size = new System.Drawing.Size(57, 31);
+            this.toolStripLabel3.Text = "用户名";
             // 
             // timer1
             // 
@@ -283,8 +306,6 @@ namespace Party_MS2
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.uiLabel2);
-            this.panel7.Controls.Add(this.uiLabel1);
             this.panel7.Location = new System.Drawing.Point(614, 14);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(444, 313);
@@ -304,54 +325,6 @@ namespace Party_MS2
             this.panel4.Size = new System.Drawing.Size(444, 312);
             this.panel4.TabIndex = 0;
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 30);
-            this.toolStripButton1.Text = "toolStripButton1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 558);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // uiLabel1
-            // 
-            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(96, 13);
-            this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(122, 39);
-            this.uiLabel1.TabIndex = 1;
-            this.uiLabel1.Text = "uiLabel1";
-            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiLabel2
-            // 
-            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(25, 79);
-            this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(100, 23);
-            this.uiLabel2.TabIndex = 2;
-            this.uiLabel2.Text = "uiLabel2";
-            this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // toolStripLabel3
-            // 
-            this.toolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(57, 31);
-            this.toolStripLabel3.Text = "用户名";
-            // 
             // AdminIndex2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -366,13 +339,12 @@ namespace Party_MS2
             this.Text = "AdminIndex2";
             this.Load += new System.EventHandler(this.AdminIndex2_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -398,8 +370,6 @@ namespace Party_MS2
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.Panel panel7;
-        private Sunny.UI.UILabel uiLabel2;
-        private Sunny.UI.UILabel uiLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
     }
 }
