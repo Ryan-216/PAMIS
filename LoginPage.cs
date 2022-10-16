@@ -59,7 +59,7 @@ namespace Party_MS2
 
                         MessageBox.Show("登录成功！");
 
-                        UserIndex user = new UserIndex();
+                        UserIndex2 user = new UserIndex2();
                         this.Hide();
                         user.ShowDialog();
                         this.Show();

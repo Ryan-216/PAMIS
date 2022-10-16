@@ -38,19 +38,38 @@ namespace Party_MS2.User
                 pri_party = dc[9].ToString();
                 apply_time = dc[10].ToString();
 
-                textBox1.Text = name;
-                textBox2.Text = stu_id;
-                textBox3.Text = sex;
-                textBox4.Text = ID;
-                textBox5.Text = status;
-                textBox6.Text = school_id;
-                textBox7.Text = nation;
-                textBox8.Text = origin;
-                textBox9.Text = e_mail;
-                textBox10.Text = apply_time;
-                textBox11.Text = pri_party;
+                uiTextBox1.Text = stu_id;
+                uiTextBox2.Text = name;
+                uiTextBox3.Text = sex;
+                uiTextBox4.Text = ID;
+                uiTextBox5.Text = status;
+                uiTextBox6.Text = school_id;
+                uiTextBox7.Text = nation;
+                uiTextBox8.Text = origin;
+                uiTextBox9.Text = e_mail;
+                uiTextBox10.Text = pri_party;
+                uiTextBox11.Text = apply_time;
             }
 
+        }
+        public void Update()
+        {
+            try
+            {
+                string sql = $"update t_user set stu_id = '{uiTextBox1.Text}', name = '{uiTextBox2.Text}', sex = '{uiTextBox3.Text}', ID = '{uiTextBox4.Text}', status = '{uiTextBox5.Text}', school_id = '{uiTextBox6.Text}', nation = '{uiTextBox7.Text}', origin = '{uiTextBox8.Text}', e_mail = '{uiTextBox9.Text}', pri_party= '{uiTextBox10.Text}', apply_time = '{uiTextBox11.Text}'where stu_id = '{Data.UID}'";
+                Dao dao = new Dao();
+                if (dao.Execute(sql) > 0)
+                {
+                    MessageBox.Show("修改成功！");
+                    this.Close();
+                    UserIndex userindex = new UserIndex();
+                    userindex.Show();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error!");
+            }
         }
         private void button2_Click(object sender, EventArgs e)  //返回
         {
@@ -76,22 +95,7 @@ namespace Party_MS2.User
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try 
-            {
-                string sql = $"update t_user set stu_id = '{textBox2.Text}', name = '{textBox1.Text}', sex = '{textBox3.Text}', ID = '{textBox4.Text}', status = '{textBox5.Text}', school_id = '{textBox6.Text}', nation = '{textBox7.Text}', origin = '{textBox8.Text}', e_mail = '{textBox9.Text}', pri_party= '{textBox11.Text}', apply_time = '{textBox10.Text}'where stu_id = '{Data.UID}'";
-                Dao dao = new Dao();
-                if (dao.Execute(sql) > 0)
-                {
-                    MessageBox.Show("修改成功！");
-                    this.Close();
-                    UserIndex userindex = new UserIndex();
-                    userindex.Show();
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Error!");
-            }
+            
 
 
         }
@@ -104,6 +108,21 @@ namespace Party_MS2.User
         private void UserBasicInformation_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void uiTextBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            Update();
         }
     }
 }

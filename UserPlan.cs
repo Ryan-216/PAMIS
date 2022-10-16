@@ -28,7 +28,7 @@ namespace Party_MS2
                         + " and t_user.stu_id = t_score.stu_id"
                         + " and t_user.stu_id = t_edufinalscore.stu_id"
                         + " and t_user.stu_id = t_writsum.stu_id"
-                        + $" and t_user.stu_id = '34191035'";
+                        + $" and t_user.stu_id = '{Data.UID}'";
             IDataReader dc = dao.read(sql);
             string stu_id = "", name = "", status = "", cul_time = "", count_reports = "", failed = "", score1 = "", score2 = "", application1 = "", application2 = "", befull = "", count_reports_last = "";
             while (dc.Read())
