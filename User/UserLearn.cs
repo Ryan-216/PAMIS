@@ -47,8 +47,8 @@ namespace Party_MS2.User
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Data.LearningNO = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            media media = new media();
+            string LearnNO = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            media media = new media(LearnNO);
             media.Show();
         }
 

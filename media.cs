@@ -14,15 +14,17 @@ namespace Party_MS2
 {
     public partial class media : Form
     {
-        public media()
+        string learnno;
+        public media(string LearnNO)
         {
             InitializeComponent();
+            learnno = LearnNO;
             if (vlcControl1.Video != null)
             {
                 vlcControl1.Video.IsMouseInputEnabled = false;
                 vlcControl1.Video.IsKeyInputEnabled = false;
             }
-            videoPlay();
+            videoPlay(LearnNO);
         }
 
         private void vlcControl1_Click(object sender, EventArgs e)
@@ -30,9 +32,9 @@ namespace Party_MS2
             vlcControl1.Pause();
         }
 
-        private void videoPlay()
+        private void videoPlay(string LearnNO)
         {
-            vlcControl1.Play(new FileInfo("..\\..\\aaa.mp4"));
+            vlcControl1.Play(new FileInfo("..\\..\\vid\\"+ LearnNO +"aaa.mp4"));
         }
 
         private void vlcControl1_VlcLibDirectoryNeeded(object sender, Vlc.DotNet.Forms.VlcLibDirectoryNeededEventArgs e)
@@ -59,7 +61,7 @@ namespace Party_MS2
 
         private void vlcControl1_EndReached(object sender, Vlc.DotNet.Core.VlcMediaPlayerEndReachedEventArgs e)
         {
-            string sql = "update ";
+            string sql = "update t_education set clear = '已完成' where stu_id=\'" + Data.UID + "\' and no=\'" + learnno + "\'";
             MessageBox.Show("本课程已完成");
         }
 
