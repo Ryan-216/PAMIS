@@ -117,28 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="uiStyleManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>82</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//
-        AAD///8A/w8P8P8PDwAPD/Dw//////D/D///Dw8P/w///w/////w/wD//wD/AP8A//8P////8P8PD/8P
-        Dw//Dw//D/////8PAP//AP8ADwD/8P///////////////////////////wAPDw8ADw//Dw8P//////8P
-        /w8P8P8P8A8PD///////D/8AD/D/Dw8PAA///////w//Dw/w/wD/Dw8P//////8ADw8PAA8P/w/w////
-        ////////////////////////AAAAAAAAAAAAAAAAAAAAAAmZmZmZmZmZmZmZmZmZmZAJmZmZmZmZmZmZ
-        mZmZmZmQCZmZmZmZmZmZmZmZmZmZkAmZmZmZmZmZmZmZmZmZmZAJmZmZmZmZmZmZmZmZmZmQCZmZmZmZ
-        mZmZmZmZmZmZkAmZmZmZmZmZmZmZmZmZmZAJmZmZmZmZmZmZmZmZmZmQCZmZmZmZmZmZmZmZmZmZkAmZ
-        mZmZmZmZmZmZmZmZmZAJmZmZmZmZmZmZmZmZmZmQCZmZmZm5mZmZmZmZmZmZkAmbmZuZmZmZmZmZmZmZ
-        mZAJmbu5mZm5mZmZmZmZmZmQCZm7uZmZmZmZmZmZmZmZkAmbm5uZmbmZmZmZmZmZmZAJmZuZmbmZmZmZ
-        mZmZmZmQCZmZmZmZmZmZmZmZmZmZkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-</value>
-  </data>
 </root>

@@ -105,5 +105,10 @@ namespace Party_MS2
             userCreateLetter.ShowDialog();
             this.Show();
         }
+
+        private void 思政教育ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -261,6 +261,12 @@
     <Compile Include="test.Designer.cs">
       <DependentUpon>test.cs</DependentUpon>
     </Compile>
+    <Compile Include="User\UserIndex2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserIndex2.Designer.cs">
+      <DependentUpon>UserIndex2.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserReports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -457,6 +463,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="test.resx">
       <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserIndex2.resx">
+      <DependentUpon>UserIndex2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserReports.resx">
       <DependentUpon>UserReports.cs</DependentUpon>
