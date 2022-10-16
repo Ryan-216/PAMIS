@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.uiLabel2 = new Sunny.UI.UILabel();
@@ -53,31 +51,8 @@
             this.uiLabel11 = new Sunny.UI.UILabel();
             this.uiTextBox11 = new Sunny.UI.UITextBox();
             this.uiButton1 = new Sunny.UI.UIButton();
+            this.uiButton2 = new Sunny.UI.UIButton();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(395, 532);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "修改";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(570, 532);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 42);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "返回";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // uiTextBox1
             // 
@@ -95,10 +70,11 @@
             this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox1.Name = "uiTextBox1";
+            this.uiTextBox1.ReadOnly = true;
             this.uiTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ShowText = false;
-            this.uiTextBox1.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox1.Size = new System.Drawing.Size(171, 29);
             this.uiTextBox1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox1.TabIndex = 27;
             this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,9 +84,9 @@
             // uiLabel1
             // 
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(172, 26);
+            this.uiLabel1.Location = new System.Drawing.Point(147, 26);
             this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(53, 33);
+            this.uiLabel1.Size = new System.Drawing.Size(78, 33);
             this.uiLabel1.TabIndex = 28;
             this.uiLabel1.Text = "学号";
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -119,9 +95,9 @@
             // uiLabel2
             // 
             this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(172, 87);
+            this.uiLabel2.Location = new System.Drawing.Point(147, 87);
             this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(53, 33);
+            this.uiLabel2.Size = new System.Drawing.Size(78, 33);
             this.uiLabel2.TabIndex = 30;
             this.uiLabel2.Text = "姓名";
             this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -143,10 +119,11 @@
             this.uiTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox2.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox2.Name = "uiTextBox2";
+            this.uiTextBox2.ReadOnly = true;
             this.uiTextBox2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox2.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox2.ShowText = false;
-            this.uiTextBox2.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox2.Size = new System.Drawing.Size(171, 29);
             this.uiTextBox2.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox2.TabIndex = 29;
             this.uiTextBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -156,9 +133,9 @@
             // uiLabel3
             // 
             this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel3.Location = new System.Drawing.Point(172, 149);
+            this.uiLabel3.Location = new System.Drawing.Point(147, 149);
             this.uiLabel3.Name = "uiLabel3";
-            this.uiLabel3.Size = new System.Drawing.Size(53, 33);
+            this.uiLabel3.Size = new System.Drawing.Size(78, 33);
             this.uiLabel3.TabIndex = 32;
             this.uiLabel3.Text = "性别";
             this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -180,10 +157,11 @@
             this.uiTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox3.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox3.Name = "uiTextBox3";
+            this.uiTextBox3.ReadOnly = true;
             this.uiTextBox3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox3.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox3.ShowText = false;
-            this.uiTextBox3.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox3.Size = new System.Drawing.Size(171, 29);
             this.uiTextBox3.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox3.TabIndex = 31;
             this.uiTextBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,9 +171,9 @@
             // uiLabel4
             // 
             this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel4.Location = new System.Drawing.Point(172, 214);
+            this.uiLabel4.Location = new System.Drawing.Point(113, 214);
             this.uiLabel4.Name = "uiLabel4";
-            this.uiLabel4.Size = new System.Drawing.Size(53, 33);
+            this.uiLabel4.Size = new System.Drawing.Size(112, 33);
             this.uiLabel4.TabIndex = 34;
             this.uiLabel4.Text = "身份证号";
             this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -217,10 +195,11 @@
             this.uiTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox4.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox4.Name = "uiTextBox4";
+            this.uiTextBox4.ReadOnly = true;
             this.uiTextBox4.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox4.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox4.ShowText = false;
-            this.uiTextBox4.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox4.Size = new System.Drawing.Size(171, 29);
             this.uiTextBox4.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox4.TabIndex = 33;
             this.uiTextBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -230,11 +209,11 @@
             // uiLabel5
             // 
             this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel5.Location = new System.Drawing.Point(172, 275);
+            this.uiLabel5.Location = new System.Drawing.Point(112, 275);
             this.uiLabel5.Name = "uiLabel5";
-            this.uiLabel5.Size = new System.Drawing.Size(53, 33);
+            this.uiLabel5.Size = new System.Drawing.Size(113, 33);
             this.uiLabel5.TabIndex = 36;
-            this.uiLabel5.Text = "入党身份";
+            this.uiLabel5.Text = "入党状态";
             this.uiLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
@@ -254,10 +233,11 @@
             this.uiTextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox5.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox5.Name = "uiTextBox5";
+            this.uiTextBox5.ReadOnly = true;
             this.uiTextBox5.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox5.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox5.ShowText = false;
-            this.uiTextBox5.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox5.Size = new System.Drawing.Size(171, 29);
             this.uiTextBox5.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox5.TabIndex = 35;
             this.uiTextBox5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -267,9 +247,9 @@
             // uiLabel6
             // 
             this.uiLabel6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel6.Location = new System.Drawing.Point(142, 334);
+            this.uiLabel6.Location = new System.Drawing.Point(129, 334);
             this.uiLabel6.Name = "uiLabel6";
-            this.uiLabel6.Size = new System.Drawing.Size(83, 33);
+            this.uiLabel6.Size = new System.Drawing.Size(85, 33);
             this.uiLabel6.TabIndex = 38;
             this.uiLabel6.Text = "学院号";
             this.uiLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -291,10 +271,11 @@
             this.uiTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox6.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox6.Name = "uiTextBox6";
+            this.uiTextBox6.ReadOnly = true;
             this.uiTextBox6.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox6.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox6.ShowText = false;
-            this.uiTextBox6.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox6.Size = new System.Drawing.Size(171, 29);
             this.uiTextBox6.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox6.TabIndex = 37;
             this.uiTextBox6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -304,9 +285,9 @@
             // uiLabel7
             // 
             this.uiLabel7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel7.Location = new System.Drawing.Point(579, 26);
+            this.uiLabel7.Location = new System.Drawing.Point(562, 26);
             this.uiLabel7.Name = "uiLabel7";
-            this.uiLabel7.Size = new System.Drawing.Size(53, 33);
+            this.uiLabel7.Size = new System.Drawing.Size(70, 33);
             this.uiLabel7.TabIndex = 40;
             this.uiLabel7.Text = "民族";
             this.uiLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -328,6 +309,7 @@
             this.uiTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox7.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox7.Name = "uiTextBox7";
+            this.uiTextBox7.ReadOnly = true;
             this.uiTextBox7.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox7.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox7.ShowText = false;
@@ -341,9 +323,9 @@
             // uiLabel8
             // 
             this.uiLabel8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel8.Location = new System.Drawing.Point(579, 87);
+            this.uiLabel8.Location = new System.Drawing.Point(557, 87);
             this.uiLabel8.Name = "uiLabel8";
-            this.uiLabel8.Size = new System.Drawing.Size(53, 33);
+            this.uiLabel8.Size = new System.Drawing.Size(75, 33);
             this.uiLabel8.TabIndex = 42;
             this.uiLabel8.Text = "籍贯";
             this.uiLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -366,6 +348,7 @@
             this.uiTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox8.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox8.Name = "uiTextBox8";
+            this.uiTextBox8.ReadOnly = true;
             this.uiTextBox8.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox8.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox8.ShowText = false;
@@ -404,6 +387,7 @@
             this.uiTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox9.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox9.Name = "uiTextBox9";
+            this.uiTextBox9.ReadOnly = true;
             this.uiTextBox9.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox9.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox9.ShowText = false;
@@ -441,6 +425,7 @@
             this.uiTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox10.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox10.Name = "uiTextBox10";
+            this.uiTextBox10.ReadOnly = true;
             this.uiTextBox10.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox10.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox10.ShowText = false;
@@ -454,7 +439,7 @@
             // uiLabel11
             // 
             this.uiLabel11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel11.Location = new System.Drawing.Point(507, 275);
+            this.uiLabel11.Location = new System.Drawing.Point(509, 275);
             this.uiLabel11.Name = "uiLabel11";
             this.uiLabel11.Size = new System.Drawing.Size(125, 33);
             this.uiLabel11.TabIndex = 48;
@@ -478,6 +463,7 @@
             this.uiTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox11.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox11.Name = "uiTextBox11";
+            this.uiTextBox11.ReadOnly = true;
             this.uiTextBox11.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox11.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox11.ShowText = false;
@@ -498,7 +484,7 @@
             this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(369, 443);
+            this.uiButton1.Location = new System.Drawing.Point(286, 452);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
             this.uiButton1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
@@ -513,11 +499,37 @@
             this.uiButton1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
             // 
+            // uiButton2
+            // 
+            this.uiButton2.BackColor = System.Drawing.Color.Transparent;
+            this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
+            this.uiButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
+            this.uiButton2.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
+            this.uiButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
+            this.uiButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
+            this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton2.Location = new System.Drawing.Point(584, 452);
+            this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton2.Name = "uiButton2";
+            this.uiButton2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
+            this.uiButton2.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
+            this.uiButton2.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
+            this.uiButton2.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
+            this.uiButton2.Size = new System.Drawing.Size(117, 48);
+            this.uiButton2.Style = Sunny.UI.UIStyle.LayuiOrange;
+            this.uiButton2.TabIndex = 50;
+            this.uiButton2.Text = "确认修改";
+            this.uiButton2.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
+            // 
             // UserBasicInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1279, 612);
+            this.ClientSize = new System.Drawing.Size(995, 612);
+            this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiButton1);
             this.Controls.Add(this.uiLabel11);
             this.Controls.Add(this.uiTextBox11);
@@ -541,8 +553,6 @@
             this.Controls.Add(this.uiTextBox2);
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.uiTextBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserBasicInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -553,9 +563,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UILabel uiLabel2;
@@ -579,5 +586,6 @@
         private Sunny.UI.UILabel uiLabel11;
         private Sunny.UI.UITextBox uiTextBox11;
         private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIButton uiButton2;
     }
 }

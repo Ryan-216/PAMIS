@@ -52,5 +52,10 @@ namespace Party_MS2
         {
             table();
         }
+
+        private void UserTranscript_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

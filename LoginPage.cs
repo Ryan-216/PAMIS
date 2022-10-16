@@ -22,6 +22,7 @@ namespace Party_MS2
             this.BackgroundImage = Image.FromFile(picPath);
             this.BackgroundImageLayout = ImageLayout.Stretch;
             GenerateCode();
+            textBox2.Text = "123";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -133,7 +134,7 @@ namespace Party_MS2
             {
                 code += rand.Next(0, 9).ToString();
             }
-            code1 = code;
+            textBox3.Text=code1 = code;                                                 //方便测试
             /*这里将code保存下来做比对验证*/
 
             //生成验证码图片并显示到pictureBox1

@@ -175,6 +175,7 @@ namespace Party_MS2
             this.Controls.Add(this.panel1);
             this.Name = "UserIndex2";
             this.Text = "UserIndex2";
+            this.Load += new System.EventHandler(this.UserIndex2_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

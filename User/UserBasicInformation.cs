@@ -60,10 +60,7 @@ namespace Party_MS2.User
                 Dao dao = new Dao();
                 if (dao.Execute(sql) > 0)
                 {
-                    MessageBox.Show("修改成功！");
-                    this.Close();
-                    UserIndex userindex = new UserIndex();
-                    userindex.Show();
+                    MessageBox.Show("修改成功！");                   
                 }
             }
             catch
@@ -121,6 +118,14 @@ namespace Party_MS2.User
         }
 
         private void uiButton1_Click(object sender, EventArgs e)
+        {
+            uiTextBox4.ReadOnly = false;
+            uiTextBox7.ReadOnly = false;
+            uiTextBox8.ReadOnly = false;
+            uiTextBox9.ReadOnly = false;
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
         {
             Update();
         }

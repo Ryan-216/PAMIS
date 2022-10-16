@@ -111,5 +111,10 @@ namespace Party_MS2
                 admin.Show();
             }
         }
+
+        private void UserIndex2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
