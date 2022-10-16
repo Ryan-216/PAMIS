@@ -107,17 +107,18 @@ namespace Party_MS2
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(444, 375);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 45);
             this.button1.TabIndex = 27;
             this.button1.Text = "审核文书";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button4.Location = new System.Drawing.Point(707, 482);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(95, 31);
@@ -129,10 +130,10 @@ namespace Party_MS2
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("楷体_GB2312", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton2.Location = new System.Drawing.Point(587, 442);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(124, 19);
+            this.radioButton2.Size = new System.Drawing.Size(119, 22);
             this.radioButton2.TabIndex = 25;
             this.radioButton2.Text = "审核结果查询";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -140,17 +141,17 @@ namespace Party_MS2
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("楷体_GB2312", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton1.Location = new System.Drawing.Point(334, 442);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(92, 19);
+            this.radioButton1.Size = new System.Drawing.Size(89, 22);
             this.radioButton1.TabIndex = 24;
             this.radioButton1.Text = "学号查询";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button5.Location = new System.Drawing.Point(587, 482);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(97, 31);
@@ -161,7 +162,7 @@ namespace Party_MS2
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("楷体_GB2312", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox1.Location = new System.Drawing.Point(204, 485);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(350, 28);

@@ -1,4 +1,5 @@
-﻿using Party_MS2.User;
+﻿using Party_MS2.Admin;
+using Party_MS2.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Party_MS2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginPage());
+            Application.Run(new AdminIndex2());
         }
     }
 }

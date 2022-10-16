@@ -85,5 +85,10 @@ namespace Party_MS2
             textBox1.Text = "";
             Table();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

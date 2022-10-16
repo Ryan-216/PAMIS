@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Party_MS2.Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -184,6 +185,15 @@ namespace Party_MS2
             AMLeavereasons admin = new AMLeavereasons();
             this.Hide();
             admin.ShowDialog();
+            this.Show();
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            string meeting_no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            AdminMeetingChart adminMeetingChart = new AdminMeetingChart(meeting_no);
+            this.Hide();
+            adminMeetingChart.ShowDialog();
             this.Show();
         }
     }

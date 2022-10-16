@@ -235,6 +235,18 @@
     <Compile Include="Admin\AdminExam.Designer.cs">
       <DependentUpon>AdminExam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminMeetingChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMeetingChart.Designer.cs">
+      <DependentUpon>AdminMeetingChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminExamScoreChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminExamScoreChart.Designer.cs">
+      <DependentUpon>AdminExamScoreChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Notification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -469,6 +481,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AMLeavereasons.resx">
       <DependentUpon>AMLeavereasons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminMeetingChart.resx">
+      <DependentUpon>AdminMeetingChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminExamScoreChart.resx">
+      <DependentUpon>AdminExamScoreChart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
