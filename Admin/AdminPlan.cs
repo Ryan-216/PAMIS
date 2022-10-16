@@ -25,7 +25,8 @@ namespace Party_MS2
         {
             basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select t_user.stu_id,t_user.[name],t_user.[status],t_timerecord.cul_time,count_reports,failed,score1,score2,application1,application2,befull"
+            string sql = "update t_timerecord set cul_time=datediff(CONVERT(varchar(100), GETDATE(), 23)"
+                        + "select t_user.stu_id,t_user.[name],t_user.[status],t_timerecord.cul_time,count_reports,failed,score1,score2,application1,application2,befull"
                         + " from t_user, t_timerecord, t_score, t_edufinalscore, t_writsum"
                         + " where t_user.stu_id = t_timerecord.stu_id"
                         + " and t_user.stu_id = t_score.stu_id"
