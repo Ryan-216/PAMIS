@@ -34,13 +34,13 @@ namespace Party_MS2
                         + " and t_user.stu_id = t_writsum.stu_id";
                         //+$" and t_user.stu_id = '{Data.UID}'";
             IDataReader dc = dao.read(sql);
-            string stu_id, name, status, final_time, count_reports, failed, score1, score2, application1, application2, befull;
+            string stu_id, name, status, cul_time, count_reports, failed, score1, score2, application1, application2, befull;
             while (dc.Read())
             {
                 stu_id = dc[0].ToString();
                 name = dc[1].ToString();
                 status = dc[2].ToString();
-                final_time = dc[3].ToString();
+                cul_time = dc[3].ToString();
                 count_reports = dc[4].ToString();
                 failed = dc[5].ToString();
                 score1 = dc[6].ToString();
@@ -49,7 +49,7 @@ namespace Party_MS2
                 application2 = dc[9].ToString();
                 befull = dc[10].ToString();
 
-                string[] table = { stu_id, name, status, final_time, count_reports, failed, score1, score2, application1, application2, befull };
+                string[] table = { stu_id, name, status, cul_time, count_reports, failed, score1, score2, application1, application2, befull };
                 basicDataGridView.Rows.Add(table);
             }
             dc.Close();
@@ -92,13 +92,13 @@ namespace Party_MS2
             string sql = sql_basic + sql_conditions;
             IDataReader dc = dao.read(sql);
 
-            string stu_id, name, status, final_time, count_reports, failed, score1, score2, application1, application2, befull;
+            string stu_id, name, status, cul_time, count_reports, failed, score1, score2, application1, application2, befull;
             while (dc.Read())
             {
                 stu_id = dc[0].ToString();
                 name = dc[1].ToString();
                 status = dc[2].ToString();
-                final_time = dc[3].ToString();
+                cul_time = dc[3].ToString();
                 count_reports = dc[4].ToString();
                 failed = dc[5].ToString();
                 score1 = dc[6].ToString();
@@ -107,7 +107,7 @@ namespace Party_MS2
                 application2 = dc[9].ToString();
                 befull = dc[10].ToString();
 
-                string[] table = { stu_id, name, status, final_time, count_reports, failed, score1, score2, application1, application2, befull };
+                string[] table = { stu_id, name, status, cul_time, count_reports, failed, score1, score2, application1, application2, befull };
                 basicDataGridView.Rows.Add(table);
             }
             dc.Close();
