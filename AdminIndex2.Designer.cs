@@ -52,11 +52,11 @@ namespace Party_MS2
             treeNode11,
             treeNode12});
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.uiNavMenu1 = new Sunny.UI.UINavMenu();
             this.panel6 = new System.Windows.Forms.Panel();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.uiLabel3 = new Sunny.UI.UILabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.uiNavMenu1 = new Sunny.UI.UINavMenu();
             this.panel2 = new System.Windows.Forms.Panel();
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -72,7 +72,6 @@ namespace Party_MS2
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -87,6 +86,37 @@ namespace Party_MS2
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(258, 655);
             this.panel1.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(51, 787);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1322, 34);
+            this.panel6.TabIndex = 3;
+            // 
+            // uiLabel4
+            // 
+            this.uiLabel4.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel4.Location = new System.Drawing.Point(705, 697);
+            this.uiLabel4.Name = "uiLabel4";
+            this.uiLabel4.Size = new System.Drawing.Size(606, 34);
+            this.uiLabel4.TabIndex = 4;
+            this.uiLabel4.Text = "地址：中国吉林长春 联系电话：85168315 邮箱：nicxxb@jlu.edu.cn";
+            this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiLabel3
+            // 
+            this.uiLabel3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel3.Location = new System.Drawing.Point(28, 697);
+            this.uiLabel3.Name = "uiLabel3";
+            this.uiLabel3.Size = new System.Drawing.Size(671, 34);
+            this.uiLabel3.TabIndex = 3;
+            this.uiLabel3.Text = "吉林大学 版权所有 Copyright © 2022 Jilin University，All Rights Reserved";
+            this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // pictureBox1
             // 
@@ -163,39 +193,6 @@ namespace Party_MS2
             this.uiNavMenu1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiNavMenu1.MenuItemClick += new Sunny.UI.UINavMenu.OnMenuItemClick(this.uiNavMenu1_MenuItemClick);
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.uiLabel4);
-            this.panel6.Controls.Add(this.uiLabel3);
-            this.panel6.Location = new System.Drawing.Point(51, 787);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1322, 34);
-            this.panel6.TabIndex = 3;
-            // 
-            // uiLabel4
-            // 
-            this.uiLabel4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel4.Location = new System.Drawing.Point(820, 0);
-            this.uiLabel4.Name = "uiLabel4";
-            this.uiLabel4.Size = new System.Drawing.Size(606, 34);
-            this.uiLabel4.TabIndex = 4;
-            this.uiLabel4.Text = "地址：中国吉林长春 联系电话：85168315 邮箱：nicxxb@jlu.edu.cn";
-            this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiLabel3
-            // 
-            this.uiLabel3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel3.Location = new System.Drawing.Point(24, 0);
-            this.uiLabel3.Name = "uiLabel3";
-            this.uiLabel3.Size = new System.Drawing.Size(671, 34);
-            this.uiLabel3.TabIndex = 3;
-            this.uiLabel3.Text = "吉林大学 版权所有 Copyright © 2022 Jilin University，All Rights Reserved";
-            this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.uiAvatar1);
@@ -226,7 +223,7 @@ namespace Party_MS2
             this.uiAvatar1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiAvatar1.Click += new System.EventHandler(this.uiAvatar1_Click);
             // 
-            // pictureBox1
+            // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
@@ -295,7 +292,6 @@ namespace Party_MS2
             // 
             this.panel3.BackgroundImage = global::Party_MS2.Properties.Resources.微信图片_20220906155730;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(265, 42);
@@ -303,16 +299,8 @@ namespace Party_MS2
             this.panel3.Size = new System.Drawing.Size(1060, 652);
             this.panel3.TabIndex = 2;
             // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(614, 14);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(444, 313);
-            this.panel7.TabIndex = 2;
-            // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.uiFlowLayoutPanel1);
             this.panel5.Location = new System.Drawing.Point(97, 346);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(382, 291);
@@ -341,12 +329,7 @@ namespace Party_MS2
             this.Load += new System.EventHandler(this.AdminIndex2_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -377,6 +360,6 @@ namespace Party_MS2
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
     }
 }
