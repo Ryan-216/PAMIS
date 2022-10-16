@@ -161,6 +161,16 @@ namespace Party_MS2
                 this.panel3.Controls.Add(admin);
                 admin.Show();
             }
+            else if (node.Text == "考试统计")
+            {
+                AdminExamScoreChart admin = new AdminExamScoreChart("E03");                  //static!!!!!!!!!!!!
+                admin.TopLevel = false;
+                admin.FormBorderStyle = FormBorderStyle.None;
+                admin.Dock = DockStyle.Fill;
+                this.panel3.Controls.Clear();
+                this.panel3.Controls.Add(admin);
+                admin.Show();
+            }
         }
 
         private void AdminIndex2_Load(object sender, EventArgs e)

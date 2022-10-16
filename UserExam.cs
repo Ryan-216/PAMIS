@@ -15,7 +15,7 @@ namespace Party_MS2
         public UserExam()
         {
             InitializeComponent();
-            setExam("E01");             //need alter
+            setExam("E03");             //need alter
         }
 
         private void setExam(string exam_no)
@@ -138,8 +138,8 @@ namespace Party_MS2
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            setAnswer("E01");               //need alter
-            int score = setScore("E01");
+            setAnswer("E03");               //need alter
+            int score = setScore("E03");
             MessageBox.Show("提交成功！ 您本次考试的得分为" + score + "分");
             this.Close();
         }
