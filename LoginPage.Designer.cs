@@ -170,6 +170,7 @@ namespace Party_MS2
             // 
             // textBox3
             // 
+            this.textBox3.AcceptsTab = true;
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(368, 326);
             this.textBox3.Name = "textBox3";

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Party_MS2.Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -143,6 +144,16 @@ namespace Party_MS2
             else if (node.Text == "文书管理")
             {
                 AdminWrit admin = new AdminWrit();
+                admin.TopLevel = false;
+                admin.FormBorderStyle = FormBorderStyle.None;
+                admin.Dock = DockStyle.Fill;
+                this.panel3.Controls.Clear();
+                this.panel3.Controls.Add(admin);
+                admin.Show();
+            }
+            else if (node.Text == "考试批改")
+            {
+                AdminExam admin = new AdminExam();
                 admin.TopLevel = false;
                 admin.FormBorderStyle = FormBorderStyle.None;
                 admin.Dock = DockStyle.Fill;

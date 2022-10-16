@@ -17,7 +17,7 @@ namespace Party_MS2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminPlan());
+            Application.Run(new AdminIndex2());
         }
     }
 }

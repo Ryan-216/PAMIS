@@ -103,6 +103,12 @@
     <Compile Include="AdminIndex2.Designer.cs">
       <DependentUpon>AdminIndex2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminCheckExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCheckExam.Designer.cs">
+      <DependentUpon>AdminCheckExam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminMeeting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,12 @@
     </Compile>
     <Compile Include="Admin\AMLeavereasons.Designer.cs">
       <DependentUpon>AMLeavereasons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminExam.Designer.cs">
+      <DependentUpon>AdminExam.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Notification.cs">
       <SubType>Form</SubType>
@@ -378,6 +390,12 @@
     </Compile>
     <EmbeddedResource Include="AdminIndex2.resx">
       <DependentUpon>AdminIndex2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminCheckExam.resx">
+      <DependentUpon>AdminCheckExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminExam.resx">
+      <DependentUpon>AdminExam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminMeeting.resx">
       <DependentUpon>AdminMeeting.cs</DependentUpon>

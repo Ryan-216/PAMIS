@@ -30,37 +30,37 @@ namespace Party_MS2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("申请人基本信息管理");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("成绩审查");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("思想汇报管理");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("基本资料管理", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("发展计划管理");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("思政教育管理");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("函调管理");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("计划、培训及函调管理", new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode6,
-            treeNode7});
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("会议管理");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("文书管理");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("联系管理员");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("退出");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
-            treeNode11,
-            treeNode12});
+            Sunny.UI.UINavMenu uiNavMenu1;
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("申请人基本信息管理");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("成绩审查");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("思想汇报管理");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("基本资料管理", new System.Windows.Forms.TreeNode[] {
+            treeNode15,
+            treeNode16,
+            treeNode17});
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("发展计划管理");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("考试批改");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("思政教育管理", new System.Windows.Forms.TreeNode[] {
+            treeNode20});
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("函调管理");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("计划、培训及函调管理", new System.Windows.Forms.TreeNode[] {
+            treeNode19,
+            treeNode21,
+            treeNode22});
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("会议管理");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("文书管理");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("联系管理员");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("退出");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
+            treeNode26,
+            treeNode27});
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.uiLabel3 = new Sunny.UI.UILabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.uiNavMenu1 = new Sunny.UI.UINavMenu();
             this.panel2 = new System.Windows.Forms.Panel();
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
@@ -70,21 +70,24 @@ namespace Party_MS2
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            uiNavMenu1 = new Sunny.UI.UINavMenu();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.uiNavMenu1);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(uiNavMenu1);
             this.panel1.Location = new System.Drawing.Point(1, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(258, 655);
+            this.panel1.Size = new System.Drawing.Size(332, 768);
             this.panel1.TabIndex = 0;
             // 
             // panel6
@@ -94,11 +97,78 @@ namespace Party_MS2
             this.panel6.Size = new System.Drawing.Size(1322, 34);
             this.panel6.TabIndex = 3;
             // 
+            // uiNavMenu1
+            // 
+            uiNavMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            uiNavMenu1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            uiNavMenu1.Cursor = System.Windows.Forms.Cursors.Hand;
+            uiNavMenu1.DrawMode = System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll;
+            uiNavMenu1.ExpandSelectFirst = false;
+            uiNavMenu1.FillColor = System.Drawing.Color.OrangeRed;
+            uiNavMenu1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            uiNavMenu1.ForeColor = System.Drawing.Color.Beige;
+            uiNavMenu1.FullRowSelect = true;
+            uiNavMenu1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            uiNavMenu1.ItemHeight = 50;
+            uiNavMenu1.Location = new System.Drawing.Point(3, 0);
+            uiNavMenu1.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
+            uiNavMenu1.Name = "uiNavMenu1";
+            treeNode15.Name = "节点1";
+            treeNode15.Text = "申请人基本信息管理";
+            treeNode16.Name = "节点2";
+            treeNode16.Text = "成绩审查";
+            treeNode17.Name = "节点4";
+            treeNode17.Text = "思想汇报管理";
+            treeNode18.Name = "基本资料管理";
+            treeNode18.Text = "基本资料管理";
+            treeNode19.Name = "节点9";
+            treeNode19.Text = "发展计划管理";
+            treeNode20.Name = "节点0";
+            treeNode20.Text = "考试批改";
+            treeNode21.Name = "节点10";
+            treeNode21.Text = "思政教育管理";
+            treeNode22.Name = "节点11";
+            treeNode22.Text = "函调管理";
+            treeNode23.Name = "节点5";
+            treeNode23.Text = "计划、培训及函调管理";
+            treeNode24.Name = "节点6";
+            treeNode24.Text = "会议管理";
+            treeNode25.Name = "节点7";
+            treeNode25.Text = "文书管理";
+            treeNode26.Name = "节点13";
+            treeNode26.Text = "联系管理员";
+            treeNode27.Name = "节点14";
+            treeNode27.Text = "退出";
+            treeNode28.Name = "节点8";
+            treeNode28.Text = "系统";
+            uiNavMenu1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode18,
+            treeNode23,
+            treeNode24,
+            treeNode25,
+            treeNode28});
+            uiNavMenu1.ScrollBarColor = System.Drawing.Color.Tomato;
+            uiNavMenu1.ScrollBarHoverColor = System.Drawing.Color.Tomato;
+            uiNavMenu1.ScrollBarPressColor = System.Drawing.Color.Maroon;
+            uiNavMenu1.ScrollFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            uiNavMenu1.SecondBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            uiNavMenu1.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            uiNavMenu1.SelectedColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            uiNavMenu1.SelectedForeColor = System.Drawing.Color.SeaShell;
+            uiNavMenu1.SelectedHighColor = System.Drawing.Color.SeaShell;
+            uiNavMenu1.ShowLines = false;
+            uiNavMenu1.Size = new System.Drawing.Size(326, 765);
+            uiNavMenu1.Style = Sunny.UI.UIStyle.Custom;
+            uiNavMenu1.TabIndex = 5;
+            uiNavMenu1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            uiNavMenu1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            uiNavMenu1.MenuItemClick += new Sunny.UI.UINavMenu.OnMenuItemClick(this.uiNavMenu1_MenuItemClick);
+            // 
             // uiLabel4
             // 
             this.uiLabel4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel4.Location = new System.Drawing.Point(705, 697);
+            this.uiLabel4.Location = new System.Drawing.Point(841, 810);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(606, 34);
             this.uiLabel4.TabIndex = 4;
@@ -110,88 +180,13 @@ namespace Party_MS2
             // 
             this.uiLabel3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel3.Location = new System.Drawing.Point(28, 697);
+            this.uiLabel3.Location = new System.Drawing.Point(123, 810);
             this.uiLabel3.Name = "uiLabel3";
             this.uiLabel3.Size = new System.Drawing.Size(671, 34);
             this.uiLabel3.TabIndex = 3;
             this.uiLabel3.Text = "吉林大学 版权所有 Copyright © 2022 Jilin University，All Rights Reserved";
             this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 558);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // uiNavMenu1
-            // 
-            this.uiNavMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.uiNavMenu1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.uiNavMenu1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiNavMenu1.DrawMode = System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll;
-            this.uiNavMenu1.ExpandSelectFirst = false;
-            this.uiNavMenu1.FillColor = System.Drawing.Color.Red;
-            this.uiNavMenu1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiNavMenu1.ForeColor = System.Drawing.Color.Yellow;
-            this.uiNavMenu1.FullRowSelect = true;
-            this.uiNavMenu1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.uiNavMenu1.ItemHeight = 50;
-            this.uiNavMenu1.Location = new System.Drawing.Point(3, 0);
-            this.uiNavMenu1.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
-            this.uiNavMenu1.Name = "uiNavMenu1";
-            treeNode1.Name = "节点1";
-            treeNode1.Text = "申请人基本信息管理";
-            treeNode2.Name = "节点2";
-            treeNode2.Text = "成绩审查";
-            treeNode3.Name = "节点4";
-            treeNode3.Text = "思想汇报管理";
-            treeNode4.Name = "基本资料管理";
-            treeNode4.Text = "基本资料管理";
-            treeNode5.Name = "节点9";
-            treeNode5.Text = "发展计划管理";
-            treeNode6.Name = "节点10";
-            treeNode6.Text = "思政教育管理";
-            treeNode7.Name = "节点11";
-            treeNode7.Text = "函调管理";
-            treeNode8.Name = "节点5";
-            treeNode8.Text = "计划、培训及函调管理";
-            treeNode9.Name = "节点6";
-            treeNode9.Text = "会议管理";
-            treeNode10.Name = "节点7";
-            treeNode10.Text = "文书管理";
-            treeNode11.Name = "节点13";
-            treeNode11.Text = "联系管理员";
-            treeNode12.Name = "节点14";
-            treeNode12.Text = "退出";
-            treeNode13.Name = "节点8";
-            treeNode13.Text = "系统";
-            this.uiNavMenu1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode13});
-            this.uiNavMenu1.ScrollBarColor = System.Drawing.Color.Tomato;
-            this.uiNavMenu1.ScrollBarHoverColor = System.Drawing.Color.Tomato;
-            this.uiNavMenu1.ScrollBarPressColor = System.Drawing.Color.Maroon;
-            this.uiNavMenu1.ScrollFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.uiNavMenu1.SecondBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.uiNavMenu1.SelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.uiNavMenu1.SelectedColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.uiNavMenu1.SelectedForeColor = System.Drawing.Color.Yellow;
-            this.uiNavMenu1.SelectedHighColor = System.Drawing.Color.Yellow;
-            this.uiNavMenu1.ShowLines = false;
-            this.uiNavMenu1.Size = new System.Drawing.Size(252, 640);
-            this.uiNavMenu1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiNavMenu1.TabIndex = 5;
-            this.uiNavMenu1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiNavMenu1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.uiNavMenu1.MenuItemClick += new Sunny.UI.UINavMenu.OnMenuItemClick(this.uiNavMenu1_MenuItemClick);
             // 
             // panel2
             // 
@@ -242,15 +237,6 @@ namespace Party_MS2
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 31);
-            this.toolStripButton1.Text = "toolStripButton1";
-            // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.BackColor = System.Drawing.Color.Red;
@@ -294,30 +280,49 @@ namespace Party_MS2
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(265, 42);
+            this.panel3.Location = new System.Drawing.Point(339, 42);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1060, 652);
+            this.panel3.Size = new System.Drawing.Size(1164, 765);
             this.panel3.TabIndex = 2;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(97, 346);
+            this.panel5.Location = new System.Drawing.Point(103, 376);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(382, 291);
+            this.panel5.Size = new System.Drawing.Size(434, 355);
             this.panel5.TabIndex = 1;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(591, 346);
+            this.panel4.Location = new System.Drawing.Point(654, 376);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(388, 285);
+            this.panel4.Size = new System.Drawing.Size(445, 355);
             this.panel4.TabIndex = 0;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 31);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 718);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // AdminIndex2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1337, 733);
+            this.ClientSize = new System.Drawing.Size(1505, 853);
             this.Controls.Add(this.uiLabel4);
             this.Controls.Add(this.uiLabel3);
             this.Controls.Add(this.panel3);
@@ -328,11 +333,11 @@ namespace Party_MS2
             this.Text = "AdminIndex2";
             this.Load += new System.EventHandler(this.AdminIndex2_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,7 +347,6 @@ namespace Party_MS2
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private Sunny.UI.UINavMenu uiNavMenu1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Sunny.UI.UIAvatar uiAvatar1;
         private System.Windows.Forms.Panel panel5;
