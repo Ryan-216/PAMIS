@@ -68,7 +68,6 @@ namespace Party_MS2
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -81,11 +80,12 @@ namespace Party_MS2
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.uiNavMenu1);
             this.panel1.Location = new System.Drawing.Point(1, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 743);
+            this.panel1.Size = new System.Drawing.Size(258, 655);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -100,14 +100,14 @@ namespace Party_MS2
             // 
             // uiNavMenu1
             // 
-            this.uiNavMenu1.BackColor = System.Drawing.Color.White;
+            this.uiNavMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.uiNavMenu1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.uiNavMenu1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiNavMenu1.DrawMode = System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll;
             this.uiNavMenu1.ExpandSelectFirst = false;
             this.uiNavMenu1.FillColor = System.Drawing.Color.Red;
             this.uiNavMenu1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiNavMenu1.ForeColor = System.Drawing.Color.SeaShell;
+            this.uiNavMenu1.ForeColor = System.Drawing.Color.Yellow;
             this.uiNavMenu1.FullRowSelect = true;
             this.uiNavMenu1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.uiNavMenu1.ItemHeight = 50;
@@ -156,7 +156,7 @@ namespace Party_MS2
             this.uiNavMenu1.SelectedForeColor = System.Drawing.Color.Yellow;
             this.uiNavMenu1.SelectedHighColor = System.Drawing.Color.Yellow;
             this.uiNavMenu1.ShowLines = false;
-            this.uiNavMenu1.Size = new System.Drawing.Size(341, 745);
+            this.uiNavMenu1.Size = new System.Drawing.Size(252, 640);
             this.uiNavMenu1.Style = Sunny.UI.UIStyle.Custom;
             this.uiNavMenu1.TabIndex = 5;
             this.uiNavMenu1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -200,10 +200,9 @@ namespace Party_MS2
             // 
             this.panel2.Controls.Add(this.uiAvatar1);
             this.panel2.Controls.Add(this.toolStrip1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(1, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1489, 35);
+            this.panel2.Size = new System.Drawing.Size(1330, 35);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -214,12 +213,12 @@ namespace Party_MS2
             this.uiAvatar1.Enabled = false;
             this.uiAvatar1.FillColor = System.Drawing.Color.Red;
             this.uiAvatar1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiAvatar1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.uiAvatar1.ForeColor = System.Drawing.Color.Yellow;
             this.uiAvatar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.uiAvatar1.Location = new System.Drawing.Point(1328, 0);
+            this.uiAvatar1.Location = new System.Drawing.Point(1192, 0);
             this.uiAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar1.Name = "uiAvatar1";
-            this.uiAvatar1.Size = new System.Drawing.Size(45, 39);
+            this.uiAvatar1.Size = new System.Drawing.Size(43, 39);
             this.uiAvatar1.Style = Sunny.UI.UIStyle.Custom;
             this.uiAvatar1.SymbolSize = 30;
             this.uiAvatar1.TabIndex = 0;
@@ -227,7 +226,7 @@ namespace Party_MS2
             this.uiAvatar1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiAvatar1.Click += new System.EventHandler(this.uiAvatar1_Click);
             // 
-            // toolStrip1
+            // pictureBox1
             // 
             this.toolStrip1.AutoSize = false;
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
@@ -299,9 +298,9 @@ namespace Party_MS2
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(354, 47);
+            this.panel3.Location = new System.Drawing.Point(265, 42);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1141, 734);
+            this.panel3.Size = new System.Drawing.Size(1060, 652);
             this.panel3.TabIndex = 2;
             // 
             // panel7
@@ -313,27 +312,29 @@ namespace Party_MS2
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(97, 375);
+            this.panel5.Controls.Add(this.uiFlowLayoutPanel1);
+            this.panel5.Location = new System.Drawing.Point(97, 346);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(416, 312);
+            this.panel5.Size = new System.Drawing.Size(382, 291);
             this.panel5.TabIndex = 1;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(614, 375);
+            this.panel4.Location = new System.Drawing.Point(591, 346);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(444, 312);
+            this.panel4.Size = new System.Drawing.Size(388, 285);
             this.panel4.TabIndex = 0;
             // 
             // AdminIndex2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1489, 821);
+            this.ClientSize = new System.Drawing.Size(1337, 733);
+            this.Controls.Add(this.uiLabel4);
+            this.Controls.Add(this.uiLabel3);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel6);
             this.Name = "AdminIndex2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminIndex2";
@@ -342,6 +343,10 @@ namespace Party_MS2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -368,7 +373,9 @@ namespace Party_MS2
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
     }
