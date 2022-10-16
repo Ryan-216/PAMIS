@@ -19,6 +19,7 @@ namespace Party_MS2
             Table();
             uiRadioButton1.Checked = true;
         }
+        int ifsearch = 0;
 
         public void Table()
         {
@@ -53,10 +54,13 @@ namespace Party_MS2
             dc.Close();
             dao.DaoClose();
         }
-        string sql_conditions = "";
-        string sql_status = "";
+        
         public void TableSearch()
         {
+            string sql_conditions = "";
+
+
+            ifsearch = 1;
             basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql_basic = "select t_user.stu_id,t_user.[name],t_user.[status],cul_time,count_reports,failed,score1,score2,application1,application2,befull"
@@ -66,32 +70,27 @@ namespace Party_MS2
                         + " and t_user.stu_id = t_edufinalscore.stu_id"
                         + " and t_user.stu_id = t_writsum.stu_id";
                         //+ $" and t_user.stu_id = '{Data.UID}'";
-
-            string sql_conditions = "";
             
             if (uiRadioButton1.Checked == true)
             {
-                sql_conditions = " and cul_time >= 6 and application1='通过'and count_reports >= 2 and failed='否' ";
-                sql_status = "入党积极分子";
+                sql_conditions = " and status='入党申请人'and cul_time >= 6 and application1='通过'and count_reports >= 2 and failed='否' ";
             }
             else if (uiRadioButton2.Checked == true)
             {
-                sql_conditions = " and status='入党积极分子' cul_time >= 12 and count_reports >= 6 and failed='否' and score1> = 60";
-                sql_status = "发展对象";
+                sql_conditions = " and status='入党积极分子' and cul_time >= 12 and count_reports >= 6 and failed='否' and score1> = 60";
             }
             else if (uiRadioButton3.Checked == true)
             {
                 sql_conditions = " and status='发展对象' and count_reports >= 6 + (cul_time/4) and failed='否' and score2> = 60 and application2='通过'";
-                sql_status = "预备党员";
             }
-            else if (uiRadioButton3.Checked == true)
+            else if (uiRadioButton4.Checked == true)
             {
                 sql_conditions = " and status='预备党员' and cul_time >= 12 and count_reports >= (count_reports_last + 4) and failed='否' and befull='通过'";
-                sql_status = "正式党员";
             }
 
             string sql = sql_basic + sql_conditions;
             IDataReader dc = dao.read(sql);
+
             string stu_id, name, status, final_time, count_reports, failed, score1, score2, application1, application2, befull;
             while (dc.Read())
             {
@@ -116,6 +115,34 @@ namespace Party_MS2
         }
         public void Update_status()
         {
+            string sql_conditions = "";
+            string update_status = "";
+            string update_time = "";
+            if (uiRadioButton1.Checked == true)
+            {
+                sql_conditions = " and status='入党申请人'and cul_time >= 6 and application1='通过'and count_reports >= 2 and failed='否' ";
+                update_status = "入党积极分子";
+                update_time = "activist_time";
+            }
+            else if (uiRadioButton2.Checked == true)
+            {
+                sql_conditions = " and status='入党积极分子' and cul_time >= 12 and count_reports >= 6 and failed='否' and score1> = 60";
+                update_status = "发展对象";
+                update_time = "developer_time";
+            }
+            else if (uiRadioButton3.Checked == true)
+            {
+                sql_conditions = " and status='发展对象' and count_reports >= 6 + (cul_time/4) and failed='否' and score2> = 60 and application2='通过'";
+                update_status = "预备党员";
+                update_time = "member_time";
+            }
+            else if (uiRadioButton4.Checked == true)
+            {
+                sql_conditions = " and status='预备党员' and cul_time >= 12 and count_reports >= (count_reports_last + 4) and failed='否' and befull='通过'";
+                update_status = "正式党员";
+                update_time = "fullmember_time";
+            }
+
             string sql_basic = "select t_user.stu_id"
                         + " from t_user, t_timerecord, t_score, t_edufinalscore, t_writsum"
                         + " where t_user.stu_id = t_timerecord.stu_id"
@@ -124,16 +151,28 @@ namespace Party_MS2
                         + " and t_user.stu_id = t_writsum.stu_id"
                         + sql_conditions;
 
-            string sql_update = $"update t_user set status='{sql_status}' where stu_id in ( {sql_basic})";
+            string sql_update = $"update t_user set status='{update_status}' where stu_id in ({sql_basic})";
+            string sql_time=$"update t_timerecord set {update_time}=CONVERT(varchar(100), GETDATE(), 23),final_time= CONVERT(varchar(100), GETDATE(), 23) where stu_id in ({sql_basic})";
 
-            if (uiTextBox1.Text != null)
+            
+            if (uiTextBox1.Text != "")
             {
                 string sql_exclude = " and stu_id not in " + $"({uiTextBox1.Text})";
                 sql_update = sql_update + sql_exclude;
+                sql_time = sql_time + sql_exclude;
             }
             Dao dao = new Dao();
-            IDataReader dc = dao.read(sql_update);
-
+            int n = dao.Execute(sql_update);
+            int m = dao.Execute(sql_time);
+            if (m > 0 && n > 0)
+            {
+                MessageBox.Show($"{n}名学生的身份已改为“{update_status}”");
+            }
+            else
+            {
+                MessageBox.Show("没有需要发展的学生！");
+            }            
+            dao.DaoClose();
         }
 
         private void AdminPlan_Load(object sender, EventArgs e)
@@ -141,19 +180,21 @@ namespace Party_MS2
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            TableSearch();
-        }
+      
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
-        }
+
 
         private void uiButton2_Click(object sender, EventArgs e)
         {
-
+            if (ifsearch == 0)
+            {
+                MessageBox.Show("请先查询需要发展的学生！");
+            }
+            else
+            { 
+                 Update_status();
+            }
+            
         }
 
         private void uiButton3_Click(object sender, EventArgs e)
