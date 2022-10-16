@@ -15,26 +15,58 @@ namespace Party_MS2
         public UserTranscript()
         {
             InitializeComponent();
-            table();
+            Table();
         }
-
-        private void table()
+        
+        private void Table()
         {
-            dataGridView1.Rows.Clear();
+            basicDataGridView.Rows.Clear();
             Dao dao = new Dao();
-            string sql = "select course_no, course_name, course_score from t_transcript where stu_id=" + Data.UID;
+            string sql = $"select failed,score1,score2 from t_scoresum where stu_id= '{Data.UID}'";
             IDataReader dc = dao.read(sql);
-            string course_no, course_name, course_score;
+            string failed,score1,score2;
             while(dc.Read())
             {
-                course_no = dc[0].ToString();
-                course_name = dc[1].ToString();
-                course_score = dc[2].ToString();
-
-                string[] table = new string[] { course_no, course_name, course_score };
-                dataGridView1.Rows.Add(table);
+                failed = dc[0].ToString();
+                score1 = dc[1].ToString();
+                score2 = dc[2].ToString();
+                string[] table = new string[] { failed,score1,score2 };
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
+            dao.DaoClose();
+        }
+        private void Check()
+        {
+            string type = "";
+            if (uiRadioButton3.Checked == true)
+            {
+                type = "学业成绩";
+            }
+            else if (uiRadioButton1.Checked == true)
+            {
+                type = "积极分子培训成绩";
+            }
+            else if (uiRadioButton2.Checked == true)
+            {
+                type = "发展对象培训成绩";
+            }
+            if(type == "")
+            {
+                MessageBox.Show("请选择申诉类型！");
+            }
+            Dao dao = new Dao();
+            string sql = $"insert into t_asktocheck values('{Data.UID}','type','未审核')";
+            int n = dao.Execute(sql);
+            if (n>0)
+            {
+                MessageBox.Show("申诉请求已发送！");
+            }
+            else 
+            {
+                MessageBox.Show($"Error[{sql}]");
+            }
+            
             dao.DaoClose();
         }
 
@@ -45,12 +77,12 @@ namespace Party_MS2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
         }
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            table();
+            Check();
         }
 
         private void UserTranscript_Load(object sender, EventArgs e)
