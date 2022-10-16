@@ -52,7 +52,7 @@ namespace Party_MS2
             }
             else if (node.Text == "我的发展流程")
             {
-                AdminPlan admin = new AdminPlan();
+                UserPlan admin = new UserPlan();
                 admin.TopLevel = false;
                 admin.FormBorderStyle = FormBorderStyle.None;
                 admin.Dock = DockStyle.Fill;

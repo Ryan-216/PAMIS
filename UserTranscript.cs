@@ -61,6 +61,7 @@ namespace Party_MS2
             else
             {
                 MessageBox.Show("请选择申诉类型！");
+                return;
             }
            
             int n = dao.Execute(sql);
