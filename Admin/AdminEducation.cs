@@ -111,7 +111,7 @@ namespace Party_MS2
             if (uiTextBox1.Text != "" && uiTextBox2.Text != "" && uiTextBox3.Text != "" && uiTextBox4.Text != "" && uiTextBox5.Text != "" && uiTextBox6.Text != "" && uiTextBox7.Text != "")
             {
                 Dao dao = new Dao();
-                string sql = $"insert into t_education values('{uiTextBox1.Text}','{uiTextBox2.Text}','id','{uiTextBox3.Text}','{uiTextBox4.Text}','{uiTextBox5.Text}','{uiTextBox6.Text}','{uiTextBox7.Text}','0')";
+                string sql = $"insert into t_education values('{uiTextBox1.Text}','{uiTextBox2.Text}','id','{uiTextBox3.Text}','{uiTextBox4.Text}','{uiTextBox5.Text}','{uiTextBox6.Text}','{uiTextBox7.Text}','未完成','0')";
                 int n = dao.Execute(sql);
                 if (n > 0)
                 {
