@@ -15,7 +15,12 @@ namespace Party_MS2
         public UserExam()
         {
             InitializeComponent();
-            setExam("E03");             //need alter
+            setExam("E03");             
+        }
+        public UserExam(string no)
+        {
+            InitializeComponent();
+            setExam(no);             //need alter
         }
 
         private void setExam(string exam_no)

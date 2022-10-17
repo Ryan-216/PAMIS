@@ -20,6 +20,10 @@ namespace Party_MS2.User
 
         private void Init()
         {
+            uiTextBox4.ReadOnly = true;
+            uiTextBox7.ReadOnly = true;
+            uiTextBox8.ReadOnly = true;
+            uiTextBox9.ReadOnly = true;
             Dao dao = new Dao();
             string sql = "select * from t_user where stu_id="+Data.UID;
             IDataReader dc = dao.read(sql);
@@ -127,7 +131,30 @@ namespace Party_MS2.User
 
         private void uiButton2_Click(object sender, EventArgs e)
         {
-            Update();
+            if (uiTextBox4.Text != "" && uiTextBox7.Text != "" && uiTextBox8.Text != "" && uiTextBox9.Text != "")
+            {
+                if (uiTextBox4.Text.Length == 18)
+                {
+                    Update();
+                    Init();
+                }
+                else
+                {
+                    MessageBox.Show("身份证号格式不正确！");
+                }
+               
+            }
+            else
+            {
+                MessageBox.Show("输入不能为空！");
+            }
+            
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            
+            Init();
         }
     }
 }
