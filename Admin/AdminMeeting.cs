@@ -17,11 +17,11 @@ namespace Party_MS2
         {
             InitializeComponent();
             Table();
-            radioButton1.Checked = true;
+            uiRadioButton1.Checked = true;
         }
         public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "select * from t_meeting";
             IDataReader dc = dao.read(sql);
@@ -39,7 +39,7 @@ namespace Party_MS2
 
 
                 string[] table = { no, name, m_content, time,place,attendee,record,host };
-                dataGridView1.Rows.Add(table);
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
@@ -47,16 +47,16 @@ namespace Party_MS2
 
         public void TableSearch()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "";
-            if (radioButton1.Checked == true)
+            if (uiRadioButton1.Checked == true)
             {
-                sql = $"select*from t_meeting where no='{textBox1.Text}'";
+                sql = $"select*from t_meeting where no='{uiTextBox1.Text}'";
             }
-            else if (radioButton2.Checked == true)
+            else if (uiRadioButton2.Checked == true)
             {
-                sql = $"select*from t_meeting where host='{textBox1.Text}'";
+                sql = $"select*from t_meeting where host='{uiTextBox1.Text}'";
             }
            
             IDataReader dc = dao.read(sql);
@@ -74,7 +74,7 @@ namespace Party_MS2
 
 
                 string[] table = { no, name, m_content, time, place, attendee, record, host };
-                dataGridView1.Rows.Add(table);
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
@@ -91,33 +91,51 @@ namespace Party_MS2
 
         private void button5_Click(object sender, EventArgs e)
         {
-            TableSearch();
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Table();
-            textBox1.Text = "";
+            
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            AMAttendee aMAttendee = new AMAttendee();
-            this.Hide();
-            aMAttendee.ShowDialog();
-            this.Show();
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string meeting_id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            AMRecord aMRecord = new AMRecord(meeting_id);
-            this.Hide();
-            aMRecord.ShowDialog();
-            this.Show();
+            
         }
 
         private void button9_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            string meeting_no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            AdminMeetingChart adminMeetingChart = new AdminMeetingChart(meeting_no);
+            this.Hide();
+            adminMeetingChart.ShowDialog();
+            this.Show();
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
         {
             AMadd1 aMRecord = new AMadd1();
             this.Hide();
@@ -125,22 +143,21 @@ namespace Party_MS2
             this.Show();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void uiButton3_Click(object sender, EventArgs e)
         {
-
             try
             {
-                string no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                string name = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                string m_content = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                string time = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                string place = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-                string attendee = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-                string record = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-                string host = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                string no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                string name = basicDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+                string m_content = basicDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+                string time = basicDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+                string place = basicDataGridView.SelectedRows[0].Cells[4].Value.ToString();
+                string attendee = basicDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+                string record = basicDataGridView.SelectedRows[0].Cells[6].Value.ToString();
+                string host = basicDataGridView.SelectedRows[0].Cells[7].Value.ToString();
 
 
-                AMupdate admin = new AMupdate( no,  name,  m_content,  time,  place,attendee,  record,  host);
+                AMupdate admin = new AMupdate(no, name, m_content, time, place, attendee, record, host);
                 admin.ShowDialog();
 
                 Table();
@@ -151,16 +168,16 @@ namespace Party_MS2
             }
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void uiButton4_Click(object sender, EventArgs e)
         {
             try
             {
-                string no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();//获取学号
-                //label2.Text = id + dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                string no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();//获取学号
+                //label2.Text = id + basicDataGridView.SelectedRows[0].Cells[1].Value.ToString();
                 DialogResult dr = MessageBox.Show("确认删除吗？", "信息提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                 {
-                    string sql = $"delete from t_meeting where no = '{no }'";
+                    string sql = $"delete from t_meeting where no = '{no}'";
                     Dao dao = new Dao();
                     if (dao.Execute(sql) > 0)
                     {
@@ -180,7 +197,16 @@ namespace Party_MS2
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void uiButton5_Click(object sender, EventArgs e)
+        {
+            string meeting_id = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            AMRecord aMRecord = new AMRecord(meeting_id);
+            this.Hide();
+            aMRecord.ShowDialog();
+            this.Show();
+        }
+
+        private void uiButton6_Click(object sender, EventArgs e)
         {
             AMLeavereasons admin = new AMLeavereasons();
             this.Hide();
@@ -188,13 +214,15 @@ namespace Party_MS2
             this.Show();
         }
 
-        private void uiButton1_Click(object sender, EventArgs e)
+        private void uiButton7_Click(object sender, EventArgs e)
         {
-            string meeting_no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            AdminMeetingChart adminMeetingChart = new AdminMeetingChart(meeting_no);
-            this.Hide();
-            adminMeetingChart.ShowDialog();
-            this.Show();
+            TableSearch();
+        }
+
+        private void uiButton8_Click(object sender, EventArgs e)
+        {
+            Table();
+            uiTextBox1.Text = "";
         }
     }
 }

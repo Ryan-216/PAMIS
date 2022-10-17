@@ -19,7 +19,7 @@ namespace Party_MS2
         }
         public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "select * from t_leavereasons";
             IDataReader dc = dao.read(sql);
@@ -32,7 +32,7 @@ namespace Party_MS2
                 audit = dc[3].ToString();
 
                 string[] table = { no,stu_id, reason, audit };
-                dataGridView1.Rows.Add(table);
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
@@ -47,8 +47,19 @@ namespace Party_MS2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            meeting_no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            mstu_id= dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            meeting_no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            mstu_id = basicDataGridView.SelectedRows[0].Cells[1].Value.ToString();
             Dao dao = new Dao();
             string sql = $"update t_leavereasons set audit='批准'where no='{meeting_no}'and stu_id='{mstu_id}';insert into t_mattend values('{meeting_no}','{mstu_id}','请假')";
             int n = dao.Execute(sql);
@@ -62,13 +73,12 @@ namespace Party_MS2
             }
             dao.DaoClose();
             Table();
-
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void uiButton2_Click(object sender, EventArgs e)
         {
-            meeting_no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            mstu_id = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            meeting_no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            mstu_id = basicDataGridView.SelectedRows[0].Cells[1].Value.ToString();
             Dao dao = new Dao();
             string sql = $"update t_leavereasons set audit='拒绝'where no='{meeting_no}'and stu_id='{mstu_id}';";
             int n = dao.Execute(sql);

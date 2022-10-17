@@ -23,21 +23,31 @@ namespace Party_MS2
         }
         public void set_Null()
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
-            textBox6.Text = "";
-            textBox7.Text = "";
+            uiTextBox1.Text = "";
+            uiTextBox2.Text = "";
+            uiTextBox3.Text = "";
+            uiTextBox4.Text = "";
+            uiTextBox5.Text = "";
+            uiTextBox6.Text = "";
+            uiTextBox7.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "" && textBox7.Text != "" && textBox8.Text != "")
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            if (uiTextBox1.Text != "" && uiTextBox2.Text != "" && uiTextBox3.Text != "" && uiTextBox4.Text != "" && uiTextBox5.Text != "" && uiTextBox6.Text != "" && uiTextBox7.Text != "" && uiTextBox8.Text != "")
             {
                 Dao dao = new Dao();
-                string sql = $"insert into t_meeting values('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}','{textBox6.Text}','{textBox7.Text}'，'{textBox8.Text}')";
+                string sql = $"insert into t_meeting values('{uiTextBox1.Text}','{uiTextBox2.Text}','{uiTextBox3.Text}','{uiTextBox4.Text}','{uiTextBox5.Text}','{uiTextBox6.Text}','{uiTextBox7.Text}'，'{uiTextBox8.Text}')";
                 int n = dao.Execute(sql);
                 if (n > 0)
                 {
@@ -55,9 +65,14 @@ namespace Party_MS2
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void uiButton2_Click(object sender, EventArgs e)
         {
             set_Null();
+        }
+
+        private void uiLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
