@@ -18,13 +18,14 @@ namespace Party_MS2
         }
         string train_no="";
         string location="";
-        string video_name = "";
+
         public Uservideos(string no)
         {
             InitializeComponent();
             train_no = no;
             Table();            
         }
+  
 
         public void Table()
         {

@@ -39,23 +39,25 @@ namespace Party_MS2
             treeNode2,
             treeNode3});
             System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("发展计划管理");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("考试批改");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("考试统计");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("思政教育管理", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("培训管理");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("考试批改");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("考试统计");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("思政教育管理", new System.Windows.Forms.TreeNode[] {
             treeNode6,
-            treeNode7});
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("函调管理");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("计划、培训及函调管理", new System.Windows.Forms.TreeNode[] {
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("函调管理");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("计划、培训及函调管理", new System.Windows.Forms.TreeNode[] {
             treeNode5,
-            treeNode8,
-            treeNode9});
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("会议管理");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("文书管理");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("联系管理员");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("退出");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14});
+            treeNode9,
+            treeNode10});
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("会议管理");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("文书管理");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("联系管理员");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("退出");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
+            treeNode14,
+            treeNode15});
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -109,31 +111,33 @@ namespace Party_MS2
             treeNode5.Name = "节点9";
             treeNode5.Text = "发展计划管理";
             treeNode6.Name = "节点0";
-            treeNode6.Text = "考试批改";
+            treeNode6.Text = "培训管理";
             treeNode7.Name = "节点0";
-            treeNode7.Text = "考试统计";
-            treeNode8.Name = "节点10";
-            treeNode8.Text = "思政教育管理";
-            treeNode9.Name = "节点11";
-            treeNode9.Text = "函调管理";
-            treeNode10.Name = "节点5";
-            treeNode10.Text = "计划、培训及函调管理";
-            treeNode11.Name = "节点6";
-            treeNode11.Text = "会议管理";
-            treeNode12.Name = "节点7";
-            treeNode12.Text = "文书管理";
-            treeNode13.Name = "节点13";
-            treeNode13.Text = "联系管理员";
-            treeNode14.Name = "节点14";
-            treeNode14.Text = "退出";
-            treeNode15.Name = "节点8";
-            treeNode15.Text = "系统";
+            treeNode7.Text = "考试批改";
+            treeNode8.Name = "节点0";
+            treeNode8.Text = "考试统计";
+            treeNode9.Name = "节点10";
+            treeNode9.Text = "思政教育管理";
+            treeNode10.Name = "节点11";
+            treeNode10.Text = "函调管理";
+            treeNode11.Name = "节点5";
+            treeNode11.Text = "计划、培训及函调管理";
+            treeNode12.Name = "节点6";
+            treeNode12.Text = "会议管理";
+            treeNode13.Name = "节点7";
+            treeNode13.Text = "文书管理";
+            treeNode14.Name = "节点13";
+            treeNode14.Text = "联系管理员";
+            treeNode15.Name = "节点14";
+            treeNode15.Text = "退出";
+            treeNode16.Name = "节点8";
+            treeNode16.Text = "系统";
             uiNavMenu1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode4,
-            treeNode10,
             treeNode11,
             treeNode12,
-            treeNode15});
+            treeNode13,
+            treeNode16});
             uiNavMenu1.ScrollBarColor = System.Drawing.Color.Tomato;
             uiNavMenu1.ScrollBarHoverColor = System.Drawing.Color.Tomato;
             uiNavMenu1.ScrollBarPressColor = System.Drawing.Color.Maroon;
@@ -290,7 +294,7 @@ namespace Party_MS2
             // 
             this.toolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(57, 31);
+            this.toolStripLabel3.Size = new System.Drawing.Size(54, 31);
             this.toolStripLabel3.Text = "用户名";
             // 
             // timer1
