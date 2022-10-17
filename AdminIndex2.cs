@@ -111,7 +111,7 @@ namespace Party_MS2
                 this.panel3.Controls.Add(admin);
                 admin.Show();
             }
-            else if (node.Text == "思政教育管理")
+            else if (node.Text == "培训管理")
             {
                 AdminEducation admin = new AdminEducation();
                 admin.TopLevel = false;
