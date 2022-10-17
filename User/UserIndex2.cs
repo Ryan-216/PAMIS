@@ -72,7 +72,7 @@ namespace Party_MS2
             }
              else if (node.Text == "考试")
             {
-                UserExam admin = new UserExam();
+                UserExam1 admin = new UserExam1();
                 admin.TopLevel = false;
                 admin.FormBorderStyle = FormBorderStyle.None;
                 admin.Dock = DockStyle.Fill;
