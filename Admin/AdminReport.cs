@@ -104,7 +104,7 @@ namespace Party_MS2
         private void uiButton5_Click(object sender, EventArgs e)
         {
             Dao dao = new Dao();
-            string sql = $"update t_reports set status='通过' where report_id='{report_id}'";
+            string sql = $"update t_reports set status='通过' ,check_time=getdate() where report_id='{report_id}'";
             int n = dao.Execute(sql);
             if (n > 0)
             {
@@ -121,7 +121,7 @@ namespace Party_MS2
         private void uiButton4_Click(object sender, EventArgs e)
         {
             Dao dao = new Dao();
-            string sql = $"update t_reports set status='拒绝' where report_id='{report_id}'";
+            string sql = $"update t_reports set status='拒绝',check_time=getdate() where report_id='{report_id}'";
             int n = dao.Execute(sql);
             if (n > 0)
             {
