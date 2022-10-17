@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Party_MS2.Admin;
+using Sunny.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,16 +31,17 @@ namespace Party_MS2
             Dao dao = new Dao();
             string sql = "select * from t_writ";
             IDataReader dc = dao.read(sql);
-            string stu_id, type, time, contents,pass ;
+            string stu_id, type, writ_id, upload_time, check_time, pass;
             while (dc.Read())
             {
                 stu_id = dc[0].ToString();
                 type = dc[1].ToString();
-                time = dc[2].ToString();
-                contents = dc[3].ToString();
-                pass = dc[4].ToString();
+                writ_id = dc[2].ToString();
+                upload_time = dc[3].ToString();
+                check_time = dc[4].ToString();
+                pass = dc[5].ToString();
               
-                string[] table = { stu_id,type,time,contents,pass };
+                string[] table = { stu_id, type, writ_id, upload_time, check_time, pass };
                 dataGridView1.Rows.Add(table);
             }
             dc.Close();
@@ -55,20 +58,21 @@ namespace Party_MS2
             }
             else if (radioButton2.Checked == true)
             {
-                sql = $"select*from t_writ where type='{textBox1.Text}'";
+                sql = $"select*from t_writ where statues='{textBox1.Text}'";
             }
 
             IDataReader dc = dao.read(sql);
-            string stu_id, type, time, contents, pass;
+            string stu_id, type,writ_id, upload_time, check_time, pass;
             while (dc.Read())
             {
                 stu_id = dc[0].ToString();
                 type = dc[1].ToString();
-                time = dc[2].ToString();
-                contents = dc[3].ToString();
-                pass = dc[4].ToString();
+                writ_id = dc[2].ToString();
+                upload_time = dc[3].ToString();
+                check_time = dc[4].ToString();
+                pass = dc[5].ToString();
 
-                string[] table = { stu_id, type, time, contents, pass };
+                string[] table = { stu_id, type, writ_id, upload_time, check_time, pass };
                 dataGridView1.Rows.Add(table);
             }
             dc.Close();
@@ -88,7 +92,13 @@ namespace Party_MS2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string writ_id = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            string type = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            string stu_id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
 
+            AdminCheckWrit adminCheckWrit = new AdminCheckWrit(writ_id, type, stu_id);
+            adminCheckWrit.ShowDialog();
+            Table();
         }
     }
 }
