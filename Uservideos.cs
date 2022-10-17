@@ -36,7 +36,7 @@ namespace Party_MS2
             while (dc.Read())
             {
                 no = dc[0].ToString();
-                video_name= name = dc[1].ToString();               
+                name = dc[1].ToString();               
                 complete = dc[2].ToString();               
 
                 string[] table = { no,name,complete };
@@ -49,15 +49,16 @@ namespace Party_MS2
         {
             string id = uiDataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             Dao dao = new Dao();
-            string sql = $"select location from t_video where train_no='{train_no}' and video_no='{id}'";
+            string sql = $"select location,video_name from t_video where train_no='{train_no}' and video_no='{id}'";
             IDataReader dc = dao.read(sql);
             while (dc.Read())
             {
-                location = dc[0].ToString();               
+                location = dc[0].ToString();
+                uiLabel1.Text= dc[1].ToString();
+
             }
             dc.Close();
             dao.DaoClose();
-            uiLabel1.Text = video_name;
         }
         private void Uservideos_Load(object sender, EventArgs e)
         {

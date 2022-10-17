@@ -34,7 +34,7 @@ namespace Party_MS2
 
         private void videoPlay(string LearnNO)
         {
-            vlcControl1.Play(new FileInfo("..\\..\\vid\\"+ LearnNO +"aaa.mp4"));
+            vlcControl1.Play(new FileInfo(LearnNO));
         }
 
         private void vlcControl1_VlcLibDirectoryNeeded(object sender, Vlc.DotNet.Forms.VlcLibDirectoryNeededEventArgs e)
