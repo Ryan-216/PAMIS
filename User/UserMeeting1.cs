@@ -24,7 +24,7 @@ namespace Party_MS2
         }
         public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = $"select * from t_meeting where t_meeting.attendee=(select status from t_user where stu_id ='{Data.UID}'); ";
             IDataReader dc = dao.read(sql);
@@ -42,30 +42,32 @@ namespace Party_MS2
 
 
                 string[] table = { no, name, m_content, time, place, attendee, record, host };
-                dataGridView1.Rows.Add(table);
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+      
+
+        private void uiButton2_Click(object sender, EventArgs e)
         {
-            string meeting_id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-           
+            string meeting_id = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+
             UMSignin1 user = new UMSignin1(meeting_id);
             this.Hide();
             user.ShowDialog();
             this.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void uiButton1_Click(object sender, EventArgs e)
         {
-            string meeting_id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            string name= dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            string meeting_time = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            string meeting_place = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            string meeting_id = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            string name = basicDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+            string meeting_time = basicDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+            string meeting_place = basicDataGridView.SelectedRows[0].Cells[4].Value.ToString();
 
-            UMAskforleave user = new UMAskforleave(meeting_id,name,meeting_time,meeting_place);
+            UMAskforleave user = new UMAskforleave(meeting_id, name, meeting_time, meeting_place);
             this.Hide();
             user.ShowDialog();
             this.Show();

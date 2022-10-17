@@ -30,14 +30,14 @@ namespace Party_MS2
             meeting_name = name;
             meeting_time = time;
             meeting_place = place;
-            label2.Text = $"您要请假的会议名称：{meeting_name}";
-            label4.Text = $"时间：{meeting_time}";
-            label5.Text = $"地点：{meeting_place}";
+            uiLabel2.Text = $"您要请假的会议名称：{meeting_name}";
+            uiLabel3.Text = $"时间：{meeting_time}";
+            uiLabel4.Text = $"地点：{meeting_place}";
         }
         
         public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = $"select * from t_leavereasons where stu_id ='{Data.UID}';";
             IDataReader dc = dao.read(sql);
@@ -50,28 +50,14 @@ namespace Party_MS2
                 audit = dc[3].ToString();
 
                 string[] table = { no, stu_id, reason, audit };
-                dataGridView1.Rows.Add(table);
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
        
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Dao dao = new Dao();
-            string sql = $"insert into t_leavereasons values('{meeting_no}','{Data.UID}','{textBox1.Text}','未审核')";
-            int n = dao.Execute(sql);
-            if (n > 0)
-            {
-                MessageBox.Show("请假成功！");
-            }
-            else
-            {
-                MessageBox.Show("请假失败！");
-            }
-            dao.DaoClose();
-        }
+        
 
 
         private void UMAskforleave_Load(object sender, EventArgs e)
@@ -82,6 +68,22 @@ namespace Party_MS2
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            Dao dao = new Dao();
+            string sql = $"insert into t_leavereasons values('{meeting_no}','{Data.UID}','{uiRichTextBox1.Text}','未审核')";
+            int n = dao.Execute(sql);
+            if (n > 0)
+            {
+                MessageBox.Show("请假成功！");
+            }
+            else
+            {
+                MessageBox.Show("请假失败！");
+            }
+            dao.DaoClose();
         }
     }
 }

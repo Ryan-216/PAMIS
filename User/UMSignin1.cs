@@ -44,7 +44,7 @@ namespace Party_MS2
             {
                 //获得文件的完整路径
                 string filePath = ofd.FileName;
-                label2.Text = filePath;
+                uiLabel2.Text = filePath;
 
                 //int position = filePath.LastIndexOf("\\");
                 //string photoName = filePath.Substring(position + 1);
@@ -80,7 +80,7 @@ namespace Party_MS2
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string path = openFileDialog1.FileName;
-                label2.Text = path;
+                uiLabel2.Text = path;
                 using (FileStream filestream = new FileStream(path, FileMode.Open))
                 {
                     Byte[] imageByte = new byte[filestream.Length];
@@ -111,12 +111,19 @@ namespace Party_MS2
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+      
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
         {
             upload1();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void uiButton1_Click(object sender, EventArgs e)
         {
             Dao dao = new Dao();
             string sql = $"insert into t_mattend values('{meeting_no}','{Data.UID}','出席')";
@@ -130,11 +137,6 @@ namespace Party_MS2
                 MessageBox.Show("签到失败！");
             }
             dao.DaoClose();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
