@@ -21,7 +21,7 @@ namespace Party_MS2
         {
             dataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select * from t_letter where no like \'________010001\'";
+            string sql = "select * from t_letter where no like \'%0001\'";
             IDataReader dc = dao.read(sql);
             string no, stu_id, name, time, pass, status;
             while (dc.Read())
@@ -39,8 +39,10 @@ namespace Party_MS2
             dc.Close();
             dao.DaoClose();
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
+
             ALAdd aLAdd = new ALAdd();
             this.Hide();
             aLAdd.ShowDialog();

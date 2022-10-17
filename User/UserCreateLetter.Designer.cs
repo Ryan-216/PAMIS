@@ -41,7 +41,7 @@
             this.uiLine1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLine1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiLine1.Location = new System.Drawing.Point(57, 31);
-            this.uiLine1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uiLine1.Margin = new System.Windows.Forms.Padding(2);
             this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine1.Name = "uiLine1";
             this.uiLine1.Size = new System.Drawing.Size(757, 44);
@@ -60,7 +60,7 @@
             this.uiButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiButton2.Location = new System.Drawing.Point(378, 521);
-            this.uiButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uiButton2.Margin = new System.Windows.Forms.Padding(2);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
@@ -78,7 +78,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(57, 79);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(757, 411);
             this.pictureBox1.TabIndex = 7;
@@ -94,6 +94,7 @@
             this.Controls.Add(this.uiLine1);
             this.Name = "UserCreateLetter";
             this.Text = "UserCreateLetter";
+            this.Load += new System.EventHandler(this.UserCreateLetter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -20,11 +20,30 @@ namespace Party_MS2.User
         public UserCreateLetter()
         {
             InitializeComponent();
+            Create_letter();
         }
 
         private void uiButton2_Click(object sender, EventArgs e)
         {
             upload_letter();
+        }
+        private void Create_letter()
+        {
+            Dao dao = new Dao();
+            int n = -1;
+            for (int i = 1; i <= 2; i++)
+            {
+                string sql = $"insert into t_letter values('{Data.UID}' + '01000'+ '{i}','id','name', NULL, NULL, '待提交', '未审核')";
+                n = dao.Execute(sql);
+            }
+            if (n > 0)
+            {
+                MessageBox.Show("添加成功！");
+            }
+            else
+            {
+                MessageBox.Show("添加失败！");
+            }
         }
 
         private void upload_letter()
@@ -87,6 +106,11 @@ namespace Party_MS2.User
             }
             MessageBox.Show("图片均已上传成功");
             sqlcon.Close();
+        }
+
+        private void UserCreateLetter_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
