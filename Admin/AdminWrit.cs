@@ -29,7 +29,7 @@ namespace Party_MS2
         {
             dataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select * from t_writ";
+            string sql = "select * from t_writ where writ_id like \'%001\'";
             IDataReader dc = dao.read(sql);
             string stu_id, type, writ_id, upload_time, check_time, pass;
             while (dc.Read())
