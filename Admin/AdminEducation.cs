@@ -116,6 +116,7 @@ namespace Party_MS2
                 if (n > 0)
                 {
                     MessageBox.Show("添加成功！");
+                    Table();
                 }
                 else
                 {
@@ -151,6 +152,7 @@ namespace Party_MS2
                 if (n > 0)
                 {
                     MessageBox.Show("修改成功！");
+                    Table();
                 }
                 else
                 {
