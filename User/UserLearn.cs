@@ -18,12 +18,12 @@ namespace Party_MS2.User
         public UserLearn()
         {
             InitializeComponent();
-            table();
+            Table();
         }
 
-        public void table()
+        public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "select no, name, hours, status, s_time, e_time, clear, score from t_education where stu_id="+Data.UID;
             IDataReader dc = dao.read(sql);
@@ -40,17 +40,12 @@ namespace Party_MS2.User
                 education_clear = dc[7].ToString();
 
                 string[] table = { education_no, education_name, education_hours, education_contents, education_status, education_stime, education_etime, education_clear };
-                dataGridView1.Rows.Add(table);
+               basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string LearnNO = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            media media = new media(LearnNO);
-            media.Show();
-        }
+     
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -62,11 +57,13 @@ namespace Party_MS2.User
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+      
+
+        private void uiButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            UserIndex userIndex = new UserIndex();
-            userIndex.Show();
+            string train_no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            Uservideos user = new Uservideos(train_no);
+            user.Show();
         }
     }
 }

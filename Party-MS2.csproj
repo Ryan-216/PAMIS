@@ -297,6 +297,12 @@
     <Compile Include="UserPlan.Designer.cs">
       <DependentUpon>UserPlan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Uservideos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uservideos.Designer.cs">
+      <DependentUpon>Uservideos.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\UserIndex2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -517,6 +523,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserPlan.resx">
       <DependentUpon>UserPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uservideos.resx">
+      <DependentUpon>Uservideos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\UserIndex2.resx">
       <DependentUpon>UserIndex2.cs</DependentUpon>

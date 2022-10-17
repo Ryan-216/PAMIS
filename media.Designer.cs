@@ -56,6 +56,7 @@ namespace Party_MS2
             this.Controls.Add(this.vlcControl1);
             this.Name = "media";
             this.Text = "media";
+            this.Load += new System.EventHandler(this.media_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vlcControl1)).EndInit();
             this.ResumeLayout(false);
 

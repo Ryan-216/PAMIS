@@ -71,5 +71,10 @@ namespace Party_MS2.User
 
 
         }
+
+        private void UserLearning_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

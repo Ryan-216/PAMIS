@@ -446,7 +446,7 @@ namespace Party_MS2
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem5});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(43, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(41, 24);
             this.toolStripMenuItem1.Text = "111";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -460,14 +460,14 @@ namespace Party_MS2
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(43, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(41, 24);
             this.toolStripMenuItem2.Text = "222";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(43, 24);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(41, 24);
             this.toolStripMenuItem3.Text = "333";
             // 
             // panel1
@@ -488,7 +488,7 @@ namespace Party_MS2
             this.toolStripMenuItem3});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(56, 520);
+            this.menuStrip1.Size = new System.Drawing.Size(58, 520);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);

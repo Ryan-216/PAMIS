@@ -65,6 +65,9 @@ namespace Party_MS2
             MessageBox.Show("本课程已完成");
         }
 
-        
+        private void media_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
