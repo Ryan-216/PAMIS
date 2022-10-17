@@ -46,16 +46,32 @@ namespace Party_MS2
         {
             string exam_no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
             string exam_type = basicDataGridView.SelectedRows[0].Cells[2].Value.ToString();
-            if(exam_type == "choose")
+            Dao dao = new Dao();
+            string sql = "select * from t_stu_exam where stu_id =\'" + Data.UID + "\' and exam_no = \'" + exam_no + "\'";
+            IDataReader dc = dao.read(sql);
+            int count = 0;
+            while(dc.Read())
             {
-                UserExamChoose userExam = new UserExamChoose(exam_no);
-                userExam.ShowDialog();
+                count++;
             }
-            if(exam_type == "subjective")
+            if(count == 0)
             {
-                UserExamSub userExamSub = new UserExamSub(exam_no);
-                userExamSub.ShowDialog();
+                if (exam_type == "choose")
+                {
+                    UserExamChoose userExam = new UserExamChoose(exam_no);
+                    userExam.ShowDialog();
+                }
+                if (exam_type == "subjective")
+                {
+                    UserExamSub userExamSub = new UserExamSub(exam_no);
+                    userExamSub.ShowDialog();
+                }
             }
+            else
+            {
+                MessageBox.Show("您已经完成本次考试，无需再次考试");
+            }
+
 
 
         }

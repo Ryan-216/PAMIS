@@ -37,15 +37,38 @@ namespace Party_MS2.Admin
             dao.DaoClose();
         }
 
+        private void uiTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
         private void uiButton2_Click(object sender, EventArgs e)
         {
-            int score = uiTextBox1.Text.ToInt();
-            Dao dao = new Dao();
-            string sql = "update t_stu_exam set exam_score=" + score + "where exam_no =\'" + exam_no_global + "\' and stu_id=\'" + stu_id_global + "\'";
-            dao.Execute(sql);
-            MessageBox.Show("成绩上传成功");
-            dao.DaoClose();
-            this.Hide();
+            int score = -1;
+            try
+            {
+                score = int.Parse(uiTextBox1.Text);
+            }
+            catch
+            {
+                MessageBox.Show("请输入0-100以内的整数");
+                return;
+            }
+            if(score >= 0 && score <= 100)
+            {
+                Dao dao = new Dao();
+                string sql = "update t_stu_exam set exam_score=" + score + "where exam_no =\'" + exam_no_global + "\' and stu_id=\'" + stu_id_global + "\'";
+                dao.Execute(sql);
+                MessageBox.Show("成绩上传成功");
+                dao.DaoClose();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("请输入0-100以内的整数");
+                return;
+            }
+
         }
     }
 }
