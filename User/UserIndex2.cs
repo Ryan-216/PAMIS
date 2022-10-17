@@ -13,9 +13,20 @@ namespace Party_MS2
 {
     public partial class UserIndex2 : Form
     {
+        string status;
         public UserIndex2()
         {
             InitializeComponent();
+            Dao dao = new Dao();
+            string sql = $"select status from t_user where stu_id='{Data.UID}'";
+            IDataReader dc = dao.read(sql);
+            
+            while (dc.Read())
+            {
+                status = dc[0].ToString();
+            }
+            dc.Close();
+            dao.DaoClose();
         }
 
         private void uiNavMenu1_MenuItemClick(TreeNode node, Sunny.UI.NavMenuItem item, int pageIndex)
@@ -82,13 +93,22 @@ namespace Party_MS2
             }
             else if (node.Text == "我的函调")
             {
-                UserCreateLetter admin = new UserCreateLetter();
-                admin.TopLevel = false;
-                admin.FormBorderStyle = FormBorderStyle.None;
-                admin.Dock = DockStyle.Fill;
-                this.panel2.Controls.Clear();
-                this.panel2.Controls.Add(admin);
-                admin.Show();
+                status = "发展对象";//测试
+                if (status == "发展对象")
+                {
+                    UserCreateLetter admin = new UserCreateLetter();
+                    admin.TopLevel = false;
+                    admin.FormBorderStyle = FormBorderStyle.None;
+                    admin.Dock = DockStyle.Fill;
+                    this.panel2.Controls.Clear();
+                    this.panel2.Controls.Add(admin);
+                    admin.Show();
+                }
+                else 
+                {
+                    MessageBox.Show("对不起，您不是发展对象，不具备函调资格！");
+                }
+                
             }
             else if (node.Text == "我的会议")
             {
