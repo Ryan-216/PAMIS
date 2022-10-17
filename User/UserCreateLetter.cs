@@ -29,21 +29,7 @@ namespace Party_MS2.User
         }
         private void Create_letter()
         {
-            Dao dao = new Dao();
-            int n = -1;
-            for (int i = 1; i <= 2; i++)
-            {
-                string sql = $"insert into t_letter values('{Data.UID}' + '01000'+ '{i}','id', NULL, NULL, '待提交', '未审核')";
-                n = dao.Execute(sql);
-            }
-            if (n > 0)
-            {
-                MessageBox.Show("添加成功！");
-            }
-            else
-            {
-                MessageBox.Show("添加失败！");
-            }
+            MessageBox.Show("您需要添加函调信，请上传两张函调信图片！");
         }
 
         private void upload_letter()
@@ -63,8 +49,7 @@ namespace Party_MS2.User
             System.DateTime currentTime = System.DateTime.Now;
             //string dateNO = currentTime.Year.ToString() + currentTime.Month.ToString() + currentTime.Day.ToString() + currentTime.Hour.ToString() + currentTime.Minute.ToString() + currentTime.Second.ToString();
 
-            UserAddReports userAddReports = new UserAddReports();
-
+            int flag = 0;
             for (int i = 0; i <= amount - 1; i++)
             {
                 OpenFileDialog openFileDialog1 = new OpenFileDialog();
@@ -84,27 +69,44 @@ namespace Party_MS2.User
                         MessageBox.Show("图片" + (i + 1) + "选择成功");
                         if (i == amount - 1)
                         {
-                            int j = 1;
-                            foreach (Byte[] imageStream in imageByteList)
+                            if (i == imageByteList.Count - 1)
                             {
-                                SqlCommand sqlcom = new SqlCommand($"update t_letter set contents=@ImageList, time='"+currentTime+"', status='已提交' where no='"+Data.UID+"01000"+j+"'", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
-                                sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
-                                sqlcom.Parameters["ImageList"].Value = imageStream;
-                                sqlcom.ExecuteNonQuery();
-                                /*
-                                if (sqlcom.ExecuteNonQuery() > 0)
+                                int j = 1;
+                                foreach (Byte[] imageStream in imageByteList)
                                 {
-                                    MessageBox.Show("图片" + j + "上传成功");
+                                    SqlCommand sqlcom = new SqlCommand($"insert into t_letter values('{Data.UID}' + '01000'+ '{i}','" + Data.UID + "', @ImageList, NULL, '待提交', '未审核')", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
+                                    sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
+                                    sqlcom.Parameters["ImageList"].Value = imageStream;
+                                    sqlcom.ExecuteNonQuery();
+
+                                    if (sqlcom.ExecuteNonQuery() > 0)
+                                    {
+                                        flag++;
+                                    }
+
+                                    j++;
                                 }
-                                */
-                                j++;
                             }
+                            else
+                            {
+                                MessageBox.Show("您选择的图片数不足两张，请连续选择两张图片");
+                                return;
+                            }
+
                         }
 
                     }
                 }
             }
-            MessageBox.Show("图片均已上传成功");
+            if(flag == amount)
+            {
+                MessageBox.Show("图片均已上传成功");
+            }
+            else
+            {
+                MessageBox.Show("图片上传失败");
+            }
+
             sqlcon.Close();
         }
 

@@ -148,7 +148,7 @@ namespace Party_MS2
             uiNavMenu1.SelectedForeColor = System.Drawing.Color.SeaShell;
             uiNavMenu1.SelectedHighColor = System.Drawing.Color.SeaShell;
             uiNavMenu1.ShowLines = false;
-            uiNavMenu1.Size = new System.Drawing.Size(326, 765);
+            uiNavMenu1.Size = new System.Drawing.Size(316, 965);
             uiNavMenu1.Style = Sunny.UI.UIStyle.Custom;
             uiNavMenu1.TabIndex = 5;
             uiNavMenu1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -162,7 +162,7 @@ namespace Party_MS2
             this.panel1.Controls.Add(uiNavMenu1);
             this.panel1.Location = new System.Drawing.Point(1, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 768);
+            this.panel1.Size = new System.Drawing.Size(322, 968);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -177,7 +177,7 @@ namespace Party_MS2
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(51, 787);
+            this.panel6.Location = new System.Drawing.Point(115, 971);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1322, 34);
             this.panel6.TabIndex = 3;
@@ -186,7 +186,7 @@ namespace Party_MS2
             // 
             this.uiLabel4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel4.Location = new System.Drawing.Point(841, 810);
+            this.uiLabel4.Location = new System.Drawing.Point(1126, 1010);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(606, 34);
             this.uiLabel4.TabIndex = 4;
@@ -198,7 +198,7 @@ namespace Party_MS2
             // 
             this.uiLabel3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel3.Location = new System.Drawing.Point(123, 810);
+            this.uiLabel3.Location = new System.Drawing.Point(181, 1010);
             this.uiLabel3.Name = "uiLabel3";
             this.uiLabel3.Size = new System.Drawing.Size(671, 34);
             this.uiLabel3.TabIndex = 3;
@@ -208,7 +208,6 @@ namespace Party_MS2
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.uiAvatar1);
             this.panel2.Controls.Add(this.toolStrip1);
             this.panel2.Location = new System.Drawing.Point(1, 2);
             this.panel2.Name = "panel2";
@@ -225,7 +224,7 @@ namespace Party_MS2
             this.uiAvatar1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiAvatar1.ForeColor = System.Drawing.Color.Yellow;
             this.uiAvatar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.uiAvatar1.Location = new System.Drawing.Point(1192, 0);
+            this.uiAvatar1.Location = new System.Drawing.Point(1715, 2);
             this.uiAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar1.Name = "uiAvatar1";
             this.uiAvatar1.Size = new System.Drawing.Size(43, 39);
@@ -251,7 +250,7 @@ namespace Party_MS2
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(1489, 34);
+            this.toolStrip1.Size = new System.Drawing.Size(1802, 34);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -294,7 +293,7 @@ namespace Party_MS2
             // 
             this.toolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(54, 31);
+            this.toolStripLabel3.Size = new System.Drawing.Size(57, 31);
             this.toolStripLabel3.Text = "用户名";
             // 
             // timer1
@@ -309,28 +308,29 @@ namespace Party_MS2
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(339, 42);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1164, 765);
+            this.panel3.Size = new System.Drawing.Size(1472, 962);
             this.panel3.TabIndex = 2;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(103, 376);
+            this.panel5.Location = new System.Drawing.Point(163, 407);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(434, 355);
+            this.panel5.Size = new System.Drawing.Size(520, 460);
             this.panel5.TabIndex = 1;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(654, 376);
+            this.panel4.Location = new System.Drawing.Point(848, 407);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(445, 355);
+            this.panel4.Size = new System.Drawing.Size(514, 460);
             this.panel4.TabIndex = 0;
             // 
             // AdminIndex2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1505, 853);
+            this.ClientSize = new System.Drawing.Size(1812, 1053);
+            this.Controls.Add(this.uiAvatar1);
             this.Controls.Add(this.uiLabel4);
             this.Controls.Add(this.uiLabel3);
             this.Controls.Add(this.panel3);
