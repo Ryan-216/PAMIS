@@ -97,246 +97,246 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminIndex2.cs">
+    <Compile Include="Admin\AdminIndex2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminIndex2.Designer.cs">
+    <Compile Include="Admin\AdminIndex2.Designer.cs">
       <DependentUpon>AdminIndex2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Adminvideo.cs">
+    <Compile Include="Admin\Education\Adminvideo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Adminvideo.Designer.cs">
+    <Compile Include="Admin\Education\Adminvideo.Designer.cs">
       <DependentUpon>Adminvideo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminCheckExam.cs">
+    <Compile Include="Admin\Education\AdminCheckExam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminCheckExam.Designer.cs">
+    <Compile Include="Admin\Education\AdminCheckExam.Designer.cs">
       <DependentUpon>AdminCheckExam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminMeeting.cs">
+    <Compile Include="Admin\Meeting\AdminMeeting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminMeeting.Designer.cs">
+    <Compile Include="Admin\Meeting\AdminMeeting.Designer.cs">
       <DependentUpon>AdminMeeting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminWrit.cs">
+    <Compile Include="Admin\Writ\AdminWrit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminWrit.Designer.cs">
+    <Compile Include="Admin\Writ\AdminWrit.Designer.cs">
       <DependentUpon>AdminWrit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ABIUpdate.cs">
+    <Compile Include="Admin\BasicInformation\ABIUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\ABIUpdate.Designer.cs">
+    <Compile Include="Admin\BasicInformation\ABIUpdate.Designer.cs">
       <DependentUpon>ABIUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ABIAdd.cs">
+    <Compile Include="Admin\BasicInformation\ABIAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\ABIAdd.Designer.cs">
+    <Compile Include="Admin\BasicInformation\ABIAdd.Designer.cs">
       <DependentUpon>ABIAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminBasicInfomation.cs">
+    <Compile Include="Admin\BasicInformation\AdminBasicInfomation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminBasicInfomation.Designer.cs">
+    <Compile Include="Admin\BasicInformation\AdminBasicInfomation.Designer.cs">
       <DependentUpon>AdminBasicInfomation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminEducation.cs">
+    <Compile Include="Admin\Education\AdminEducation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminEducation.Designer.cs">
+    <Compile Include="Admin\Education\AdminEducation.Designer.cs">
       <DependentUpon>AdminEducation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminIndex.cs">
+    <Compile Include="RecycleBin\AdminIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminIndex.Designer.cs">
+    <Compile Include="RecycleBin\AdminIndex.Designer.cs">
       <DependentUpon>AdminIndex.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminLetter.cs">
+    <Compile Include="Admin\Writ\AdminLetter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminLetter.Designer.cs">
+    <Compile Include="Admin\Writ\AdminLetter.Designer.cs">
       <DependentUpon>AdminLetter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminPlan.cs">
+    <Compile Include="Admin\Plan\AdminPlan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminPlan.Designer.cs">
+    <Compile Include="Admin\Plan\AdminPlan.Designer.cs">
       <DependentUpon>AdminPlan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminReport.cs">
+    <Compile Include="Admin\Writ\AdminReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminReport.Designer.cs">
+    <Compile Include="Admin\Writ\AdminReport.Designer.cs">
       <DependentUpon>AdminReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminScore.cs">
+    <Compile Include="Admin\Education\AdminScore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminScore.Designer.cs">
+    <Compile Include="Admin\Education\AdminScore.Designer.cs">
       <DependentUpon>AdminScore.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AEAdd.cs">
+    <Compile Include="Admin\Education\AEAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AEAdd.Designer.cs">
+    <Compile Include="Admin\Education\AEAdd.Designer.cs">
       <DependentUpon>AEAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AEUpdate.cs">
+    <Compile Include="Admin\Education\AEUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AEUpdate.Designer.cs">
+    <Compile Include="Admin\Education\AEUpdate.Designer.cs">
       <DependentUpon>AEUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ALAdd.cs">
+    <Compile Include="Admin\Writ\ALAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\ALAdd.Designer.cs">
+    <Compile Include="Admin\Writ\ALAdd.Designer.cs">
       <DependentUpon>ALAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ALUpdate1.cs">
+    <Compile Include="Admin\Writ\ALUpdate1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\ALUpdate1.Designer.cs">
+    <Compile Include="Admin\Writ\ALUpdate1.Designer.cs">
       <DependentUpon>ALUpdate1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AMadd1.cs">
+    <Compile Include="Admin\Meeting\AMadd1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AMadd1.Designer.cs">
+    <Compile Include="Admin\Meeting\AMadd1.Designer.cs">
       <DependentUpon>AMadd1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AMAttendee.cs">
+    <Compile Include="Admin\Meeting\AMAttendee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AMAttendee.Designer.cs">
+    <Compile Include="Admin\Meeting\AMAttendee.Designer.cs">
       <DependentUpon>AMAttendee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AMRecord.cs">
+    <Compile Include="Admin\Meeting\AMRecord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AMRecord.Designer.cs">
+    <Compile Include="Admin\Meeting\AMRecord.Designer.cs">
       <DependentUpon>AMRecord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AMupdate.cs">
+    <Compile Include="Admin\Meeting\AMupdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AMupdate.Designer.cs">
+    <Compile Include="Admin\Meeting\AMupdate.Designer.cs">
       <DependentUpon>AMupdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AMLeavereasons.cs">
+    <Compile Include="Admin\Meeting\AMLeavereasons.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AMLeavereasons.Designer.cs">
+    <Compile Include="Admin\Meeting\AMLeavereasons.Designer.cs">
       <DependentUpon>AMLeavereasons.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminExam.cs">
+    <Compile Include="Admin\Education\AdminExam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminExam.Designer.cs">
+    <Compile Include="Admin\Education\AdminExam.Designer.cs">
       <DependentUpon>AdminExam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminMeetingChart.cs">
+    <Compile Include="Admin\Meeting\AdminMeetingChart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminMeetingChart.Designer.cs">
+    <Compile Include="Admin\Meeting\AdminMeetingChart.Designer.cs">
       <DependentUpon>AdminMeetingChart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminExamScoreChart.cs">
+    <Compile Include="Admin\Education\AdminExamScoreChart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminExamScoreChart.Designer.cs">
+    <Compile Include="Admin\Education\AdminExamScoreChart.Designer.cs">
       <DependentUpon>AdminExamScoreChart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminExamTotal.cs">
+    <Compile Include="Admin\Education\AdminExamTotal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminExamTotal.Designer.cs">
+    <Compile Include="Admin\Education\AdminExamTotal.Designer.cs">
       <DependentUpon>AdminExamTotal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminCheckWrit.cs">
+    <Compile Include="Admin\Writ\AdminCheckWrit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\AdminCheckWrit.Designer.cs">
+    <Compile Include="Admin\Writ\AdminCheckWrit.Designer.cs">
       <DependentUpon>AdminCheckWrit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Notification.cs">
+    <Compile Include="RecycleBin\Notification.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Notification.Designer.cs">
+    <Compile Include="RecycleBin\Notification.Designer.cs">
       <DependentUpon>Notification.cs</DependentUpon>
     </Compile>
-    <Compile Include="Advertisement.cs">
+    <Compile Include="Public\Advertisement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Advertisement.Designer.cs">
+    <Compile Include="Public\Advertisement.Designer.cs">
       <DependentUpon>Advertisement.cs</DependentUpon>
     </Compile>
-    <Compile Include="AScheck.cs">
+    <Compile Include="Admin\Education\AScheck.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AScheck.Designer.cs">
+    <Compile Include="Admin\Education\AScheck.Designer.cs">
       <DependentUpon>AScheck.cs</DependentUpon>
     </Compile>
     <Compile Include="Dao.cs" />
     <Compile Include="Data.cs" />
-    <Compile Include="Developers.cs">
+    <Compile Include="Public\Developers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Developers.Designer.cs">
+    <Compile Include="Public\Developers.Designer.cs">
       <DependentUpon>Developers.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserExamSub.cs">
+    <Compile Include="User\Education\UserExamSub.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserExamSub.Designer.cs">
+    <Compile Include="User\Education\UserExamSub.Designer.cs">
       <DependentUpon>UserExamSub.cs</DependentUpon>
     </Compile>
-    <Compile Include="News.cs">
+    <Compile Include="Public\News.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="News.Designer.cs">
+    <Compile Include="Public\News.Designer.cs">
       <DependentUpon>News.cs</DependentUpon>
     </Compile>
-    <Compile Include="NNcontents.cs">
+    <Compile Include="RecycleBin\NNcontents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NNcontents.Designer.cs">
+    <Compile Include="RecycleBin\NNcontents.Designer.cs">
       <DependentUpon>NNcontents.cs</DependentUpon>
     </Compile>
-    <Compile Include="Notification1.cs">
+    <Compile Include="Public\Notification1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Notification1.Designer.cs">
+    <Compile Include="Public\Notification1.Designer.cs">
       <DependentUpon>Notification1.cs</DependentUpon>
     </Compile>
-    <Compile Include="test.cs">
+    <Compile Include="Public\test.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="test.Designer.cs">
+    <Compile Include="Public\test.Designer.cs">
       <DependentUpon>test.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserExam1.cs">
+    <Compile Include="User\Education\UserExam1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserExam1.Designer.cs">
+    <Compile Include="User\Education\UserExam1.Designer.cs">
       <DependentUpon>UserExam1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserPlan.cs">
+    <Compile Include="User\Plan\UserPlan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserPlan.Designer.cs">
+    <Compile Include="User\Plan\UserPlan.Designer.cs">
       <DependentUpon>UserPlan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Uservideos.cs">
+    <Compile Include="User\Education\Uservideos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Uservideos.Designer.cs">
+    <Compile Include="User\Education\Uservideos.Designer.cs">
       <DependentUpon>Uservideos.cs</DependentUpon>
     </Compile>
     <Compile Include="User\UserIndex2.cs">
@@ -345,34 +345,34 @@
     <Compile Include="User\UserIndex2.Designer.cs">
       <DependentUpon>UserIndex2.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserReports.cs">
+    <Compile Include="User\Writ\UserReports.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserReports.Designer.cs">
+    <Compile Include="User\Writ\UserReports.Designer.cs">
       <DependentUpon>UserReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserExamChoose.cs">
+    <Compile Include="User\Education\UserExamChoose.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserExamChoose.Designer.cs">
+    <Compile Include="User\Education\UserExamChoose.Designer.cs">
       <DependentUpon>UserExamChoose.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserTranscript.cs">
+    <Compile Include="User\Education\UserTranscript.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserTranscript.Designer.cs">
+    <Compile Include="User\Education\UserTranscript.Designer.cs">
       <DependentUpon>UserTranscript.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginPage.cs">
+    <Compile Include="Public\LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginPage.Designer.cs">
+    <Compile Include="Public\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="media.cs">
+    <Compile Include="User\Education\media.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="media.Designer.cs">
+    <Compile Include="User\Education\media.Designer.cs">
       <DependentUpon>media.cs</DependentUpon>
     </Compile>
     <Compile Include="PartyDBIIDataSet.Designer.cs">
@@ -382,221 +382,221 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.cs">
+    <Compile Include="Public\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Register.Designer.cs">
+    <Compile Include="Public\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserCreateLetter.cs">
+    <Compile Include="User\Writ\UserCreateLetter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserCreateLetter.Designer.cs">
+    <Compile Include="User\Writ\UserCreateLetter.Designer.cs">
       <DependentUpon>UserCreateLetter.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserCheckWrit.cs">
+    <Compile Include="User\Writ\UserCheckWrit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserCheckWrit.Designer.cs">
+    <Compile Include="User\Writ\UserCheckWrit.Designer.cs">
       <DependentUpon>UserCheckWrit.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserSelectWrit.cs">
+    <Compile Include="User\Writ\UserSelectWrit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserSelectWrit.Designer.cs">
+    <Compile Include="User\Writ\UserSelectWrit.Designer.cs">
       <DependentUpon>UserSelectWrit.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserAddReports.cs">
+    <Compile Include="User\Writ\UserAddReports.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserAddReports.Designer.cs">
+    <Compile Include="User\Writ\UserAddReports.Designer.cs">
       <DependentUpon>UserAddReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UMAskforleave.cs">
+    <Compile Include="User\Meeting\UMAskforleave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UMAskforleave.Designer.cs">
+    <Compile Include="User\Meeting\UMAskforleave.Designer.cs">
       <DependentUpon>UMAskforleave.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UMSignin1.cs">
+    <Compile Include="User\Meeting\UMSignin1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UMSignin1.Designer.cs">
+    <Compile Include="User\Meeting\UMSignin1.Designer.cs">
       <DependentUpon>UMSignin1.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserMeeting1.cs">
+    <Compile Include="User\Meeting\UserMeeting1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserMeeting1.Designer.cs">
+    <Compile Include="User\Meeting\UserMeeting1.Designer.cs">
       <DependentUpon>UserMeeting1.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserWrit.cs">
+    <Compile Include="User\Writ\UserWrit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserWrit.Designer.cs">
+    <Compile Include="User\Writ\UserWrit.Designer.cs">
       <DependentUpon>UserWrit.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserLearning.cs">
+    <Compile Include="RecycleBin\UserLearning.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserLearning.Designer.cs">
+    <Compile Include="RecycleBin\UserLearning.Designer.cs">
       <DependentUpon>UserLearning.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserLearn.cs">
+    <Compile Include="User\Education\UserLearn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserLearn.Designer.cs">
+    <Compile Include="User\Education\UserLearn.Designer.cs">
       <DependentUpon>UserLearn.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserBasicInformation.cs">
+    <Compile Include="User\BasicInformation\UserBasicInformation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserBasicInformation.Designer.cs">
+    <Compile Include="User\BasicInformation\UserBasicInformation.Designer.cs">
       <DependentUpon>UserBasicInformation.cs</DependentUpon>
     </Compile>
-    <Compile Include="User\UserIndex.cs">
+    <Compile Include="RecycleBin\UserIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User\UserIndex.Designer.cs">
+    <Compile Include="RecycleBin\UserIndex.Designer.cs">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminIndex2.resx">
+    <EmbeddedResource Include="Admin\AdminIndex2.resx">
       <DependentUpon>AdminIndex2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Adminvideo.resx">
+    <EmbeddedResource Include="Admin\Education\Adminvideo.resx">
       <DependentUpon>Adminvideo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminCheckExam.resx">
+    <EmbeddedResource Include="Admin\Education\AdminCheckExam.resx">
       <DependentUpon>AdminCheckExam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminExam.resx">
+    <EmbeddedResource Include="Admin\Education\AdminExam.resx">
       <DependentUpon>AdminExam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminMeeting.resx">
+    <EmbeddedResource Include="Admin\Meeting\AdminMeeting.resx">
       <DependentUpon>AdminMeeting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminWrit.resx">
+    <EmbeddedResource Include="Admin\Writ\AdminWrit.resx">
       <DependentUpon>AdminWrit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ABIAdd.resx">
+    <EmbeddedResource Include="Admin\BasicInformation\ABIAdd.resx">
       <DependentUpon>ABIAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ABIUpdate.resx">
+    <EmbeddedResource Include="Admin\BasicInformation\ABIUpdate.resx">
       <DependentUpon>ABIUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminBasicInfomation.resx">
+    <EmbeddedResource Include="Admin\BasicInformation\AdminBasicInfomation.resx">
       <DependentUpon>AdminBasicInfomation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminEducation.resx">
+    <EmbeddedResource Include="Admin\Education\AdminEducation.resx">
       <DependentUpon>AdminEducation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\adminIndex.resx">
+    <EmbeddedResource Include="RecycleBin\adminIndex.resx">
       <DependentUpon>AdminIndex.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminLetter.resx">
+    <EmbeddedResource Include="Admin\Writ\AdminLetter.resx">
       <DependentUpon>AdminLetter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminPlan.resx">
+    <EmbeddedResource Include="Admin\Plan\AdminPlan.resx">
       <DependentUpon>AdminPlan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminReport.resx">
+    <EmbeddedResource Include="Admin\Writ\AdminReport.resx">
       <DependentUpon>AdminReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminScore.resx">
+    <EmbeddedResource Include="Admin\Education\AdminScore.resx">
       <DependentUpon>AdminScore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AEAdd.resx">
+    <EmbeddedResource Include="Admin\Education\AEAdd.resx">
       <DependentUpon>AEAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AEUpdate.resx">
+    <EmbeddedResource Include="Admin\Education\AEUpdate.resx">
       <DependentUpon>AEUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ALAdd.resx">
+    <EmbeddedResource Include="Admin\Writ\ALAdd.resx">
       <DependentUpon>ALAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ALUpdate.resx" />
-    <EmbeddedResource Include="Admin\ALUpdate1.resx">
+    <EmbeddedResource Include="Admin\Writ\ALUpdate.resx" />
+    <EmbeddedResource Include="Admin\Writ\ALUpdate1.resx">
       <DependentUpon>ALUpdate1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AMadd1.resx">
+    <EmbeddedResource Include="Admin\Meeting\AMadd1.resx">
       <DependentUpon>AMadd1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AMAttendee.resx">
+    <EmbeddedResource Include="Admin\Meeting\AMAttendee.resx">
       <DependentUpon>AMAttendee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AMRecord.resx">
+    <EmbeddedResource Include="Admin\Meeting\AMRecord.resx">
       <DependentUpon>AMRecord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AMupdate.resx">
+    <EmbeddedResource Include="Admin\Meeting\AMupdate.resx">
       <DependentUpon>AMupdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AMLeavereasons.resx">
+    <EmbeddedResource Include="Admin\Meeting\AMLeavereasons.resx">
       <DependentUpon>AMLeavereasons.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminMeetingChart.resx">
+    <EmbeddedResource Include="Admin\Meeting\AdminMeetingChart.resx">
       <DependentUpon>AdminMeetingChart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminExamScoreChart.resx">
+    <EmbeddedResource Include="Admin\Education\AdminExamScoreChart.resx">
       <DependentUpon>AdminExamScoreChart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminExamTotal.resx">
+    <EmbeddedResource Include="Admin\Education\AdminExamTotal.resx">
       <DependentUpon>AdminExamTotal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminCheckWrit.resx">
+    <EmbeddedResource Include="Admin\Writ\AdminCheckWrit.resx">
       <DependentUpon>AdminCheckWrit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Notification.resx">
+    <EmbeddedResource Include="RecycleBin\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Advertisement.resx">
+    <EmbeddedResource Include="Public\Advertisement.resx">
       <DependentUpon>Advertisement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AScheck.resx">
+    <EmbeddedResource Include="Admin\Education\AScheck.resx">
       <DependentUpon>AScheck.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Developers.resx">
+    <EmbeddedResource Include="Public\Developers.resx">
       <DependentUpon>Developers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserExamSub.resx">
+    <EmbeddedResource Include="User\Education\UserExamSub.resx">
       <DependentUpon>UserExamSub.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="News.resx">
+    <EmbeddedResource Include="Public\News.resx">
       <DependentUpon>News.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NNcontents.resx">
+    <EmbeddedResource Include="RecycleBin\NNcontents.resx">
       <DependentUpon>NNcontents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Notification1.resx">
+    <EmbeddedResource Include="Public\Notification1.resx">
       <DependentUpon>Notification1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="test.resx">
+    <EmbeddedResource Include="Public\test.resx">
       <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserExam1.resx">
+    <EmbeddedResource Include="User\Education\UserExam1.resx">
       <DependentUpon>UserExam1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserPlan.resx">
+    <EmbeddedResource Include="User\Plan\UserPlan.resx">
       <DependentUpon>UserPlan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Uservideos.resx">
+    <EmbeddedResource Include="User\Education\Uservideos.resx">
       <DependentUpon>Uservideos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\UserIndex2.resx">
       <DependentUpon>UserIndex2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserReports.resx">
+    <EmbeddedResource Include="User\Writ\UserReports.resx">
       <DependentUpon>UserReports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserExamChoose.resx">
+    <EmbeddedResource Include="User\Education\UserExamChoose.resx">
       <DependentUpon>UserExamChoose.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserTranscript.resx">
+    <EmbeddedResource Include="User\Education\UserTranscript.resx">
       <DependentUpon>UserTranscript.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginPage.resx">
+    <EmbeddedResource Include="Public\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="media.resx">
+    <EmbeddedResource Include="User\Education\media.resx">
       <DependentUpon>media.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -609,43 +609,43 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Register.resx">
+    <EmbeddedResource Include="Public\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserCreateLetter.resx">
+    <EmbeddedResource Include="User\Writ\UserCreateLetter.resx">
       <DependentUpon>UserCreateLetter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserSelectWrit.resx">
+    <EmbeddedResource Include="User\Writ\UserSelectWrit.resx">
       <DependentUpon>UserSelectWrit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserAddReports.resx">
+    <EmbeddedResource Include="User\Writ\UserAddReports.resx">
       <DependentUpon>UserAddReports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UMAskforleave.resx">
+    <EmbeddedResource Include="User\Meeting\UMAskforleave.resx">
       <DependentUpon>UMAskforleave.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UMSignin1.resx">
+    <EmbeddedResource Include="User\Meeting\UMSignin1.resx">
       <DependentUpon>UMSignin1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserMeeting1.resx">
+    <EmbeddedResource Include="User\Meeting\UserMeeting1.resx">
       <DependentUpon>UserMeeting1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserCheckWrit.resx">
+    <EmbeddedResource Include="User\Writ\UserCheckWrit.resx">
       <DependentUpon>UserCheckWrit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserWrit.resx">
+    <EmbeddedResource Include="User\Writ\UserWrit.resx">
       <DependentUpon>UserWrit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserBasicInformation.resx">
+    <EmbeddedResource Include="User\BasicInformation\UserBasicInformation.resx">
       <DependentUpon>UserBasicInformation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserLearn.resx">
+    <EmbeddedResource Include="User\Education\UserLearn.resx">
       <DependentUpon>UserLearn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserIndex.resx">
+    <EmbeddedResource Include="RecycleBin\UserIndex.resx">
       <DependentUpon>UserIndex.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User\UserLearning.resx">
+    <EmbeddedResource Include="RecycleBin\UserLearning.resx">
       <DependentUpon>UserLearning.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -700,6 +700,7 @@
     <Content Include="Todo2.txt" />
     <None Include="Resources\t01cd4b59a94db03b3b.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\VideoLAN.LibVLC.Windows.3.0.17.4\build\VideoLAN.LibVLC.Windows.targets" Condition="Exists('packages\VideoLAN.LibVLC.Windows.3.0.17.4\build\VideoLAN.LibVLC.Windows.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

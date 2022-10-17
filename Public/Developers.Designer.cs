@@ -158,7 +158,7 @@
             this.uiLabel4.Size = new System.Drawing.Size(319, 77);
             this.uiLabel4.Style = Sunny.UI.UIStyle.Purple;
             this.uiLabel4.TabIndex = 7;
-            this.uiLabel4.Text = "34191012 张雨扬\r\nzhangyy3419@mails.jlu.edu.cn";
+            this.uiLabel4.Text = "34191012 张雨扬\r\nyyzhang3419@mails.jlu.edu.cn";
             this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiLabel4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
