@@ -17,10 +17,13 @@ namespace Party_MS2
             InitializeComponent();
             //setExam("E03");             
         }
+
+        string exam_no;
         public UserExamChoose(string no)
         {
             InitializeComponent();
-            setExam(no);             //need alter
+            setExam(no);
+            exam_no = no;
         }
 
         private void setExam(string exam_no)
@@ -31,7 +34,7 @@ namespace Party_MS2
             dc.Read();
             string exam_type = dc[1].ToString();
 
-            if(exam_type == "choose")
+            if(exam_type == "选择题")
             {
                 string text = dc[0].ToString();
                 string[] sArray = text.Split('*');
@@ -138,13 +141,16 @@ namespace Party_MS2
             }
             sql = "update t_stu_exam set exam_score =" + score + "where stu_id = " + Data.UID + "and exam_no =\'" + exam_no + "\'";
             dao.Execute(sql);
+            string sql2 = "insert into t_scoresum values (\'" + Data.UID + "\', \'无\', \'" + score + "\', null)";
+            dao.Execute(sql2);
+            dao.DaoClose();
             return score;
         }
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            setAnswer("E03");               //need alter
-            int score = setScore("E03");
+            setAnswer(exam_no);               //need alter
+            int score = setScore(exam_no);
             MessageBox.Show("提交成功！ 您本次考试的得分为" + score + "分");
             this.Close();
         }

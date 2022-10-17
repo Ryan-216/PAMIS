@@ -64,6 +64,8 @@ namespace Party_MS2.Admin
                 Dao dao = new Dao();
                 string sql = "update t_stu_exam set exam_score=" + score + "where exam_no =\'" + exam_no_global + "\' and stu_id=\'" + stu_id_global + "\'";
                 dao.Execute(sql);
+                string sql2 = "update t_scoresum set score2 = " + score + "where stu_id = \'" + stu_id_global + "\'";
+                dao.Execute(sql2);
                 MessageBox.Show("成绩上传成功");
                 dao.DaoClose();
                 this.Hide();

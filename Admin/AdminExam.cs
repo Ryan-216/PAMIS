@@ -22,7 +22,7 @@ namespace Party_MS2.Admin
         {
             uiDataGridView1.Rows.Clear();
             Dao dao = new Dao();
-            string sql = "select stu_id, t_exam.exam_no , exam_name from t_exam , t_stu_exam where t_exam.exam_no = t_stu_exam.exam_no and t_exam.exam_type = \'subjective\' and t_stu_exam.exam_score = -1";
+            string sql = "select stu_id, t_exam.exam_no , exam_name from t_exam , t_stu_exam where t_exam.exam_no = t_stu_exam.exam_no and t_exam.exam_type = \'问答题\' and t_stu_exam.exam_score = -1";
             IDataReader dc = dao.read(sql);
             string stu_id, exam_no, exam_name ;
             while(dc.Read())

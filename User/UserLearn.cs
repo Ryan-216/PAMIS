@@ -46,12 +46,11 @@ namespace Party_MS2.User
                 education_name = dc[1].ToString();
                 education_hours = dc[2].ToString();
                 education_contents = dc[3].ToString();
-                education_status = dc[4].ToString();
                 education_stime = dc[5].ToString();
                 education_etime = dc[6].ToString();
                 education_clear = dc[7].ToString();
 
-                string[] table = { education_no, education_name, education_hours, education_contents, education_status, education_stime, education_etime, education_clear };
+                string[] table = { education_no, education_name, education_hours, education_contents, education_stime, education_etime, education_clear };
                basicDataGridView.Rows.Add(table);
             }
             dc.Close();

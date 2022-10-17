@@ -27,7 +27,7 @@ namespace Party_MS2
         {
             basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select * from t_scoresum";
+            string sql = "select distinct * from t_scoresum ";
             IDataReader dc = dao.read(sql);
             string stu_id, failed, score1, score2;
             while (dc.Read())

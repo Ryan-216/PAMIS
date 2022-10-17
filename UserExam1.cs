@@ -56,12 +56,12 @@ namespace Party_MS2
             }
             if(count == 0)
             {
-                if (exam_type == "choose")
+                if (exam_type == "选择题")
                 {
                     UserExamChoose userExam = new UserExamChoose(exam_no);
                     userExam.ShowDialog();
                 }
-                if (exam_type == "subjective")
+                if (exam_type == "问答题")
                 {
                     UserExamSub userExamSub = new UserExamSub(exam_no);
                     userExamSub.ShowDialog();
