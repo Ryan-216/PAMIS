@@ -31,29 +31,29 @@ namespace Party_MS2
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABIAdd));
             this.uiLabel11 = new Sunny.UI.UILabel();
-            this.uiTextBox11 = new Sunny.UI.UITextBox();
             this.uiLabel10 = new Sunny.UI.UILabel();
             this.uiTextBox10 = new Sunny.UI.UITextBox();
             this.uiLabel9 = new Sunny.UI.UILabel();
             this.uiTextBox9 = new Sunny.UI.UITextBox();
             this.uiLabel8 = new Sunny.UI.UILabel();
-            this.uiTextBox8 = new Sunny.UI.UITextBox();
             this.uiLabel7 = new Sunny.UI.UILabel();
             this.uiTextBox7 = new Sunny.UI.UITextBox();
             this.uiLabel6 = new Sunny.UI.UILabel();
-            this.uiTextBox6 = new Sunny.UI.UITextBox();
             this.uiLabel5 = new Sunny.UI.UILabel();
-            this.uiTextBox5 = new Sunny.UI.UITextBox();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.uiTextBox4 = new Sunny.UI.UITextBox();
             this.uiLabel3 = new Sunny.UI.UILabel();
-            this.uiTextBox3 = new Sunny.UI.UITextBox();
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiTextBox2 = new Sunny.UI.UITextBox();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiButton2 = new Sunny.UI.UIButton();
             this.uiButton1 = new Sunny.UI.UIButton();
+            this.uiDatetimePicker1 = new Sunny.UI.UIDatetimePicker();
+            this.uiComboBox1 = new Sunny.UI.UIComboBox();
+            this.uiComboBox2 = new Sunny.UI.UIComboBox();
+            this.uiComboBox3 = new Sunny.UI.UIComboBox();
+            this.uiComboBox4 = new Sunny.UI.UIComboBox();
             this.SuspendLayout();
             // 
             // uiLabel11
@@ -66,33 +66,6 @@ namespace Party_MS2
             this.uiLabel11.Text = "申请时间";
             this.uiLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel11.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiTextBox11
-            // 
-            this.uiTextBox11.BackColor = System.Drawing.Color.Transparent;
-            this.uiTextBox11.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox11.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox11.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox11.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox11.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox11.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox11.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
-            this.uiTextBox11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox11.Location = new System.Drawing.Point(664, 286);
-            this.uiTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox11.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox11.Name = "uiTextBox11";
-            this.uiTextBox11.ReadOnly = true;
-            this.uiTextBox11.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox11.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox11.ShowText = false;
-            this.uiTextBox11.Size = new System.Drawing.Size(166, 29);
-            this.uiTextBox11.Style = Sunny.UI.UIStyle.LayuiOrange;
-            this.uiTextBox11.TabIndex = 69;
-            this.uiTextBox11.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox11.Watermark = "";
-            this.uiTextBox11.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel10
             // 
@@ -125,7 +98,7 @@ namespace Party_MS2
             this.uiTextBox10.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox10.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox10.ShowText = false;
-            this.uiTextBox10.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox10.Size = new System.Drawing.Size(274, 29);
             this.uiTextBox10.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox10.TabIndex = 67;
             this.uiTextBox10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -163,7 +136,7 @@ namespace Party_MS2
             this.uiTextBox9.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox9.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox9.ShowText = false;
-            this.uiTextBox9.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox9.Size = new System.Drawing.Size(274, 29);
             this.uiTextBox9.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox9.TabIndex = 65;
             this.uiTextBox9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -180,33 +153,6 @@ namespace Party_MS2
             this.uiLabel8.Text = "籍贯";
             this.uiLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel8.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiTextBox8
-            // 
-            this.uiTextBox8.BackColor = System.Drawing.Color.Transparent;
-            this.uiTextBox8.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox8.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox8.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox8.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox8.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox8.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox8.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
-            this.uiTextBox8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox8.Location = new System.Drawing.Point(664, 98);
-            this.uiTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox8.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox8.Name = "uiTextBox8";
-            this.uiTextBox8.ReadOnly = true;
-            this.uiTextBox8.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox8.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox8.ShowText = false;
-            this.uiTextBox8.Size = new System.Drawing.Size(166, 29);
-            this.uiTextBox8.Style = Sunny.UI.UIStyle.LayuiOrange;
-            this.uiTextBox8.TabIndex = 63;
-            this.uiTextBox8.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox8.Watermark = "";
-            this.uiTextBox8.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel7
             // 
@@ -239,7 +185,7 @@ namespace Party_MS2
             this.uiTextBox7.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox7.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox7.ShowText = false;
-            this.uiTextBox7.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox7.Size = new System.Drawing.Size(274, 29);
             this.uiTextBox7.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox7.TabIndex = 61;
             this.uiTextBox7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -253,36 +199,9 @@ namespace Party_MS2
             this.uiLabel6.Name = "uiLabel6";
             this.uiLabel6.Size = new System.Drawing.Size(85, 33);
             this.uiLabel6.TabIndex = 60;
-            this.uiLabel6.Text = "学院号";
+            this.uiLabel6.Text = "学院";
             this.uiLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel6.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiTextBox6
-            // 
-            this.uiTextBox6.BackColor = System.Drawing.Color.Transparent;
-            this.uiTextBox6.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox6.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox6.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox6.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox6.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox6.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
-            this.uiTextBox6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox6.Location = new System.Drawing.Point(230, 343);
-            this.uiTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox6.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox6.Name = "uiTextBox6";
-            this.uiTextBox6.ReadOnly = true;
-            this.uiTextBox6.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox6.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox6.ShowText = false;
-            this.uiTextBox6.Size = new System.Drawing.Size(171, 29);
-            this.uiTextBox6.Style = Sunny.UI.UIStyle.LayuiOrange;
-            this.uiTextBox6.TabIndex = 59;
-            this.uiTextBox6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox6.Watermark = "";
-            this.uiTextBox6.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel5
             // 
@@ -294,33 +213,6 @@ namespace Party_MS2
             this.uiLabel5.Text = "入党状态";
             this.uiLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiTextBox5
-            // 
-            this.uiTextBox5.BackColor = System.Drawing.Color.Transparent;
-            this.uiTextBox5.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox5.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox5.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox5.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox5.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox5.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
-            this.uiTextBox5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox5.Location = new System.Drawing.Point(231, 286);
-            this.uiTextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox5.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox5.Name = "uiTextBox5";
-            this.uiTextBox5.ReadOnly = true;
-            this.uiTextBox5.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox5.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox5.ShowText = false;
-            this.uiTextBox5.Size = new System.Drawing.Size(171, 29);
-            this.uiTextBox5.Style = Sunny.UI.UIStyle.LayuiOrange;
-            this.uiTextBox5.TabIndex = 57;
-            this.uiTextBox5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox5.Watermark = "";
-            this.uiTextBox5.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel4
             // 
@@ -353,7 +245,7 @@ namespace Party_MS2
             this.uiTextBox4.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox4.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox4.ShowText = false;
-            this.uiTextBox4.Size = new System.Drawing.Size(171, 29);
+            this.uiTextBox4.Size = new System.Drawing.Size(279, 29);
             this.uiTextBox4.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox4.TabIndex = 55;
             this.uiTextBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -370,33 +262,6 @@ namespace Party_MS2
             this.uiLabel3.Text = "性别";
             this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
-            // uiTextBox3
-            // 
-            this.uiTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.uiTextBox3.ButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox3.ButtonFillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox3.ButtonFillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox3.ButtonRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox3.ButtonRectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
-            this.uiTextBox3.ButtonRectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
-            this.uiTextBox3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox3.Location = new System.Drawing.Point(231, 160);
-            this.uiTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox3.MinimumSize = new System.Drawing.Size(1, 16);
-            this.uiTextBox3.Name = "uiTextBox3";
-            this.uiTextBox3.ReadOnly = true;
-            this.uiTextBox3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox3.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiTextBox3.ShowText = false;
-            this.uiTextBox3.Size = new System.Drawing.Size(171, 29);
-            this.uiTextBox3.Style = Sunny.UI.UIStyle.LayuiOrange;
-            this.uiTextBox3.TabIndex = 53;
-            this.uiTextBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiTextBox3.Watermark = "";
-            this.uiTextBox3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel2
             // 
@@ -429,7 +294,7 @@ namespace Party_MS2
             this.uiTextBox2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox2.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox2.ShowText = false;
-            this.uiTextBox2.Size = new System.Drawing.Size(171, 29);
+            this.uiTextBox2.Size = new System.Drawing.Size(279, 29);
             this.uiTextBox2.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox2.TabIndex = 51;
             this.uiTextBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -467,7 +332,7 @@ namespace Party_MS2
             this.uiTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ShowText = false;
-            this.uiTextBox1.Size = new System.Drawing.Size(171, 29);
+            this.uiTextBox1.Size = new System.Drawing.Size(279, 29);
             this.uiTextBox1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox1.TabIndex = 49;
             this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -524,31 +389,166 @@ namespace Party_MS2
             this.uiButton1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
             // 
+            // uiDatetimePicker1
+            // 
+            this.uiDatetimePicker1.FillColor = System.Drawing.Color.White;
+            this.uiDatetimePicker1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiDatetimePicker1.Location = new System.Drawing.Point(664, 286);
+            this.uiDatetimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiDatetimePicker1.MaxLength = 19;
+            this.uiDatetimePicker1.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiDatetimePicker1.Name = "uiDatetimePicker1";
+            this.uiDatetimePicker1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiDatetimePicker1.Size = new System.Drawing.Size(274, 36);
+            this.uiDatetimePicker1.SymbolDropDown = 61555;
+            this.uiDatetimePicker1.SymbolNormal = 61555;
+            this.uiDatetimePicker1.TabIndex = 97;
+            this.uiDatetimePicker1.Text = "请选择";
+            this.uiDatetimePicker1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiDatetimePicker1.Value = new System.DateTime(2022, 10, 18, 7, 29, 57, 368);
+            this.uiDatetimePicker1.Watermark = "";
+            this.uiDatetimePicker1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiComboBox1
+            // 
+            this.uiComboBox1.DataSource = null;
+            this.uiComboBox1.FillColor = System.Drawing.Color.White;
+            this.uiComboBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiComboBox1.Items.AddRange(new object[] {
+            "男",
+            "女"});
+            this.uiComboBox1.Location = new System.Drawing.Point(230, 164);
+            this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiComboBox1.Name = "uiComboBox1";
+            this.uiComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiComboBox1.Size = new System.Drawing.Size(279, 29);
+            this.uiComboBox1.TabIndex = 99;
+            this.uiComboBox1.Text = "请选择";
+            this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiComboBox1.Watermark = "";
+            this.uiComboBox1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiComboBox2
+            // 
+            this.uiComboBox2.DataSource = null;
+            this.uiComboBox2.FillColor = System.Drawing.Color.White;
+            this.uiComboBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiComboBox2.Items.AddRange(new object[] {
+            "入党申请人",
+            "入党积极分子",
+            "发展对象",
+            "中共预备党员",
+            "中共党员"});
+            this.uiComboBox2.Location = new System.Drawing.Point(231, 286);
+            this.uiComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiComboBox2.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiComboBox2.Name = "uiComboBox2";
+            this.uiComboBox2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiComboBox2.Size = new System.Drawing.Size(278, 29);
+            this.uiComboBox2.TabIndex = 100;
+            this.uiComboBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiComboBox2.Watermark = "";
+            this.uiComboBox2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiComboBox3
+            // 
+            this.uiComboBox3.DataSource = null;
+            this.uiComboBox3.FillColor = System.Drawing.Color.White;
+            this.uiComboBox3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiComboBox3.Items.AddRange(new object[] {
+            "北京市",
+            "天津市",
+            "上海市",
+            "重庆市",
+            "河北省",
+            "河南省",
+            "云南省",
+            "辽宁省",
+            "黑龙江省",
+            "湖南省",
+            "安徽省",
+            "山东省",
+            "新疆维吾尔",
+            "江苏省",
+            "浙江省",
+            "江西省",
+            "湖北省",
+            "广西壮族",
+            "甘肃省",
+            "山西省",
+            "内蒙古",
+            "陕西",
+            "吉林",
+            "福建",
+            "贵州",
+            "广东",
+            "青海",
+            "西藏",
+            "四川",
+            "宁夏",
+            "海南",
+            "台湾",
+            "香港特别行政区",
+            "澳门特别行政区"});
+            this.uiComboBox3.Location = new System.Drawing.Point(664, 98);
+            this.uiComboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiComboBox3.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiComboBox3.Name = "uiComboBox3";
+            this.uiComboBox3.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiComboBox3.Size = new System.Drawing.Size(274, 29);
+            this.uiComboBox3.TabIndex = 100;
+            this.uiComboBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiComboBox3.Watermark = "";
+            this.uiComboBox3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiComboBox4
+            // 
+            this.uiComboBox4.DataSource = null;
+            this.uiComboBox4.FillColor = System.Drawing.Color.White;
+            this.uiComboBox4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiComboBox4.Items.AddRange(new object[] {
+            "入党申请人",
+            "入党积极分子",
+            "发展对象",
+            "中共预备党员",
+            "中共党员"});
+            this.uiComboBox4.Location = new System.Drawing.Point(232, 343);
+            this.uiComboBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiComboBox4.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiComboBox4.Name = "uiComboBox4";
+            this.uiComboBox4.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiComboBox4.Size = new System.Drawing.Size(278, 29);
+            this.uiComboBox4.TabIndex = 101;
+            this.uiComboBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiComboBox4.Watermark = "";
+            this.uiComboBox4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
             // ABIAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1101, 481);
+            this.ClientSize = new System.Drawing.Size(1132, 481);
+            this.Controls.Add(this.uiComboBox4);
+            this.Controls.Add(this.uiComboBox3);
+            this.Controls.Add(this.uiComboBox2);
+            this.Controls.Add(this.uiComboBox1);
+            this.Controls.Add(this.uiDatetimePicker1);
             this.Controls.Add(this.uiButton1);
             this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiLabel11);
-            this.Controls.Add(this.uiTextBox11);
             this.Controls.Add(this.uiLabel10);
             this.Controls.Add(this.uiTextBox10);
             this.Controls.Add(this.uiLabel9);
             this.Controls.Add(this.uiTextBox9);
             this.Controls.Add(this.uiLabel8);
-            this.Controls.Add(this.uiTextBox8);
             this.Controls.Add(this.uiLabel7);
             this.Controls.Add(this.uiTextBox7);
             this.Controls.Add(this.uiLabel6);
-            this.Controls.Add(this.uiTextBox6);
             this.Controls.Add(this.uiLabel5);
-            this.Controls.Add(this.uiTextBox5);
             this.Controls.Add(this.uiLabel4);
             this.Controls.Add(this.uiTextBox4);
             this.Controls.Add(this.uiLabel3);
-            this.Controls.Add(this.uiTextBox3);
             this.Controls.Add(this.uiLabel2);
             this.Controls.Add(this.uiTextBox2);
             this.Controls.Add(this.uiLabel1);
@@ -564,28 +564,28 @@ namespace Party_MS2
 
         #endregion
         private Sunny.UI.UILabel uiLabel11;
-        private Sunny.UI.UITextBox uiTextBox11;
         private Sunny.UI.UILabel uiLabel10;
         private Sunny.UI.UITextBox uiTextBox10;
         private Sunny.UI.UILabel uiLabel9;
         private Sunny.UI.UITextBox uiTextBox9;
         private Sunny.UI.UILabel uiLabel8;
-        private Sunny.UI.UITextBox uiTextBox8;
         private Sunny.UI.UILabel uiLabel7;
         private Sunny.UI.UITextBox uiTextBox7;
         private Sunny.UI.UILabel uiLabel6;
-        private Sunny.UI.UITextBox uiTextBox6;
         private Sunny.UI.UILabel uiLabel5;
-        private Sunny.UI.UITextBox uiTextBox5;
         private Sunny.UI.UILabel uiLabel4;
         private Sunny.UI.UITextBox uiTextBox4;
         private Sunny.UI.UILabel uiLabel3;
-        private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UITextBox uiTextBox2;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIDatetimePicker uiDatetimePicker1;
+        private Sunny.UI.UIComboBox uiComboBox1;
+        private Sunny.UI.UIComboBox uiComboBox2;
+        private Sunny.UI.UIComboBox uiComboBox3;
+        private Sunny.UI.UIComboBox uiComboBox4;
     }
 }

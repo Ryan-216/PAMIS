@@ -13,21 +13,25 @@ namespace Party_MS2
 {
     public partial class UserIndex2 : Form
     {
-        string status;
+        string status="";
+        string Name1="";
         public UserIndex2()
         {
-            InitializeComponent();
+            InitializeComponent();           
             preload();
             Dao dao = new Dao();
-            string sql2 = $"select status from t_user where stu_id='{Data.UID}'";
+            string sql2 = $"select name,status from t_user where stu_id='{Data.UID}'";
             IDataReader dc2 = dao.read(sql2);
 
             while (dc2.Read())
             {
-                status = dc2[0].ToString();
+                Name1= dc2[0].ToString();
+                status = dc2[1].ToString();
             }
             dc2.Close();
             dao.DaoClose();
+            toolStripLabel3.Text = $"{Name1}";
+            uiLabel1.Text = $"欢迎{status}{Name1}登录！";
         }
 
         private void preload()

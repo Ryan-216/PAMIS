@@ -75,7 +75,7 @@
             this.uiTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ShowText = false;
-            this.uiTextBox1.Size = new System.Drawing.Size(171, 29);
+            this.uiTextBox1.Size = new System.Drawing.Size(258, 29);
             this.uiTextBox1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox1.TabIndex = 27;
             this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -124,7 +124,7 @@
             this.uiTextBox2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox2.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox2.ShowText = false;
-            this.uiTextBox2.Size = new System.Drawing.Size(171, 29);
+            this.uiTextBox2.Size = new System.Drawing.Size(258, 29);
             this.uiTextBox2.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox2.TabIndex = 29;
             this.uiTextBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,7 +162,7 @@
             this.uiTextBox3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox3.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox3.ShowText = false;
-            this.uiTextBox3.Size = new System.Drawing.Size(171, 29);
+            this.uiTextBox3.Size = new System.Drawing.Size(258, 29);
             this.uiTextBox3.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox3.TabIndex = 31;
             this.uiTextBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -200,7 +200,7 @@
             this.uiTextBox4.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox4.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox4.ShowText = false;
-            this.uiTextBox4.Size = new System.Drawing.Size(171, 29);
+            this.uiTextBox4.Size = new System.Drawing.Size(258, 29);
             this.uiTextBox4.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox4.TabIndex = 33;
             this.uiTextBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -238,7 +238,7 @@
             this.uiTextBox5.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox5.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox5.ShowText = false;
-            this.uiTextBox5.Size = new System.Drawing.Size(171, 29);
+            this.uiTextBox5.Size = new System.Drawing.Size(258, 29);
             this.uiTextBox5.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox5.TabIndex = 35;
             this.uiTextBox5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -276,7 +276,7 @@
             this.uiTextBox6.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox6.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox6.ShowText = false;
-            this.uiTextBox6.Size = new System.Drawing.Size(171, 29);
+            this.uiTextBox6.Size = new System.Drawing.Size(258, 29);
             this.uiTextBox6.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox6.TabIndex = 37;
             this.uiTextBox6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -314,7 +314,7 @@
             this.uiTextBox7.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox7.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox7.ShowText = false;
-            this.uiTextBox7.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox7.Size = new System.Drawing.Size(253, 29);
             this.uiTextBox7.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox7.TabIndex = 39;
             this.uiTextBox7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -353,7 +353,7 @@
             this.uiTextBox8.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox8.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox8.ShowText = false;
-            this.uiTextBox8.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox8.Size = new System.Drawing.Size(253, 29);
             this.uiTextBox8.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox8.TabIndex = 41;
             this.uiTextBox8.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -392,7 +392,7 @@
             this.uiTextBox9.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox9.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox9.ShowText = false;
-            this.uiTextBox9.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox9.Size = new System.Drawing.Size(253, 29);
             this.uiTextBox9.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox9.TabIndex = 43;
             this.uiTextBox9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -430,7 +430,7 @@
             this.uiTextBox10.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox10.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox10.ShowText = false;
-            this.uiTextBox10.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox10.Size = new System.Drawing.Size(253, 29);
             this.uiTextBox10.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox10.TabIndex = 45;
             this.uiTextBox10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -468,7 +468,7 @@
             this.uiTextBox11.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox11.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox11.ShowText = false;
-            this.uiTextBox11.Size = new System.Drawing.Size(166, 29);
+            this.uiTextBox11.Size = new System.Drawing.Size(253, 29);
             this.uiTextBox11.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox11.TabIndex = 47;
             this.uiTextBox11.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -554,7 +554,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(995, 612);
+            this.ClientSize = new System.Drawing.Size(1062, 612);
             this.Controls.Add(this.uiButton3);
             this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiButton1);

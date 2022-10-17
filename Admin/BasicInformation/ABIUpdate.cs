@@ -29,7 +29,7 @@ namespace Party_MS2
             uiTextBox8.Text = "";
             uiTextBox9.Text = "";
             uiTextBox10.Text = "";
-            uiTextBox11.Text = "";
+            uiDatetimePicker1.Text = "";
         }
         public ABIUpdate(string stu_id, string name, string sex, string ID, string statu, string school_id, string nation, string region, string e_mail, string pri_party, string apply_time)
         {
@@ -44,7 +44,7 @@ namespace Party_MS2
             uiTextBox8.Text = region;
             uiTextBox9.Text = e_mail;
             uiTextBox10.Text = pri_party;
-            uiTextBox11.Text = apply_time;
+            uiDatetimePicker1.Text = apply_time;
         }
 
        
@@ -52,7 +52,7 @@ namespace Party_MS2
        
         private void uiButton2_Click(object sender, EventArgs e)
         {
-            string sql = $"update t_user set stu_id = '{uiTextBox1.Text}', name = '{uiTextBox2.Text}', sex = '{uiTextBox3.Text}', ID = '{uiTextBox4.Text}', status = '{uiTextBox5.Text}', school_id = '{uiTextBox6.Text}', nation = '{uiTextBox7.Text}', origin = '{uiTextBox8.Text}', e_mail = '{uiTextBox9.Text}', pri_party= '{uiTextBox10.Text}', apply_time = '{uiTextBox11.Text}'where stu_id = '{id}'";
+            string sql = $"update t_user set stu_id = '{uiTextBox1.Text}', name = '{uiTextBox2.Text}', sex = '{uiTextBox3.Text}', ID = '{uiTextBox4.Text}', status = '{uiTextBox5.Text}', school_id = '{uiTextBox6.Text}', nation = '{uiTextBox7.Text}', origin = '{uiTextBox8.Text}', e_mail = '{uiTextBox9.Text}', pri_party= '{uiTextBox10.Text}', apply_time = '{uiDatetimePicker1.Text}'where stu_id = '{id}'";
             Dao dao = new Dao();
             if (dao.Execute(sql) > 0)
             {

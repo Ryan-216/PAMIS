@@ -21,15 +21,15 @@ namespace Party_MS2
         {
             uiTextBox1.Text = "";
             uiTextBox2.Text = "";
-            uiTextBox3.Text = "";
+            uiComboBox1.Text = "男";
             uiTextBox4.Text = "";
-            uiTextBox5.Text = "";
+            uiComboBox2.Text = "";
             uiTextBox6.Text = "";
             uiTextBox7.Text = "";
-            uiTextBox8.Text = "";
+            uiComboBox3.Text = "";
             uiTextBox9.Text = "";
             uiTextBox10.Text = "";
-            uiTextBox11.Text = "";
+            uiDatetimePicker1.Text = "";
         }
        
      
@@ -52,10 +52,10 @@ namespace Party_MS2
 
         private void uiButton2_Click(object sender, EventArgs e)
         {
-            if (uiTextBox1.Text != "" && uiTextBox2.Text != "" && uiTextBox3.Text != "" && uiTextBox4.Text != "" && uiTextBox5.Text != "" && uiTextBox6.Text != "" && uiTextBox7.Text != "" && uiTextBox8.Text != "" && uiTextBox9.Text != "" && uiTextBox10.Text != "" && uiTextBox11.Text != "")
+            if (uiTextBox1.Text != "" && uiTextBox2.Text != "" && uiComboBox1.Text != "" && uiTextBox4.Text != "" && uiComboBox2.Text != "" && uiTextBox6.Text != "" && uiTextBox7.Text != "" && uiComboBox3.Text != "" && uiTextBox9.Text != "" && uiTextBox10.Text != "" && uiDatetimePicker1.Text != "")
             {
                 Dao dao = new Dao();
-                string sql = $"insert into t_user values('{uiTextBox1.Text}','{uiTextBox2.Text}','{uiTextBox3.Text}','{uiTextBox4.Text}','{uiTextBox5.Text}','{uiTextBox6.Text}','{uiTextBox7.Text}','{uiTextBox8.Text}','{uiTextBox9.Text}','{uiTextBox10.Text}','{uiTextBox11.Text}')";
+                string sql = $"insert into t_user values('{uiTextBox1.Text}','{uiTextBox2.Text}','{uiComboBox1.Text}','{uiTextBox4.Text}','{uiComboBox2.Text}','{uiTextBox6.Text}','{uiTextBox7.Text}','{uiComboBox3.Text}','{uiTextBox9.Text}','{uiTextBox10.Text}','{uiDatetimePicker1.Text}')";
                 int n = dao.Execute(sql);
                 if (n > 0)
                 {
