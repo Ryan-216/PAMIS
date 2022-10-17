@@ -21,7 +21,7 @@ namespace Party_MS2
         {
             basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select * from t_letter where no like \'%01\'";
+            string sql = "select * from t_letter where no like \'%0001\'";
             IDataReader dc = dao.read(sql);
             string no, stu_id,time, pass, status;
             while (dc.Read())
