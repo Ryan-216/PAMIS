@@ -18,7 +18,7 @@ namespace Party_MS2
         {
             InitializeComponent();
             Table();
-            radioButton1.Checked = true;
+            uiRadioButton1.Checked = true;
         }
 
         private void AdminWrit_Load(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace Party_MS2
         }
         public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            uiDataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "select * from t_writ where writ_id like \'%001\'";
             IDataReader dc = dao.read(sql);
@@ -42,23 +42,23 @@ namespace Party_MS2
                 pass = dc[5].ToString();
               
                 string[] table = { stu_id, type, writ_id, upload_time, check_time, pass };
-                dataGridView1.Rows.Add(table);
+                uiDataGridView1.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
         public void TableSearch()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            uiDataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "";
-            if (radioButton1.Checked == true)
+            if (uiRadioButton1.Checked == true)
             {
-                sql = $"select*from t_writ where stu_id='{textBox1.Text}'";
+                sql = $"select*from t_writ where stu_id='{uiTextBox1.Text}'";
             }
-            else if (radioButton2.Checked == true)
+            else if (uiRadioButton2.Checked == true)
             {
-                sql = $"select*from t_writ where statues='{textBox1.Text}'";
+                sql = $"select*from t_writ where statues='{uiTextBox1.Text}'";
             }
 
             IDataReader dc = dao.read(sql);
@@ -73,7 +73,7 @@ namespace Party_MS2
                 pass = dc[5].ToString();
 
                 string[] table = { stu_id, type, writ_id, upload_time, check_time, pass };
-                dataGridView1.Rows.Add(table);
+                uiDataGridView1.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
@@ -81,23 +81,43 @@ namespace Party_MS2
 
         private void button5_Click(object sender, EventArgs e)
         {
-            TableSearch();
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            Table();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string writ_id = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            string type = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            string stu_id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            string writ_id = uiDataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            string type = uiDataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            string stu_id = uiDataGridView1.SelectedRows[0].Cells[0].Value.ToString();
 
             AdminCheckWrit adminCheckWrit = new AdminCheckWrit(writ_id, type, stu_id);
             adminCheckWrit.ShowDialog();
+            Table();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            TableSearch();
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            uiTextBox1.Text = "";
             Table();
         }
     }

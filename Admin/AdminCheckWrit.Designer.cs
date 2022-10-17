@@ -165,7 +165,7 @@
             this.uiTextBox1.Size = new System.Drawing.Size(221, 35);
             this.uiTextBox1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox1.TabIndex = 6;
-            this.uiTextBox1.Text = "审核通过";
+            this.uiTextBox1.Text = "通过";
             this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiTextBox1.Watermark = "";
             this.uiTextBox1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
