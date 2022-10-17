@@ -103,6 +103,12 @@
     <Compile Include="AdminIndex2.Designer.cs">
       <DependentUpon>AdminIndex2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Adminvideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminvideo.Designer.cs">
+      <DependentUpon>Adminvideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminCheckExam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -450,6 +456,9 @@
     </Compile>
     <EmbeddedResource Include="AdminIndex2.resx">
       <DependentUpon>AdminIndex2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminvideo.resx">
+      <DependentUpon>Adminvideo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminCheckExam.resx">
       <DependentUpon>AdminCheckExam.cs</DependentUpon>
