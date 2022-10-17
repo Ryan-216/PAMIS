@@ -56,7 +56,7 @@ namespace Party_MS2
             Dao dao = new Dao();
             if (type != "")
             {
-                sql = $"insert into t_asktocheck values('{Data.UID}','type','未审核')";
+                sql = $"insert into t_asktocheck values('{Data.UID}','{type}','未审核')";
             }
             else
             {

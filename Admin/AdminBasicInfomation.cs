@@ -206,11 +206,9 @@ namespace Party_MS2
 
         private void uiButton2_Click(object sender, EventArgs e)
         {
-            ABIAdd add = new ABIAdd();
-            this.Hide();
+            ABIAdd add = new ABIAdd();          
             add.ShowDialog();
-            Table();
-            this.Show();
+            Table();           
         }
 
         private void uiButton1_Click(object sender, EventArgs e)

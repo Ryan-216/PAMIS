@@ -19,24 +19,43 @@ namespace Party_MS2
 
         public void set_Null()
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
-            textBox6.Text = "";
-            textBox7.Text = "";
-            textBox8.Text = "";
-            textBox9.Text = "";
-            textBox10.Text = "";
-            textBox11.Text = "";
+            uiTextBox1.Text = "";
+            uiTextBox2.Text = "";
+            uiTextBox3.Text = "";
+            uiTextBox4.Text = "";
+            uiTextBox5.Text = "";
+            uiTextBox6.Text = "";
+            uiTextBox7.Text = "";
+            uiTextBox8.Text = "";
+            uiTextBox9.Text = "";
+            uiTextBox10.Text = "";
+            uiTextBox11.Text = "";
         }
-        private void button1_Click_1(object sender, EventArgs e)
+       
+     
+
+       
+        private void label1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "" && textBox7.Text != "" && textBox8.Text != "" && textBox9.Text != "" && textBox10.Text != "" && textBox11.Text != "")
+
+        }
+
+        private void ADBIAdd_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            if (uiTextBox1.Text != "" && uiTextBox2.Text != "" && uiTextBox3.Text != "" && uiTextBox4.Text != "" && uiTextBox5.Text != "" && uiTextBox6.Text != "" && uiTextBox7.Text != "" && uiTextBox8.Text != "" && uiTextBox9.Text != "" && uiTextBox10.Text != "" && uiTextBox11.Text != "")
             {
                 Dao dao = new Dao();
-                string sql = $"insert into t_user values('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}','{textBox6.Text}','{textBox7.Text}','{textBox8.Text}','{textBox9.Text}','{textBox10.Text}','{textBox11.Text}')";
+                string sql = $"insert into t_user values('{uiTextBox1.Text}','{uiTextBox2.Text}','{uiTextBox3.Text}','{uiTextBox4.Text}','{uiTextBox5.Text}','{uiTextBox6.Text}','{uiTextBox7.Text}','{uiTextBox8.Text}','{uiTextBox9.Text}','{uiTextBox10.Text}','{uiTextBox11.Text}')";
                 int n = dao.Execute(sql);
                 if (n > 0)
                 {
@@ -53,25 +72,10 @@ namespace Party_MS2
                 MessageBox.Show("信息不可为空！");
             }
         }
-     
 
-        private void button2_Click(object sender, EventArgs e)
+        private void uiButton1_Click(object sender, EventArgs e)
         {
             set_Null();
-        }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ADBIAdd_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
         }
     }
 }

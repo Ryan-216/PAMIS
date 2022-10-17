@@ -265,6 +265,12 @@
     <Compile Include="Advertisement.Designer.cs">
       <DependentUpon>Advertisement.cs</DependentUpon>
     </Compile>
+    <Compile Include="AScheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AScheck.Designer.cs">
+      <DependentUpon>AScheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dao.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="News.cs">
@@ -508,6 +514,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Advertisement.resx">
       <DependentUpon>Advertisement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AScheck.resx">
+      <DependentUpon>AScheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="News.resx">
       <DependentUpon>News.cs</DependentUpon>

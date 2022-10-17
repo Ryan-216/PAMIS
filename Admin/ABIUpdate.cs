@@ -19,39 +19,40 @@ namespace Party_MS2
         }
         public void set_Null()
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
-            textBox6.Text = "";
-            textBox7.Text = "";
-            textBox8.Text = "";
-            textBox9.Text = "";
-            textBox10.Text = "";
-            textBox11.Text = "";
+            uiTextBox1.Text = "";
+            uiTextBox2.Text = "";
+            uiTextBox3.Text = "";
+            uiTextBox4.Text = "";
+            uiTextBox5.Text = "";
+            uiTextBox6.Text = "";
+            uiTextBox7.Text = "";
+            uiTextBox8.Text = "";
+            uiTextBox9.Text = "";
+            uiTextBox10.Text = "";
+            uiTextBox11.Text = "";
         }
         public ABIUpdate(string stu_id, string name, string sex, string ID, string statu, string school_id, string nation, string region, string e_mail, string pri_party, string apply_time)
         {
             InitializeComponent();
-            id =textBox1.Text = stu_id;
-            textBox2.Text = name;
-            textBox3.Text = sex;
-            textBox4.Text = ID;
-            textBox5.Text = statu;
-            textBox6.Text = school_id;
-            textBox7.Text = nation;
-            textBox8.Text = region;
-            textBox9.Text = e_mail;
-            textBox10.Text = pri_party;
-            textBox11.Text = apply_time;
+            id = uiTextBox1.Text = stu_id;
+            uiTextBox2.Text = name;
+            uiTextBox3.Text = sex;
+            uiTextBox4.Text = ID;
+            uiTextBox5.Text = statu;
+            uiTextBox6.Text = school_id;
+            uiTextBox7.Text = nation;
+            uiTextBox8.Text = region;
+            uiTextBox9.Text = e_mail;
+            uiTextBox10.Text = pri_party;
+            uiTextBox11.Text = apply_time;
         }
 
        
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void uiButton2_Click(object sender, EventArgs e)
         {
-            string sql = $"update t_user set stu_id = '{textBox1.Text}', name = '{textBox2.Text}', sex = '{textBox3.Text}', ID = '{textBox4.Text}', status = '{textBox5.Text}', school_id = '{textBox6.Text}', nation = '{textBox7.Text}', origin = '{textBox8.Text}', e_mail = '{textBox9.Text}', pri_party= '{textBox10.Text}', apply_time = '{textBox11.Text}'where stu_id = '{id}'";
+            string sql = $"update t_user set stu_id = '{uiTextBox1.Text}', name = '{uiTextBox2.Text}', sex = '{uiTextBox3.Text}', ID = '{uiTextBox4.Text}', status = '{uiTextBox5.Text}', school_id = '{uiTextBox6.Text}', nation = '{uiTextBox7.Text}', origin = '{uiTextBox8.Text}', e_mail = '{uiTextBox9.Text}', pri_party= '{uiTextBox10.Text}', apply_time = '{uiTextBox11.Text}'where stu_id = '{id}'";
             Dao dao = new Dao();
             if (dao.Execute(sql) > 0)
             {
@@ -59,16 +60,15 @@ namespace Party_MS2
                 this.Close();
             }
         }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+            set_Null();
+        }
         private void ABIUpdate_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            set_Null();
-        }
-
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
@@ -178,5 +178,7 @@ namespace Party_MS2
         {
 
         }
+
+        
     }
 }

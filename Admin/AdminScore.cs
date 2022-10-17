@@ -16,7 +16,7 @@ namespace Party_MS2
         {
             InitializeComponent();
             Table();
-            radioButton1.Checked = true;
+            uiRadioButton1.Checked = true;
         }
 
         private void AdminScore_Load(object sender, EventArgs e)
@@ -25,40 +25,44 @@ namespace Party_MS2
         }
         public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select * from t_score";
+            string sql = "select * from t_scoresum";
             IDataReader dc = dao.read(sql);
-            string stu_id, name, avg_score, failed;
+            string stu_id, failed, score1, score2;
             while (dc.Read())
             {
                 stu_id = dc[0].ToString();
-                name = dc[1].ToString();
-                avg_score = dc[2].ToString();
-                failed = dc[3].ToString();
+                failed = dc[1].ToString();
+                score1 = dc[2].ToString();
+                score2 = dc[3].ToString();
 
-                string[] table = { stu_id, name, avg_score, failed };
-                dataGridView1.Rows.Add(table);
+                string[] table = { stu_id, failed,score1, score2 };
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
         public void TableSearch()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
             string sql = "";
-            if (radioButton1.Checked == true)
+            if (uiRadioButton1.Checked == true)
             {
-                sql = $"select*from t_score where stu_id='{textBox1.Text}'";
+                sql = $"select * from t_scoresum where stu_id='{uiTextBox1.Text}'";
             }
-            else if (radioButton2.Checked == true)
+            else if (uiRadioButton2.Checked == true)
             {
-                sql = $"select*from t_score where avg_score='{textBox1.Text}'";
+                sql = $"select * from t_scoresum where failed = '{uiTextBox1.Text}'";
             }
-            else if (radioButton3.Checked == true)
+            else if (uiRadioButton3.Checked == true)
             {
-                sql = $"select*from t_score where failed='{textBox1.Text}'";
+                sql = $"select * from t_scoresum where score1 ='{uiTextBox1.Text}'";
+            }
+            else if (uiRadioButton4.Checked == true)
+            {
+                sql = $"select * from t_scoresum where score2='{uiTextBox1.Text}'";
             }
             IDataReader dc = dao.read(sql);
             string stu_id, name, avg_score, failed;
@@ -70,20 +74,28 @@ namespace Party_MS2
                 failed = dc[3].ToString();
 
                 string[] table = { stu_id, name, avg_score, failed };
-                dataGridView1.Rows.Add(table);
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
-        private void button5_Click(object sender, EventArgs e)
+
+
+        private void uiButton1_Click(object sender, EventArgs e)
         {
             TableSearch();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void uiButton2_Click(object sender, EventArgs e)
         {
             Table();
-            textBox1.Text = "";
+            uiTextBox1.Text = "";
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            AScheck aScheck = new AScheck();
+            aScheck.ShowDialog();
         }
     }
 }
