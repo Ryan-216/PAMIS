@@ -33,6 +33,7 @@ namespace Party_MS2
             radioButton1.BackColor = Color.Transparent;
             radioButton2.BackColor = Color.Transparent;
             radioButton1.Checked = true;
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -46,9 +47,11 @@ namespace Party_MS2
         {
             if (textBox3.Text == code1)
             {
+
                 //user
                 if (radioButton1.Checked == true)
                 {
+                    
 
                     Dao dao = new Dao();
                     string sql = $"select* from t_pwd where stu_id='{textBox1.Text}' and pwd='{textBox2.Text}'";
@@ -74,6 +77,7 @@ namespace Party_MS2
                 //admin
                 if (radioButton2.Checked == true)
                 {
+                    textBox1.Text = "admin";
                     Dao dao = new Dao();
                     string sql = $"select* from t_admin where id='{textBox1.Text}' and pwd='{textBox2.Text}'";
                     IDataReader dc = dao.read(sql);
@@ -101,6 +105,7 @@ namespace Party_MS2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            textBox1.Text = "34191035";
             if (textBox1.Text != "" && textBox2.Text != "")
             {
                 Login();
