@@ -53,18 +53,15 @@ namespace Party_MS2
             treeNode10});
             System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("会议管理");
             System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("文书管理");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("联系管理员");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("退出");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
-            treeNode14,
-            treeNode15});
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("退出");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
+            treeNode14});
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uiAvatar1 = new Sunny.UI.UIAvatar();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -72,6 +69,7 @@ namespace Party_MS2
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.uiAvatar1 = new Sunny.UI.UIAvatar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -126,18 +124,16 @@ namespace Party_MS2
             treeNode12.Text = "会议管理";
             treeNode13.Name = "节点7";
             treeNode13.Text = "文书管理";
-            treeNode14.Name = "节点13";
-            treeNode14.Text = "联系管理员";
-            treeNode15.Name = "节点14";
-            treeNode15.Text = "退出";
-            treeNode16.Name = "节点8";
-            treeNode16.Text = "系统";
+            treeNode14.Name = "节点14";
+            treeNode14.Text = "退出";
+            treeNode15.Name = "节点8";
+            treeNode15.Text = "系统";
             uiNavMenu1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode4,
             treeNode11,
             treeNode12,
             treeNode13,
-            treeNode16});
+            treeNode15});
             uiNavMenu1.ScrollBarColor = System.Drawing.Color.Tomato;
             uiNavMenu1.ScrollBarHoverColor = System.Drawing.Color.Tomato;
             uiNavMenu1.ScrollBarPressColor = System.Drawing.Color.Maroon;
@@ -215,26 +211,6 @@ namespace Party_MS2
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // uiAvatar1
-            // 
-            this.uiAvatar1.AvatarSize = 35;
-            this.uiAvatar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiAvatar1.Enabled = false;
-            this.uiAvatar1.FillColor = System.Drawing.Color.Red;
-            this.uiAvatar1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiAvatar1.ForeColor = System.Drawing.Color.Yellow;
-            this.uiAvatar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.uiAvatar1.Location = new System.Drawing.Point(1715, 2);
-            this.uiAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiAvatar1.Name = "uiAvatar1";
-            this.uiAvatar1.Size = new System.Drawing.Size(43, 39);
-            this.uiAvatar1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiAvatar1.SymbolSize = 30;
-            this.uiAvatar1.TabIndex = 0;
-            this.uiAvatar1.Text = "uiAvatar1";
-            this.uiAvatar1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.uiAvatar1.Click += new System.EventHandler(this.uiAvatar1_Click);
-            // 
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
@@ -295,6 +271,26 @@ namespace Party_MS2
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Size = new System.Drawing.Size(57, 31);
             this.toolStripLabel3.Text = "用户名";
+            // 
+            // uiAvatar1
+            // 
+            this.uiAvatar1.AvatarSize = 35;
+            this.uiAvatar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiAvatar1.Enabled = false;
+            this.uiAvatar1.FillColor = System.Drawing.Color.Red;
+            this.uiAvatar1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiAvatar1.ForeColor = System.Drawing.Color.Yellow;
+            this.uiAvatar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.uiAvatar1.Location = new System.Drawing.Point(1715, 2);
+            this.uiAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiAvatar1.Name = "uiAvatar1";
+            this.uiAvatar1.Size = new System.Drawing.Size(43, 39);
+            this.uiAvatar1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiAvatar1.SymbolSize = 30;
+            this.uiAvatar1.TabIndex = 0;
+            this.uiAvatar1.Text = "uiAvatar1";
+            this.uiAvatar1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiAvatar1.Click += new System.EventHandler(this.uiAvatar1_Click);
             // 
             // timer1
             // 

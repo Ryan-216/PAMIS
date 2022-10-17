@@ -17,6 +17,7 @@ namespace Party_MS2
         public UserIndex2()
         {
             InitializeComponent();
+            preload();
             Dao dao = new Dao();
             string sql2 = $"select status from t_user where stu_id='{Data.UID}'";
             IDataReader dc2 = dao.read(sql2);
@@ -27,6 +28,25 @@ namespace Party_MS2
             }
             dc2.Close();
             dao.DaoClose();
+        }
+
+        private void preload()
+        {
+            Notification1 admin = new Notification1();
+            admin.TopLevel = false;
+            admin.FormBorderStyle = FormBorderStyle.None;
+            admin.Dock = DockStyle.Fill;
+            this.panel6.Controls.Clear();
+            this.panel6.Controls.Add(admin);
+            admin.Show();
+            //
+            News admin1 = new News();
+            admin1.TopLevel = false;
+            admin1.FormBorderStyle = FormBorderStyle.None;
+            admin1.Dock = DockStyle.Fill;
+            this.panel7.Controls.Clear();
+            this.panel7.Controls.Add(admin1);
+            admin1.Show();
         }
 
         private void uiNavMenu1_MenuItemClick(TreeNode node, Sunny.UI.NavMenuItem item, int pageIndex)
@@ -129,6 +149,16 @@ namespace Party_MS2
                 this.panel2.Controls.Clear();
                 this.panel2.Controls.Add(admin);
                 admin.Show();
+            }
+            else if (node.Text == "联系管理员")
+            {
+                Developers developers = new Developers();
+                developers.TopLevel = false;
+                developers.FormBorderStyle = FormBorderStyle.None;
+                developers.Dock = DockStyle.Fill;
+                this.panel2.Controls.Clear();
+                this.panel2.Controls.Add(developers);
+                developers.Show();
             }
         }
 
