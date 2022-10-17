@@ -32,7 +32,6 @@ namespace Party_MS2
             id = textBox1.Text = no;
             textBox2.Text = stu_id;
             textBox5.Text = time;
-            textBox6.Text = pass;
             pictureShow(id);
         }
 
@@ -57,7 +56,7 @@ namespace Party_MS2
         {
             textBox1.Text = "";
             textBox2.Text = "";
-            textBox3.Text = "";
+
             textBox5.Text = "";
             textBox6.Text = "";
         }
@@ -66,16 +65,7 @@ namespace Party_MS2
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string sql = $"update t_letter set no = '{textBox1.Text}', stu_id = '{textBox2.Text}', name = '{textBox3.Text}', time = '{textBox5.Text}', pass = '{textBox6.Text}'where no={id}";
-            Dao dao = new Dao();
-            if (dao.Execute(sql) > 0)
-            {
-                MessageBox.Show("修改成功！");
-                this.Close();
-            }
-        }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -109,6 +99,36 @@ namespace Party_MS2
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            string sql = $"update t_letter set pass = '通过 'where no={id}";
+            Dao dao = new Dao();
+            if (dao.Execute(sql) > 0)
+            {
+                MessageBox.Show("修改成功！");
+                this.Close();
+            }
+        }
+
+        private void uiButton4_Click(object sender, EventArgs e)
+        {
+            if (textBox6.Text != "")
+            {
+                string sql = $"update t_letter set pass = '拒绝{textBox6.Text} 'where no={id}";
+                Dao dao = new Dao();
+                if (dao.Execute(sql) > 0)
+                {
+                    MessageBox.Show("修改成功！");
+                    this.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("请输入拒绝理由！");
+            }
+            
         }
     }
 }
