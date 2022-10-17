@@ -1,6 +1,6 @@
 ﻿namespace Party_MS2
 {
-    partial class UserExam
+    partial class UserExamChoose
     {
         /// <summary>
         /// Required designer variable.

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Party_MS2
 {
-    public partial class UserExam : Form
+    public partial class UserExamChoose : Form
     {
-        public UserExam()
+        public UserExamChoose()
         {
             InitializeComponent();
-            setExam("E03");             
+            //setExam("E03");             
         }
-        public UserExam(string no)
+        public UserExamChoose(string no)
         {
             InitializeComponent();
             setExam(no);             //need alter

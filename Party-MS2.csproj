@@ -279,6 +279,12 @@
     </Compile>
     <Compile Include="Dao.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="UserExamSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserExamSub.Designer.cs">
+      <DependentUpon>UserExamSub.cs</DependentUpon>
+    </Compile>
     <Compile Include="News.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,11 +339,11 @@
     <Compile Include="UserReports.Designer.cs">
       <DependentUpon>UserReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserExam.cs">
+    <Compile Include="UserExamChoose.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserExam.Designer.cs">
-      <DependentUpon>UserExam.cs</DependentUpon>
+    <Compile Include="UserExamChoose.Designer.cs">
+      <DependentUpon>UserExamChoose.cs</DependentUpon>
     </Compile>
     <Compile Include="UserTranscript.cs">
       <SubType>Form</SubType>
@@ -533,6 +539,9 @@
     <EmbeddedResource Include="AScheck.resx">
       <DependentUpon>AScheck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserExamSub.resx">
+      <DependentUpon>UserExamSub.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="News.resx">
       <DependentUpon>News.cs</DependentUpon>
     </EmbeddedResource>
@@ -560,8 +569,8 @@
     <EmbeddedResource Include="UserReports.resx">
       <DependentUpon>UserReports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserExam.resx">
-      <DependentUpon>UserExam.cs</DependentUpon>
+    <EmbeddedResource Include="UserExamChoose.resx">
+      <DependentUpon>UserExamChoose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserTranscript.resx">
       <DependentUpon>UserTranscript.cs</DependentUpon>

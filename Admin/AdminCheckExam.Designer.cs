@@ -33,6 +33,7 @@
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiButton2 = new Sunny.UI.UIButton();
             this.uiLabel1 = new Sunny.UI.UILabel();
+            this.uiLabel2 = new Sunny.UI.UILabel();
             this.SuspendLayout();
             // 
             // uiContextMenuStrip1
@@ -49,7 +50,7 @@
             this.uiRichTextBox1.FillColor = System.Drawing.Color.White;
             this.uiRichTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiRichTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiRichTextBox1.Location = new System.Drawing.Point(69, 56);
+            this.uiRichTextBox1.Location = new System.Drawing.Point(69, 110);
             this.uiRichTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiRichTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiRichTextBox1.Name = "uiRichTextBox1";
@@ -58,7 +59,7 @@
             this.uiRichTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiRichTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiRichTextBox1.ShowText = false;
-            this.uiRichTextBox1.Size = new System.Drawing.Size(794, 449);
+            this.uiRichTextBox1.Size = new System.Drawing.Size(794, 395);
             this.uiRichTextBox1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiRichTextBox1.TabIndex = 2;
             this.uiRichTextBox1.Text = "uiRichTextBox1";
@@ -127,11 +128,24 @@
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
+            // uiLabel2
+            // 
+            this.uiLabel2.AutoSize = true;
+            this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel2.Location = new System.Drawing.Point(69, 35);
+            this.uiLabel2.Name = "uiLabel2";
+            this.uiLabel2.Size = new System.Drawing.Size(91, 27);
+            this.uiLabel2.TabIndex = 7;
+            this.uiLabel2.Text = "uiLabel2";
+            this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
             // AdminCheckExam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 633);
+            this.Controls.Add(this.uiLabel2);
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiTextBox1);
@@ -139,6 +153,7 @@
             this.Name = "AdminCheckExam";
             this.Text = " AdminCheckExam";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -149,5 +164,6 @@
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UILabel uiLabel2;
     }
 }

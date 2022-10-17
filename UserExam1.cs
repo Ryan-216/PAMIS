@@ -45,8 +45,18 @@ namespace Party_MS2
         private void uiButton2_Click(object sender, EventArgs e)
         {
             string exam_no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
-            UserExam userExam = new UserExam(exam_no);
-            userExam.ShowDialog();
+            string exam_type = basicDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+            if(exam_type == "choose")
+            {
+                UserExamChoose userExam = new UserExamChoose(exam_no);
+                userExam.ShowDialog();
+            }
+            if(exam_type == "subjective")
+            {
+                UserExamSub userExamSub = new UserExamSub(exam_no);
+                userExamSub.ShowDialog();
+            }
+
 
         }
     }

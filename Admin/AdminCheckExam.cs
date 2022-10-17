@@ -27,8 +27,13 @@ namespace Party_MS2.Admin
             IDataReader dc = dao.read(sql);
             dc.Read();
             uiRichTextBox1.Text = dc[0].ToString();
+            sql = "select exam_content from t_exam where exam_no=\'" + exam_no + "\'";
+            dc = dao.read(sql);
+            dc.Read();
+            uiLabel2.Text = dc[0].ToString();
             exam_no_global = exam_no;
             stu_id_global = stu_id;
+            dc.Close();
             dao.DaoClose();
         }
 
