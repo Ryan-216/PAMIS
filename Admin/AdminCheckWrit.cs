@@ -30,6 +30,11 @@ namespace Party_MS2.Admin
             writ_type = type;
             id = writ_id;
             student_id = stu_id;
+            if(page + 1 != count)
+            {
+                uiTextBox1.Hide();
+                uiButton3.Hide();
+            }
         }
 
         private void labelChange(string stu_id, string type, int page)
@@ -73,6 +78,8 @@ namespace Party_MS2.Admin
                 pictureBox1.Image = bmap;
                 uiLabel2.Text = (page + 1) + "/" + count;
                 labelChange(student_id, writ_type, page + 1);
+                uiButton3.Hide();
+                uiTextBox1.Hide();
             }
         }
 
@@ -87,6 +94,11 @@ namespace Party_MS2.Admin
                 pictureBox1.Image = bmap;
                 uiLabel2.Text = (page + 1) + "/" + count;
                 labelChange(student_id, writ_type, page + 1);
+                if (page + 1 == count)
+                {
+                    uiTextBox1.Show();
+                    uiButton3.Show();
+                }
             }
         }
     }

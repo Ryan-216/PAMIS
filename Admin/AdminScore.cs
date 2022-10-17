@@ -58,11 +58,11 @@ namespace Party_MS2
             }
             else if (uiRadioButton3.Checked == true)
             {
-                sql = $"select * from t_scoresum where score1 ='{uiTextBox1.Text}'";
+                sql = $"select * from t_scoresum where score1{uiTextBox1.Text}";
             }
             else if (uiRadioButton4.Checked == true)
             {
-                sql = $"select * from t_scoresum where score2='{uiTextBox1.Text}'";
+                sql = $"select * from t_scoresum where score2{uiTextBox1.Text}";
             }
             IDataReader dc = dao.read(sql);
             string stu_id, name, avg_score, failed;
@@ -96,6 +96,16 @@ namespace Party_MS2
         {
             AScheck aScheck = new AScheck();
             aScheck.ShowDialog();
+        }
+
+        private void uiRadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            uiLabel1.Show();
+        }
+
+        private void uiRadioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            uiLabel1.Show();
         }
     }
 }

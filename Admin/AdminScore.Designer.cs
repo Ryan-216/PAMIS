@@ -48,6 +48,7 @@ namespace Party_MS2
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiRadioButton4 = new Sunny.UI.UIRadioButton();
             this.uiButton3 = new Sunny.UI.UIButton();
+            this.uiLabel1 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)(this.basicDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -198,6 +199,7 @@ namespace Party_MS2
             this.uiRadioButton3.TabIndex = 34;
             this.uiRadioButton3.Text = "积极分子培训成绩查询";
             this.uiRadioButton3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiRadioButton3.CheckedChanged += new System.EventHandler(this.uiRadioButton3_CheckedChanged);
             // 
             // uiButton1
             // 
@@ -278,6 +280,7 @@ namespace Party_MS2
             this.uiRadioButton4.TabIndex = 40;
             this.uiRadioButton4.Text = "发展对象培训成绩查询";
             this.uiRadioButton4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiRadioButton4.CheckedChanged += new System.EventHandler(this.uiRadioButton4_CheckedChanged);
             // 
             // uiButton3
             // 
@@ -303,11 +306,24 @@ namespace Party_MS2
             this.uiButton3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
             // 
+            // uiLabel1
+            // 
+            this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel1.Location = new System.Drawing.Point(187, 332);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(229, 95);
+            this.uiLabel1.TabIndex = 42;
+            this.uiLabel1.Text = "输入成绩查询条件\r\neg. >90";
+            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel1.Visible = false;
+            this.uiLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
             // AdminScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1130, 542);
+            this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.uiButton3);
             this.Controls.Add(this.uiRadioButton4);
             this.Controls.Add(this.uiTextBox1);
@@ -341,5 +357,6 @@ namespace Party_MS2
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UIRadioButton uiRadioButton4;
         private Sunny.UI.UIButton uiButton3;
+        private Sunny.UI.UILabel uiLabel1;
     }
 }

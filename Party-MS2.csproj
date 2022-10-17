@@ -679,7 +679,6 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="aaa.mp4" />
     <Content Include="Todo2.txt" />
     <None Include="Resources\t01cd4b59a94db03b3b.jpg" />
   </ItemGroup>
