@@ -74,8 +74,10 @@ namespace Party_MS2.User
         private void uiButton1_Click(object sender, EventArgs e)
         {
             string train_no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            Data.LearningNO = train_no;
             Uservideos user = new Uservideos(train_no);
             user.Show();
+            Table();
         }
 
     

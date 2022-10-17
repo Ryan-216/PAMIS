@@ -61,8 +61,17 @@ namespace Party_MS2
 
         private void vlcControl1_EndReached(object sender, Vlc.DotNet.Core.VlcMediaPlayerEndReachedEventArgs e)
         {
-            string sql = "update t_education set clear = '已完成' where stu_id=\'" + Data.UID + "\' and no=\'" + learnno + "\'";
-            MessageBox.Show("本课程已完成");
+            string sql = "update t_education set clear = '已完成' where stu_id=\'" + Data.UID + "\' and no=\'" + Data.LearningNO + "\'";
+            Dao dao = new Dao();
+            if(dao.Execute(sql)>0)
+            {
+                MessageBox.Show("本课程已完成");
+            }
+            else
+            {
+                MessageBox.Show("发生未知错误，请联系管理员");
+            }
+
         }
 
         private void media_Load(object sender, EventArgs e)
