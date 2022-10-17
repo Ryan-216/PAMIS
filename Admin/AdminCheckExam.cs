@@ -42,6 +42,11 @@ namespace Party_MS2.Admin
             
         }
 
+        private void AdminCheckExam_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void uiButton2_Click(object sender, EventArgs e)
         {
             int score = -1;

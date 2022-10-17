@@ -15,9 +15,21 @@ namespace Party_MS2.User
 {
     public partial class UserLearn : Form
     {
+        string Status;
         public UserLearn()
         {
             InitializeComponent();
+            
+            Dao dao = new Dao();
+            string sql2 = $"select status from t_user where stu_id='{Data.UID}'";
+            IDataReader dc2 = dao.read(sql2);
+
+            while (dc2.Read())
+            {
+                Status = dc2[0].ToString();
+            }
+            dc2.Close();
+            dao.DaoClose();
             Table();
         }
 
@@ -25,7 +37,7 @@ namespace Party_MS2.User
         {
             basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select no, name, hours, status, s_time, e_time, clear, from t_education where stu_id="+Data.UID;
+            string sql = $"select distinct no, name, hours, contents,status, s_time, e_time, clear from t_education where status ='{Status}'";
             IDataReader dc = dao.read(sql);
             string education_no, education_name, education_hours, education_contents, education_status, education_stime, education_etime, education_clear;
             while (dc.Read())
@@ -65,5 +77,7 @@ namespace Party_MS2.User
             Uservideos user = new Uservideos(train_no);
             user.Show();
         }
+
+    
     }
 }

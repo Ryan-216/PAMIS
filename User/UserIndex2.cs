@@ -18,14 +18,14 @@ namespace Party_MS2
         {
             InitializeComponent();
             Dao dao = new Dao();
-            string sql = $"select status from t_user where stu_id='{Data.UID}'";
-            IDataReader dc = dao.read(sql);
-            
-            while (dc.Read())
+            string sql2 = $"select status from t_user where stu_id='{Data.UID}'";
+            IDataReader dc2 = dao.read(sql2);
+
+            while (dc2.Read())
             {
-                status = dc[0].ToString();
+                status = dc2[0].ToString();
             }
-            dc.Close();
+            dc2.Close();
             dao.DaoClose();
         }
 

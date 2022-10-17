@@ -23,6 +23,7 @@ namespace Party_MS2
             this.BackgroundImageLayout = ImageLayout.Stretch;
             GenerateCode();
             textBox2.Text = "123";
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -67,13 +68,17 @@ namespace Party_MS2
                         this.Hide();
                         user.ShowDialog();
                         this.Show();
+
+
                     }
                     else
                     {
                         MessageBox.Show("登录失败！");
                     }
-                    dao.DaoClose();
+                    
+
                 }
+
                 //admin
                 if (radioButton2.Checked == true)
                 {

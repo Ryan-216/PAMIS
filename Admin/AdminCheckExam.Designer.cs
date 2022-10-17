@@ -153,6 +153,7 @@
             this.Controls.Add(this.uiRichTextBox1);
             this.Name = "AdminCheckExam";
             this.Text = " AdminCheckExam";
+            this.Load += new System.EventHandler(this.AdminCheckExam_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
