@@ -19,50 +19,49 @@ namespace Party_MS2
         }
         public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select * from t_letter where no like \'%0001\'";
+            string sql = "select * from t_letter where no like \'%01\'";
             IDataReader dc = dao.read(sql);
-            string no, stu_id, name, time, pass, status;
+            string no, stu_id,time, pass, status;
             while (dc.Read())
             {
                 no = dc[0].ToString();
                 stu_id = dc[1].ToString();
-                name = dc[2].ToString();
-                time = dc[4].ToString();
-                status = dc[5].ToString();
-                pass = dc[6].ToString();
+                time = dc[3].ToString();
+                status = dc[4].ToString();
+                pass = dc[5].ToString();
 
-                string[] table = { no, stu_id, name, status, time, pass };
-                dataGridView1.Rows.Add(table);
+                string[] table = { no, stu_id, status, time, pass };
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+     
+
+       
+
+        private void AdminLetter_Load(object sender, EventArgs e)
         {
 
-            ALAdd aLAdd = new ALAdd();
-            this.Hide();
-            aLAdd.ShowDialog();
-            this.Show();
-            Table();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+
+     
+
+        private void uiButton2_Click(object sender, EventArgs e)
         {
             try
             {
-                string no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                string stu_id = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                string name = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                string time = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-                string pass = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-               
+                string no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                string stu_id = basicDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+                string time = basicDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+                string pass = basicDataGridView.SelectedRows[0].Cells[5].Value.ToString();
 
-
-                ALUpdate1 admin = new ALUpdate1(no, stu_id, name,time, pass);
+                ALUpdate1 admin = new ALUpdate1(no, stu_id, time, pass);
                 admin.ShowDialog();
 
                 Table();
@@ -71,20 +70,14 @@ namespace Party_MS2
             {
                 MessageBox.Show("Error");
             }
-           
         }
 
-        private void AdminLetter_Load(object sender, EventArgs e)
+        private void uiButton1_Click(object sender, EventArgs e)
         {
+            string no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
 
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            string no = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-
-            DialogResult dialogResult = MessageBox.Show("您确定要删除编号为"+no+"的函调信吗", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-            if(dialogResult == DialogResult.Yes)
+            DialogResult dialogResult = MessageBox.Show("您确定要删除编号为" + no + "的函调信吗", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+            if (dialogResult == DialogResult.Yes)
             {
                 Dao dao = new Dao();
                 string sql = "delete from t_letter where no=" + no;
@@ -104,7 +97,7 @@ namespace Party_MS2
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void uiButton3_Click(object sender, EventArgs e)
         {
             Table();
         }

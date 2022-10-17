@@ -26,12 +26,11 @@ namespace Party_MS2
 
             
         }
-        public ALUpdate1(string no, string stu_id, string name, string time, string pass)
+        public ALUpdate1(string no, string stu_id,  string time, string pass)
         {
             InitializeComponent();
             id = textBox1.Text = no;
             textBox2.Text = stu_id;
-            textBox3.Text = name;
             textBox5.Text = time;
             textBox6.Text = pass;
             pictureShow(id);
