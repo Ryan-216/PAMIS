@@ -18,21 +18,22 @@ namespace Party_MS2
         }
         public void set_Null()
         {
-            textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
-            textBox4.Text = "";
-            textBox5.Text = "";
-            textBox6.Text = "";
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "" )
+            if (textBox2.Text != "" && textBox3.Text != "" )
             {
                 Dao dao = new Dao();
-                string sql = $"insert into t_letter values('{textBox1.Text}','{textBox2.Text}','{textBox3.Text}','{textBox4.Text}','{textBox5.Text}','{textBox6.Text}')";
-                int n = dao.Execute(sql);
+                int n=-1;
+                for (int i =1;i<=2;i++)
+                {
+                    string sql = $"insert into t_letter values('{Data.UID + "01000" + i}','{textBox2.Text}','{textBox3.Text}', NULL, NULL, '待提交', '未审核')";
+                    n = dao.Execute(sql);
+                }
                 if (n > 0)
                 {
                     MessageBox.Show("添加成功！");
