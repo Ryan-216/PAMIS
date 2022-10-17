@@ -99,6 +99,7 @@ namespace Party_MS2
             {
                 MessageBox.Show("审核失败！");
             }
+            Table();
 
 
             dao.DaoClose();
@@ -135,8 +136,8 @@ namespace Party_MS2
             {
                 MessageBox.Show("修改成功！");
 
-                string sql1 = $"update t_asktocheck set audit='成绩已修改' where stu_id='{stu_id1}' and type='{type1}'";
-                int m = dao.Execute(sql);
+                string sql2 = $"update t_asktocheck set audit= '成绩已修改' where stu_id='{stu_id1}' and type='{type1}'";
+                int m = dao.Execute(sql2);
 
                 if (m > 0)
                 {
@@ -146,6 +147,7 @@ namespace Party_MS2
                 {
                     MessageBox.Show("审核失败！");
                 }
+                Table();
             }
             else
             {

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,61 +18,64 @@ namespace Party_MS2
         {
             InitializeComponent();
             Table();
-            radioButton1.Checked = true;
         }
-
+        string report_id;
         public void Table()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select * from t_report";
+            string sql = "select report_id,update_time,status from t_reports";
             IDataReader dc = dao.read(sql);
-            string stu_id, name, th_report, pass;
+            string id, time, audit;
             while (dc.Read())
             {
-                stu_id = dc[0].ToString();
-                name = dc[1].ToString();
-                th_report = dc[2].ToString();
-                pass = dc[3].ToString();
+                id = dc[0].ToString();
+                time = dc[1].ToString();
+                audit = dc[2].ToString();
 
-                string[] table = { stu_id, name, th_report, pass };
-                dataGridView1.Rows.Add(table);
+                string[] table = { id, time, audit };
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
         public void TableSearch()
         {
-            dataGridView1.Rows.Clear();//清空旧数据
+            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "";
-            if (radioButton1.Checked == true)
-            {
-                sql = $"select*from t_report where stu_id='{textBox1.Text}'";
-            }           
-            else if (radioButton3.Checked == true)
-            {
-                sql = $"select*from t_report where pass='{textBox1.Text}'";
-            }
+            string sql = $"select report_id,update_time,status from t_reports where stu_id='{uiTextBox1.Text}'";          
             IDataReader dc = dao.read(sql);
-            string stu_id, name, th_report, pass;
+            string id, time, audit;
             while (dc.Read())
             {
-                stu_id = dc[0].ToString();
-                name = dc[1].ToString();
-                th_report = dc[2].ToString();
-                pass = dc[3].ToString();
+                id = dc[0].ToString();
+                time = dc[1].ToString();
+                audit = dc[2].ToString();
 
-                string[] table = { stu_id, name, th_report,pass };
-                dataGridView1.Rows.Add(table);
+                string[] table = { id, time, audit };
+                basicDataGridView.Rows.Add(table);
             }
             dc.Close();
             dao.DaoClose();
         }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        public void Check()
         {
+            report_id = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+            string str = @"Data Source=LAPTOP-TESM5QR4; Initial Catalog=PartyDBII; User Id = test; Password = 123456";
+            SqlConnection sqlcon = new SqlConnection(str);
+            sqlcon.Open();
+            byte[] imagebytes;
+            SqlCommand sqlcom = new SqlCommand($"select file_content from t_reports where report_id ='{report_id}'", sqlcon);//查询到要提取的图片
+            SqlDataReader dr = sqlcom.ExecuteReader();
+            if (dr.Read())
+            {
+                imagebytes = (byte[])dr["file_content"];
 
+                MemoryStream ms = new MemoryStream(imagebytes);//创建图片数据流
+                Bitmap bmap = new Bitmap(ms);//获取图片
+                ms.Close();
+                pictureBox1.Image = bmap;
+            }
         }
 
         private void AdminReport_Load(object sender, EventArgs e)
@@ -78,19 +83,56 @@ namespace Party_MS2
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+      
+  
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            Table();
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
         {
             TableSearch();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void uiButton2_Click(object sender, EventArgs e)
         {
-            Table();
-            textBox1.Text = "";
+            Check();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void uiButton5_Click(object sender, EventArgs e)
         {
+            Dao dao = new Dao();
+            string sql = $"update t_reports set status='通过' where report_id='{report_id}'";
+            int n = dao.Execute(sql);
+            if (n > 0)
+            {
+                MessageBox.Show("审核成功！");
+                Table();
+            }
+            else
+            {
+                MessageBox.Show("Error!");
+            }
+            dao.DaoClose();
+        }
+
+        private void uiButton4_Click(object sender, EventArgs e)
+        {
+            Dao dao = new Dao();
+            string sql = $"update t_reports set status='拒绝' where report_id='{report_id}'";
+            int n = dao.Execute(sql);
+            if (n > 0)
+            {
+                MessageBox.Show("审核成功！");
+                Table();
+            }
+            else
+            {
+                MessageBox.Show("Error!");
+            }
+            dao.DaoClose();
 
         }
     }
