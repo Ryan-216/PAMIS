@@ -33,7 +33,7 @@ namespace Party_MS2.User
             int n = -1;
             for (int i = 1; i <= 2; i++)
             {
-                string sql = $"insert into t_letter values('{Data.UID}' + '01000'+ '{i}','id','name', NULL, NULL, '待提交', '未审核')";
+                string sql = $"insert into t_letter values('{Data.UID}' + '01000'+ '{i}','id', NULL, NULL, '待提交', '未审核')";
                 n = dao.Execute(sql);
             }
             if (n > 0)

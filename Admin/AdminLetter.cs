@@ -59,7 +59,7 @@ namespace Party_MS2
                 string no = basicDataGridView.SelectedRows[0].Cells[0].Value.ToString();
                 string stu_id = basicDataGridView.SelectedRows[0].Cells[1].Value.ToString();
                 string time = basicDataGridView.SelectedRows[0].Cells[3].Value.ToString();
-                string pass = basicDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+                string pass = basicDataGridView.SelectedRows[0].Cells[4].Value.ToString();
 
                 ALUpdate1 admin = new ALUpdate1(no, stu_id, time, pass);
                 admin.ShowDialog();
