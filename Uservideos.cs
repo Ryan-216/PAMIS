@@ -29,9 +29,10 @@ namespace Party_MS2
 
         public void Table()
         {
-            uiDataGridView1.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = $"select video_no, video_name, complete from t_video where train_no='{train_no}'";
+            
+
+            string sql = $"select distinct video_no, video_name, complete from t_video where train_no='{train_no}'";
             IDataReader dc = dao.read(sql);
             string no, name, complete;
             while (dc.Read())
@@ -50,7 +51,7 @@ namespace Party_MS2
         {
             string id = uiDataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             Dao dao = new Dao();
-            string sql = $"select location,video_name from t_video where train_no='{train_no}' and video_no='{id}'";
+            string sql = $"select distinct location,video_name from t_video where train_no='{train_no}' and video_no='{id}'";
             IDataReader dc = dao.read(sql);
             while (dc.Read())
             {

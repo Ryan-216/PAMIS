@@ -21,7 +21,7 @@ namespace Party_MS2
         {
             basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = "select * from t_education";
+            string sql = "select distinct * from t_education";
             IDataReader dc = dao.read(sql);
             string no, name, hours, contents, status, s_time, e_time;
             while (dc.Read())

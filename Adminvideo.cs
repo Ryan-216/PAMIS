@@ -26,9 +26,9 @@ namespace Party_MS2
         }
         public void Table()
         {
-            basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = $"select video_no,video_name,location from t_video where train_no='{type}'";
+            basicDataGridView.Rows.Clear();//清空旧数据            
+            string sql = $"select  distinct video_no,video_name,location from t_video where train_no='{type}'";
             IDataReader dc = dao.read(sql);
             string  no2, name, loc;
             while (dc.Read())
@@ -151,7 +151,7 @@ namespace Party_MS2
         {
             basicDataGridView.Rows.Clear();//清空旧数据
             Dao dao = new Dao();
-            string sql = $"select video_no,video_name,location from t_video where train_no='{type}'and video_no={uiTextBox1.Text}";
+            string sql = $"select distinct video_no,video_name,location from t_video where train_no='{type}'and video_no={uiTextBox1.Text}";
             IDataReader dc = dao.read(sql);
             string no2, name, loc;
             while (dc.Read())
