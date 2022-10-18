@@ -22,7 +22,7 @@ namespace Party_MS2.User
         {
             uiTextBox4.ReadOnly = true;
             uiTextBox7.ReadOnly = true;
-            uiTextBox8.ReadOnly = true;
+            uiComboBox3.ReadOnly = true;
             uiTextBox9.ReadOnly = true;
             Dao dao = new Dao();
             string sql = "select * from t_user where stu_id="+Data.UID;
@@ -49,7 +49,7 @@ namespace Party_MS2.User
                 uiTextBox5.Text = status;
                 uiTextBox6.Text = school_id;
                 uiTextBox7.Text = nation;
-                uiTextBox8.Text = origin;
+                uiComboBox3.Text = origin;
                 uiTextBox9.Text = e_mail;
                 uiTextBox10.Text = pri_party;
                 uiTextBox11.Text = apply_time;
@@ -60,7 +60,7 @@ namespace Party_MS2.User
         {
             try
             {
-                string sql = $"update t_user set stu_id = '{uiTextBox1.Text}', name = '{uiTextBox2.Text}', sex = '{uiTextBox3.Text}', ID = '{uiTextBox4.Text}', status = '{uiTextBox5.Text}', school_id = '{uiTextBox6.Text}', nation = '{uiTextBox7.Text}', origin = '{uiTextBox8.Text}', e_mail = '{uiTextBox9.Text}', pri_party= '{uiTextBox10.Text}', apply_time = '{uiTextBox11.Text}'where stu_id = '{Data.UID}'";
+                string sql = $"update t_user set stu_id = '{uiTextBox1.Text}', name = '{uiTextBox2.Text}', sex = '{uiTextBox3.Text}', ID = '{uiTextBox4.Text}', status = '{uiTextBox5.Text}', school_id = '{uiTextBox6.Text}', nation = '{uiTextBox7.Text}', origin = '{uiComboBox3.Text}', e_mail = '{uiTextBox9.Text}', pri_party= '{uiTextBox10.Text}', apply_time = '{uiTextBox11.Text}'where stu_id = '{Data.UID}'";
                 Dao dao = new Dao();
                 if (dao.Execute(sql) > 0)
                 {
@@ -125,13 +125,13 @@ namespace Party_MS2.User
         {
             uiTextBox4.ReadOnly = false;
             uiTextBox7.ReadOnly = false;
-            uiTextBox8.ReadOnly = false;
+            uiComboBox3.ReadOnly = false;
             uiTextBox9.ReadOnly = false;
         }
 
         private void uiButton2_Click(object sender, EventArgs e)
         {
-            if (uiTextBox4.Text != "" && uiTextBox7.Text != "" && uiTextBox8.Text != "" && uiTextBox9.Text != "")
+            if (uiTextBox4.Text != "" && uiTextBox7.Text != "" && uiComboBox3.Text != "" && uiTextBox9.Text != "")
             {
                 if (uiTextBox4.Text.Length == 18)
                 {

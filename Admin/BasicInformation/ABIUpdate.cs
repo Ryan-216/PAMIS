@@ -21,12 +21,12 @@ namespace Party_MS2
         {
             uiTextBox1.Text = "";
             uiTextBox2.Text = "";
-            uiTextBox3.Text = "";
+            uiComboBox1.Text = "";
             uiTextBox4.Text = "";
-            uiTextBox5.Text = "";
-            uiTextBox6.Text = "";
+            uiComboBox2.Text = "";
+            uiComboBox4.Text = "";
             uiTextBox7.Text = "";
-            uiTextBox8.Text = "";
+            uiComboBox3.Text = "";
             uiTextBox9.Text = "";
             uiTextBox10.Text = "";
             uiDatetimePicker1.Text = "";
@@ -36,12 +36,12 @@ namespace Party_MS2
             InitializeComponent();
             id = uiTextBox1.Text = stu_id;
             uiTextBox2.Text = name;
-            uiTextBox3.Text = sex;
+            uiComboBox1.Text = sex;
             uiTextBox4.Text = ID;
-            uiTextBox5.Text = statu;
-            uiTextBox6.Text = school_id;
+            uiComboBox2.Text = statu;
+            uiComboBox4.Text = school_id;
             uiTextBox7.Text = nation;
-            uiTextBox8.Text = region;
+            uiComboBox3.Text = region;
             uiTextBox9.Text = e_mail;
             uiTextBox10.Text = pri_party;
             uiDatetimePicker1.Text = apply_time;
@@ -52,7 +52,7 @@ namespace Party_MS2
        
         private void uiButton2_Click(object sender, EventArgs e)
         {
-            string sql = $"update t_user set stu_id = '{uiTextBox1.Text}', name = '{uiTextBox2.Text}', sex = '{uiTextBox3.Text}', ID = '{uiTextBox4.Text}', status = '{uiTextBox5.Text}', school_id = '{uiTextBox6.Text}', nation = '{uiTextBox7.Text}', origin = '{uiTextBox8.Text}', e_mail = '{uiTextBox9.Text}', pri_party= '{uiTextBox10.Text}', apply_time = '{uiDatetimePicker1.Text}'where stu_id = '{id}'";
+            string sql = $"update t_user set stu_id = '{uiTextBox1.Text}', name = '{uiTextBox2.Text}', sex = '{uiComboBox1.Text}', ID = '{uiTextBox4.Text}', status = '{uiComboBox2.Text}', school_id = '{uiComboBox4.Text}', nation = '{uiTextBox7.Text}', origin = '{uiComboBox3.Text}', e_mail = '{uiTextBox9.Text}', pri_party= '{uiTextBox10.Text}', apply_time = '{uiDatetimePicker1.Text}'where stu_id = '{id}'";
             Dao dao = new Dao();
             if (dao.Execute(sql) > 0)
             {

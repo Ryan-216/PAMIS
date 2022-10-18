@@ -59,7 +59,7 @@ namespace Party_MS2
             // uiLabel11
             // 
             this.uiLabel11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel11.Location = new System.Drawing.Point(534, 286);
+            this.uiLabel11.Location = new System.Drawing.Point(532, 286);
             this.uiLabel11.Name = "uiLabel11";
             this.uiLabel11.Size = new System.Drawing.Size(125, 33);
             this.uiLabel11.TabIndex = 70;
@@ -70,11 +70,11 @@ namespace Party_MS2
             // uiLabel10
             // 
             this.uiLabel10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel10.Location = new System.Drawing.Point(534, 221);
+            this.uiLabel10.Location = new System.Drawing.Point(550, 217);
             this.uiLabel10.Name = "uiLabel10";
-            this.uiLabel10.Size = new System.Drawing.Size(123, 33);
+            this.uiLabel10.Size = new System.Drawing.Size(88, 33);
             this.uiLabel10.TabIndex = 68;
-            this.uiLabel10.Text = "党组织编号";
+            this.uiLabel10.Text = "党组织";
             this.uiLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel10.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
@@ -393,13 +393,13 @@ namespace Party_MS2
             // 
             this.uiDatetimePicker1.FillColor = System.Drawing.Color.White;
             this.uiDatetimePicker1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiDatetimePicker1.Location = new System.Drawing.Point(664, 286);
+            this.uiDatetimePicker1.Location = new System.Drawing.Point(664, 278);
             this.uiDatetimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiDatetimePicker1.MaxLength = 19;
             this.uiDatetimePicker1.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiDatetimePicker1.Name = "uiDatetimePicker1";
             this.uiDatetimePicker1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiDatetimePicker1.Size = new System.Drawing.Size(274, 36);
+            this.uiDatetimePicker1.Size = new System.Drawing.Size(274, 44);
             this.uiDatetimePicker1.SymbolDropDown = 61555;
             this.uiDatetimePicker1.SymbolNormal = 61555;
             this.uiDatetimePicker1.TabIndex = 97;
@@ -417,12 +417,12 @@ namespace Party_MS2
             this.uiComboBox1.Items.AddRange(new object[] {
             "男",
             "女"});
-            this.uiComboBox1.Location = new System.Drawing.Point(230, 164);
+            this.uiComboBox1.Location = new System.Drawing.Point(230, 156);
             this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboBox1.Name = "uiComboBox1";
             this.uiComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox1.Size = new System.Drawing.Size(279, 29);
+            this.uiComboBox1.Size = new System.Drawing.Size(279, 37);
             this.uiComboBox1.TabIndex = 99;
             this.uiComboBox1.Text = "请选择";
             this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -440,13 +440,14 @@ namespace Party_MS2
             "发展对象",
             "中共预备党员",
             "中共党员"});
-            this.uiComboBox2.Location = new System.Drawing.Point(231, 286);
+            this.uiComboBox2.Location = new System.Drawing.Point(231, 278);
             this.uiComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboBox2.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboBox2.Name = "uiComboBox2";
             this.uiComboBox2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox2.Size = new System.Drawing.Size(278, 29);
+            this.uiComboBox2.Size = new System.Drawing.Size(278, 37);
             this.uiComboBox2.TabIndex = 100;
+            this.uiComboBox2.Text = "请选择";
             this.uiComboBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiComboBox2.Watermark = "";
             this.uiComboBox2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -491,13 +492,14 @@ namespace Party_MS2
             "台湾",
             "香港特别行政区",
             "澳门特别行政区"});
-            this.uiComboBox3.Location = new System.Drawing.Point(664, 98);
+            this.uiComboBox3.Location = new System.Drawing.Point(664, 90);
             this.uiComboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboBox3.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboBox3.Name = "uiComboBox3";
             this.uiComboBox3.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox3.Size = new System.Drawing.Size(274, 29);
+            this.uiComboBox3.Size = new System.Drawing.Size(274, 37);
             this.uiComboBox3.TabIndex = 100;
+            this.uiComboBox3.Text = "请选择";
             this.uiComboBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiComboBox3.Watermark = "";
             this.uiComboBox3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -508,18 +510,17 @@ namespace Party_MS2
             this.uiComboBox4.FillColor = System.Drawing.Color.White;
             this.uiComboBox4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiComboBox4.Items.AddRange(new object[] {
-            "入党申请人",
-            "入党积极分子",
-            "发展对象",
-            "中共预备党员",
-            "中共党员"});
-            this.uiComboBox4.Location = new System.Drawing.Point(232, 343);
+            "商学与管理学院",
+            "文学院",
+            "药学院"});
+            this.uiComboBox4.Location = new System.Drawing.Point(232, 335);
             this.uiComboBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboBox4.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboBox4.Name = "uiComboBox4";
             this.uiComboBox4.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox4.Size = new System.Drawing.Size(278, 29);
+            this.uiComboBox4.Size = new System.Drawing.Size(278, 37);
             this.uiComboBox4.TabIndex = 101;
+            this.uiComboBox4.Text = "请选择";
             this.uiComboBox4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiComboBox4.Watermark = "";
             this.uiComboBox4.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
