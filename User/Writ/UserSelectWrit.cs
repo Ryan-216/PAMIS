@@ -251,5 +251,20 @@ namespace Party_MS2.User
             amount = uiTextBox1.Text.ToInt();
             MessageBox.Show("您选择上传的类型为"+ uiComboBox1.SelectedItem.ToString() +"，图片数为" + amount + "张，请点击上传按钮开始上传。");
         }
+
+        private void uiTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserSelectWrit_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

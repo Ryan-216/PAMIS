@@ -50,7 +50,7 @@
             this.uiRichTextBox1.FillColor = System.Drawing.Color.White;
             this.uiRichTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiRichTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiRichTextBox1.Location = new System.Drawing.Point(69, 110);
+            this.uiRichTextBox1.Location = new System.Drawing.Point(131, 112);
             this.uiRichTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiRichTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiRichTextBox1.Name = "uiRichTextBox1";
@@ -59,7 +59,7 @@
             this.uiRichTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiRichTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiRichTextBox1.ShowText = false;
-            this.uiRichTextBox1.Size = new System.Drawing.Size(794, 395);
+            this.uiRichTextBox1.Size = new System.Drawing.Size(1269, 634);
             this.uiRichTextBox1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiRichTextBox1.TabIndex = 2;
             this.uiRichTextBox1.Text = "uiRichTextBox1";
@@ -77,14 +77,14 @@
             this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox1.Location = new System.Drawing.Point(69, 569);
+            this.uiTextBox1.Location = new System.Drawing.Point(131, 814);
             this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox1.Name = "uiTextBox1";
             this.uiTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ShowText = false;
-            this.uiTextBox1.Size = new System.Drawing.Size(208, 35);
+            this.uiTextBox1.Size = new System.Drawing.Size(294, 35);
             this.uiTextBox1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox1.TabIndex = 3;
             this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -101,7 +101,7 @@
             this.uiButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(763, 569);
+            this.uiButton2.Location = new System.Drawing.Point(1300, 800);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
@@ -120,7 +120,7 @@
             // 
             this.uiLabel1.BackColor = System.Drawing.Color.Transparent;
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(64, 530);
+            this.uiLabel1.Location = new System.Drawing.Point(126, 761);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(232, 34);
             this.uiLabel1.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -133,7 +133,7 @@
             // 
             this.uiLabel2.AutoSize = true;
             this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(69, 35);
+            this.uiLabel2.Location = new System.Drawing.Point(126, 41);
             this.uiLabel2.Name = "uiLabel2";
             this.uiLabel2.Size = new System.Drawing.Size(91, 27);
             this.uiLabel2.TabIndex = 7;
@@ -145,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 633);
+            this.ClientSize = new System.Drawing.Size(1544, 899);
             this.Controls.Add(this.uiLabel2);
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.uiButton2);

@@ -40,11 +40,11 @@
             this.uiLine1.FillColor = System.Drawing.Color.Transparent;
             this.uiLine1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLine1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiLine1.Location = new System.Drawing.Point(57, 31);
+            this.uiLine1.Location = new System.Drawing.Point(11, 31);
             this.uiLine1.Margin = new System.Windows.Forms.Padding(2);
             this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine1.Name = "uiLine1";
-            this.uiLine1.Size = new System.Drawing.Size(757, 44);
+            this.uiLine1.Size = new System.Drawing.Size(1486, 44);
             this.uiLine1.Style = Sunny.UI.UIStyle.Custom;
             this.uiLine1.TabIndex = 1;
             this.uiLine1.Text = "创建函调信";
@@ -59,7 +59,7 @@
             this.uiButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(378, 521);
+            this.uiButton2.Location = new System.Drawing.Point(680, 867);
             this.uiButton2.Margin = new System.Windows.Forms.Padding(2);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
@@ -67,7 +67,7 @@
             this.uiButton2.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
             this.uiButton2.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiButton2.Size = new System.Drawing.Size(114, 31);
+            this.uiButton2.Size = new System.Drawing.Size(141, 50);
             this.uiButton2.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiButton2.TabIndex = 4;
             this.uiButton2.Text = "上传图片";
@@ -77,10 +77,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(57, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(371, 93);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(757, 411);
+            this.pictureBox1.Size = new System.Drawing.Size(757, 754);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -88,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 888);
+            this.ClientSize = new System.Drawing.Size(1508, 948);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiLine1);

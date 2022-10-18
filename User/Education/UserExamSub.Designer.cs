@@ -39,7 +39,7 @@
             this.uiRichTextBox1.FillColor = System.Drawing.Color.White;
             this.uiRichTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiRichTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiRichTextBox1.Location = new System.Drawing.Point(13, 104);
+            this.uiRichTextBox1.Location = new System.Drawing.Point(13, 125);
             this.uiRichTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiRichTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiRichTextBox1.Name = "uiRichTextBox1";
@@ -47,7 +47,7 @@
             this.uiRichTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiRichTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiRichTextBox1.ShowText = false;
-            this.uiRichTextBox1.Size = new System.Drawing.Size(929, 438);
+            this.uiRichTextBox1.Size = new System.Drawing.Size(1482, 672);
             this.uiRichTextBox1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiRichTextBox1.TabIndex = 0;
             this.uiRichTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -62,14 +62,14 @@
             this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(405, 589);
+            this.uiButton1.Location = new System.Drawing.Point(706, 860);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
             this.uiButton1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiButton1.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
             this.uiButton1.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiButton1.Size = new System.Drawing.Size(100, 35);
+            this.uiButton1.Size = new System.Drawing.Size(117, 45);
             this.uiButton1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiButton1.TabIndex = 1;
             this.uiButton1.Text = "提交";
@@ -82,7 +82,7 @@
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLabel1.Location = new System.Drawing.Point(13, 9);
             this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(929, 90);
+            this.uiLabel1.Size = new System.Drawing.Size(1482, 90);
             this.uiLabel1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiLabel1.TabIndex = 2;
             this.uiLabel1.Text = "uiLabel1";
@@ -93,7 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 662);
+            this.ClientSize = new System.Drawing.Size(1508, 948);
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.uiButton1);
             this.Controls.Add(this.uiRichTextBox1);

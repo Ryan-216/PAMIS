@@ -208,5 +208,10 @@ namespace Party_MS2
             Adminvideo adminvideo = new Adminvideo(id);
             adminvideo.ShowDialog();
         }
+
+        private void uiTextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,12 +35,13 @@
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiButton3 = new Sunny.UI.UIButton();
+            this.uiLine1 = new Sunny.UI.UILine();
             this.SuspendLayout();
             // 
             // uiLabel1
             // 
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(117, 19);
+            this.uiLabel1.Location = new System.Drawing.Point(329, 222);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(333, 30);
             this.uiLabel1.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -58,7 +59,7 @@
             this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(59, 365);
+            this.uiButton1.Location = new System.Drawing.Point(440, 845);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
             this.uiButton1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
@@ -82,7 +83,7 @@
             this.uiButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(268, 365);
+            this.uiButton2.Location = new System.Drawing.Point(906, 845);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
@@ -111,7 +112,7 @@
             "转正申请书"});
             this.uiComboBox1.ItemSelectBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiComboBox1.ItemSelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
-            this.uiComboBox1.Location = new System.Drawing.Point(59, 70);
+            this.uiComboBox1.Location = new System.Drawing.Point(787, 223);
             this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboBox1.Name = "uiComboBox1";
@@ -128,13 +129,14 @@
             // uiLabel2
             // 
             this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(105, 155);
+            this.uiLabel2.Location = new System.Drawing.Point(329, 439);
             this.uiLabel2.Name = "uiLabel2";
             this.uiLabel2.Size = new System.Drawing.Size(251, 33);
             this.uiLabel2.TabIndex = 4;
             this.uiLabel2.Text = "请填写上传文书图片数";
             this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiLabel2.Click += new System.EventHandler(this.uiLabel2_Click);
             // 
             // uiTextBox1
             // 
@@ -147,19 +149,20 @@
             this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox1.Location = new System.Drawing.Point(59, 227);
+            this.uiTextBox1.Location = new System.Drawing.Point(663, 434);
             this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox1.Name = "uiTextBox1";
             this.uiTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ShowText = false;
-            this.uiTextBox1.Size = new System.Drawing.Size(179, 29);
+            this.uiTextBox1.Size = new System.Drawing.Size(289, 38);
             this.uiTextBox1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiTextBox1.TabIndex = 5;
             this.uiTextBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiTextBox1.Watermark = "";
             this.uiTextBox1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiTextBox1.TextChanged += new System.EventHandler(this.uiTextBox1_TextChanged);
             // 
             // uiButton3
             // 
@@ -170,14 +173,14 @@
             this.uiButton3.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton3.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton3.Location = new System.Drawing.Point(268, 227);
+            this.uiButton3.Location = new System.Drawing.Point(986, 434);
             this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton3.Name = "uiButton3";
             this.uiButton3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiButton3.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
             this.uiButton3.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton3.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiButton3.Size = new System.Drawing.Size(100, 29);
+            this.uiButton3.Size = new System.Drawing.Size(110, 38);
             this.uiButton3.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiButton3.TabIndex = 6;
             this.uiButton3.Text = "确定";
@@ -185,11 +188,29 @@
             this.uiButton3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
             // 
+            // uiLine1
+            // 
+            this.uiLine1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uiLine1.BackColor = System.Drawing.Color.Transparent;
+            this.uiLine1.FillColor = System.Drawing.Color.Transparent;
+            this.uiLine1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLine1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
+            this.uiLine1.Location = new System.Drawing.Point(12, 72);
+            this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiLine1.Name = "uiLine1";
+            this.uiLine1.Size = new System.Drawing.Size(1484, 57);
+            this.uiLine1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine1.TabIndex = 7;
+            this.uiLine1.Text = "上传文书";
+            this.uiLine1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
             // UserSelectWrit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 482);
+            this.ClientSize = new System.Drawing.Size(1508, 948);
+            this.Controls.Add(this.uiLine1);
             this.Controls.Add(this.uiButton3);
             this.Controls.Add(this.uiTextBox1);
             this.Controls.Add(this.uiLabel2);
@@ -199,6 +220,7 @@
             this.Controls.Add(this.uiLabel1);
             this.Name = "UserSelectWrit";
             this.Text = "UserSelectWrit";
+            this.Load += new System.EventHandler(this.UserSelectWrit_Load);
             this.ResumeLayout(false);
 
         }
@@ -212,5 +234,6 @@
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UIButton uiButton3;
+        private Sunny.UI.UILine uiLine1;
     }
 }

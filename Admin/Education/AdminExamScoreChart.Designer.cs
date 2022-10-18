@@ -41,7 +41,7 @@
             this.uiBarChart1.Location = new System.Drawing.Point(3, 12);
             this.uiBarChart1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiBarChart1.Name = "uiBarChart1";
-            this.uiBarChart1.Size = new System.Drawing.Size(1299, 767);
+            this.uiBarChart1.Size = new System.Drawing.Size(1529, 875);
             this.uiBarChart1.SubFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiBarChart1.TabIndex = 0;
             this.uiBarChart1.Text = "uiBarChart1";
@@ -51,7 +51,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1314, 791);
+            this.ClientSize = new System.Drawing.Size(1544, 899);
             this.Controls.Add(this.uiBarChart1);
             this.Name = "AdminExamScoreChart";
             this.Text = "Form1";

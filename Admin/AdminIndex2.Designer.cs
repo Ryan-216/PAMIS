@@ -57,7 +57,6 @@ namespace Party_MS2
             System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("系统", new System.Windows.Forms.TreeNode[] {
             treeNode44});
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.uiLabel4 = new Sunny.UI.UILabel();
             this.uiLabel3 = new Sunny.UI.UILabel();
@@ -72,13 +71,12 @@ namespace Party_MS2
             this.uiAvatar1 = new Sunny.UI.UIAvatar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
+            this.uiLabel1 = new Sunny.UI.UILabel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.uiLabel1 = new Sunny.UI.UILabel();
             this.uiLabel2 = new Sunny.UI.UILabel();
             uiNavMenu1 = new Sunny.UI.UINavMenu();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -146,7 +144,7 @@ namespace Party_MS2
             uiNavMenu1.SelectedForeColor = System.Drawing.Color.SeaShell;
             uiNavMenu1.SelectedHighColor = System.Drawing.Color.SeaShell;
             uiNavMenu1.ShowLines = false;
-            uiNavMenu1.Size = new System.Drawing.Size(316, 965);
+            uiNavMenu1.Size = new System.Drawing.Size(316, 949);
             uiNavMenu1.Style = Sunny.UI.UIStyle.Custom;
             uiNavMenu1.TabIndex = 5;
             uiNavMenu1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -155,23 +153,12 @@ namespace Party_MS2
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(uiNavMenu1);
             this.panel1.Location = new System.Drawing.Point(1, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(322, 968);
+            this.panel1.Size = new System.Drawing.Size(322, 949);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Party_MS2.Properties.Resources.t01cd4b59a94db03b3b;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 718);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel6
             // 
@@ -184,7 +171,7 @@ namespace Party_MS2
             // 
             this.uiLabel4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel4.Location = new System.Drawing.Point(1126, 1010);
+            this.uiLabel4.Location = new System.Drawing.Point(1114, 991);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(606, 34);
             this.uiLabel4.TabIndex = 4;
@@ -196,7 +183,7 @@ namespace Party_MS2
             // 
             this.uiLabel3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel3.Location = new System.Drawing.Point(181, 1010);
+            this.uiLabel3.Location = new System.Drawing.Point(192, 991);
             this.uiLabel3.Name = "uiLabel3";
             this.uiLabel3.Size = new System.Drawing.Size(671, 34);
             this.uiLabel3.TabIndex = 3;
@@ -228,7 +215,7 @@ namespace Party_MS2
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.toolStrip1.Size = new System.Drawing.Size(1802, 34);
+            this.toolStrip1.Size = new System.Drawing.Size(1892, 34);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -271,7 +258,7 @@ namespace Party_MS2
             // 
             this.toolStripLabel3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(54, 31);
+            this.toolStripLabel3.Size = new System.Drawing.Size(57, 31);
             this.toolStripLabel3.Text = "用户名";
             // 
             // uiAvatar1
@@ -283,7 +270,7 @@ namespace Party_MS2
             this.uiAvatar1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiAvatar1.ForeColor = System.Drawing.Color.Yellow;
             this.uiAvatar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.uiAvatar1.Location = new System.Drawing.Point(1637, 2);
+            this.uiAvatar1.Location = new System.Drawing.Point(1741, -2);
             this.uiAvatar1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar1.Name = "uiAvatar1";
             this.uiAvatar1.Size = new System.Drawing.Size(43, 39);
@@ -307,8 +294,22 @@ namespace Party_MS2
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(339, 42);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1472, 962);
+            this.panel3.Size = new System.Drawing.Size(1562, 946);
             this.panel3.TabIndex = 2;
+            // 
+            // uiLabel1
+            // 
+            this.uiLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.uiLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel1.ForeColor = System.Drawing.Color.White;
+            this.uiLabel1.Location = new System.Drawing.Point(579, 135);
+            this.uiLabel1.Name = "uiLabel1";
+            this.uiLabel1.Size = new System.Drawing.Size(603, 46);
+            this.uiLabel1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLabel1.TabIndex = 3;
+            this.uiLabel1.Text = "欢迎管理员登录！";
+            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // panel5
             // 
@@ -324,25 +325,11 @@ namespace Party_MS2
             this.panel4.Size = new System.Drawing.Size(514, 460);
             this.panel4.TabIndex = 0;
             // 
-            // uiLabel1
-            // 
-            this.uiLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.uiLabel1.Font = new System.Drawing.Font("楷体_GB2312", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.ForeColor = System.Drawing.Color.White;
-            this.uiLabel1.Location = new System.Drawing.Point(579, 135);
-            this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(603, 46);
-            this.uiLabel1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiLabel1.TabIndex = 3;
-            this.uiLabel1.Text = "欢迎管理员登录！";
-            this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
             // uiLabel2
             // 
             this.uiLabel2.BackColor = System.Drawing.Color.Transparent;
             this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(1686, 9);
+            this.uiLabel2.Location = new System.Drawing.Point(1790, 9);
             this.uiLabel2.Name = "uiLabel2";
             this.uiLabel2.Size = new System.Drawing.Size(100, 23);
             this.uiLabel2.TabIndex = 4;
@@ -354,7 +341,7 @@ namespace Party_MS2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1812, 1053);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.uiLabel2);
             this.Controls.Add(this.uiAvatar1);
             this.Controls.Add(this.uiLabel4);
@@ -367,7 +354,6 @@ namespace Party_MS2
             this.Text = "AdminIndex2";
             this.Load += new System.EventHandler(this.AdminIndex2_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -381,7 +367,6 @@ namespace Party_MS2
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Sunny.UI.UIAvatar uiAvatar1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;

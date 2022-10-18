@@ -76,7 +76,7 @@
             this.uiDataGridView1.EnableHeadersVisualStyles = false;
             this.uiDataGridView1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(34)))));
-            this.uiDataGridView1.Location = new System.Drawing.Point(2, 68);
+            this.uiDataGridView1.Location = new System.Drawing.Point(2, 65);
             this.uiDataGridView1.MultiSelect = false;
             this.uiDataGridView1.Name = "uiDataGridView1";
             this.uiDataGridView1.ReadOnly = true;
@@ -103,7 +103,7 @@
             this.uiDataGridView1.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiDataGridView1.SelectedIndex = -1;
             this.uiDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.uiDataGridView1.Size = new System.Drawing.Size(1037, 428);
+            this.uiDataGridView1.Size = new System.Drawing.Size(1538, 533);
             this.uiDataGridView1.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiDataGridView1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiDataGridView1.TabIndex = 0;
@@ -140,14 +140,14 @@
             this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(288, 591);
+            this.uiButton1.Location = new System.Drawing.Point(580, 759);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
             this.uiButton1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiButton1.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
             this.uiButton1.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiButton1.Size = new System.Drawing.Size(100, 35);
+            this.uiButton1.Size = new System.Drawing.Size(127, 40);
             this.uiButton1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiButton1.TabIndex = 1;
             this.uiButton1.Text = "批改";
@@ -165,14 +165,14 @@
             this.uiButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(655, 591);
+            this.uiButton2.Location = new System.Drawing.Point(947, 759);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiButton2.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
             this.uiButton2.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiButton2.Size = new System.Drawing.Size(100, 35);
+            this.uiButton2.Size = new System.Drawing.Size(127, 40);
             this.uiButton2.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiButton2.TabIndex = 2;
             this.uiButton2.Text = "返回";
@@ -185,10 +185,10 @@
             this.uiLine1.FillColor = System.Drawing.Color.Transparent;
             this.uiLine1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiLine1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiLine1.Location = new System.Drawing.Point(2, 22);
+            this.uiLine1.Location = new System.Drawing.Point(2, 30);
             this.uiLine1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLine1.Name = "uiLine1";
-            this.uiLine1.Size = new System.Drawing.Size(1037, 29);
+            this.uiLine1.Size = new System.Drawing.Size(1538, 29);
             this.uiLine1.Style = Sunny.UI.UIStyle.Custom;
             this.uiLine1.TabIndex = 3;
             this.uiLine1.Text = "未批改的主观题考试";
@@ -198,7 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 694);
+            this.ClientSize = new System.Drawing.Size(1544, 899);
             this.Controls.Add(this.uiLine1);
             this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiButton1);

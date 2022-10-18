@@ -164,6 +164,10 @@ namespace Party_MS2
                 this.panel2.Controls.Add(developers);
                 developers.Show();
             }
+            else if (node.Text == "退出")
+            {
+                this.Close();
+            }
         }
 
         private void UserIndex2_Load(object sender, EventArgs e)

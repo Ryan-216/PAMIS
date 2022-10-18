@@ -115,7 +115,7 @@ namespace Party_MS2
             this.basicDataGridView.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.basicDataGridView.SelectedIndex = -1;
             this.basicDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.basicDataGridView.Size = new System.Drawing.Size(1130, 158);
+            this.basicDataGridView.Size = new System.Drawing.Size(1544, 491);
             this.basicDataGridView.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.basicDataGridView.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.basicDataGridView.TabIndex = 31;
@@ -155,7 +155,7 @@ namespace Party_MS2
             this.uiRadioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiRadioButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiRadioButton2.ForeColor = System.Drawing.Color.Black;
-            this.uiRadioButton2.Location = new System.Drawing.Point(278, 223);
+            this.uiRadioButton2.Location = new System.Drawing.Point(558, 589);
             this.uiRadioButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiRadioButton2.Name = "uiRadioButton2";
             this.uiRadioButton2.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -172,7 +172,7 @@ namespace Party_MS2
             this.uiRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiRadioButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiRadioButton1.ForeColor = System.Drawing.Color.Black;
-            this.uiRadioButton1.Location = new System.Drawing.Point(100, 223);
+            this.uiRadioButton1.Location = new System.Drawing.Point(380, 589);
             this.uiRadioButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiRadioButton1.Name = "uiRadioButton1";
             this.uiRadioButton1.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -189,7 +189,7 @@ namespace Party_MS2
             this.uiRadioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiRadioButton3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiRadioButton3.ForeColor = System.Drawing.Color.Black;
-            this.uiRadioButton3.Location = new System.Drawing.Point(473, 223);
+            this.uiRadioButton3.Location = new System.Drawing.Point(753, 589);
             this.uiRadioButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiRadioButton3.Name = "uiRadioButton3";
             this.uiRadioButton3.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -210,7 +210,7 @@ namespace Party_MS2
             this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(716, 298);
+            this.uiButton1.Location = new System.Drawing.Point(996, 664);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
             this.uiButton1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
@@ -234,7 +234,7 @@ namespace Party_MS2
             this.uiButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(839, 298);
+            this.uiButton2.Location = new System.Drawing.Point(1119, 664);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
@@ -260,7 +260,7 @@ namespace Party_MS2
             this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox1.Location = new System.Drawing.Point(192, 298);
+            this.uiTextBox1.Location = new System.Drawing.Point(472, 664);
             this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox1.Name = "uiTextBox1";
@@ -280,7 +280,7 @@ namespace Party_MS2
             this.uiRadioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiRadioButton4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiRadioButton4.ForeColor = System.Drawing.Color.Black;
-            this.uiRadioButton4.Location = new System.Drawing.Point(757, 223);
+            this.uiRadioButton4.Location = new System.Drawing.Point(1037, 589);
             this.uiRadioButton4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiRadioButton4.Name = "uiRadioButton4";
             this.uiRadioButton4.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -301,7 +301,7 @@ namespace Party_MS2
             this.uiButton3.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton3.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton3.Location = new System.Drawing.Point(716, 366);
+            this.uiButton3.Location = new System.Drawing.Point(996, 732);
             this.uiButton3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton3.Name = "uiButton3";
             this.uiButton3.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
@@ -319,7 +319,7 @@ namespace Party_MS2
             // uiLabel1
             // 
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(187, 332);
+            this.uiLabel1.Location = new System.Drawing.Point(467, 698);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(229, 95);
             this.uiLabel1.TabIndex = 42;
@@ -332,7 +332,7 @@ namespace Party_MS2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1130, 542);
+            this.ClientSize = new System.Drawing.Size(1544, 899);
             this.Controls.Add(this.uiLabel1);
             this.Controls.Add(this.uiButton3);
             this.Controls.Add(this.uiRadioButton4);

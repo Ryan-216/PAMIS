@@ -84,7 +84,7 @@ namespace Party_MS2
             this.uiBreadcrumb1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiBreadcrumb1.ForeColor = System.Drawing.Color.Red;
             this.uiBreadcrumb1.ItemWidth = 192;
-            this.uiBreadcrumb1.Location = new System.Drawing.Point(125, 300);
+            this.uiBreadcrumb1.Location = new System.Drawing.Point(150, 493);
             this.uiBreadcrumb1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiBreadcrumb1.Name = "uiBreadcrumb1";
             this.uiBreadcrumb1.SelectedColor = System.Drawing.Color.Gold;
@@ -99,7 +99,7 @@ namespace Party_MS2
             // uiLight1
             // 
             this.uiLight1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLight1.Location = new System.Drawing.Point(74, 293);
+            this.uiLight1.Location = new System.Drawing.Point(99, 486);
             this.uiLight1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLight1.Name = "uiLight1";
             this.uiLight1.OffColor = System.Drawing.Color.Red;
@@ -114,7 +114,7 @@ namespace Party_MS2
             // uiLight2
             // 
             this.uiLight2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLight2.Location = new System.Drawing.Point(393, 293);
+            this.uiLight2.Location = new System.Drawing.Point(418, 486);
             this.uiLight2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLight2.Name = "uiLight2";
             this.uiLight2.OffColor = System.Drawing.Color.Red;
@@ -129,7 +129,7 @@ namespace Party_MS2
             // uiLight3
             // 
             this.uiLight3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLight3.Location = new System.Drawing.Point(684, 293);
+            this.uiLight3.Location = new System.Drawing.Point(709, 486);
             this.uiLight3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLight3.Name = "uiLight3";
             this.uiLight3.OffColor = System.Drawing.Color.Red;
@@ -144,7 +144,7 @@ namespace Party_MS2
             // uiLight4
             // 
             this.uiLight4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLight4.Location = new System.Drawing.Point(999, 293);
+            this.uiLight4.Location = new System.Drawing.Point(1024, 486);
             this.uiLight4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLight4.Name = "uiLight4";
             this.uiLight4.OffColor = System.Drawing.Color.Red;
@@ -159,7 +159,7 @@ namespace Party_MS2
             // uiLight5
             // 
             this.uiLight5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLight5.Location = new System.Drawing.Point(1288, 293);
+            this.uiLight5.Location = new System.Drawing.Point(1313, 486);
             this.uiLight5.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLight5.Name = "uiLight5";
             this.uiLight5.OffColor = System.Drawing.Color.Red;
@@ -241,7 +241,7 @@ namespace Party_MS2
             this.basicDataGridView.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.basicDataGridView.SelectedIndex = -1;
             this.basicDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.basicDataGridView.Size = new System.Drawing.Size(1440, 141);
+            this.basicDataGridView.Size = new System.Drawing.Size(1508, 313);
             this.basicDataGridView.StripeOddColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.basicDataGridView.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.basicDataGridView.TabIndex = 29;
@@ -328,7 +328,7 @@ namespace Party_MS2
             // 
             this.uiLabel1.AutoSize = true;
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(41, 346);
+            this.uiLabel1.Location = new System.Drawing.Point(66, 539);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(112, 27);
             this.uiLabel1.TabIndex = 30;
@@ -340,7 +340,7 @@ namespace Party_MS2
             // 
             this.uiLabel2.AutoSize = true;
             this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(343, 346);
+            this.uiLabel2.Location = new System.Drawing.Point(368, 539);
             this.uiLabel2.Name = "uiLabel2";
             this.uiLabel2.Size = new System.Drawing.Size(132, 27);
             this.uiLabel2.TabIndex = 31;
@@ -352,7 +352,7 @@ namespace Party_MS2
             // 
             this.uiLabel3.AutoSize = true;
             this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel3.Location = new System.Drawing.Point(660, 346);
+            this.uiLabel3.Location = new System.Drawing.Point(685, 539);
             this.uiLabel3.Name = "uiLabel3";
             this.uiLabel3.Size = new System.Drawing.Size(92, 27);
             this.uiLabel3.TabIndex = 32;
@@ -364,7 +364,7 @@ namespace Party_MS2
             // 
             this.uiLabel4.AutoSize = true;
             this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel4.Location = new System.Drawing.Point(977, 346);
+            this.uiLabel4.Location = new System.Drawing.Point(1002, 539);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(132, 27);
             this.uiLabel4.TabIndex = 33;
@@ -377,7 +377,7 @@ namespace Party_MS2
             // 
             this.uiLabel5.AutoSize = true;
             this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel5.Location = new System.Drawing.Point(1265, 346);
+            this.uiLabel5.Location = new System.Drawing.Point(1290, 539);
             this.uiLabel5.Name = "uiLabel5";
             this.uiLabel5.Size = new System.Drawing.Size(92, 27);
             this.uiLabel5.TabIndex = 34;
@@ -389,7 +389,7 @@ namespace Party_MS2
             // 
             this.uiLabel6.AutoSize = true;
             this.uiLabel6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel6.Location = new System.Drawing.Point(570, 205);
+            this.uiLabel6.Location = new System.Drawing.Point(565, 367);
             this.uiLabel6.Name = "uiLabel6";
             this.uiLabel6.Size = new System.Drawing.Size(212, 27);
             this.uiLabel6.TabIndex = 35;
@@ -402,7 +402,7 @@ namespace Party_MS2
             this.uiCheckBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox1.Enabled = false;
             this.uiCheckBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox1.Location = new System.Drawing.Point(155, 388);
+            this.uiCheckBox1.Location = new System.Drawing.Point(180, 581);
             this.uiCheckBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox1.Name = "uiCheckBox1";
             this.uiCheckBox1.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -416,7 +416,7 @@ namespace Party_MS2
             this.uiBreadcrumb2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiBreadcrumb2.ForeColor = System.Drawing.Color.Red;
             this.uiBreadcrumb2.ItemWidth = 192;
-            this.uiBreadcrumb2.Location = new System.Drawing.Point(434, 300);
+            this.uiBreadcrumb2.Location = new System.Drawing.Point(459, 493);
             this.uiBreadcrumb2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiBreadcrumb2.Name = "uiBreadcrumb2";
             this.uiBreadcrumb2.SelectedColor = System.Drawing.Color.Gold;
@@ -432,7 +432,7 @@ namespace Party_MS2
             this.uiBreadcrumb3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiBreadcrumb3.ForeColor = System.Drawing.Color.Red;
             this.uiBreadcrumb3.ItemWidth = 192;
-            this.uiBreadcrumb3.Location = new System.Drawing.Point(725, 300);
+            this.uiBreadcrumb3.Location = new System.Drawing.Point(750, 493);
             this.uiBreadcrumb3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiBreadcrumb3.Name = "uiBreadcrumb3";
             this.uiBreadcrumb3.SelectedColor = System.Drawing.Color.Gold;
@@ -448,7 +448,7 @@ namespace Party_MS2
             this.uiBreadcrumb4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiBreadcrumb4.ForeColor = System.Drawing.Color.Red;
             this.uiBreadcrumb4.ItemWidth = 192;
-            this.uiBreadcrumb4.Location = new System.Drawing.Point(1040, 300);
+            this.uiBreadcrumb4.Location = new System.Drawing.Point(1065, 493);
             this.uiBreadcrumb4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiBreadcrumb4.Name = "uiBreadcrumb4";
             this.uiBreadcrumb4.SelectedColor = System.Drawing.Color.Gold;
@@ -464,7 +464,7 @@ namespace Party_MS2
             this.uiCheckBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox2.Enabled = false;
             this.uiCheckBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox2.Location = new System.Drawing.Point(155, 433);
+            this.uiCheckBox2.Location = new System.Drawing.Point(180, 626);
             this.uiCheckBox2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox2.Name = "uiCheckBox2";
             this.uiCheckBox2.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -478,7 +478,7 @@ namespace Party_MS2
             this.uiCheckBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox3.Enabled = false;
             this.uiCheckBox3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox3.Location = new System.Drawing.Point(155, 478);
+            this.uiCheckBox3.Location = new System.Drawing.Point(180, 671);
             this.uiCheckBox3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox3.Name = "uiCheckBox3";
             this.uiCheckBox3.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -492,7 +492,7 @@ namespace Party_MS2
             this.uiCheckBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox4.Enabled = false;
             this.uiCheckBox4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox4.Location = new System.Drawing.Point(467, 388);
+            this.uiCheckBox4.Location = new System.Drawing.Point(492, 581);
             this.uiCheckBox4.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox4.Name = "uiCheckBox4";
             this.uiCheckBox4.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -506,7 +506,7 @@ namespace Party_MS2
             this.uiCheckBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox5.Enabled = false;
             this.uiCheckBox5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox5.Location = new System.Drawing.Point(467, 433);
+            this.uiCheckBox5.Location = new System.Drawing.Point(492, 626);
             this.uiCheckBox5.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox5.Name = "uiCheckBox5";
             this.uiCheckBox5.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -520,7 +520,7 @@ namespace Party_MS2
             this.uiCheckBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox6.Enabled = false;
             this.uiCheckBox6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox6.Location = new System.Drawing.Point(467, 478);
+            this.uiCheckBox6.Location = new System.Drawing.Point(492, 671);
             this.uiCheckBox6.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox6.Name = "uiCheckBox6";
             this.uiCheckBox6.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -534,7 +534,7 @@ namespace Party_MS2
             this.uiCheckBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox7.Enabled = false;
             this.uiCheckBox7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox7.Location = new System.Drawing.Point(467, 524);
+            this.uiCheckBox7.Location = new System.Drawing.Point(492, 717);
             this.uiCheckBox7.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox7.Name = "uiCheckBox7";
             this.uiCheckBox7.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -548,7 +548,7 @@ namespace Party_MS2
             this.uiCheckBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox8.Enabled = false;
             this.uiCheckBox8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox8.Location = new System.Drawing.Point(771, 388);
+            this.uiCheckBox8.Location = new System.Drawing.Point(796, 581);
             this.uiCheckBox8.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox8.Name = "uiCheckBox8";
             this.uiCheckBox8.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -562,7 +562,7 @@ namespace Party_MS2
             this.uiCheckBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox9.Enabled = false;
             this.uiCheckBox9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox9.Location = new System.Drawing.Point(771, 433);
+            this.uiCheckBox9.Location = new System.Drawing.Point(796, 626);
             this.uiCheckBox9.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox9.Name = "uiCheckBox9";
             this.uiCheckBox9.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -576,7 +576,7 @@ namespace Party_MS2
             this.uiCheckBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox10.Enabled = false;
             this.uiCheckBox10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox10.Location = new System.Drawing.Point(771, 478);
+            this.uiCheckBox10.Location = new System.Drawing.Point(796, 671);
             this.uiCheckBox10.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox10.Name = "uiCheckBox10";
             this.uiCheckBox10.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -590,7 +590,7 @@ namespace Party_MS2
             this.uiCheckBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox11.Enabled = false;
             this.uiCheckBox11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox11.Location = new System.Drawing.Point(771, 524);
+            this.uiCheckBox11.Location = new System.Drawing.Point(796, 717);
             this.uiCheckBox11.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox11.Name = "uiCheckBox11";
             this.uiCheckBox11.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -604,7 +604,7 @@ namespace Party_MS2
             this.uiCheckBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox12.Enabled = false;
             this.uiCheckBox12.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox12.Location = new System.Drawing.Point(1103, 388);
+            this.uiCheckBox12.Location = new System.Drawing.Point(1128, 581);
             this.uiCheckBox12.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox12.Name = "uiCheckBox12";
             this.uiCheckBox12.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -618,7 +618,7 @@ namespace Party_MS2
             this.uiCheckBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox13.Enabled = false;
             this.uiCheckBox13.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox13.Location = new System.Drawing.Point(1103, 433);
+            this.uiCheckBox13.Location = new System.Drawing.Point(1128, 626);
             this.uiCheckBox13.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox13.Name = "uiCheckBox13";
             this.uiCheckBox13.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -632,7 +632,7 @@ namespace Party_MS2
             this.uiCheckBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox14.Enabled = false;
             this.uiCheckBox14.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox14.Location = new System.Drawing.Point(1103, 478);
+            this.uiCheckBox14.Location = new System.Drawing.Point(1128, 671);
             this.uiCheckBox14.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox14.Name = "uiCheckBox14";
             this.uiCheckBox14.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -647,7 +647,7 @@ namespace Party_MS2
             this.uiCheckBox15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiCheckBox15.Enabled = false;
             this.uiCheckBox15.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCheckBox15.Location = new System.Drawing.Point(1103, 524);
+            this.uiCheckBox15.Location = new System.Drawing.Point(1128, 717);
             this.uiCheckBox15.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiCheckBox15.Name = "uiCheckBox15";
             this.uiCheckBox15.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
@@ -660,7 +660,7 @@ namespace Party_MS2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1440, 634);
+            this.ClientSize = new System.Drawing.Size(1508, 948);
             this.Controls.Add(this.uiCheckBox15);
             this.Controls.Add(this.uiCheckBox14);
             this.Controls.Add(this.uiCheckBox13);

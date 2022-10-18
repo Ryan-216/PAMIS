@@ -181,22 +181,22 @@
     <Compile Include="Admin\Education\AdminScore.Designer.cs">
       <DependentUpon>AdminScore.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Education\AEAdd.cs">
+    <Compile Include="RecycleBin\AEAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Education\AEAdd.Designer.cs">
+    <Compile Include="RecycleBin\AEAdd.Designer.cs">
       <DependentUpon>AEAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Education\AEUpdate.cs">
+    <Compile Include="RecycleBin\AEUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Education\AEUpdate.Designer.cs">
+    <Compile Include="RecycleBin\AEUpdate.Designer.cs">
       <DependentUpon>AEUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Writ\ALAdd.cs">
+    <Compile Include="RecycleBin\ALAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Writ\ALAdd.Designer.cs">
+    <Compile Include="RecycleBin\ALAdd.Designer.cs">
       <DependentUpon>ALAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Writ\ALUpdate1.cs">
@@ -211,10 +211,10 @@
     <Compile Include="Admin\Meeting\AMadd1.Designer.cs">
       <DependentUpon>AMadd1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Meeting\AMAttendee.cs">
+    <Compile Include="RecycleBin\AMAttendee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Meeting\AMAttendee.Designer.cs">
+    <Compile Include="RecycleBin\AMAttendee.Designer.cs">
       <DependentUpon>AMAttendee.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Meeting\AMRecord.cs">
@@ -505,13 +505,13 @@
     <EmbeddedResource Include="Admin\Education\AdminScore.resx">
       <DependentUpon>AdminScore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Education\AEAdd.resx">
+    <EmbeddedResource Include="RecycleBin\AEAdd.resx">
       <DependentUpon>AEAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Education\AEUpdate.resx">
+    <EmbeddedResource Include="RecycleBin\AEUpdate.resx">
       <DependentUpon>AEUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Writ\ALAdd.resx">
+    <EmbeddedResource Include="RecycleBin\ALAdd.resx">
       <DependentUpon>ALAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Writ\ALUpdate.resx" />
@@ -521,7 +521,7 @@
     <EmbeddedResource Include="Admin\Meeting\AMadd1.resx">
       <DependentUpon>AMadd1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Meeting\AMAttendee.resx">
+    <EmbeddedResource Include="RecycleBin\AMAttendee.resx">
       <DependentUpon>AMAttendee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Meeting\AMRecord.resx">

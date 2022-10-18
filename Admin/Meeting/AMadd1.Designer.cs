@@ -52,7 +52,7 @@ namespace Party_MS2
             // uiLabel1
             // 
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel1.Location = new System.Drawing.Point(248, 42);
+            this.uiLabel1.Location = new System.Drawing.Point(577, 78);
             this.uiLabel1.Name = "uiLabel1";
             this.uiLabel1.Size = new System.Drawing.Size(100, 35);
             this.uiLabel1.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -64,7 +64,7 @@ namespace Party_MS2
             // uiLabel2
             // 
             this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel2.Location = new System.Drawing.Point(175, 97);
+            this.uiLabel2.Location = new System.Drawing.Point(504, 152);
             this.uiLabel2.Name = "uiLabel2";
             this.uiLabel2.Size = new System.Drawing.Size(173, 35);
             this.uiLabel2.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -77,7 +77,7 @@ namespace Party_MS2
             // uiLabel3
             // 
             this.uiLabel3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel3.Location = new System.Drawing.Point(175, 147);
+            this.uiLabel3.Location = new System.Drawing.Point(504, 230);
             this.uiLabel3.Name = "uiLabel3";
             this.uiLabel3.Size = new System.Drawing.Size(173, 35);
             this.uiLabel3.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -89,7 +89,7 @@ namespace Party_MS2
             // uiLabel4
             // 
             this.uiLabel4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel4.Location = new System.Drawing.Point(175, 213);
+            this.uiLabel4.Location = new System.Drawing.Point(504, 315);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(173, 31);
             this.uiLabel4.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -101,7 +101,7 @@ namespace Party_MS2
             // uiLabel5
             // 
             this.uiLabel5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel5.Location = new System.Drawing.Point(175, 266);
+            this.uiLabel5.Location = new System.Drawing.Point(504, 395);
             this.uiLabel5.Name = "uiLabel5";
             this.uiLabel5.Size = new System.Drawing.Size(173, 34);
             this.uiLabel5.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -113,7 +113,7 @@ namespace Party_MS2
             // uiLabel6
             // 
             this.uiLabel6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel6.Location = new System.Drawing.Point(175, 321);
+            this.uiLabel6.Location = new System.Drawing.Point(504, 483);
             this.uiLabel6.Name = "uiLabel6";
             this.uiLabel6.Size = new System.Drawing.Size(173, 31);
             this.uiLabel6.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -125,7 +125,7 @@ namespace Party_MS2
             // uiLabel7
             // 
             this.uiLabel7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel7.Location = new System.Drawing.Point(175, 375);
+            this.uiLabel7.Location = new System.Drawing.Point(504, 561);
             this.uiLabel7.Name = "uiLabel7";
             this.uiLabel7.Size = new System.Drawing.Size(173, 35);
             this.uiLabel7.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -137,7 +137,7 @@ namespace Party_MS2
             // uiLabel8
             // 
             this.uiLabel8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel8.Location = new System.Drawing.Point(231, 428);
+            this.uiLabel8.Location = new System.Drawing.Point(560, 631);
             this.uiLabel8.Name = "uiLabel8";
             this.uiLabel8.Size = new System.Drawing.Size(117, 35);
             this.uiLabel8.Style = Sunny.UI.UIStyle.LayuiOrange;
@@ -157,7 +157,7 @@ namespace Party_MS2
             this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox1.Location = new System.Drawing.Point(355, 42);
+            this.uiTextBox1.Location = new System.Drawing.Point(684, 78);
             this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox1.Name = "uiTextBox1";
@@ -182,7 +182,7 @@ namespace Party_MS2
             this.uiTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox2.Location = new System.Drawing.Point(355, 97);
+            this.uiTextBox2.Location = new System.Drawing.Point(684, 152);
             this.uiTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox2.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox2.Name = "uiTextBox2";
@@ -207,7 +207,7 @@ namespace Party_MS2
             this.uiTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox3.Location = new System.Drawing.Point(355, 147);
+            this.uiTextBox3.Location = new System.Drawing.Point(684, 230);
             this.uiTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox3.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox3.Name = "uiTextBox3";
@@ -232,7 +232,7 @@ namespace Party_MS2
             this.uiTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox4.Location = new System.Drawing.Point(355, 209);
+            this.uiTextBox4.Location = new System.Drawing.Point(684, 311);
             this.uiTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox4.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox4.Name = "uiTextBox4";
@@ -257,7 +257,7 @@ namespace Party_MS2
             this.uiTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox5.Location = new System.Drawing.Point(355, 265);
+            this.uiTextBox5.Location = new System.Drawing.Point(684, 394);
             this.uiTextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox5.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox5.Name = "uiTextBox5";
@@ -282,7 +282,7 @@ namespace Party_MS2
             this.uiTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox6.Location = new System.Drawing.Point(355, 317);
+            this.uiTextBox6.Location = new System.Drawing.Point(684, 479);
             this.uiTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox6.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox6.Name = "uiTextBox6";
@@ -307,7 +307,7 @@ namespace Party_MS2
             this.uiTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox7.Location = new System.Drawing.Point(355, 375);
+            this.uiTextBox7.Location = new System.Drawing.Point(684, 561);
             this.uiTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox7.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox7.Name = "uiTextBox7";
@@ -332,7 +332,7 @@ namespace Party_MS2
             this.uiTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.uiTextBox8.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(251)))), ((int)(((byte)(238)))));
             this.uiTextBox8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiTextBox8.Location = new System.Drawing.Point(355, 428);
+            this.uiTextBox8.Location = new System.Drawing.Point(684, 631);
             this.uiTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox8.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox8.Name = "uiTextBox8";
@@ -355,14 +355,14 @@ namespace Party_MS2
             this.uiButton1.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton1.Location = new System.Drawing.Point(269, 490);
+            this.uiButton1.Location = new System.Drawing.Point(490, 761);
             this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton1.Name = "uiButton1";
             this.uiButton1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiButton1.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
             this.uiButton1.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton1.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiButton1.Size = new System.Drawing.Size(100, 33);
+            this.uiButton1.Size = new System.Drawing.Size(129, 45);
             this.uiButton1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiButton1.TabIndex = 70;
             this.uiButton1.Text = "添加";
@@ -379,14 +379,14 @@ namespace Party_MS2
             this.uiButton2.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton2.Location = new System.Drawing.Point(548, 490);
+            this.uiButton2.Location = new System.Drawing.Point(953, 761);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiButton2.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(198)))), ((int)(((byte)(51)))));
             this.uiButton2.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
             this.uiButton2.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(148)))), ((int)(((byte)(0)))));
-            this.uiButton2.Size = new System.Drawing.Size(100, 33);
+            this.uiButton2.Size = new System.Drawing.Size(129, 45);
             this.uiButton2.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiButton2.TabIndex = 71;
             this.uiButton2.Text = "清空";
@@ -398,7 +398,7 @@ namespace Party_MS2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 575);
+            this.ClientSize = new System.Drawing.Size(1544, 899);
             this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiButton1);
             this.Controls.Add(this.uiTextBox8);

@@ -42,7 +42,7 @@
             this.uiPieChart1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPieChart1.Name = "uiPieChart1";
             this.uiPieChart1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
-            this.uiPieChart1.Size = new System.Drawing.Size(1321, 773);
+            this.uiPieChart1.Size = new System.Drawing.Size(1520, 875);
             this.uiPieChart1.Style = Sunny.UI.UIStyle.LayuiOrange;
             this.uiPieChart1.SubFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPieChart1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1345, 797);
+            this.ClientSize = new System.Drawing.Size(1544, 899);
             this.Controls.Add(this.uiPieChart1);
             this.Name = "AdminMeetingChart";
             this.Text = "AdminMeetingChart";
