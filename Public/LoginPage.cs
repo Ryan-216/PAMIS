@@ -21,8 +21,7 @@ namespace Party_MS2
             string picPath = Application.StartupPath + "\\../../img/loginBackground.png";
             this.BackgroundImage = Image.FromFile(picPath);
             this.BackgroundImageLayout = ImageLayout.Stretch;
-            GenerateCode();
-            textBox2.Text = "123";
+            GenerateCode();          
 
         }
 
@@ -82,7 +81,7 @@ namespace Party_MS2
                 //admin
                 if (radioButton2.Checked == true)
                 {
-                    textBox1.Text = "admin";
+                   
                     Dao dao = new Dao();
                     string sql = $"select* from t_admin where id='{textBox1.Text}' and pwd='{textBox2.Text}'";
                     IDataReader dc = dao.read(sql);
@@ -110,7 +109,7 @@ namespace Party_MS2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "34191035";
+            
             if (textBox1.Text != "" && textBox2.Text != "")
             {
                 Login();
@@ -144,7 +143,7 @@ namespace Party_MS2
             {
                 code += rand.Next(0, 9).ToString();
             }
-            textBox3.Text=code1 = code;                                                 //方便测试
+            code1 = code;                                                 //方便测试
             /*这里将code保存下来做比对验证*/
 
             //生成验证码图片并显示到pictureBox1

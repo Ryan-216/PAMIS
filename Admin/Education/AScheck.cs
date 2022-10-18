@@ -24,7 +24,7 @@ namespace Party_MS2
         {
             basicDataGridView.Rows.Clear();
             Dao dao = new Dao();
-            string sql = $"select * from t_asktocheck";
+            string sql = $"select distinct * from t_asktocheck";
             IDataReader dc = dao.read(sql);
             string stu_id, type, audit;
             while (dc.Read())

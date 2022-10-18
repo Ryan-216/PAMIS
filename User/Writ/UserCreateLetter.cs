@@ -69,12 +69,10 @@ namespace Party_MS2.User
                         MessageBox.Show("图片" + (i + 1) + "选择成功");
                         if (i == amount - 1)
                         {
-                            if (i == imageByteList.Count - 1)
-                            {
                                 int j = 1;
                                 foreach (Byte[] imageStream in imageByteList)
                                 {
-                                    SqlCommand sqlcom = new SqlCommand($"insert into t_letter values('{Data.UID}' + '01000'+ '{i}','" + Data.UID + "', @ImageList, NULL, '待提交', '未审核')", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
+                                    SqlCommand sqlcom = new SqlCommand($"insert into t_letter values('{Data.UID}' + '01000'+ '{i}','" + Data.UID + "', @ImageList, '"+currentTime+"', '待提交', '未审核')", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
                                     sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
                                     sqlcom.Parameters["ImageList"].Value = imageStream;
                                     sqlcom.ExecuteNonQuery();
@@ -86,13 +84,6 @@ namespace Party_MS2.User
 
                                     j++;
                                 }
-                            }
-                            else
-                            {
-                                MessageBox.Show("您选择的图片数不足两张，请连续选择两张图片");
-                                return;
-                            }
-
                         }
 
                     }

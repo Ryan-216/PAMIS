@@ -94,7 +94,6 @@ namespace Party_MS2
             this.uiTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox10.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox10.Name = "uiTextBox10";
-            this.uiTextBox10.ReadOnly = true;
             this.uiTextBox10.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox10.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox10.ShowText = false;
@@ -132,7 +131,6 @@ namespace Party_MS2
             this.uiTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox9.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox9.Name = "uiTextBox9";
-            this.uiTextBox9.ReadOnly = true;
             this.uiTextBox9.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox9.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox9.ShowText = false;
@@ -181,7 +179,6 @@ namespace Party_MS2
             this.uiTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox7.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox7.Name = "uiTextBox7";
-            this.uiTextBox7.ReadOnly = true;
             this.uiTextBox7.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox7.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox7.ShowText = false;
@@ -241,7 +238,6 @@ namespace Party_MS2
             this.uiTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox4.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox4.Name = "uiTextBox4";
-            this.uiTextBox4.ReadOnly = true;
             this.uiTextBox4.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox4.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox4.ShowText = false;
@@ -290,7 +286,6 @@ namespace Party_MS2
             this.uiTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox2.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox2.Name = "uiTextBox2";
-            this.uiTextBox2.ReadOnly = true;
             this.uiTextBox2.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox2.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox2.ShowText = false;
@@ -328,7 +323,6 @@ namespace Party_MS2
             this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 16);
             this.uiTextBox1.Name = "uiTextBox1";
-            this.uiTextBox1.ReadOnly = true;
             this.uiTextBox1.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ScrollBarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(0)))));
             this.uiTextBox1.ShowText = false;
@@ -403,7 +397,7 @@ namespace Party_MS2
             this.uiDatetimePicker1.SymbolDropDown = 61555;
             this.uiDatetimePicker1.SymbolNormal = 61555;
             this.uiDatetimePicker1.TabIndex = 97;
-            this.uiDatetimePicker1.Text = "请选择";
+            this.uiDatetimePicker1.Text = "2022-10-18 07:29:57";
             this.uiDatetimePicker1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiDatetimePicker1.Value = new System.DateTime(2022, 10, 18, 7, 29, 57, 368);
             this.uiDatetimePicker1.Watermark = "";
