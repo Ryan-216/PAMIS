@@ -46,18 +46,18 @@ namespace Party_MS2
             string course_id = "";
             if (type1 == "积极分子培训成绩")
             {
-                course_id = "E";
+                course_id = "ACT";
             }
             else if (type1 == "发展对象培训成绩")
             {
-                course_id = "E";
+                course_id = "IMP";
             }
             uiDataGridView1.Rows.Clear();
             Dao dao = new Dao();
             string sql = $"select stu_id,t_exam.exam_no,stu_answer,exam_answer"
                         +" from t_stu_exam, t_exam"
                         +" where t_stu_exam.exam_no = t_exam.exam_no"
-                        +$" and stu_id = '{Data.UID}' and t_exam.exam_no like '{course_id}%'";
+                        +$" and stu_id = '{stu_id1}' and t_exam.exam_no = 'ACT'";
             IDataReader dc = dao.read(sql);
             string stu_id, exam_no, stu_answer, exam_answer;
             while (dc.Read())
