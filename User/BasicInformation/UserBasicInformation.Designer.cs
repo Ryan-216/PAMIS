@@ -607,7 +607,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserBasicInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "我的个人信息";
             this.Load += new System.EventHandler(this.UserBasicInformation_Load);
             this.ResumeLayout(false);
 
