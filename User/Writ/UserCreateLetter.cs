@@ -75,13 +75,10 @@ namespace Party_MS2.User
                                     SqlCommand sqlcom = new SqlCommand($"insert into t_letter values('{Data.UID}' + '01000'+ '{i}','" + Data.UID + "', @ImageList, '"+currentTime+"', '待提交', '未审核')", sqlcon);//此处设置一个占位符ImageList，含义将在以下定义
                                     sqlcom.Parameters.Add("ImageList", SqlDbType.Image);
                                     sqlcom.Parameters["ImageList"].Value = imageStream;
-                                    sqlcom.ExecuteNonQuery();
-
                                     if (sqlcom.ExecuteNonQuery() > 0)
                                     {
                                         flag++;
                                     }
-
                                     j++;
                                 }
                         }
