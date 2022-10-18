@@ -174,13 +174,28 @@ namespace Party_MS2
                     uiCheckBox15.Checked = true;
                 }
             }
-            else if (status == "正式党员")
+            else if (status == "中共党员")
             {
                 uiLight1.State = Sunny.UI.UILightState.On;
                 uiLight2.State = Sunny.UI.UILightState.On;
                 uiLight3.State = Sunny.UI.UILightState.On;
                 uiLight4.State = Sunny.UI.UILightState.On;
                 uiLight5.State = Sunny.UI.UILightState.On;
+                uiCheckBox1.Checked = true;
+                uiCheckBox2.Checked = true;
+                uiCheckBox3.Checked = true;
+                uiCheckBox4.Checked = true;
+                uiCheckBox5.Checked = true;
+                uiCheckBox6.Checked = true;
+                uiCheckBox7.Checked = true;
+                uiCheckBox8.Checked = true;
+                uiCheckBox9.Checked = true;
+                uiCheckBox10.Checked = true;
+                uiCheckBox11.Checked = true;
+                uiCheckBox12.Checked = true;
+                uiCheckBox13.Checked = true;
+                uiCheckBox14.Checked = true;
+                uiCheckBox15.Checked = true;
 
             }
 

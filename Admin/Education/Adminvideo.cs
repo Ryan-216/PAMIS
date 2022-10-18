@@ -150,6 +150,11 @@ namespace Party_MS2
         private void uiButton6_Click(object sender, EventArgs e)
         {
             basicDataGridView.Rows.Clear();//清空旧数据
+            if(uiTextBox1.Text == "")
+            {
+                MessageBox.Show("查询信息不可为空！");
+                return;
+            }
             Dao dao = new Dao();
             string sql = $"select distinct video_no,video_name,location from t_video where train_no='{type}'and video_no={uiTextBox1.Text}";
             IDataReader dc = dao.read(sql);

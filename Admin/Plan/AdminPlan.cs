@@ -86,7 +86,7 @@ namespace Party_MS2
             }
             else if (uiRadioButton4.Checked == true)
             {
-                sql_conditions = " and status='预备党员' and cul_time >= 12 and count_reports >= (count_reports_last + 4) and failed='否' and befull='通过'";
+                sql_conditions = " and status='中共预备党员' and cul_time >= 12 and count_reports >= (count_reports_last + 4) and failed='否' and befull='通过'";
             }
 
             string sql = sql_basic + sql_conditions;
@@ -166,7 +166,7 @@ namespace Party_MS2
             int n = dao.Execute(sql_update);
             int m = dao.Execute(sql_time);
             int p = dao.Execute(sql_reports_last);
-            if (m > 0 && n > 0)
+            if (n > 0)//m > 0 && 
             {
                 MessageBox.Show($"{n}名学生的身份已改为“{update_status}”");
             }
