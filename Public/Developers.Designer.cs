@@ -62,7 +62,7 @@
             this.uiAvatar2.BackColor = System.Drawing.Color.Transparent;
             this.uiAvatar2.FillColor = System.Drawing.Color.White;
             this.uiAvatar2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiAvatar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.uiAvatar2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.uiAvatar2.Location = new System.Drawing.Point(181, 61);
             this.uiAvatar2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar2.Name = "uiAvatar2";
