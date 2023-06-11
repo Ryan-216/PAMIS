@@ -1,4 +1,4 @@
-# PartyMSII
+# PMIS
 
 #### 介绍
 党务管理系统
