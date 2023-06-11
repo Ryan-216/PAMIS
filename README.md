@@ -27,7 +27,7 @@ Course Project for Information System Programming Experiment
 ### Developers
 Yehan SHI -- SYmpHony
 
-Hongyun RAN -- rhy20220905
+Hongyun RAN -- Ryan-216
 ### Special Thanks
 Woqi CAI -- System Design, Developing Methods and Process Discussion
 
